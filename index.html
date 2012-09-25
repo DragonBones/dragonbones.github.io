@@ -1,8 +1,63 @@
-<html>
-<head>
-	<title>DragonBones System</title>
-</head>
-<body>
-TBD
-</body>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+	<head>
+		<title>Skeleton 1.3</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style type="text/css" media="screen">
+		html, body { background-color: #666666;}
+		body { margin:0; padding:0;}
+		</style>
+	</head>
+	<body>
+		<input type='button' value='上一个例子' onclick='prevEx();'>
+		<input type='button' value='下一个例子' onclick='nextEx();'>
+		<div>
+			<iframe id="example" width="800" height="1300" src=""></iframe>
+		</div>
+	</body>
+	<script type='text/javascript'>
+			var examples=[
+				"zombie_starling.html",
+				"zombie_normal.html",
+				"plant_starling.html",
+				"bone.html"
+			];
+			
+			var exID=0;
+			var exHref=window.location.href.split("#")[1];
+			
+			if(exHref){
+				var arr= exHref.split("&");
+				var obj={};
+				var arrT;
+				for(var i in arr){
+					arrT=arr[i].split("=");
+					obj[arrT[0]]=arrT[1];
+				}
+				if(obj.e){
+					exID=obj.e;
+				}
+			}
+			
+			var iframe=document.getElementById("example");
+			addEX();
+			
+			function prevEx(){
+				exID--;
+				if(exID<0){
+					exID=exID+examples.length;
+				}
+				addEX();
+			}
+			function nextEx(){
+				exID++;
+				exID%=examples.length;
+				addEX();
+			}
+			
+			function addEX(){
+				window.location.href=window.location.href.split("#")[0]+"#e="+exID;
+				iframe.src = examples[exID];
+			}
+	</script>
 </html>

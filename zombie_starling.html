@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+	<head>
+		<title>Zombie Starling</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style type="text/css" media="screen">
+		html, body { background-color: #666666;}
+		body { margin:0; padding:0 }
+		</style>
+		<script src='./js/swfobject.js' type='text/javascript'></script>
+	</head>
+	<body>
+		<div id="flashContent"></div>
+		<div id="flashView"></div>
+	</body>
+	<script type='text/javascript'>
+		addSWF("./Example_Zombie_starling.swf","flashContent",800,600,{wmode:"direct"});
+		addSWF("./SkeletonDesignPanel.swf","flashView",800,600,{data:"./resources/Zombie.swf"});
+	</script>
+</html>
