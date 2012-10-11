@@ -23,7 +23,6 @@ if(!pwrdSWF){
 		}
 	}
 	
-	pwrdSWF.PWRD_SWFPATH="http://www.wanmei.com/public/swf/";
 	pwrdSWF.addSWF=function(_src,_containerID,_width,_height,_argObj){
 		if(!_src){
 			alert("未设置SWF源！");
@@ -92,15 +91,7 @@ if(!pwrdSWF){
 					break;
 			}
 		}
-		var _varsStr="";
-		for(_i in _flashVars){
-			_varsStr+="&"+_i+"="+_flashVars[_i];
-		}
-		if(_src.indexOf("?")<0){
-			_src+="?"+_varsStr.substr(1);
-		}else{
-			_src+=_varsStr;
-		}
+		
 		swfobject.embedSWF(_src,_containerID,_width,_height,_version,null,_flashVars,_params,_attributes,addedSWF);
 	}
 	pwrdSWF.removeSWF=function(_swfName){
@@ -158,11 +149,3 @@ var getSWF=pwrdSWF.getSWF;
 var callSWF=pwrdSWF.callSWF;
 var hideSWF=pwrdSWF.hideSWF;
 var showSWF=pwrdSWF.showSWF;
-
-function addCopyButton(_containerID,_width,_height,_setClipboard){
-	pwrdSWF.addSWF(pwrdSWF.PWRD_SWFPATH+"copybutton.swf",_containerID,_width,_height,{setClipboard:_setClipboard,wmode:"transparent"});
-}
-function addVideoPlayer(_containerID,_width,_height,_argObj){
-	if(_argObj){_argObj.bgcolor="0x000000";}
-	pwrdSWF.addSWF(pwrdSWF.PWRD_SWFPATH+"videoplayer.swf",_containerID,_width,_height,_argObj);
-}
