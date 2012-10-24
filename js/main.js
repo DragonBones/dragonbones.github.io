@@ -8,8 +8,8 @@ function showNextQuoteSliderItem() {
     if (nextItem.length == 0) {
         nextItem = visibleItem.siblings().first();
     }
-    visibleItem.toggle("drop", function () {
-        nextItem.toggle("drop");
+    visibleItem.fadeToggle("slow", "linear", function () {
+        nextItem.fadeToggle("slow", "linear");
     });
 }
 

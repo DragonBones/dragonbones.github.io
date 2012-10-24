@@ -23,7 +23,7 @@ body ol, body ul {
 }
 
 #footer {
-    padding: 20px 20px 100px;
+    padding: 10px 0 50px 0;
     background: white;
     color: #999;
     text-align: center;
@@ -38,7 +38,7 @@ body ol, body ul {
 }
 
 .main-description {
-    font-size: 24px;
+    font-size: 22px;
     color: #999;
     padding: 25px 0;
 }
@@ -65,6 +65,10 @@ body ol, body ul {
 .carousel h4 {
    text-align: center;
    font-weight: normal;
+}
+
+.quote-slider {
+    min-height: 110px;
 }
 
 .separator {
@@ -98,4 +102,18 @@ blockquote small {
 
 .key-feature h3 {
     border-bottom: 1px solid #E4E4DF;
+}
+
+.addthis_toolbox {
+    margin: 15px 0;
+}
+
+#footer .nav {
+    margin-bottom: 0;
+}
+
+#footer .nav a {
+    color: #999;
+    font-size: 11px;
+    text-transform: uppercase;
 }
