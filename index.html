@@ -32,7 +32,8 @@
                 <div class="nav-collapse">
                     <ul class="nav">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#demo">Demo</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="#">Help</a></li>
                     </ul>
                 </div>
             </div>
@@ -53,7 +54,16 @@
                         <p class="main-description">The Open Source 2D skeleton animation system for Flash</p>
                         <div class="row-fluid">
                             <div class="span3">
-                                <a href="https://github.com/DragonBones/SkeletonDesignPanel/tree/master/release" class="btn btn-large btn-block btn-inverse">Download</a>
+                                <div class="btn-group">
+                                    <a target="_blank" href="download.html?download_url=https://github.com/DragonBones/SkeletonDesignPanel/tree/master/release" class="btn btn-large btn-inverse">Download</a>
+                                    <button class="btn btn-large btn-inverse dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="download.html?download_url=https://github.com/DragonBones">Latest</a></li>
+                                        <li><a href="download.html?download_url=https://github.com/DragonBones/SkeletonDesignPanel/tree/master/release">V1.3</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="span3">
                                 <a href="https://github.com/DragonBones/SkeletonAnimationFramework/wiki" class="btn btn-large btn-block btn-inverse">Help</a>
@@ -65,6 +75,7 @@
                                 <a class="addthis_button_preferred_2"></a>
                                 <a class="addthis_button_preferred_3"></a>
                                 <a class="addthis_button_preferred_4"></a>
+                                <a class="addthis_button_preferred_5"></a>
                                 <a class="addthis_button_compact"></a>
                                 <a class="addthis_counter addthis_bubble_style"></a>
                                 </div>
@@ -176,67 +187,21 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <ul class="nav nav-pills pull-right">
-                    <li><a href="#">Follow Us on Twitter</a></li>
-                    <li><a href="#">Follow Us on Weibo</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="http://twitter.com/dragonbonesteam">Follow Us on Twitter</a></li>
+                    <li><a href="http://weibo.com/u/3064180163">Follow Us on Weibo</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
                     <li><a href="mailto:dragon.bones.team@gmail.com">Contact Us</a></li>
                 </ul>
             </div>
             <div class="row-fluid">
                  <div class="span6 offset3">
-                    <p>© 2012 The DragonBones Team </p>
+                    <p class="copyright">© 2012 The DragonBones Team </p>
                  </div>
             </div>
         </div>
     </div>
 </body>
-<script type='text/javascript'>
-        var examples=[
-            "./demos/zombie_starling.html",
-            "./demos/zombie_normal.html",
-            "./demos/plant_starling.html",
-            "./demos/bone.html",
-            "./demos/girl.html",
-            "./demos/zombie_hand.html"
-        ];
-        
-        var exID=0;
-        var exHref=window.location.href.split("#")[1];
-        
-        if(exHref){
-            var arr= exHref.split("&");
-            var obj={};
-            var arrT;
-            for(var i in arr){
-                arrT=arr[i].split("=");
-                obj[arrT[0]]=arrT[1];
-            }
-            if(obj.e){
-                exID=obj.e;
-            }
-        }
-        
-        var iframe=document.getElementById("example");
-        addEX();
-        
-        function prevEx(){
-            exID--;
-            if(exID<0){
-                exID=exID+examples.length;
-            }
-            addEX();
-        }
-        function nextEx(){
-            exID++;
-            exID%=examples.length;
-            addEX();
-        }
-        
-        function addEX(){
-            window.location.href=window.location.href.split("#")[0]+"#e="+exID;
-            iframe.src = examples[exID];
-        }
-</script>
+
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>

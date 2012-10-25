@@ -1,15 +1,31 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: #F0F0ED;
 }
 
 body ol, body ul {
     list-style-type: none;
 }
 
+
+/* Bootstrap reset begin */
+.navbar .nav > li > a {
+    padding: 15px;
+}
+
+.navbar .brand {
+    padding: 15px 20px 15px;
+}
+
+.btn {
+    background-image: none;
+}
+
+/* Bootstrap reset end */
+
 #content {
     padding: 80px 0;
     border-bottom: 1px solid #E4E4DF;
+    background: #F0F0ED;
 }
 
 #content .container-fluid {
@@ -24,8 +40,15 @@ body ol, body ul {
 
 #footer {
     padding: 10px 0 50px 0;
-    background: white;
     color: #999;
+}
+
+#about_us li {
+    padding: 4px;
+}
+
+.copyright {
+    padding: 10px;
     text-align: center;
 }
 
