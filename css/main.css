@@ -20,6 +20,10 @@ body ol, body ul {
     background-image: none;
 }
 
+.navbar-inverse .brand {
+    color: #FF6600;
+}
+
 /* Bootstrap reset end */
 
 #content {
@@ -58,6 +62,7 @@ body ol, body ul {
 
 .main-title {
     font-size: 60px;
+    color: #FF6600;
 }
 
 .main-description {
