@@ -2,11 +2,6 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body ol, body ul {
-    list-style-type: none;
-}
-
-
 /* Bootstrap reset begin */
 .navbar .nav > li > a {
     padding: 15px;
@@ -113,6 +108,10 @@ body ol, body ul {
     background-image: linear-gradient(left, #F2F2F2,#D9D9D9 50%,#F2F2F2);
 }
 
+.quote-slider ol, .quote-slider ul {
+    list-style-type: none;
+}
+
 blockquote p {
     font-size: 24px;
     line-height: 36px;
@@ -144,4 +143,28 @@ blockquote small {
     color: #999;
     font-size: 11px;
     text-transform: uppercase;
+}
+
+.page-header {
+    border-color: #E4E4DF;
+}
+
+.action-area {
+    padding: 20px 0;
+}
+
+.feature-item {
+    background-color: white;
+    padding: 20px;
+    margin: 50px 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0px 2px 4px 0 rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0px 2px 4px 0 rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
