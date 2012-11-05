@@ -15,4 +15,5 @@ function showNextQuoteSliderItem() {
 
 $(document).ready(function() {
     initializeQuoteSliders();
+    $("#myCarousel").carousel();
 });

@@ -91,7 +91,7 @@ body {
 }
 
 .quote-slider {
-    min-height: 110px;
+    min-height: 130px;
 }
 
 .separator {
@@ -113,13 +113,13 @@ body {
 }
 
 blockquote p {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 28px;
     font-style: italic;
 }
 
 blockquote small {
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
 }
 
