@@ -147,6 +147,11 @@ blockquote small {
 
 .page-header {
     border-color: #E4E4DF;
+    margin-bottom: 20px;
+}
+
+.page-header h2, .page-header h3 {
+    margin-bottom: 0;
 }
 
 .action-area {
