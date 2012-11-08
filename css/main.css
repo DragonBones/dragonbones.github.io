@@ -8,7 +8,7 @@ body {
 }
 
 .navbar .brand {
-    padding: 15px 20px 15px;
+    
 }
 
 .btn {
@@ -172,4 +172,13 @@ blockquote small {
     -webkit-box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1);
     -o-box-shadow: 0px 2px 4px 0 rgba(0,0,0,0.1);
     box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar .brand {
+    background-image: url('../img/logo.png');
+    width: 160px;
+    height: 16px;
+    text-indent: -9999px;
+    margin-top: 6px;
+    margin-right: 10px;
 }
