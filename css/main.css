@@ -34,7 +34,6 @@ body {
 
 #myCarousel {
    margin: 20px 0 50px 0;
-   background-color: #DDD;
 }
 
 #footer {
@@ -181,4 +180,9 @@ blockquote small {
     text-indent: -9999px;
     margin-top: 6px;
     margin-right: 10px;
+}
+
+.carousel img {
+    border: 1px solid #CCC;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
