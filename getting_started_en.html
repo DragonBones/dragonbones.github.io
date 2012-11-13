@@ -1,0 +1,280 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js" ><!--<![endif]-->
+<head>
+    <title>DragonBones Doc</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flash 2D skeleton animation system">
+    <meta http-equiv="cleartype" content="on">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script type="text/javascript" src="js/shCore.js"></script>
+    <script type="text/javascript" src="js/shBrushAS3.js"></script>
+    <link rel="stylesheet" href="css/shCoreDefault.css"/>
+    <script type="text/javascript">SyntaxHighlighter.defaults['gutter'] = false; SyntaxHighlighter.all();</script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+<body data-spy="scroll" data-target=".navbar">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="index.html">DragonBones</a>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="well">
+                        <section>
+                            <div class="page-header"><h2>What is DragonBones?</h2></div>
+                            <p>DragonBones is an open source project for 2D skeletal animation. It contains an design panel for the skeletal animation based on Flash Pro named "Skeleton Animation Design Panel". It also provides a 2D skeletal animation framework based on ActionScript.</p>
+                            </p>The project makes it possible for developers to build 2D skeletal animations and use the animations on Flash or other technical platform within a short time. All these animations can be built by using traditional ways which developers are familiar with in Flash Pro, such as elements and timeline.</p>
+                        </section>
+                        <section>
+                            <div class="page-header"><h2>Features</h2></div>
+                            <ul>
+                                <li><p>Animations by the project is based on the timeline in Flash Pro, which leads to a similar way used in creating traditional animation in Flash.</p></li>
+                                <li><p>Binding bones promote the quality of the animation and make the animation more accurate and natural. Besides, the bones can be controlled by the program dynamically.</p></li>
+                                <li><p>Setting the scale and the delay of the animation time for a single bone is available. This means a living and complex animation can be accomplished with few key frames.</p></li>
+                                <li><p>The whole animation by the framework is made up of several pieces and each piece has its own tween effect. This structure will spend less bitmap resource and memory resource.</p></li>
+                                <li><p>The view part and the logic part of the skeletal animation are separate. And the view part of the skeletal animation can be changed dynamically without any impact on the progress of animation.</p></li>
+                                <li><p>Animations by the project can be easily used in traditional DisplayList, the Starling framework and other technologies for 2D applications.</p></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <div class="page-header"><h2>Download and installation setup</h2></div>
+                            <p>The project address: <a href="http://dragonbones.github.com">http://dragonbones.github.com</a></p>
+                            <ul>
+                                <li><p>Download the install program file "SkeletonAnimationDesignPanel.zxp" of the design panel plug-in for Flash Pro from the link "SkeletonAnimationDesignPanel", then double click the file to install the plug-in. (The plug-in supports only Flash Pro5.5 and higher versions right now. )</p></li>
+                                <li><p>Download the skeletal animation framework based on ActionScript from the link "SkeletonAnimationLibrary". In following tutorials, we will display the skeletal animation designed by Flash Pro dynamically with this framework.</p></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <div class="page-header"><h2>Download the source code of tutorials</h2></div>
+                            <p>Next we will introduce how to use DragonBones with several simple tutorials.</p>
+                            <p>Please download the related source code from the adress xxx.</p>
+                        </section>
+                        <section>
+                            <div class="page-header"><h2>Tutorial 1: For designers <small>Use DragonBones and create skeletal animation in Flash Pro</small></h2></div>
+                            <p>As a designer, you just need to prepare for all the parts of the cartoon characters. Then, in the timeline of Flash Pro, build them up in order, set the key frame well and use the design panel of DragonBones to get everything done.</p>
+                            <ol>
+                                <li><p>After downloading and installing the design panel plug-in for Flash Pro, start the Flash Pro and open the "DragonBones_tutorial_Start.fla" file in source code package.</p></li>
+                                <li>
+                                    <p>Open the library panel and you may see the related resource for this example.</p>
+                                    <p>The "parts" folder contains all the elements that the animation "Dragon" is made up of. You can infer directly which part of the dragon it is from the name of a element. Naming a element clearly is a good habit, isn't it? :)</p>
+                                </li>
+                                <li>
+                                    <p>Double click the MovieElement "Dragon" in the library panel to enter the edit mode. We need to know the details about structure of the animation, which can help edit the skeletal animation later.</p>
+                                    <p>Be careful for the name of each layer in the timeline because we name layers by the related part of the skeleton. The design panel of DragonBones will recognize all the parts of the skeleton automatically according to the name of layers.</p>
+                                    <p>You should also be careful for the layer named "label", within which we append the label "walk" to explain the motion of current timeline. If there are more than one motions, please also append labels in corresponding position of start to help explain. This step is very important! The design panel will read and set motions by these labels.</p>
+                                    <p>Finding that there isn't any tween yet? Yes, what you need to do is just set key frames on the timeline and the rest of the work will be accomplished by the design panel.</p>
+                                    <p>Being a designer, you can also follow your habit and complete the tween animation. The design panel can still import your animation as it is. (The current version of DragonBones only supports traditional tween. New kinds of tween will be supported in later version)</p>
+                                </li>
+                                <li>
+                                    <p>After getting all of the requirements above ready, you can click Window>Other Panels>SkeletonAnimationDesignPanel in the window of Flash Pro and open the design panel of DragonBones. We will explain in details about the use of design panel in later operations.</p>
+                                </li>
+                                <li>
+                                    <p>Click the "import" button in this panel, then there will be a window shown like this:</p>
+                                    <p>In the "Import" panel you can set the layout of the texture, texture size and texture padding. In the "Import" option you can import the selected elements in library, all the elements in library and the PNG/SWF/ZIP files exported by the design panel of DragonBones.</p>
+                                    <p>Select the MovieClip "Dragon" in library panel, then select "Selected Items" item in design panel of DragonBones. Finally click the "OK" button.</p>
+                                </li>
+                                <li>
+                                    <p>After importing the MovieClip "Dragon" the design panel may be like this:</p>
+                                    <p><strong>Armature List</strong>: List of imported animations. Each element in this list has the same name with the corresponding MovieClip in library and the program will use this name to create the animated object. Each MovieClip containing motions is called "Armature" in DragonBones.</p>
+                                    <p><strong>Behavior List</strong>: Motion/Behavior names of corresponding animated objects. The name is accord with the label name in the MovieClip and will be used by programs to play motions.</p>
+                                    <p><strong>Bone Tree</strong>: The skeleton structures of animated objects. The name of each item is same with the name of related layer in the MovieClip.</p>
+                                    <p><strong>Texture List</strong>: The material name related to the each part of the animated object.</p>
+                                </li>
+                                <li>
+                                    <p>For each behavior, you need firstly set the preferences like this:</p>
+                                    <p><strong>Total Frame</strong>: Number of total frames of current behavior. The larger the number is, the slower the motion goes.</p>
+                                    <p><strong>Tween Frame</strong>: Number of tween frames needed to switch from one behavior to another. For example, there is a behavior "going down" which has only 1 frame in timeline, but if you set this parameter into 6, then the program will add a 6 frames long tween to make the switch more natural when there is a switch to the "going down" behavior.</p>
+                                    <p><strong>Keyframe Ease</strong>: The ease value between key frames within a behavior.</p>
+                                    <p><strong>Loop</strong>: Decide if the current behavior should be played loop. Such as the "walk", "run" behaviors of a character.</p>
+                                </li>
+                                <li>
+                                    <p>After setting the parameters above, you can see the currently edited animation in the preview region on the bottom left.</p>
+                                    <p>The button located at the top left corner of the preview window can scale the object to make the observation conveniently.</p>
+                                </li>
+                                <li>
+                                    <p>OK, now we will set the membership relation between bones in the behavior with Bone Tree panel. From the graph below we can see that in default animation. Bones have no relationship with each other:</p>
+                                    <p>At the top right of the panel you can set the highlight color of the selected bone in the preview window.</p>
+                                    <p>At the list we can attach one bone as a child to the other bone by the way of dragging. As you see below, we set the body as the major bone and the head, tail, upper limb and lower limb as the children of major bone. The upper limb contains upper arm and lower arm as its children at the same time. By the tree structure we can see directly the membership relation between bones.</p>
+                                </li>
+                                <li>
+                                    <p>We can set the motion parameters for each bone individually. Just select the bone you want to modify in the "BoneTree" panel and set these parameters:</p>
+                                    <p><strong>Tween Time Scale</strong>: Set the scale for the total frames of current bone. (Relative to the total frames of the behavior)</p>
+                                    <p><strong>Tween Time Delay</strong>: Set the delay for the motion time of current bone. (Relative to the motion time of the behavior)</p>
+                                    <p>Be careful for these two parameters. After finely adjusting these two parameters, you will find that even there are only 2 key frames in the timeline, the behaviors of the character will look very complex.</p>
+                                    <p>In this example, we set the "Tween Delay" parameter of the tail to the number -10, and the tail tip to the number -50. Then you can find obviously that the dragon's tail wag along the motion of body naturally. :)</p>
+                                 </li>
+                                 <li>
+                                    <p>After adjusting the skeletal animation well, you can click the button "export".</p>
+                                    <p>There are many kinds of file format for export to meet your project requirement at the pop up list of "Export".</p>
+                                    <p><strong>SWF (XML Merged)</strong>: SWF file format that contains the skeletal animation data with the type of XML. If you need skeletal animation with vector image in your application, you can choose this type of format. Surely the original format of your resource must be the vector.
+PNG(XML Merged): PNG file format that contains the skeletal animation data with the type of XML.</p>
+                                    <p><strong>Zip(XML and SWF)</strong>: Export the XML file and SWF file packed into a Zip file to store the skeletal animation and the visual resource individually.</p>
+                                    <p><strong>Zip(XML and PNG)</strong>: Export the XML file and PNG file packed into a Zip file to store the skeletal animation and the visual resource individually.</p>
+                                    <p><strong>Zip(XML and PNGs)</strong>: Export the XML file and PNG files packed into a Zip file to store the skeletal animation and the visual resource individually. There would be an individual PNG file for each bone.</p>
+                                    <p>In this example, we choose "PNG (XML Merged)" and click "OK" to export the file "DragonWalk.png" into a selected directory.</p>
+                                    <p>Finding that there is only a single PNG file? Yes. Because we choose the export form that combines both XML data and visual data, so this PNG file has contains all the resources needed by the skeletal animation.</p>
+                                    <p>Till now, as a designer, you have finished all of your works.</p>
+                                 </li>
+                            </ol>
+                        </section>
+                        <section>
+                            <div class="page-header"><h2>Tutorial 2: For programmers <small>Use skeletal animation in ActionScript projects</small></h2></div>
+                            <p>After designers export related assets and data into a predefined format file such as PNG of SWF, developers can use the skeleton animation library, import the file to program and control the characters to play. It is a very easy task with only a few steps. Following you will start to study how to use the skeletal animation library to render characters with traditional flash DisplayList or GPU base starling.</p>
+                            <p>Download the Skeleton Animation Library, and import this project into your project. Let’s study some basic concepts about skeletal animation before coding.</p>
+                            <p><strong>Factory</strong>: This is the basis for building skeletal animation. It is responsible for parsing the data from the imported file and preparing resources to create skeleton container, which is Armature.</p>
+                            <p><strong>Armature</strong>: We can consider it as a container which corresponds with a MovieClip exported from design panel in Flash Pro. Armature is responsible for skeleton management and playing animation.</p>
+                            <p>Now let's check out an example about how to create characters with traditional Flash DisplayList using skeleton animation library. Open source code DB_Tutorial_Walk_DisplayList.as.</p>
+                            <ol>
+                                <li>
+                                    <p>Firstly, import assets into your project.</p>
+                                    <pre class="brush: as3;">
+                                    [Embed(source = "../assets/Dragon1.swf", mimeType = "application/octet-stream")]  
+                                    private static const ResourcesData:Class;
+                                    </pre>
+                                    <p>This asset is exported from Flash Pro skeleton animation design panel, merged with png data and XML data. Of course you can also dynamic import it after application launched.</p>
+                                </li>
+                                <li>
+                                    <p>Create factory and parse resource data from function "fromRawData", then do other things in callback function "textureCompleteHandler".</p>
+                                    <pre class="brush: as3;">
+                                    factory = new BaseFactory(); factory.fromRawData(new ResourcesData(), textureCompleteHandler); 
+                                    </pre>
+                                </li>
+                                <li>
+                                    <p>In textureCompleteHandler, you need to create Armature with function "buildArmature":</p>
+                                    <pre class="brush: as3;">
+                                    armature = factory.buildArmature("Dragon");
+                                    </pre>
+                                    <p>Then, add "armature.display" to stage.</p>
+                                    <pre class="brush: as3;">
+                                    addChild(armature.display as Sprite); 
+                                    </pre>
+                                    <p>Then, play some movement:</p>
+                                    <pre class="brush: as3;">
+                                    armature.animation.play("walk");
+                                    </pre>
+                                </li>
+                                <li>
+                                    <p>At last, call "armature.update()" at ENTER_FRAME event handler.</p>
+                                </li>
+                            </ol>
+                            <p>Just the few lines of code, you can use skeleton animation in your own project. It is very cool, isn't?</p>
+                            <p>Next we talk about how to create the skeleton animation in Starling. Starling is a famous 2D open-source framework powered by Stage3D which can help you build high quality games. For more information about Starling, please visit its official web site: <a href="http://starlingframework.org">http://starlingframework.org</a>.</p>
+                            <p>Some users probably have been familiar with the way of creating animations in Starling: using the Sprite Sheet. However, it is a serious problem of memory consumption, especially when processing complex animations. Look at the picture below, it's just a simple movement of walking, but takes up a big texture.</p>
+                            <p>DragonBones have solved this problem. It can implement richer animation by using fewer assets (or textures).</p>
+                            <p>DragonBones can work seamlessly with Starling, creating 2D skeleton animation which can be accelerated by GPU.</p>
+                            <p>Open the DBStarlingWalk.as in the example project, you will notice that we create a special factory for Starling, the code like this:</p>
+                            <pre class="brush: as3;">
+                            factory = new StarlingFactory();
+                            </pre>
+                            <p>And the rest of the codes, they are the same with the previous DisplayList example.</p>
+                            <p>For Starling framework, the embedded skeleton animation assets can be PNG format ( which include the xml data) or the SWF format( which also include the xml data). SWF assets store data as vector graph, and then Skeleton Animation Library will transform them to bitmap textures at runtime. This can help you reduce the size of your project.</p>
+                        </section>
+                        <section>
+                            <div class="page-header"><h2>Tutorial 3: Create and control multiple Skeleton animations</h2></div>
+                            <p>Next, you will learn how to use DragonBones to create skeleton animation including multiple movements, and control these actions by keyboard interaction.</p>
+                            <ol>
+                                <li><p>Open file DragonBones_Tutorial_MultiBehavior.fla, then double click the Dragon Element in library, you can see four movements: stand, walk, jump and fail. Frame labels have been added in start frame of each action, which is identification for DragonBones to distinguish different movements.</p></li>
+                                <li><p>Open Skeleton animation design panel, there are multiple movements in Behavior List. You can set total frame, tween and detail parameter of single bone by choose one movement.</p></li>
+                                <li>
+                                    <p>Please pay attention to the Tween Frame option in Behavior editor.</p>
+                                    <p>This option is the frame number of transition movement from current movement to other. E.g. we set Tween Frame of jump movement is 3, then 3 frames will be needed from other movement to jump.</p>
+                                    <p>DragonBones will automatically add frames to make the transition smoothly. Also you can preview the transition effects in the preview panels.</p>
+                                </li>
+                                <li><p>Click "Export" button to export Skeleton animation data after you finished the adjustment of each movement.</p></li>
+                                <li>
+                                    <p>Open file DBStarlingMultiBehavior.as, the code is as following which is control Skeleton animation by keyboard in Starling.</p>
+                                </li>
+                                <p>You can find that whenever you want to play the Skeleton animation, just call function armature.animation.gotoAndPlay()</p>
+                                <p>Not only the movement name, but also total frame number and loop also can be specified dynamically by call this function.</p>
+                                <p>DragonBones provide various events for each animation:</p>
+                                <p><strong>Movement change event:</strong></p>
+                                <pre class="brush: as3;">
+                                armature.addEventListener(dragonbones.events.Event.MOVEMENT_CHANGE, aramtureEventHandler);
+                                </pre>
+                                <p><strong>Movement start event:</strong></p>
+                                <pre class="brush: as3;">
+                                armature.addEventListener(dragonbones.events.Event.START, aramtureEventHandler);
+                                </pre>
+                                <p><strong>Movement complete event</strong></p>
+                                <pre class="brush: as3;">
+                                armature.addEventListener(dragonbones.events.Event.COMPLETE, aramtureEventHandler);
+                                </pre>
+                                <p><strong>Movement loop complete event:</strong></p>
+                                <pre class="brush: as3;">
+                                armature.addEventListener(dragonbones.events.Event.LOOP_COMPLETE, aramtureEventHandler);
+                                </pre>
+                                <p>You can easily create games including complex roles by various events and movement.</p>
+                            </ol>
+                        </section>
+                        <section>
+                            <div class="page-header"><h2>Tutorial 4: Control each bone of the skeleton</h2></div>
+                            <p>For an interesting game, perhaps it is not enough to just play the predefined skeleton animations, for we want the characters to have their own dynamic and controllable movements. To our great joy, DragonBones provides the mechanism to access and control each bone of the skeleton, which can make the characters free to move around.</p>
+                            <p>In this example, the skeleton is controlled by the mouse movement in the scene. We create a bird that will follow the mouse movement and maintain a certain distance with the dragon. At the same time, the dragon's head and arms will follow the bird movement and make a variety of poses. It sounds funny, right?</p>
+                            <p>Let's open the file DBStarlingControlBone.as and below is the corresponding code:</p>
+                            <p>From the above code, we can find that method dragonBones.Armature.getBone(_name:String):Bone is used to get one specific bone. The node object of the bone contains the data, such as position, rotation, scale, skew and etc. We can assign values to these parameters based on the game logic needs, to achieve the effect of dynamic bone controlling.</p>
+                            <p>Please pay attention to the updateBones() method in the above example, where we first fetch the angle between the mouse's current position and the central point of the skeleton, then change the rotations of the dragon's head and arms based on this angle, thus realize this interesting effect.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="http://twitter.com/dragonbonesteam">Follow Us on Twitter</a></li>
+                    <li><a href="http://weibo.com/u/3064343903">Follow Us on Weibo</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="mailto:dragonbonesteam@gmail.com">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="row-fluid">
+                 <div class="span6 offset3">
+                    <p class="copyright">© 2012 The DragonBones Team </p>
+                 </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35106030-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</html>
