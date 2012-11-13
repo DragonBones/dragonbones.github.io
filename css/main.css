@@ -186,3 +186,11 @@ blockquote small {
     border: 1px solid #CCC;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+.thumbnail .caption {
+    padding-left: 16px;
+}
+
+.thumbnail .action {
+    padding: 16px;
+}
