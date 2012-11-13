@@ -21,6 +21,11 @@
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
+    <style type="text/css">
+        .navbar-fixed-top {
+            position: relative;
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar">
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -41,12 +46,27 @@
             <div class="row-fluid">
                 <div class="span12">
                     <div class="well">
+                        <h1>DragonBones Getting Started Guide</h1>
                         <section>
+                            <h4>Table of Contents</h4>
+                            <ul>
+                                <li><a href="#s1">What is DragonBones?</a></li>
+                                <li><a href="#s2">Features</a></li>
+                                <li><a href="#s3">Download and installation setup</a></li>
+                                <li><a href="#s4">Download the source code of tutorials</a></li>
+                                <li><a href="#s5">Tutorial 1: For designers - Use DragonBones and create skeletal animation in Flash Pro</a></li>
+                                <li><a href="#s6">Tutorial 2: For programmers - se skeletal animation in ActionScript projects</a></li>
+                                <li><a href="#s7">Tutorial 3: Create and control multiple Skeleton animations</a></li>
+                                <li><a href="#s8">Tutorial 4: Control each bone of the skeleton</a></li>
+                                <li><a href="#s9">Tutorial 5: Switching texture in skeleton animation</a></li>
+                            </ul>
+                        </section>
+                        <section id="s1">
                             <div class="page-header"><h2>What is DragonBones?</h2></div>
                             <p>DragonBones is an open source project for 2D skeletal animation. It contains an design panel for the skeletal animation based on Flash Pro named "Skeleton Animation Design Panel". It also provides a 2D skeletal animation framework based on ActionScript.</p>
                             </p>The project makes it possible for developers to build 2D skeletal animations and use the animations on Flash or other technical platform within a short time. All these animations can be built by using traditional ways which developers are familiar with in Flash Pro, such as elements and timeline.</p>
                         </section>
-                        <section>
+                        <section id="s2">
                             <div class="page-header"><h2>Features</h2></div>
                             <ul>
                                 <li><p>Animations by the project is based on the timeline in Flash Pro, which leads to a similar way used in creating traditional animation in Flash.</p></li>
@@ -57,7 +77,7 @@
                                 <li><p>Animations by the project can be easily used in traditional DisplayList, the Starling framework and other technologies for 2D applications.</p></li>
                             </ul>
                         </section>
-                        <section>
+                        <sectio id="s3"n>
                             <div class="page-header"><h2>Download and installation setup</h2></div>
                             <p>The project address: <a href="http://dragonbones.github.com">http://dragonbones.github.com</a></p>
                             <ul>
@@ -65,12 +85,12 @@
                                 <li><p>Download the skeletal animation framework based on ActionScript from the link "SkeletonAnimationLibrary". In following tutorials, we will display the skeletal animation designed by Flash Pro dynamically with this framework.</p></li>
                             </ul>
                         </section>
-                        <section>
+                        <section id="s4">
                             <div class="page-header"><h2>Download the source code of tutorials</h2></div>
                             <p>Next we will introduce how to use DragonBones with several simple tutorials.</p>
                             <p>Please download the related source code from the adress xxx.</p>
                         </section>
-                        <section>
+                        <section id="s5">
                             <div class="page-header"><h2>Tutorial 1: For designers <small>Use DragonBones and create skeletal animation in Flash Pro</small></h2></div>
                             <p>As a designer, you just need to prepare for all the parts of the cartoon characters. Then, in the timeline of Flash Pro, build them up in order, set the key frame well and use the design panel of DragonBones to get everything done.</p>
                             <ol>
@@ -138,7 +158,7 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                                  </li>
                             </ol>
                         </section>
-                        <section>
+                        <section id="s6">
                             <div class="page-header"><h2>Tutorial 2: For programmers <small>Use skeletal animation in ActionScript projects</small></h2></div>
                             <p>After designers export related assets and data into a predefined format file such as PNG of SWF, developers can use the skeleton animation library, import the file to program and control the characters to play. It is a very easy task with only a few steps. Following you will start to study how to use the skeletal animation library to render characters with traditional flash DisplayList or GPU base starling.</p>
                             <p>Download the Skeleton Animation Library, and import this project into your project. Let’s study some basic concepts about skeletal animation before coding.</p>
@@ -190,7 +210,7 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                             <p>And the rest of the codes, they are the same with the previous DisplayList example.</p>
                             <p>For Starling framework, the embedded skeleton animation assets can be PNG format ( which include the xml data) or the SWF format( which also include the xml data). SWF assets store data as vector graph, and then Skeleton Animation Library will transform them to bitmap textures at runtime. This can help you reduce the size of your project.</p>
                         </section>
-                        <section>
+                        <section id="s7">
                             <div class="page-header"><h2>Tutorial 3: Create and control multiple Skeleton animations</h2></div>
                             <p>Next, you will learn how to use DragonBones to create skeleton animation including multiple movements, and control these actions by keyboard interaction.</p>
                             <ol>
@@ -227,13 +247,72 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                                 <p>You can easily create games including complex roles by various events and movement.</p>
                             </ol>
                         </section>
-                        <section>
+                        <section id="s8">
                             <div class="page-header"><h2>Tutorial 4: Control each bone of the skeleton</h2></div>
                             <p>For an interesting game, perhaps it is not enough to just play the predefined skeleton animations, for we want the characters to have their own dynamic and controllable movements. To our great joy, DragonBones provides the mechanism to access and control each bone of the skeleton, which can make the characters free to move around.</p>
                             <p>In this example, the skeleton is controlled by the mouse movement in the scene. We create a bird that will follow the mouse movement and maintain a certain distance with the dragon. At the same time, the dragon's head and arms will follow the bird movement and make a variety of poses. It sounds funny, right?</p>
                             <p>Let's open the file DBStarlingControlBone.as and below is the corresponding code:</p>
-                            <p>From the above code, we can find that method dragonBones.Armature.getBone(_name:String):Bone is used to get one specific bone. The node object of the bone contains the data, such as position, rotation, scale, skew and etc. We can assign values to these parameters based on the game logic needs, to achieve the effect of dynamic bone controlling.</p>
+                            <p>From the above code, we can find that method <strong>dragonBones.Armature.getBone(_name:String):Bone</strong> is used to get one specific bone. The node object of the bone contains the data, such as position, rotation, scale, skew and etc. We can assign values to these parameters based on the game logic needs, to achieve the effect of dynamic bone controlling.</p>
                             <p>Please pay attention to the updateBones() method in the above example, where we first fetch the angle between the mouse's current position and the central point of the skeleton, then change the rotations of the dragon's head and arms based on this angle, thus realize this interesting effect.</p>
+                        </section>
+                        <section id="s9">
+                            <div class="page-header"><h2>Tutorial 5: Switching texture in skeleton animation</h2></div>
+                            <p>It is very a common request in the game to switch texture for some effects like changing clothes, equipments or weapons for a certain characters, and this is very easy to get done by switching the corresponding bone texture in the DragonBones Animation library.</p>
+                            <p>Through the mechanism of switching the  bone texture, we can create new texture and bind it with the corresponding bones dynamically. The new texture can be obtained from external files that are created by other means, or from Texture Atlas that is exported from the design panel.  You may have one question for now,  how Flash Pro can export the texture that does not included in the timeline animation texture?</p>
+                            <ol>
+                                <li><p>Open the sample file DragonBones_Tutorial_ChangeClothes.fla in this tutorial, and you will see the lovely dragon wear a yellow jacket with various actions that are designed on the layer called clothes. </p></li>
+                                <li>
+                                    <p>Double click clothTextureTemp element, you will find that there have 4 clothes on the different layers with its associated names, and due to the identical size and shape, they overlap each other.  However, in the actual project,  the clothes or weapons may have various size, so it is necessary to set the appropriate  relative coordination to its original texture. </p>
+                                    <p>Please note that the first frame label is named as "temp". The design panel won't import animation element that do not have frame label. </p>
+                                </li>
+                                <li><p>Select the "Dragon" and "clothTextureTemp" elements in the library, then open the design panel and click "import" button with only selected elements option, you will find that there has a skeleton named clothTextureTemp in the Armature List , which contains  clothes1 to clothes4 bones. You don't need worry them now, they are not for designing purpose, but to export them  with the whole skeletal texture as one piece. </p></li>
+                                <li><p>Next you can make some necessary adjustment for the skeletal structure if needed, and then click "Export" button to export all the texture --  a DragonWithClothes.png file contains both image and xml data. You will find that the exported texture atlases contain all clothes we need. :)</p></li>
+                                <li>
+                                    <p>Let's get a close look at how to switch texture in the code. Open DBStarlingMultiBehavior.as  file that is created in Tutorial 3, we can add switch texture code here directly.  First, rename the imported texture to DragonWithClothes.png: </p>
+                                    <pre class="brush: as3;">
+                                    [Embed(source = "../assets/DragonWithClothes.png", mimeType = "application/octet-stream")]
+                                    </pre>
+                                </li>
+                                <li>
+                                    <p>Then add 2 variables , Array textures contains the all the texture names, and  int textureIndex is the index to select various texture when switch them.</p>
+                                    <pre class="brush: as3;">
+                                    private var textures:Array = ["parts/clothes1", "parts/clothes2", "parts/clothes3", " parts/clothes4"];
+                                    private var textureIndex:int = 0;
+                                    </pre>
+                                    <p>Please note that it is "parts/clothes1", not "clothes1". This is because that Flash Pro can have same element name under different folder, so DragonBones saved the path info which contains the directory. You will understand it when you see the directory that has clothes element in the library when you open DragonBones_Tutorial_ChangeClothes.fla</p>
+                                </li>
+                                <li>
+                                    <p>Create handler function that responses the key event (press C key), which is used to change texture. </p>
+                                    <pre class="brush: as3;">
+                                    case Keyboard.C:
+                                        if (e.type == KeyboardEvent.KEY_UP) {
+                                            changeClothes(); 
+                                        }
+                                        break;
+                                    </pre>
+                                </li>
+                                <li>
+                                    <p>Create changeClothes() function:</p>
+                                    <pre class="brush: as3;">
+                                    private function changeClothes():void {
+                                        //loop the texture
+                                        textureIndex++;
+                                        if (textureIndex >= textures.length) {
+                                            textureIndex = textureIndex - textures.length; 
+                                        }
+                                        //get the image instant from textureData
+                                        var _textureName:String = textures[textureIndex];
+                                        var _image:Image = StarlingFactory.getTextureDisplay(factory.textureData, _textureName);
+                                        // assign image to bone.display for chaging clothes effect. (using bone.display to dispose)
+                                        var _bone:Bone = armature.getBone("clothes"); _bone.display.dispose();
+                                        _bone.display = _image;
+                                    } 
+                                    </pre>
+                                    <p>Here we have used dragonBones.factorys.StarlingFactory.getTextureDisplay(_textureData: TextureData, _fullName:String):Image  to obtain the texture from the design panel exported file , then assign to corresponding bone to make the changing clothes effect. As mentioned the before, the texture can be also obtained from external resource as needed. </p>
+                                    <p>When you get familiar with DragonBones library,   you can have more flexible implementation. For example, in addition to change bones’texture, you can also add, delete, update skeleton structure in  Armature dynamically. </p>
+                                </li>
+                            </ol>
+                            <p>OK, you should know how to dynamically change the texture for your game’s characters, try it now! :)</p>
                         </section>
                     </div>
                 </div>
