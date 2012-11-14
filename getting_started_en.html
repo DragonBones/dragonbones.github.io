@@ -38,6 +38,15 @@
                 <span class="icon-bar"></span>
                 </a>
                 <a class="brand" href="index.html">DragonBones</a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="help.html">Help</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -45,10 +54,10 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="span12">
-                    <div class="well">
+                    <div class="tutorials well">
                         <h1>DragonBones Getting Started Guide</h1>
                         <section>
-                            <h4>Table of Contents</h4>
+                            <div class="page-header"><h2>Table of Contents</h2></div>
                             <ul>
                                 <li><a href="#s1">What is DragonBones?</a></li>
                                 <li><a href="#s2">Features</a></li>
@@ -92,7 +101,8 @@
                         </section>
                         <section id="s5">
                             <div class="page-header"><h2>Tutorial 1: For designers <small>Use DragonBones and create skeletal animation in Flash Pro</small></h2></div>
-                            <p>As a designer, you just need to prepare for all the parts of the cartoon characters. Then, in the timeline of Flash Pro, build them up in order, set the key frame well and use the design panel of DragonBones to get everything done.</p>
+                             <img src="" alt="" />
+                             <p>As a designer, you just need to prepare for all the parts of the cartoon characters. Then, in the timeline of Flash Pro, build them up in order, set the key frame well and use the design panel of DragonBones to get everything done.</p>
                             <ol>
                                 <li><p>After downloading and installing the design panel plug-in for Flash Pro, start the Flash Pro and open the "DragonBones_tutorial_Start.fla" file in source code package.</p></li>
                                 <li>
@@ -103,19 +113,23 @@
                                     <p>Double click the MovieElement "Dragon" in the library panel to enter the edit mode. We need to know the details about structure of the animation, which can help edit the skeletal animation later.</p>
                                     <p>Be careful for the name of each layer in the timeline because we name layers by the related part of the skeleton. The design panel of DragonBones will recognize all the parts of the skeleton automatically according to the name of layers.</p>
                                     <p>You should also be careful for the layer named "label", within which we append the label "walk" to explain the motion of current timeline. If there are more than one motions, please also append labels in corresponding position of start to help explain. This step is very important! The design panel will read and set motions by these labels.</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/1-3.png" alt=""></p>
                                     <p>Finding that there isn't any tween yet? Yes, what you need to do is just set key frames on the timeline and the rest of the work will be accomplished by the design panel.</p>
                                     <p>Being a designer, you can also follow your habit and complete the tween animation. The design panel can still import your animation as it is. (The current version of DragonBones only supports traditional tween. New kinds of tween will be supported in later version)</p>
                                 </li>
                                 <li>
                                     <p>After getting all of the requirements above ready, you can click Window>Other Panels>SkeletonAnimationDesignPanel in the window of Flash Pro and open the design panel of DragonBones. We will explain in details about the use of design panel in later operations.</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/1-4.png" alt=""></p>
                                 </li>
                                 <li>
                                     <p>Click the "import" button in this panel, then there will be a window shown like this:</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/1-5.png" alt=""></p>
                                     <p>In the "Import" panel you can set the layout of the texture, texture size and texture padding. In the "Import" option you can import the selected elements in library, all the elements in library and the PNG/SWF/ZIP files exported by the design panel of DragonBones.</p>
                                     <p>Select the MovieClip "Dragon" in library panel, then select "Selected Items" item in design panel of DragonBones. Finally click the "OK" button.</p>
                                 </li>
                                 <li>
                                     <p>After importing the MovieClip "Dragon" the design panel may be like this:</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/1-6.png" alt=""></p>
                                     <p><strong>Armature List</strong>: List of imported animations. Each element in this list has the same name with the corresponding MovieClip in library and the program will use this name to create the animated object. Each MovieClip containing motions is called "Armature" in DragonBones.</p>
                                     <p><strong>Behavior List</strong>: Motion/Behavior names of corresponding animated objects. The name is accord with the label name in the MovieClip and will be used by programs to play motions.</p>
                                     <p><strong>Bone Tree</strong>: The skeleton structures of animated objects. The name of each item is same with the name of related layer in the MovieClip.</p>
@@ -123,6 +137,7 @@
                                 </li>
                                 <li>
                                     <p>For each behavior, you need firstly set the preferences like this:</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/1-7.png" alt=""></p>
                                     <p><strong>Total Frame</strong>: Number of total frames of current behavior. The larger the number is, the slower the motion goes.</p>
                                     <p><strong>Tween Frame</strong>: Number of tween frames needed to switch from one behavior to another. For example, there is a behavior "going down" which has only 1 frame in timeline, but if you set this parameter into 6, then the program will add a 6 frames long tween to make the switch more natural when there is a switch to the "going down" behavior.</p>
                                     <p><strong>Keyframe Ease</strong>: The ease value between key frames within a behavior.</p>
@@ -130,15 +145,19 @@
                                 </li>
                                 <li>
                                     <p>After setting the parameters above, you can see the currently edited animation in the preview region on the bottom left.</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/1-8.png" alt=""></p>
                                     <p>The button located at the top left corner of the preview window can scale the object to make the observation conveniently.</p>
                                 </li>
                                 <li>
                                     <p>OK, now we will set the membership relation between bones in the behavior with Bone Tree panel. From the graph below we can see that in default animation. Bones have no relationship with each other:</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/1-9.png" alt=""></p>
                                     <p>At the top right of the panel you can set the highlight color of the selected bone in the preview window.</p>
                                     <p>At the list we can attach one bone as a child to the other bone by the way of dragging. As you see below, we set the body as the major bone and the head, tail, upper limb and lower limb as the children of major bone. The upper limb contains upper arm and lower arm as its children at the same time. By the tree structure we can see directly the membership relation between bones.</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/1-9-3.png" alt=""></p>
                                 </li>
                                 <li>
                                     <p>We can set the motion parameters for each bone individually. Just select the bone you want to modify in the "BoneTree" panel and set these parameters:</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/1-10.png" alt=""></p>
                                     <p><strong>Tween Time Scale</strong>: Set the scale for the total frames of current bone. (Relative to the total frames of the behavior)</p>
                                     <p><strong>Tween Time Delay</strong>: Set the delay for the motion time of current bone. (Relative to the motion time of the behavior)</p>
                                     <p>Be careful for these two parameters. After finely adjusting these two parameters, you will find that even there are only 2 key frames in the timeline, the behaviors of the character will look very complex.</p>
@@ -146,6 +165,7 @@
                                  </li>
                                  <li>
                                     <p>After adjusting the skeletal animation well, you can click the button "export".</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/1-11.png" alt=""></p>
                                     <p>There are many kinds of file format for export to meet your project requirement at the pop up list of "Export".</p>
                                     <p><strong>SWF (XML Merged)</strong>: SWF file format that contains the skeletal animation data with the type of XML. If you need skeletal animation with vector image in your application, you can choose this type of format. Surely the original format of your resource must be the vector.
 PNG(XML Merged): PNG file format that contains the skeletal animation data with the type of XML.</p>
@@ -153,6 +173,7 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                                     <p><strong>Zip(XML and PNG)</strong>: Export the XML file and PNG file packed into a Zip file to store the skeletal animation and the visual resource individually.</p>
                                     <p><strong>Zip(XML and PNGs)</strong>: Export the XML file and PNG files packed into a Zip file to store the skeletal animation and the visual resource individually. There would be an individual PNG file for each bone.</p>
                                     <p>In this example, we choose "PNG (XML Merged)" and click "OK" to export the file "DragonWalk.png" into a selected directory.</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/1-11-2.png" alt=""></p>
                                     <p>Finding that there is only a single PNG file? Yes. Because we choose the export form that combines both XML data and visual data, so this PNG file has contains all the resources needed by the skeletal animation.</p>
                                     <p>Till now, as a designer, you have finished all of your works.</p>
                                  </li>
@@ -160,6 +181,7 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                         </section>
                         <section id="s6">
                             <div class="page-header"><h2>Tutorial 2: For programmers <small>Use skeletal animation in ActionScript projects</small></h2></div>
+                            <p class="img-line"><img src="img/tutorial_pic/t2cover.jpg" alt=""></p>
                             <p>After designers export related assets and data into a predefined format file such as PNG of SWF, developers can use the skeleton animation library, import the file to program and control the characters to play. It is a very easy task with only a few steps. Following you will start to study how to use the skeletal animation library to render characters with traditional flash DisplayList or GPU base starling.</p>
                             <p>Download the Skeleton Animation Library, and import this project into your project. Let’s study some basic concepts about skeletal animation before coding.</p>
                             <p><strong>Factory</strong>: This is the basis for building skeletal animation. It is responsible for parsing the data from the imported file and preparing resources to create skeleton container, which is Armature.</p>
@@ -177,7 +199,8 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                                 <li>
                                     <p>Create factory and parse resource data from function "fromRawData", then do other things in callback function "textureCompleteHandler".</p>
                                     <pre class="brush: as3;">
-                                    factory = new BaseFactory(); factory.fromRawData(new ResourcesData(), textureCompleteHandler); 
+                                    factory = new BaseFactory(); 
+                                    factory.fromRawData(new ResourcesData(), textureCompleteHandler); 
                                     </pre>
                                 </li>
                                 <li>
@@ -201,8 +224,10 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                             <p>Just the few lines of code, you can use skeleton animation in your own project. It is very cool, isn't?</p>
                             <p>Next we talk about how to create the skeleton animation in Starling. Starling is a famous 2D open-source framework powered by Stage3D which can help you build high quality games. For more information about Starling, please visit its official web site: <a href="http://starlingframework.org">http://starlingframework.org</a>.</p>
                             <p>Some users probably have been familiar with the way of creating animations in Starling: using the Sprite Sheet. However, it is a serious problem of memory consumption, especially when processing complex animations. Look at the picture below, it's just a simple movement of walking, but takes up a big texture.</p>
+                            <p class="img-line"><img src="img/tutorial_pic/2-4.jpg" alt=""></p>
                             <p>DragonBones have solved this problem. It can implement richer animation by using fewer assets (or textures).</p>
                             <p>DragonBones can work seamlessly with Starling, creating 2D skeleton animation which can be accelerated by GPU.</p>
+                            <p class="img-line"><img src="img/tutorial_pic/2-4-2.jpg" alt=""></p>
                             <p>Open the DBStarlingWalk.as in the example project, you will notice that we create a special factory for Starling, the code like this:</p>
                             <pre class="brush: as3;">
                             factory = new StarlingFactory();
@@ -212,20 +237,203 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                         </section>
                         <section id="s7">
                             <div class="page-header"><h2>Tutorial 3: Create and control multiple Skeleton animations</h2></div>
+                            <p class="img-line"><img src="img/tutorial_pic/t3cover.jpg" alt=""></p>
                             <p>Next, you will learn how to use DragonBones to create skeleton animation including multiple movements, and control these actions by keyboard interaction.</p>
                             <ol>
-                                <li><p>Open file DragonBones_Tutorial_MultiBehavior.fla, then double click the Dragon Element in library, you can see four movements: stand, walk, jump and fail. Frame labels have been added in start frame of each action, which is identification for DragonBones to distinguish different movements.</p></li>
-                                <li><p>Open Skeleton animation design panel, there are multiple movements in Behavior List. You can set total frame, tween and detail parameter of single bone by choose one movement.</p></li>
+                                <li>
+                                    <p>Open file DragonBones_Tutorial_MultiBehavior.fla, then double click the Dragon Element in library, you can see four movements: stand, walk, jump and fail. Frame labels have been added in start frame of each action, which is identification for DragonBones to distinguish different movements.</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/3-1.png" alt=""></p>
+                                </li>
+                                <li>
+                                    <p>Open Skeleton animation design panel, there are multiple movements in Behavior List. You can set total frame, tween and detail parameter of single bone by choose one movement.</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/3-2.png" alt=""></p>
+                                </li>
                                 <li>
                                     <p>Please pay attention to the Tween Frame option in Behavior editor.</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/3-3.png" alt=""></p>
                                     <p>This option is the frame number of transition movement from current movement to other. E.g. we set Tween Frame of jump movement is 3, then 3 frames will be needed from other movement to jump.</p>
                                     <p>DragonBones will automatically add frames to make the transition smoothly. Also you can preview the transition effects in the preview panels.</p>
                                 </li>
                                 <li><p>Click "Export" button to export Skeleton animation data after you finished the adjustment of each movement.</p></li>
                                 <li>
                                     <p>Open file DBStarlingMultiBehavior.as, the code is as following which is control Skeleton animation by keyboard in Starling.</p>
+                                    <pre class="brush: as3;">
+                                    package
+                                    {
+                                        import dragonBones.Armature;
+                                        import dragonBones.factorys.StarlingFactory;
+                                        
+                                        import flash.ui.Keyboard;
+                                        
+                                        import starling.display.Sprite;
+                                        import starling.events.EnterFrameEvent;
+                                        import starling.events.KeyboardEvent;
+                                        import starling.text.TextField;
+                                        
+                                        
+                                        public class DBStarlingMultiBehavior extends Sprite
+                                        {
+                                            [Embed(source = "../assets/Dragon2.png", mimeType = "application/octet-stream")]
+                                            public static const ResourcesData:Class;
+                                            
+                                            private var factory:StarlingFactory;
+                                            private var armature:Armature;
+                                            private var armatureClip:Sprite;
+
+                                            private var isLeft:Boolean;
+                                            private var isRight:Boolean;
+                                            private var isJumping:Boolean;
+                                            private var moveDir:int=0;
+                                            private var speedX:Number = 0;
+                                            private var speedY:Number = 0;
+                                            private var textField:TextField
+                                            
+                                            public function DBStarlingMultiBehavior()
+                                            {
+                                                factory = new StarlingFactory();
+                                                factory.fromRawData(new ResourcesData(), textureCompleteHandler);
+
+                                            }
+                                            
+                                            private function textureCompleteHandler():void
+                                            {
+                                                armature = factory.buildArmature("Dragon");
+                                                armatureClip = armature.display as Sprite;
+                                                armatureClip.x = 400;
+                                                armatureClip.y = 550;
+                                                addChild(armatureClip);
+                                                updateBehavior()
+                                                addEventListener(EnterFrameEvent.ENTER_FRAME, onEnterFrameHandler);
+
+                                                stage.addEventListener(KeyboardEvent.KEY_DOWN, onKeyEventHandler);
+                                                stage.addEventListener(KeyboardEvent.KEY_UP, onKeyEventHandler);
+                                                
+                                                textField=new TextField(400,30,"A-move left,D-move right,W-jump","Verdana",16,0,true)
+                                                textField.x=60;
+                                                textField.y=2;
+                                                addChild(textField);
+                                            }
+                                            
+                                            private function onKeyEventHandler(e:KeyboardEvent):void
+                                            {
+                                                switch (e.keyCode)
+                                                {
+                                                    case Keyboard.A :
+                                                    case Keyboard.LEFT :
+                                                        isLeft=e.type == KeyboardEvent.KEY_DOWN;
+                                                        break;
+                                                    case Keyboard.D :
+                                                    case Keyboard.RIGHT :
+                                                        isRight=e.type == KeyboardEvent.KEY_DOWN;
+                                                        break;
+                                                    case Keyboard.W :
+                                                    case Keyboard.UP :
+                                                        jump();
+                                                        break;
+                                                }
+                                                var dir:int;
+                                                if (isLeft && isRight) 
+                                                {
+                                                    dir=moveDir;
+                                                    return;
+                                                }
+                                                else if (isLeft)
+                                                {
+                                                    dir=-1;
+                                                }
+                                                else if (isRight)
+                                                {
+                                                    dir=1;
+                                                }
+                                                else 
+                                                {
+                                                    dir=0;
+                                                }
+                                                if(dir==moveDir)
+                                                {
+                                                    return;
+                                                }
+                                                else
+                                                {
+                                                    moveDir=dir;
+                                                }
+                                                updateBehavior()
+                                            }
+                                        
+                                            private function onEnterFrameHandler(_e:EnterFrameEvent):void
+                                            {
+                                                updateMove();
+                                                armature.update();
+                                            }
+
+                                            private function updateBehavior():void 
+                                            {
+                                                if (isJumping)
+                                                {
+                                                    return;
+                                                }
+                                                if (moveDir == 0)
+                                                {
+                                                    speedX = 0;
+                                                    armature.animation.gotoAndPlay("stand");
+                                                }
+                                                else
+                                                {
+                                                    speedX=6*moveDir;
+                                                    armatureClip.scaleX = -moveDir;
+                                                    armature.animation.gotoAndPlay("walk");
+                                                }
+                                            }
+                                            private function updateMove():void
+                                            {
+                                                if (speedX != 0) 
+                                                {
+                                                    armatureClip.x += speedX;
+                                                    if (armatureClip.x < 0) 
+                                                    {
+                                                        armatureClip.x = 0;
+                                                    }
+                                                    else if (armatureClip.x > 800) 
+                                                    {
+                                                        armatureClip.x = 800;
+                                                    }
+                                                }
+                                                if (isJumping)
+                                                {
+                                                    if (speedY <= 0 && speedY + 1 > 0 ) 
+                                                    {
+                                                        armature.animation.gotoAndPlay("fall");
+                                                    }
+                                                    speedY += 1;
+                                                }
+                                                if (speedY != 0) 
+                                                {
+                                                    armatureClip.y += speedY;
+                                                    if (armatureClip.y > 540) 
+                                                    {
+                                                        armatureClip.y = 550;
+                                                        isJumping = false;
+                                                        speedY = 0;
+                                                        updateBehavior();
+                                                    }
+                                                }
+                                            }
+                                            private function jump():void 
+                                            {
+                                                if (isJumping) 
+                                                {
+                                                    return;
+                                                }
+                                                speedY = -25;
+                                                isJumping = true;
+                                                armature.animation.gotoAndPlay("jump");
+                                            }
+                                        }
+                                    }
+                                    </pre>
                                 </li>
                                 <p>You can find that whenever you want to play the Skeleton animation, just call function armature.animation.gotoAndPlay()</p>
+                                <p class="img-line"><img src="img/tutorial_pic/3-5.png" alt=""></p>
                                 <p>Not only the movement name, but also total frame number and loop also can be specified dynamically by call this function.</p>
                                 <p>DragonBones provide various events for each animation:</p>
                                 <p><strong>Movement change event:</strong></p>
@@ -249,24 +457,186 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                         </section>
                         <section id="s8">
                             <div class="page-header"><h2>Tutorial 4: Control each bone of the skeleton</h2></div>
+                            <p class="img-line"><img src="img/tutorial_pic/t4cover.png" alt=""></p>
                             <p>For an interesting game, perhaps it is not enough to just play the predefined skeleton animations, for we want the characters to have their own dynamic and controllable movements. To our great joy, DragonBones provides the mechanism to access and control each bone of the skeleton, which can make the characters free to move around.</p>
                             <p>In this example, the skeleton is controlled by the mouse movement in the scene. We create a bird that will follow the mouse movement and maintain a certain distance with the dragon. At the same time, the dragon's head and arms will follow the bird movement and make a variety of poses. It sounds funny, right?</p>
                             <p>Let's open the file DBStarlingControlBone.as and below is the corresponding code:</p>
+                            <pre class="brush: as3;">
+                            package
+                            {
+                                import dragonBones.Armature;
+                                import dragonBones.Bone;
+                                import dragonBones.factorys.StarlingFactory;
+                                
+                                import flash.geom.Point;
+                                import flash.ui.Mouse;
+                                
+                                import starling.display.Image;
+                                import starling.display.Sprite;
+                                import starling.events.EnterFrameEvent;
+                                import starling.events.TouchEvent;
+                                import starling.textures.Texture;
+                                
+                                
+                                public class DBStarlingControlBone extends Sprite
+                                {
+                                    [Embed(source = "../assets/Dragon2.png", mimeType = "application/octet-stream")]
+                                    public static const ResourcesData:Class;
+                                    
+                                    [Embed(source = "../assets/starling.png")]
+                                    private static const starlingImg:Class;
+                                    
+                                    private var factory:StarlingFactory;
+                                    private var armature:Armature;
+                                    private var armatureClip:Sprite;
+                                    
+                                    private var mouseX:Number = 0;
+                                    private var mouseY:Number = 0;
+                                    private var moveDir:int=0;
+                                    private var dist:Number;
+                                    private var speedX:Number = 0;
+                                    private var starlingBird:Image;
+                                    private var _r:Number;
+                                    
+                                    private var _head:Bone;
+                                    private var _armR:Bone;
+                                    private var _armL:Bone;
+                                    
+                                    public function DBStarlingControlBone()
+                                    {
+                                        factory = new StarlingFactory();
+                                        factory.fromRawData(new ResourcesData(), textureCompleteHandler);
+                                    }
+                                    private function textureCompleteHandler():void
+                                    {
+                                        armature = factory.buildArmature("Dragon");
+                                        armatureClip = armature.display as Sprite;
+                                        
+                                        armatureClip.x = 400;
+                                        armatureClip.y = 550;
+                                        addChild(armatureClip);
+                                        updateBehavior(0)
+                                        addEventListener(EnterFrameEvent.ENTER_FRAME, onEnterFrameHandler);
+                                        stage.addEventListener(TouchEvent.TOUCH, onMouseMoveHandler);
+                                        
+                                        starlingBird=new Image(Texture.fromBitmap(new starlingImg()))
+                                        addChild(starlingBird);
+                                        Mouse.hide();
+                                        //get the bones which you want to control
+                                        _head = armature.getBone("head");
+                                        _armR = armature.getBone("armUpperR");
+                                        _armL = armature.getBone("armUpperL");
+                                        
+                                    }
+                                    
+                                    private function onEnterFrameHandler(_e:EnterFrameEvent):void
+                                    {
+                                        checkDist();
+                                        updateMove();
+                                        updateBones();
+                                        armature.update();      
+                                    }
+                                    
+                                    private function checkDist():void
+                                    {
+                                        dist = armatureClip.x-mouseX;
+                                        if(dist<150)
+                                        {
+                                            updateBehavior(1)
+                                        }
+                                        else if(dist>190)
+                                        {
+                                            updateBehavior(-1)
+                                        }
+                                        else
+                                        {
+                                            updateBehavior(0)
+                                        }
+                                        
+                                    }
+                                    
+                                    private function onMouseMoveHandler(_e:TouchEvent):void
+                                    {
+                                        var _p:Point = _e.getTouch(stage).getLocation(stage);
+                                        mouseX = _p.x;
+                                        mouseY = _p.y;
+                                        starlingBird.x=mouseX-73;
+                                        starlingBird.y=mouseY-73;
+                                    }
+                                    private function updateBehavior(dir:int):void 
+                                    {
+                                        if(moveDir==dir)return;
+                                        moveDir=dir;
+                                        if (moveDir == 0)
+                                        {
+                                            speedX = 0;
+                                            armature.animation.gotoAndPlay("stand");
+                                        }
+                                        else
+                                        {
+                                            speedX=6*moveDir;
+                                            armature.animation.gotoAndPlay("walk");
+                                        }
+                                    }
+                                    private function updateMove():void
+                                    {
+                                        if (speedX != 0) 
+                                        {
+                                            armatureClip.x += speedX;
+                                            if (armatureClip.x < 0) 
+                                            {
+                                                armatureClip.x = 0;
+                                            }
+                                            else if (armatureClip.x > 800) 
+                                            {
+                                                armatureClip.x = 800;
+                                            }
+                                        }
+                                    }
+                                    private function updateBones():void
+                                    {
+                                        //update the bones' pos or rotation
+                                        _r = Math.PI + Math.atan2(mouseY - armatureClip.y+armatureClip.height/2, 
+                                                                  mouseX - armatureClip.x);
+                                        if (_r > Math.PI)
+                                        {
+                                            _r -= Math.PI * 2;
+                                        }
+                                        _head.node.rotation = _r*0.3        
+                                        _armR.node.rotation = _r *0.8;
+                                        _armL.node.rotation = _r * 1.5;
+                                        
+                                        starlingBird.rotation = _r*0.2;
+                                    }
+                                }
+                            }
+                            </pre>
                             <p>From the above code, we can find that method <strong>dragonBones.Armature.getBone(_name:String):Bone</strong> is used to get one specific bone. The node object of the bone contains the data, such as position, rotation, scale, skew and etc. We can assign values to these parameters based on the game logic needs, to achieve the effect of dynamic bone controlling.</p>
                             <p>Please pay attention to the updateBones() method in the above example, where we first fetch the angle between the mouse's current position and the central point of the skeleton, then change the rotations of the dragon's head and arms based on this angle, thus realize this interesting effect.</p>
                         </section>
                         <section id="s9">
                             <div class="page-header"><h2>Tutorial 5: Switching texture in skeleton animation</h2></div>
+                            <p class="img-line"><img src="img/tutorial_pic/t5cover.png" alt=""></p>
                             <p>It is very a common request in the game to switch texture for some effects like changing clothes, equipments or weapons for a certain characters, and this is very easy to get done by switching the corresponding bone texture in the DragonBones Animation library.</p>
                             <p>Through the mechanism of switching the  bone texture, we can create new texture and bind it with the corresponding bones dynamically. The new texture can be obtained from external files that are created by other means, or from Texture Atlas that is exported from the design panel.  You may have one question for now,  how Flash Pro can export the texture that does not included in the timeline animation texture?</p>
                             <ol>
-                                <li><p>Open the sample file DragonBones_Tutorial_ChangeClothes.fla in this tutorial, and you will see the lovely dragon wear a yellow jacket with various actions that are designed on the layer called clothes. </p></li>
+                                <li>
+                                    <p>Open the sample file DragonBones_Tutorial_ChangeClothes.fla in this tutorial, and you will see the lovely dragon wear a yellow jacket with various actions that are designed on the layer called clothes. </p>
+                                    <p class="img-line"><img src="img/tutorial_pic/5-1.png" alt=""></p>
+                                </li>
                                 <li>
                                     <p>Double click clothTextureTemp element, you will find that there have 4 clothes on the different layers with its associated names, and due to the identical size and shape, they overlap each other.  However, in the actual project,  the clothes or weapons may have various size, so it is necessary to set the appropriate  relative coordination to its original texture. </p>
                                     <p>Please note that the first frame label is named as "temp". The design panel won't import animation element that do not have frame label. </p>
+                                    <p class="img-line"><img src="img/tutorial_pic/5-2.png" alt=""></p>
                                 </li>
-                                <li><p>Select the "Dragon" and "clothTextureTemp" elements in the library, then open the design panel and click "import" button with only selected elements option, you will find that there has a skeleton named clothTextureTemp in the Armature List , which contains  clothes1 to clothes4 bones. You don't need worry them now, they are not for designing purpose, but to export them  with the whole skeletal texture as one piece. </p></li>
-                                <li><p>Next you can make some necessary adjustment for the skeletal structure if needed, and then click "Export" button to export all the texture --  a DragonWithClothes.png file contains both image and xml data. You will find that the exported texture atlases contain all clothes we need. :)</p></li>
+                                <li>
+                                    <p>Select the "Dragon" and "clothTextureTemp" elements in the library, then open the design panel and click "import" button with only selected elements option, you will find that there has a skeleton named clothTextureTemp in the Armature List , which contains  clothes1 to clothes4 bones. You don't need worry them now, they are not for designing purpose, but to export them  with the whole skeletal texture as one piece. </p>
+                                    <p class="img-line"><img src="img/tutorial_pic/5-3.png" alt=""></p>
+                                </li>
+                                <li>
+                                    <p>Next you can make some necessary adjustment for the skeletal structure if needed, and then click "Export" button to export all the texture --  a DragonWithClothes.png file contains both image and xml data. You will find that the exported texture atlases contain all clothes we need. :)</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/5-4.png" alt=""></p>
+                                </li>
                                 <li>
                                     <p>Let's get a close look at how to switch texture in the code. Open DBStarlingMultiBehavior.as  file that is created in Tutorial 3, we can add switch texture code here directly.  First, rename the imported texture to DragonWithClothes.png: </p>
                                     <pre class="brush: as3;">
@@ -276,10 +646,11 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                                 <li>
                                     <p>Then add 2 variables , Array textures contains the all the texture names, and  int textureIndex is the index to select various texture when switch them.</p>
                                     <pre class="brush: as3;">
-                                    private var textures:Array = ["parts/clothes1", "parts/clothes2", "parts/clothes3", " parts/clothes4"];
+                                    private var textures:Array = ["parts/clothes1", "parts/clothes2", "parts/clothes3", "parts/clothes4"];
                                     private var textureIndex:int = 0;
                                     </pre>
                                     <p>Please note that it is "parts/clothes1", not "clothes1". This is because that Flash Pro can have same element name under different folder, so DragonBones saved the path info which contains the directory. You will understand it when you see the directory that has clothes element in the library when you open DragonBones_Tutorial_ChangeClothes.fla</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/5-6.png" alt=""></p>
                                 </li>
                                 <li>
                                     <p>Create handler function that responses the key event (press C key), which is used to change texture. </p>

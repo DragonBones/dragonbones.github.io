@@ -194,3 +194,11 @@ blockquote small {
 .thumbnail .action {
     padding: 16px;
 }
+
+.tutorials.well {
+    background-color: white;
+}
+
+.img-line {
+    text-align: center;
+}
