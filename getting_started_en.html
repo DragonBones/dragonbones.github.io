@@ -79,9 +79,9 @@
                             <div class="page-header"><h2>Features</h2></div>
                             <ul>
                                 <li><p>The annimation is based on traditional timeline annimation workflow.</p></li>
-                                <li><p>Binding bones improves the quality of the animation and make it more accurate and natural. And all bones can be controlled by the program dynamically.</p></li>
-                                <li><p>Setting the scale and the delay of the animation time for a single bone is available. This means a living and complex animation can be accomplished with less key frames.</p></li>
-                                <li><p>The whole animation by the framework is made up of several pieces and each piece has its own tween effect. This structure will have less bitmap and memory consumption.</p></li>
+                                <li><p>Binding bones improves the quality of the animation and make it more accurate and natural. All bones can be controlled by the program dynamically.</p></li>
+                                <li><p>Setting the scale and the delay of the animation time for a single bone is possible. This means a living and complex animation can be accomplished with less key frames.</p></li>
+                                <li><p>The whole animation is made up of several pieces and each piece has its own tween effect. This structure will have much less bitmap and memory consumption comparing to "sprite sheets, sequence frames based" animation approach.</p></li>
                                 <li><p>The view part and the logic part of the skeletal animation are separate. And the view part of the skeletal animation can be changed dynamically without any impact on the animation playback.</p></li>
                                 <li><p>Animation by the project can be easily used in traditional DisplayList, the Starling framework and other technologies for 2D applications.</p></li>
                             </ul>
@@ -90,7 +90,7 @@
                             <div class="page-header"><h2>Download and installation setup</h2></div>
                             <p>The project address: <a href="http://dragonbones.github.com">http://dragonbones.github.com</a></p>
                             <ul>
-                               <li><p>Get the Adobe Flash Pro 5.5 version or above (Link to be added)</p></li>  
+                               <li><p>Get the Adobe Flash Pro 5.5 or above version from <a href="http://www.adobe.com/products/flash.html">here</a></p></li>  
                                 <li><p>Download the install the latest version of the Design Panel, an extension for Flash Pro called "SkeletonAnimationDesignPanel.zxp" </p></li>
                                 <li><p>Download the AS3 skeletal animation library from the link "SkeletonAnimationLibrary". In following tutorial, we will guide you how to design and code the annimation.</p></li>
                             </ul>
@@ -247,18 +247,18 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                                     <p class="img-line"><img src="img/tutorial_pic/3-1.png" alt=""></p>
                                 </li>
                                 <li>
-                                    <p>Open Skeleton animation design panel, there are multiple movements in Behavior List. You can set total frame, tween and detail parameter of single bone by choose one movement.</p>
+                                    <p>Open Skeleton animation design panel, there are multiple motions listed in Behavior List. You can set total frame, tween and detail parameter for single bone by choose one motion.</p>
                                     <p class="img-line"><img src="img/tutorial_pic/3-2.png" alt=""></p>
                                 </li>
                                 <li>
-                                    <p>Please pay attention to the Tween Frame option in Behavior editor.</p>
+                                    <p>Please pay attention to the Tween Frame option in Behavior editor window.</p>
                                     <p class="img-line"><img src="img/tutorial_pic/3-3.png" alt=""></p>
-                                    <p>This option is the frame number of transition movement from current movement to other. E.g. we set Tween Frame of jump movement is 3, then 3 frames will be needed from other movement to jump.</p>
+                                    <p>This option is the frame number of transition movement from other motion to current one. E.g. we set Tween Frame of jump movement is 3, then 3 frames will be needed from other motion to this jump motion.</p>
                                     <p>DragonBones will automatically add frames to make the transition smoothly. Also you can preview the transition effects in the preview panels.</p>
                                 </li>
                                 <li><p>Click "Export" button to export Skeleton animation data after you finished the adjustment of each movement.</p></li>
                                 <li>
-                                    <p>Open file DBStarlingMultiBehavior.as, the code is as following which is control Skeleton animation by keyboard in Starling.</p>
+                                    <p>Open file DBStarlingMultiBehavior.as, the code following demenstrate how to use keyboard to control Skeleton animation in Starling.</p>
                                     <pre class="brush: as3;">
                                     package
                                     {
@@ -436,7 +436,7 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                                 </li>
                                 <p>You can find that whenever you want to play the Skeleton animation, just call function armature.animation.gotoAndPlay()</p>
                                 <p class="img-line"><img src="img/tutorial_pic/3-5.png" alt=""></p>
-                                <p>Not only the movement name, but also total frame number and loop also can be specified dynamically by call this function.</p>
+                                <p>Not only the motion name, but also the total frame number and loop also can be specified dynamically by call this function.</p>
                                 <p>DragonBones provide various events for each animation:</p>
                                 <p><strong>Movement change event:</strong></p>
                                 <pre class="brush: as3;">
@@ -458,9 +458,9 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                             </ol>
                         </section>
                         <section id="s8">
-                            <div class="page-header"><h2>Tutorial 4: Control each bone of the skeleton</h2></div>
+                            <div class="page-header"><h2>Tutorial 4: Control each bone in the skeleton annimation</h2></div>
                             <p class="img-line"><img src="img/tutorial_pic/t4cover.png" alt=""></p>
-                            <p>For an interesting game, perhaps it is not enough to just play the predefined skeleton animations, for we want the characters to have their own dynamic and controllable movements. To our great joy, DragonBones provides the mechanism to access and control each bone of the skeleton, which can make the characters free to move around.</p>
+                            <p>For an interesting game, perhaps it is not enough to just play the predefined skeleton animations, for example we want the characters to have their own dynamic and controllable movements. To our great joy, DragonBones provides the mechanism to access and control each bone of the skeleton, which can make the characters free to do all kinds of motions.</p>
                             <p>In this example, the skeleton is controlled by the mouse movement in the scene. We create a bird that will follow the mouse movement and maintain a certain distance with the dragon. At the same time, the dragon's head and arms will follow the bird movement and make a variety of poses. It sounds funny, right?</p>
                             <p>Let's open the file DBStarlingControlBone.as and below is the corresponding code:</p>
                             <pre class="brush: as3;">
