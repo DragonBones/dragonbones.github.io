@@ -5,7 +5,7 @@
 <!--[if IE 9 ]><html lang="en" class="no-js ie9"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js" ><!--<![endif]-->
 <head>
-    <title>DragonBones Help</title>
+    <title>DragonBones Badges</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,14 +22,20 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container-fluid">
-                 <a class="brand" href="index.html">DragonBones</a>
-                 <div class="nav-collapse">
+                <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="index.html">DragonBones</a>
+                <div class="nav-collapse">
                     <ul class="nav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="features.html">Features</a></li>
                         <li><a href="demo.html">Demo</a></li>
                         <li><a href="download.html">Download</a></li>
-                        <li class="active"><a href="#">Help</a></li>
+                        <li><a href="help.html">Help</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,24 +45,11 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="span10 offset1">
-                    <section>
-                        <div class="page-header">
-                            <h3>Getting Started</h3>
-                        </div>
-                        <p>Follow our very important <a href="getting_started_en.html">getting started guide</a> to learn how to setup and use DragonBones in your project.</p>
-                    </section>
-                    <section>
-                        <div class="page-header">
-                            <h3>Wiki</h3>
-                        </div>
-                        <p>Find additional information on DragonBones GitHub <a href="https://github.com/DragonBones/SkeletonAnimationLibrary/wiki">Wiki</a>.</p>
-                    </section>
-                    <section>
-                        <div class="page-header">
-                            <h3>Badges</h3>
-                        </div>
-                        <p>Show your love by adding one of our beautiful <a href="badges.html">powered-by badges</a> to your application.</p>
-                    </section>
+                    <div class="well">
+                        <div class="page-header"><h2>Badges</h2></div>
+                        <p><img src="img/badges/powered-by-dragonbones-120X120.png" /></p>
+                        <p><img src="img/badges/powered-by-dragonbones-200X200.png" /></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,7 +60,7 @@
                 <ul class="nav nav-pills pull-right">
                     <li><a href="http://twitter.com/dragonbonesteam">Follow Us on Twitter</a></li>
                     <li><a href="http://weibo.com/u/3064343903">Follow Us on Weibo</a></li>
-                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="#">About Us</a></li>
                     <li><a href="mailto:dragonbonesteam@gmail.com">Contact Us</a></li>
                 </ul>
             </div>
@@ -79,6 +72,10 @@
         </div>
     </div>
 </body>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 
 <!-- Google Analytics -->
 <script type="text/javascript">
