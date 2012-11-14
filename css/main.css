@@ -199,6 +199,10 @@ blockquote small {
     background-color: white;
 }
 
-.img-line {
+.tutorials h1, .img-line {
     text-align: center;
+}
+
+.tutorials h1 {
+    padding: 40px;
 }
