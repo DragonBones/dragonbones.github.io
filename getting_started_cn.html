@@ -207,7 +207,8 @@
                                     <p>创建factory，并通过fromRawData方法解析载入的资源格式，当解析完毕后交给对应事件textureCompleteHandler处理。</p>
                                     <pre class="brush: as3;">
                                     factory = new BaseFactory(); 
-                                    factory.fromRawData(new ResourcesData(), textureCompleteHandler); 
+                                    factory.addEventListener(Event.COMPLETE, textureCompleteHandler);
+                                    factory.parseData(new ResourcesData());
                                     </pre>
                                 </li>
                                 <li>
@@ -297,7 +298,8 @@
                                             public function DBStarlingMultiBehavior()
                                             {
                                                 factory = new StarlingFactory();
-                                                factory.fromRawData(new ResourcesData(), textureCompleteHandler);
+                                                factory.addEventListener(Event.COMPLETE, textureCompleteHandler);
+                                                factory.parseData(new ResourcesData());
 
                                             }
                                             
@@ -511,7 +513,8 @@
                                     public function DBStarlingControlBone()
                                     {
                                         factory = new StarlingFactory();
-                                        factory.fromRawData(new ResourcesData(), textureCompleteHandler);
+                                        factory.addEventListener(Event.COMPLETE, textureCompleteHandler);
+                                        factory.parseData(new ResourcesData());
                                     }
                                     private function textureCompleteHandler():void
                                     {

@@ -81,7 +81,7 @@
                         <section id="s2">
                             <div class="page-header"><h2>Features</h2></div>
                             <ul>
-                                <li><p>The annimation is based on traditional timeline annimation workflow.</p></li>
+                                <li><p>The animation is based on traditional timeline animation workflow.</p></li>
                                 <li><p>Binding bones improves the quality of the animation and make it more accurate and natural. All bones can be controlled by the program dynamically.</p></li>
                                 <li><p>Setting the scale and the delay of the animation time for a single bone is possible. This means a living and complex animation can be accomplished with less key frames.</p></li>
                                 <li><p>The whole animation is made up of several pieces and each piece has its own tween effect. This structure will have much less bitmap and memory consumption comparing to "sprite sheets, sequence frames based" animation approach.</p></li>
@@ -115,12 +115,12 @@
                                     <p>The "parts" folder contains all the elements that the animation "Dragon" is made up of. You can guess which part of the dragon it is by reading the name of each element. Naming a element clearly is a good practice, isn't it? :)</p>
                                 </li>
                                 <li>
-                                    <p>Double click the MovieClip "Dragon" in the library panel to enter the edit mode. We need to understand how this annimation is structured, which can help edit the skeletal animation later.</p>
+                                    <p>Double click the MovieClip "Dragon" in the library panel to enter the edit mode. We need to understand how this animation is structured, which can help edit the skeletal animation later.</p>
                                     <p>Pay attention to the name of each layer in the timeline because we name them as the related part of the skeleton. The design panel of DragonBones will recognize all the parts of the skeleton automatically according to the name of layers.</p>
-                                    <p>You should also note the the layer named "label", where we add the label "walk" to indicate the motion of current timeline. If there are more than one motions, you will need to add more labels in corresponding position of the start frame. This step is very important! The design panel will read and set motions by these labels.</p>
+                                    <p>You should also note the layer named "label", where we add the label "walk" to indicate the motion of current timeline. If there are more than one motions, you will need to add more labels in corresponding position of the start frame. This step is very important! The design panel will read and set motions by these labels.</p>
                                     <p class="img-line"><img src="img/tutorial_pic/1-3.png" alt=""></p>
                                     <p>You may ask why there isn't any tween in the timeline? Yes, all you need to do is to set key frames on the timeline and the rest of the work will be accomplished by the design panel.</p>
-                                    <p>As a designer, you may have added the tween in your annimation, no worry, the design panel can import the animation as what it is designed. (The current version of DragonBones only supports classictween. New kinds of tween will be supported in later version)</p>
+                                    <p>As a designer, you may have added the tween in your animation, no worry, the design panel can import the animation as what it is designed. (The current version of DragonBones only supports classictween. New kinds of tween will be supported in later version)</p>
                                 </li>
                                 <li>
                                     <p>After getting all of the requirements above ready, you can click Window>Other Panels>SkeletonAnimationDesignPanel in the Flash Pro menu to open the design panel. We will explain the details about the usage of design panel in following steps.</p>
@@ -205,7 +205,8 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                                     <p>Create factory and parse resource data from function "fromRawData", then do other things in callback function "textureCompleteHandler".</p>
                                     <pre class="brush: as3;">
                                     factory = new BaseFactory(); 
-                                    factory.fromRawData(new ResourcesData(), textureCompleteHandler); 
+                                    factory.addEventListener(Event.COMPLETE, textureCompleteHandler);
+                                    factory.parseData(new ResourcesData());
                                     </pre>
                                 </li>
                                 <li>
@@ -296,8 +297,8 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                                             public function DBStarlingMultiBehavior()
                                             {
                                                 factory = new StarlingFactory();
-                                                factory.fromRawData(new ResourcesData(), textureCompleteHandler);
-
+                                                factory.addEventListener(Event.COMPLETE, textureCompleteHandler);
+                                                factory.parseData(new ResourcesData());
                                             }
                                             
                                             private function textureCompleteHandler():void
@@ -510,7 +511,8 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                                     public function DBStarlingControlBone()
                                     {
                                         factory = new StarlingFactory();
-                                        factory.fromRawData(new ResourcesData(), textureCompleteHandler);
+                                        factory.addEventListener(Event.COMPLETE, textureCompleteHandler);
+                                        factory.parseData(new ResourcesData());
                                     }
                                     private function textureCompleteHandler():void
                                     {
