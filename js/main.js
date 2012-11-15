@@ -14,6 +14,6 @@ function showNextQuoteSliderItem() {
 }
 
 $(document).ready(function() {
-    initializeQuoteSliders();
+    //initializeQuoteSliders();
     $("#myCarousel").carousel();
 });
