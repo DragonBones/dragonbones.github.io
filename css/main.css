@@ -206,3 +206,12 @@ blockquote small {
 .tutorials h1 {
     padding: 40px;
 }
+
+.modal-body {
+    max-height: 620px;
+}
+
+.modal {
+    width: 840px;
+    margin: -350px 0 0 -420px;
+}
