@@ -32,6 +32,10 @@ body {
     margin: 0 auto;
 }
 
+.carousel a {
+    color: white;
+}
+
 #myCarousel {
    margin: 20px 0 50px 0;
 }
