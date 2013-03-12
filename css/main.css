@@ -56,7 +56,7 @@ body {
 }
 
 .project {
-    padding: 20px;
+    padding: 18px;
 }
 
 .main-title {
@@ -95,7 +95,7 @@ body {
 }
 
 .quote-slider {
-    min-height: 130px;
+    min-height: 150px;
 }
 
 .separator {
@@ -117,8 +117,8 @@ body {
 }
 
 blockquote p {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 24px;
     font-style: italic;
 }
 
@@ -164,8 +164,8 @@ blockquote small {
 
 .feature-item {
     background-color: white;
-    padding: 20px;
-    margin: 50px 0;
+    padding: 15px;
+    margin: 15px 0;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     -o-border-radius: 3px;
@@ -219,4 +219,110 @@ blockquote small {
 .modal {
     width: 840px;
     margin: -350px 0 0 -420px;
+}
+
+.showcases .thumbnail {
+	margin:15px 0;
+}
+
+.donatepanel
+{
+	min-height: 20px;
+	padding: 19px;
+	background-color: #eeeeee;
+	border: 1px solid #e3e3e3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
+
+.donatedate
+{
+	min-height: 20px;
+	padding-left:19px;
+    padding-right:19px;
+	//background-color: #D7EEF9;
+	//border: 1px solid #D7EEF9;
+	//-webkit-border-radius: 4px;
+	//-moz-border-radius: 4px;
+	//border-radius: 4px;
+    margin-top:39px;
+    //margin-bottom:19px;
+}
+
+.donaterewardpanel
+{
+	min-height: 20px;
+	background-color: #eeeeee;
+	border: 1px solid #e3e3e3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.donatereward
+{
+	padding-top:19px;
+	padding-bottom:9px;
+	padding-left:19px;
+	padding-right:19px;
+	border-bottom: 1px solid #d0d5cb;
+}
+
+.donatesection
+{
+	margin-top:19px;
+	margin-bottom:32px;
+}
+
+.strechgoalitem
+{
+	margin-bottom:9px;
+}
+
+.goalimg
+{
+	float:left;
+	margin-right:10px
+}
+
+.bignum
+{
+	font-size:36px;
+	font-weight:bolder;
+}
+
+.blacknum
+{
+	font-size:36px;
+	font-weight:bolder;
+}
+
+.backerstitle
+{
+	float:left;
+	margin-right:5px
+}
+.donaterewardlink {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    color: #000;
+}
+.donaterewardpanel a.donaterewardlink:hover{
+    background-color: #dddddd;
+    text-decoration: none;
+    cursor: pointer;
+	color: #000;
+}
+.blacktext
+{
+	color:#000000;
+}
+.rewardtext
+{
+	font-weight:bold;
+	color:#ff864a;
 }

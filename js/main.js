@@ -1,5 +1,5 @@
 function initializeQuoteSliders() {
-    window.setInterval(showNextQuoteSliderItem, 5000);
+    window.setInterval(showNextQuoteSliderItem, 7000);
 }
 
 function showNextQuoteSliderItem() {
@@ -14,6 +14,6 @@ function showNextQuoteSliderItem() {
 }
 
 $(document).ready(function() {
-    //initializeQuoteSliders();
+    initializeQuoteSliders();
     $("#myCarousel").carousel();
 });
