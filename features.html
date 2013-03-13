@@ -83,11 +83,12 @@
 					<section class="feature-item">
 						<h4>Time Based Animation (V2.0 New)</h4>
                         <p>Support time based animation as well as frames based.  You can easily switch the animation update mode by operating clock.  With the benefit of the clock, global time scale related features can be easily implemented.<br>
-                        Remember how Neo stop bullets?</p>
+                        </p>
 						<pre class="brush: as3;">
 WorldClock.clock.add(factory.buildArmature("xxx")); 
 WorldClock.clock.timeScale = 0.1; //10 times slower than normal 
 WorldClock.clock.advanceTime(-1);</pre>
+						<img src="features/Time Based Animation.png" alt="">
                     </section>
                   <section class="feature-item">
 					<h4>Skeleton Reuse and Animation Reuse (V2.0 New)</h4>
@@ -148,7 +149,7 @@ var textureAtlas:StarlingTextureAtlas = new StarlingTextureAtlas(
                     	<h4>Dynamic Texture Switching</h4>
                         <p>Textures on a bone can be dynamically changed in logic. With the benefit, equipment switching related features can be easily implemented.</p>
 					 	<pre class="brush: as3;">
-var _image:Image = StarlingFactory.getTextureDisplay(factory.textureData, "newClothes");
+var _image:Image = factory.getTextureDisplay("newClothes") as Image;
 var _bone:Bone = armature.getBone("clothes");
 _bone.display.dispose();
 _bone.display = _image;</pre>
