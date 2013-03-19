@@ -88,15 +88,18 @@
                     <div class="span7">
                     	<a href="donate.html" class="btn btn-large btn-block btn-inverse" style="background:#58bb56;">
                         Back The Dragon & Get Limited Rewards! <br> 
-                        <span class="blacktext"><b>$292</b> <small>been pledged by</small> <b>5</b> <small>backers</small>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<b>24</b> <small>days left</small></span></a>
+                        <span class="blacktext"><b>$292</b> <small>been pledged by</small> <b>5</b> <small>backers</small>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<b>23</b> <small>days left</small></span></a>
                     </div>
                 </div>
             </div>
             <br>
             <div align="center" width="520" height="390">
-            	<iframe width="520" height="390" src="http://www.youtube.com/embed/1HiC2QDbyK0" frameborder="0" allowfullscreen></iframe>
+            	<iframe width="520" height="390" id="youtubeframe" name="youtubeframe" src="http://www.youtube.com/embed/1HiC2QDbyK0" frameborder="0" allowfullscreen></iframe>
+                <iframe width=520 height=390 style="display:none" id="youkuframe" name="youkuframe" src="http://player.youku.com/embed/XNTI4NDYyMTQw" frameborder=0 allowfullscreen></iframe>
             </div>
-            <br>
+            <div align="center">
+            	<a id="switchtitle" href="javascript:" onClick="switchframe();">Switch to Youku(看不到？切换至优酷)</a>
+            </div>
                 <div class="quote-slider">
                     <ul>
                     	<li>
@@ -246,6 +249,16 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+    function switchframe(){
+        if(document.getElementById('youkuframe').style.display=='none'){
+            document.getElementById('youkuframe').style.display='block';
+            document.getElementById('youtubeframe').style.display='none';
+            document.getElementById('switchtitle').innerText='Switch to YouTube';
+        }else{
+            document.getElementById('youkuframe').style.display='none';
+            document.getElementById('youtubeframe').style.display='block';
+            document.getElementById('switchtitle').innerText='Switch to Youku(看不到？切换至优酷)';
+        }
+    }
 </script>
-
 </html>
