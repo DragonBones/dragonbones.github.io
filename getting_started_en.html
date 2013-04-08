@@ -268,178 +268,182 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                                 <li>
                                     <p>Open file DBStarlingMultiBehavior.as, the code following demenstrate how to use keyboard to control Skeleton animation in Starling.</p>
                                     <pre class="brush: as3;">
-                                    package
-                                    {
-                                        import dragonBones.Armature;
-                                        import dragonBones.factorys.StarlingFactory;
-                                        
-                                        import flash.ui.Keyboard;
-                                        
-                                        import starling.display.Sprite;
-                                        import starling.events.EnterFrameEvent;
-                                        import starling.events.KeyboardEvent;
-                                        import starling.text.TextField;
-                                        
-                                        
-                                        public class DBStarlingMultiBehavior extends Sprite
-                                        {
-                                            [Embed(source = "../assets/Dragon2.png", mimeType = "application/octet-stream")]
-                                            public static const ResourcesData:Class;
-                                            
-                                            private var factory:StarlingFactory;
-                                            private var armature:Armature;
-                                            private var armatureClip:Sprite;
-
-                                            private var isLeft:Boolean;
-                                            private var isRight:Boolean;
-                                            private var isJumping:Boolean;
-                                            private var moveDir:int=0;
-                                            private var speedX:Number = 0;
-                                            private var speedY:Number = 0;
-                                            private var textField:TextField
-                                            
-                                            public function DBStarlingMultiBehavior()
-                                            {
-                                                factory = new StarlingFactory();
-                                                factory.addEventListener(Event.COMPLETE, textureCompleteHandler);
-                                                factory.parseData(new ResourcesData());
-                                            }
-                                            
-                                            private function textureCompleteHandler():void
-                                            {
-                                                armature = factory.buildArmature("Dragon");
-                                                armatureClip = armature.display as Sprite;
-                                                armatureClip.x = 400;
-                                                armatureClip.y = 550;
-                                                addChild(armatureClip);
-                                                updateBehavior()
-                                                addEventListener(EnterFrameEvent.ENTER_FRAME, onEnterFrameHandler);
-
-                                                stage.addEventListener(KeyboardEvent.KEY_DOWN, onKeyEventHandler);
-                                                stage.addEventListener(KeyboardEvent.KEY_UP, onKeyEventHandler);
-                                                
-                                                textField=new TextField(400,30,"A-move left,D-move right,W-jump","Verdana",16,0,true)
-                                                textField.x=60;
-                                                textField.y=2;
-                                                addChild(textField);
-                                            }
-                                            
-                                            private function onKeyEventHandler(e:KeyboardEvent):void
-                                            {
-                                                switch (e.keyCode)
-                                                {
-                                                    case Keyboard.A :
-                                                    case Keyboard.LEFT :
-                                                        isLeft=e.type == KeyboardEvent.KEY_DOWN;
-                                                        break;
-                                                    case Keyboard.D :
-                                                    case Keyboard.RIGHT :
-                                                        isRight=e.type == KeyboardEvent.KEY_DOWN;
-                                                        break;
-                                                    case Keyboard.W :
-                                                    case Keyboard.UP :
-                                                        jump();
-                                                        break;
-                                                }
-                                                var dir:int;
-                                                if (isLeft && isRight) 
-                                                {
-                                                    dir=moveDir;
-                                                    return;
-                                                }
-                                                else if (isLeft)
-                                                {
-                                                    dir=-1;
-                                                }
-                                                else if (isRight)
-                                                {
-                                                    dir=1;
-                                                }
-                                                else 
-                                                {
-                                                    dir=0;
-                                                }
-                                                if(dir==moveDir)
-                                                {
-                                                    return;
-                                                }
-                                                else
-                                                {
-                                                    moveDir=dir;
-                                                }
-                                                updateBehavior()
-                                            }
-                                        
-                                            private function onEnterFrameHandler(_e:EnterFrameEvent):void
-                                            {
-                                                updateMove();
-                                                armature.update();
-                                            }
-
-                                            private function updateBehavior():void 
-                                            {
-                                                if (isJumping)
-                                                {
-                                                    return;
-                                                }
-                                                if (moveDir == 0)
-                                                {
-                                                    speedX = 0;
-                                                    armature.animation.gotoAndPlay("stand");
-                                                }
-                                                else
-                                                {
-                                                    speedX=6*moveDir;
-                                                    armatureClip.scaleX = -moveDir;
-                                                    armature.animation.gotoAndPlay("walk");
-                                                }
-                                            }
-                                            private function updateMove():void
-                                            {
-                                                if (speedX != 0) 
-                                                {
-                                                    armatureClip.x += speedX;
-                                                    if (armatureClip.x < 0) 
-                                                    {
-                                                        armatureClip.x = 0;
-                                                    }
-                                                    else if (armatureClip.x > 800) 
-                                                    {
-                                                        armatureClip.x = 800;
-                                                    }
-                                                }
-                                                if (isJumping)
-                                                {
-                                                    if (speedY <= 0 && speedY + 1 > 0 ) 
-                                                    {
-                                                        armature.animation.gotoAndPlay("fall");
-                                                    }
-                                                    speedY += 1;
-                                                }
-                                                if (speedY != 0) 
-                                                {
-                                                    armatureClip.y += speedY;
-                                                    if (armatureClip.y > 540) 
-                                                    {
-                                                        armatureClip.y = 550;
-                                                        isJumping = false;
-                                                        speedY = 0;
-                                                        updateBehavior();
-                                                    }
-                                                }
-                                            }
-                                            private function jump():void 
-                                            {
-                                                if (isJumping) 
-                                                {
-                                                    return;
-                                                }
-                                                speedY = -25;
-                                                isJumping = true;
-                                                armature.animation.gotoAndPlay("jump");
-                                            }
-                                        }
-                                    }</pre>
+    package
+    {
+        import dragonBones.Armature;
+        import dragonBones.animation.WorldClock;
+        import dragonBones.factorys.StarlingFactory;
+        
+        import flash.ui.Keyboard;
+        
+        import starling.display.Sprite;
+        import starling.events.EnterFrameEvent;
+        import starling.events.KeyboardEvent;
+        import starling.text.TextField;
+        import flash.events.Event;
+        
+        
+        public class DBStarlingMultiBehavior extends Sprite
+        {
+            [Embed(source = "../assets/Dragon2.png", mimeType = "application/octet-stream")]
+            public static const ResourcesData:Class;
+            
+            private var factory:StarlingFactory;
+            private var armature:Armature;
+            private var armatureClip:Sprite;
+    
+            private var isLeft:Boolean;
+            private var isRight:Boolean;
+            private var isJumping:Boolean;
+            private var moveDir:int=0;
+            private var speedX:Number = 0;
+            private var speedY:Number = 0;
+            private var textField:TextField
+            
+            public function DBStarlingMultiBehavior()
+            {
+                factory = new StarlingFactory();
+                factory.addEventListener(Event.COMPLETE, textureCompleteHandler);
+                factory.parseData(new ResourcesData());
+    
+            }
+            
+            private function textureCompleteHandler(e:Event):void
+            {
+                armature = factory.buildArmature("Dragon");
+                armatureClip = armature.display as Sprite;
+                armatureClip.x = 400;
+                armatureClip.y = 550;
+                addChild(armatureClip);
+                WorldClock.clock.add(armature);
+                updateBehavior()
+                addEventListener(EnterFrameEvent.ENTER_FRAME, onEnterFrameHandler);
+    
+                stage.addEventListener(KeyboardEvent.KEY_DOWN, onKeyEventHandler);
+                stage.addEventListener(KeyboardEvent.KEY_UP, onKeyEventHandler);
+                
+                textField=new TextField(400,30,"A-move left,D-move right,W-jump","Verdana",16,0,true)
+                textField.x=60;
+                textField.y=2;
+                addChild(textField);
+            }
+            
+            private function onKeyEventHandler(e:KeyboardEvent):void
+            {
+                switch (e.keyCode)
+                {
+                    case Keyboard.A :
+                    case Keyboard.LEFT :
+                        isLeft=e.type == KeyboardEvent.KEY_DOWN;
+                        break;
+                    case Keyboard.D :
+                    case Keyboard.RIGHT :
+                        isRight=e.type == KeyboardEvent.KEY_DOWN;
+                        break;
+                    case Keyboard.W :
+                    case Keyboard.UP :
+                        jump();
+                        break;
+                }
+                var dir:int;
+                if (isLeft && isRight) 
+                {
+                    dir=moveDir;
+                    return;
+                }
+                else if (isLeft)
+                {
+                    dir=-1;
+                }
+                else if (isRight)
+                {
+                    dir=1;
+                }
+                else 
+                {
+                    dir=0;
+                }
+                if(dir==moveDir)
+                {
+                    return;
+                }
+                else
+                {
+                    moveDir=dir;
+                }
+                updateBehavior()
+            }
+        
+            private function onEnterFrameHandler(_e:EnterFrameEvent):void
+            {
+                updateMove();
+                WorldClock.clock.advanceTime(-1);
+            }
+    
+            private function updateBehavior():void 
+            {
+                if (isJumping)
+                {
+                    return;
+                }
+                if (moveDir == 0)
+                {
+                    speedX = 0;
+                    armature.animation.gotoAndPlay("stand");
+                }
+                else
+                {
+                    speedX=6*moveDir;
+                    armatureClip.scaleX = -moveDir;
+                    armature.animation.gotoAndPlay("walk");
+                }
+            }
+            private function updateMove():void
+            {
+                if (speedX != 0) 
+                {
+                    armatureClip.x += speedX;
+                    if (armatureClip.x < 0) 
+                    {
+                        armatureClip.x = 0;
+                    }
+                    else if (armatureClip.x > 800) 
+                    {
+                        armatureClip.x = 800;
+                    }
+                }
+                if (isJumping)
+                {
+                    if (speedY <= 0 && speedY + 1 > 0 ) 
+                    {
+                        armature.animation.gotoAndPlay("fall");
+                    }
+                    speedY += 1;
+                }
+                if (speedY != 0) 
+                {
+                    armatureClip.y += speedY;
+                    if (armatureClip.y > 540) 
+                    {
+                        armatureClip.y = 550;
+                        isJumping = false;
+                        speedY = 0;
+                        updateBehavior();
+                    }
+                }
+            }
+            private function jump():void 
+            {
+                if (isJumping) 
+                {
+                    return;
+                }
+                speedY = -25;
+                isJumping = true;
+                armature.animation.gotoAndPlay("jump");
+            }
+        }
+    }</pre>
                                 </li>
                                 <p>You can find that whenever you want to play the Skeleton animation, just call function armature.animation.gotoAndPlay()</p>
                                 <p class="img-line"><img src="img/tutorial_pic/3-5.png" alt=""></p>
@@ -467,155 +471,157 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                             <p>In this example, the skeleton is controlled by the mouse movement in the scene. We create a bird that will follow the mouse movement and maintain a certain distance with the dragon. At the same time, the dragon's head and arms will follow the bird movement and make a variety of poses. It sounds funny, right?</p>
                             <p>Let's open the file DBStarlingControlBone.as and below is the corresponding code:</p>
                             <pre class="brush: as3;">
-                            package
-                            {
-                                import dragonBones.Armature;
-                                import dragonBones.Bone;
-                                import dragonBones.factorys.StarlingFactory;
-                                
-                                import flash.geom.Point;
-                                import flash.ui.Mouse;
-                                
-                                import starling.display.Image;
-                                import starling.display.Sprite;
-                                import starling.events.EnterFrameEvent;
-                                import starling.events.TouchEvent;
-                                import starling.textures.Texture;
-                                
-                                
-                                public class DBStarlingControlBone extends Sprite
-                                {
-                                    [Embed(source = "../assets/Dragon2.png", mimeType = "application/octet-stream")]
-                                    public static const ResourcesData:Class;
-                                    
-                                    [Embed(source = "../assets/starling.png")]
-                                    private static const starlingImg:Class;
-                                    
-                                    private var factory:StarlingFactory;
-                                    private var armature:Armature;
-                                    private var armatureClip:Sprite;
-                                    
-                                    private var mouseX:Number = 0;
-                                    private var mouseY:Number = 0;
-                                    private var moveDir:int=0;
-                                    private var dist:Number;
-                                    private var speedX:Number = 0;
-                                    private var starlingBird:Image;
-                                    private var _r:Number;
-                                    
-                                    private var _head:Bone;
-                                    private var _armR:Bone;
-                                    private var _armL:Bone;
-                                    
-                                    public function DBStarlingControlBone()
-                                    {
-                                        factory = new StarlingFactory();
-                                        factory.addEventListener(Event.COMPLETE, textureCompleteHandler);
-                                        factory.parseData(new ResourcesData());
-                                    }
-                                    private function textureCompleteHandler():void
-                                    {
-                                        armature = factory.buildArmature("Dragon");
-                                        armatureClip = armature.display as Sprite;
-                                        
-                                        armatureClip.x = 400;
-                                        armatureClip.y = 550;
-                                        addChild(armatureClip);
-                                        updateBehavior(0)
-                                        addEventListener(EnterFrameEvent.ENTER_FRAME, onEnterFrameHandler);
-                                        stage.addEventListener(TouchEvent.TOUCH, onMouseMoveHandler);
-                                        
-                                        starlingBird=new Image(Texture.fromBitmap(new starlingImg()))
-                                        addChild(starlingBird);
-                                        Mouse.hide();
-                                        //get the bones which you want to control
-                                        _head = armature.getBone("head");
-                                        _armR = armature.getBone("armUpperR");
-                                        _armL = armature.getBone("armUpperL");
-                                        
-                                    }
-                                    
-                                    private function onEnterFrameHandler(_e:EnterFrameEvent):void
-                                    {
-                                        checkDist();
-                                        updateMove();
-                                        updateBones();
-                                        armature.update();      
-                                    }
-                                    
-                                    private function checkDist():void
-                                    {
-                                        dist = armatureClip.x-mouseX;
-                                        if(dist<150)
-                                        {
-                                            updateBehavior(1)
-                                        }
-                                        else if(dist>190)
-                                        {
-                                            updateBehavior(-1)
-                                        }
-                                        else
-                                        {
-                                            updateBehavior(0)
-                                        }
-                                        
-                                    }
-                                    
-                                    private function onMouseMoveHandler(_e:TouchEvent):void
-                                    {
-                                        var _p:Point = _e.getTouch(stage).getLocation(stage);
-                                        mouseX = _p.x;
-                                        mouseY = _p.y;
-                                        starlingBird.x=mouseX-73;
-                                        starlingBird.y=mouseY-73;
-                                    }
-                                    private function updateBehavior(dir:int):void 
-                                    {
-                                        if(moveDir==dir)return;
-                                        moveDir=dir;
-                                        if (moveDir == 0)
-                                        {
-                                            speedX = 0;
-                                            armature.animation.gotoAndPlay("stand");
-                                        }
-                                        else
-                                        {
-                                            speedX=6*moveDir;
-                                            armature.animation.gotoAndPlay("walk");
-                                        }
-                                    }
-                                    private function updateMove():void
-                                    {
-                                        if (speedX != 0) 
-                                        {
-                                            armatureClip.x += speedX;
-                                            if (armatureClip.x < 0) 
-                                            {
-                                                armatureClip.x = 0;
-                                            }
-                                            else if (armatureClip.x > 800) 
-                                            {
-                                                armatureClip.x = 800;
-                                            }
-                                        }
-                                    }
-                                    private function updateBones():void
-                                    {
-                                        //update the bones' pos or rotation
-                                        _r = Math.PI + Math.atan2(mouseY - armatureClip.y+armatureClip.height/2, 
-                                                                  mouseX - armatureClip.x);
-                                        if (_r > Math.PI)
-                                        {
-                                            _r -= Math.PI * 2;
-                                        }
-                                        _head.node.rotation = _r*0.3        
-                                        _armR.node.rotation = _r *0.8;
-                                        _armL.node.rotation = _r * 1.5;
-                                        
-                                        starlingBird.rotation = _r*0.2;
-                                    }
-                                }
-                            }</pre>
+    package
+    {
+        import dragonBones.Armature;
+        import dragonBones.Bone;
+        import dragonBones.animation.WorldClock;
+        import dragonBones.factorys.StarlingFactory;
+        
+        import flash.geom.Point;
+        import flash.ui.Mouse;
+        
+        import starling.display.Image;
+        import starling.display.Sprite;
+        import starling.events.EnterFrameEvent;
+        import starling.events.TouchEvent;
+        import starling.textures.Texture;
+        import flash.events.Event;
+        
+        
+        public class DBStarlingControlBone extends Sprite
+        {
+            [Embed(source = "../assets/Dragon2.png", mimeType = "application/octet-stream")]
+            public static const ResourcesData:Class;
+            
+            [Embed(source = "../assets/starling.png")]
+            private static const starlingImg:Class;
+            
+            private var factory:StarlingFactory;
+            private var armature:Armature;
+            private var armatureClip:Sprite;
+            
+            private var mouseX:Number = 0;
+            private var mouseY:Number = 0;
+            private var moveDir:int=0;
+            private var dist:Number;
+            private var speedX:Number = 0;
+            private var starlingBird:Image;
+            private var _r:Number;
+            
+            private var _head:Bone;
+            private var _armR:Bone;
+            private var _armL:Bone;
+            
+            public function DBStarlingControlBone()
+            {
+                factory = new StarlingFactory();
+                factory.addEventListener(Event.COMPLETE, textureCompleteHandler);
+                factory.parseData(new ResourcesData());
+            }
+            private function textureCompleteHandler(e:Event):void
+            {
+                armature = factory.buildArmature("Dragon");
+                armatureClip = armature.display as Sprite;
+                
+                armatureClip.x = 400;
+                armatureClip.y = 550;
+                addChild(armatureClip);
+                WorldClock.clock.add(armature);
+                updateBehavior(0)
+                addEventListener(EnterFrameEvent.ENTER_FRAME, onEnterFrameHandler);
+                stage.addEventListener(TouchEvent.TOUCH, onMouseMoveHandler);
+                
+                starlingBird=new Image(Texture.fromBitmap(new starlingImg()))
+                addChild(starlingBird);
+                Mouse.hide();
+                //get the bones which you want to control
+                _head = armature.getBone("head");
+                _armR = armature.getBone("armUpperR");
+                _armL = armature.getBone("armUpperL");
+                
+            }
+            
+            private function onEnterFrameHandler(_e:EnterFrameEvent):void
+            {
+                checkDist();
+                updateMove();
+                updateBones();
+                WorldClock.clock.advanceTime(-1);
+            }
+            
+            private function checkDist():void
+            {
+                dist = armatureClip.x-mouseX;
+                if(dist<150)
+                {
+                    updateBehavior(1)
+                }
+                else if(dist>190)
+                {
+                    updateBehavior(-1)
+                }
+                else
+                {
+                    updateBehavior(0)
+                }
+                
+            }
+            
+            private function onMouseMoveHandler(_e:TouchEvent):void
+            {
+                var _p:Point = _e.getTouch(stage).getLocation(stage);
+                mouseX = _p.x;
+                mouseY = _p.y;
+                starlingBird.x=mouseX-73;
+                starlingBird.y=mouseY-73;
+            }
+            private function updateBehavior(dir:int):void 
+            {
+                if(moveDir==dir)return;
+                moveDir=dir;
+                if (moveDir == 0)
+                {
+                    speedX = 0;
+                    armature.animation.gotoAndPlay("stand");
+                }
+                else
+                {
+                    speedX=6*moveDir;
+                    armature.animation.gotoAndPlay("walk");
+                }
+            }
+            private function updateMove():void
+            {
+                if (speedX != 0) 
+                {
+                    armatureClip.x += speedX;
+                    if (armatureClip.x < 0) 
+                    {
+                        armatureClip.x = 0;
+                    }
+                    else if (armatureClip.x > 800) 
+                    {
+                        armatureClip.x = 800;
+                    }
+                }
+            }
+            private function updateBones():void
+            {
+                //update the bones' pos or rotation
+                _r = Math.PI + Math.atan2(mouseY - armatureClip.y+armatureClip.height/2, mouseX - armatureClip.x);
+                if (_r > Math.PI)
+                {
+                    _r -= Math.PI * 2;
+                }
+                _head.node.rotation = _r*0.3		
+                _armR.node.rotation = _r *0.8;
+                _armL.node.rotation = _r * 1.5;
+                
+                starlingBird.rotation=_r*0.2;
+            }
+        }
+    }</pre>
                             <p>From the above code, we can find that method <strong>dragonBones.Armature.getBone(_name:String):Bone</strong> is used to get one specific bone. The node object of the bone contains the data, such as position, rotation, scale, skew and etc. We can assign values to these parameters based on the game logic needs, to achieve the effect of dynamic bone controlling.</p>
                             <p>Please pay attention to the updateBones() method in the above example, where we first fetch the angle between the mouse's current position and the central point of the skeleton, then change the rotations of the dragon's head and arms based on this angle, thus realize this interesting effect.</p>
                         </section>
