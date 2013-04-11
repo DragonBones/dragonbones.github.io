@@ -129,11 +129,12 @@ armature.colorTransform = newColorTransform;</pre>
                         3. Support creating textures with dynamically scaled vector assets at runtime to appropriate device-specific resolution.
 						</p>
                         <pre class="brush: as3;">
-factory.scaleForTexture = 0.5; //for XML embed texture atlas (SWF/PNG)</pre>
+factory.scaleForTexture = 0.5; //only for XML embed SWF texture atlas. 
+factory.parseData(new ResourcesData());//parseData should be after scaleForTexture assignment.</pre>
 						<img src="features/Multiple Resolution Solution.png" alt="">
                     </section>
                     <section class="feature-item">
-						<h4>External Texture Atlas  (V2.0 New)</h4>
+					  <h4>External Texture Atlas  (V2.0 New)</h4>
                         <p>You can generate texture atlas yourself and put it into DragonBones.</p>
                         <pre class="brush: as3;">
 [Embed(source = "../assets/texture.png")]
