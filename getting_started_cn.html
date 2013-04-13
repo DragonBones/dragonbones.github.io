@@ -681,16 +681,18 @@
                                         }
                                         //从骨骼面板导出的textureData中获取Image实例，也可以单独从其他图片文件中构造Image
                                         var _textureName:String = textures[textureIndex];
-                                        var _image:Image = StarlingFactory.getTextureDisplay(factory.textureData, _textureName);
+                                        var _image:Image = factory.getTextureDisplay("_textureName") as Image;
                                         //用image替换bone.display完成换装（注意bone.display的回收）
-                                        var _bone:Bone = armature.getBone("clothes"); _bone.display.dispose();
+                                        var _bone:Bone = armature.getBone("clothes"); 
+                                        _bone.display.dispose();
                                         _bone.display = _image;
                                     } </pre>
                                     <p>这里我们用到了dragonBones.factorys.StarlingFactory.getTextureDisplay(_textureData:TextureData, _fullName:String):Image来获取由骨骼动画编辑面板导出的材质数据，然后将对应的材质赋予给骨骼的display对象，实现了换装。当然，正如前面所说，换装的材质可以随意来自程序中载入的其他图片资源。</p>
                                     <p>另外，当你熟悉了DragonBones的开源框架，你会发现可以通过代码实现更加灵活的变换，除了更换骨骼材质，你还可以在骨骼框架（Armature）中动态的删除、添加骨骼，改变骨骼的从属关系等。</p>
+                                    <p>OK，到此你掌握了如何在DragonBones中为你的游戏角色换装，赶紧在你的游戏中试试吧。:)</p>
                                 </li>
                             </ol>
-                            <p>OK，到此你掌握了如何在DragonBones中为你的游戏角色换装，赶紧在你的游戏中试试吧。:)</p>
+                            
                         </section>
                     </div>
                 </div>

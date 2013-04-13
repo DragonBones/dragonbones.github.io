@@ -664,33 +664,35 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                                 <li>
                                     <p>Create handler function that responses the key event (press C key), which is used to change texture. </p>
                                     <pre class="brush: as3;">
-                                    case Keyboard.C:
-                                        if (e.type == KeyboardEvent.KEY_UP) {
-                                            changeClothes(); 
-                                        }
-                                        break;</pre>
+    case Keyboard.C:
+        if (e.type == KeyboardEvent.KEY_UP) {
+            changeClothes(); 
+        }
+        break;</pre>
                                 </li>
                                 <li>
                                     <p>Create changeClothes() function:</p>
-                                    <pre class="brush: as3;">
-                                    private function changeClothes():void {
-                                        //loop the texture
-                                        textureIndex++;
-                                        if (textureIndex >= textures.length) {
-                                            textureIndex = textureIndex - textures.length; 
-                                        }
-                                        //get the image instant from textureData
-                                        var _textureName:String = textures[textureIndex];
-                                        var _image:Image = StarlingFactory.getTextureDisplay(factory.textureData, _textureName);
-                                        // assign image to bone.display for chaging clothes effect. (using bone.display to dispose)
-                                        var _bone:Bone = armature.getBone("clothes"); _bone.display.dispose();
-                                        _bone.display = _image;
-                                    }</pre>
+                                    <blockquote>
+                                      <pre class="brush: as3;">
+    private function changeClothes():void {
+        //loop the texture
+        textureIndex++;
+        if (textureIndex >= textures.length) {
+            textureIndex = textureIndex - textures.length; 
+        }
+        //get the image instant from textureData
+        var _textureName:String = textures[textureIndex];
+        var _image:Image = factory.getTextureDisplay("_textureName") as Image;
+        // assign image to bone.display for chaging clothes effect. (using bone.display to dispose)
+        var _bone:Bone = armature.getBone("clothes"); _bone.display.dispose();
+        _bone.display = _image;
+    }</pre>
+                                    </blockquote>
                                     <p>Here we have used dragonBones.factorys.StarlingFactory.getTextureDisplay(_textureData: TextureData, _fullName:String):Image  to obtain the texture from the design panel exported file , then assign to corresponding bone to make the changing clothes effect. As mentioned the before, the texture can be also obtained from external resource as needed. </p>
                                     <p>When you get familiar with DragonBones library,   you can have more flexible implementation. For example, in addition to change bones’texture, you can also add, delete, update skeleton structure in  Armature dynamically. </p>
+                                    <p>OK, you should know how to dynamically change the texture for your game’s characters, try it now! :)</p>
                                 </li>
                             </ol>
-                            <p>OK, you should know how to dynamically change the texture for your game’s characters, try it now! :)</p>
                         </section>
                     </div>
                 </div>
