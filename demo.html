@@ -55,7 +55,7 @@
                         <div class="thumbnail">
                             <div class="caption">
                                 <h3>Knight Attack</h3>
-                                <p>Timeline Event, Combo Attack, Switching Weapons</p>
+                                <p>Timeline Event, Combo Attack, Switching Weapons, Particle</p>
                                 <a data-toggle="modal" href="#demodialog_knight"><img src="demo/img/knight.png" alt=""></a>
                           </div>                            
                         </div>
@@ -96,7 +96,7 @@
                         <div class="thumbnail">
                             <div class="caption">
                                 <h3>Cyborg Switches Weapons</h3>
-                                <p>Switching Weapons, Moveing and Aiming</p>
+                                <p>Switching Weapons, Moveing and Aiming, Animation Mixing</p>
                                  <a data-toggle="modal" href="#demo3_dialog"><img src="demo/img/cyborg.png" alt=""></a>
                             </div>
                         </div>
@@ -104,8 +104,8 @@
                       <li class="span6">
                         <div class="thumbnail">
                             <div class="caption">
-                                <h3>Robot Changes Speed</h3>
-                                <p>Animation Speed Changing, Switching Postures</p>
+                                <h3>Scalable Robot Changes Speed</h3>
+                                <p>Animation Speed Changing, Bone Scaling, Switching Postures</p>
                                 <a data-toggle="modal" href="#demo4_dialog"><img src="demo/img/robot.png" alt=""></a>
                             </div>                            
                         </div>
@@ -513,7 +513,7 @@
             <div class="row-fluid">
                 <div>
             <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="801" height="600" id="Test" align="middle">
-                <param name="movie" value="demo/Example_Robot_ChangeSpeed.swf" />
+                <param name="movie" value="demo/Example_Robot_ChangeSpeed_BoneScale.swf" />
                 <param name="quality" value="high" />
                 <param name="bgcolor" value="#cccccc" />
                 <param name="play" value="true" />
@@ -525,7 +525,7 @@
                 <param name="salign" value="" />
                 <param name="allowScriptAccess" value="sameDomain" />
                 <!--[if !IE]>-->
-                <object type="application/x-shockwave-flash" data="demo/Example_Robot_ChangeSpeed.swf" width="801" height="600">
+                <object type="application/x-shockwave-flash" data="demo/Example_Robot_ChangeSpeed_BoneScale.swf" width="801" height="600">
                     <param name="movie" value="demo/Example_Robot_ChangeSpeed.swf" />
                     <param name="quality" value="high" />
                     <param name="bgcolor" value="#cccccc" />
@@ -661,7 +661,7 @@
 <script src='demo/js/swfobject.js' type='text/javascript'></script>
 <script type='text/javascript'>
     $(document).ready(function() {
-        addSWF("demo/SkeletonAnimationDesignPanel.swf","design_panel_demo",801,600,{data:"demo/resources/Cyborg_output.swf"});
+        addSWF("demo/DragonBonesDesignPanel.swf","design_panel_demo",801,600,{data:"demo/resources/Cyborg_output.swf"});
     })
 </script>
 
