@@ -35,12 +35,12 @@
 			texture.onload = function()
 			{
 				$.getJSON(
-					"assets/cyborg/texture.json",
+					"assets/dragon/texture.json",
 					function(data)
 					{
 						textureData = data;
 						$.getJSON(
-							"assets/cyborg/skeleton.json",
+							"assets/dragon/skeleton.json",
 							function(data)
 							{
 								skeletonData = data;
@@ -50,7 +50,7 @@
 					}
 				);
 			}
-			texture.src = "assets/cyborg/texture.png";
+			texture.src = "assets/dragon/texture.png";
 		}
 		
 		var factory;
@@ -62,18 +62,12 @@
 			factory.addSkeletonData(dragonBones.objects.DataParser.parseSkeletonData(skeletonData));
 			factory.addTextureAtlas(new dragonBones.textures.CreateJSTextureAtlas(texture, textureData));
 			
-			armature = factory.buildArmature("cyborg");
+			armature = factory.buildArmature("dragonBoy");
 			armature.getDisplay().x = 400;
 			armature.getDisplay().y = 400;
+			armature.getDisplay().scaleX = armature.getDisplay().scaleY = 0.5;
+			
 			updateAnimation();
-			
-			_body = armature.getBone("body");
-			_chest = armature.getBone("chest");
-			_head = armature.getBone("head");
-			_armR = armature.getBone("upperarmR");
-			_armL = armature.getBone("upperarmL");
-			_weapon = armature.getBone("weapon");
-			
 			dragonBones.animation.WorldClock.clock.add(armature);
 			
 			stage.addChild(armature.getDisplay());
@@ -82,42 +76,59 @@
 			
 			document.onkeydown = keyHandler;
 			document.onkeyup = keyHandler;
-			canvas.onmousemove = mouseMoveHandler;
+			canvas.onmousewheel = mouseWheelHandler;
+			canvas.onclick = mouseClickHandler;
 		}
 		
 		function update() 
 		{
 			updateSpeed();
-			updateWeapon();
 			dragonBones.animation.WorldClock.clock.advanceTime(1/60);
 			stage.update();
 		}
 		
-		var _body;
-		var _chest;
-		var _head;
-		var _armR;
-		var _armL;
-		var _weapon;
-
-		var _left = false;
-		var _right = false;
-
-		var _isJumping = false;
-		var _isSquat = false;
-		var _mouseX = 0;
-		var _mouseY = 0;
-		var _moveDir = 0;
-		var _face = 1;
-		var _weaponID = -1;
-		var _speedX = 0;
-		var _speedY = 0;
-		
-		function mouseMoveHandler(e)
+		var _currentClothesID = 0;
+		function mouseClickHandler(e)
 		{
-			_mouseX = e.layerX;
-			_mouseY = e.layerY;
+			_currentClothesID ++;
+			if(_currentClothesID > 4)
+			{
+				_currentClothesID = 0;
+			}
+			
+			if(_currentClothesID)
+			{
+				armature.getSlot("clothes").setDisplay(factory.getTextureDisplay("parts/clothes" + _currentClothesID));
+			}
+			else
+			{
+				armature.getSlot("clothes").setDisplay(null);
+			}
 		}
+		
+		function mouseWheelHandler(e) 
+		{
+			e = e || window.event;
+			var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+
+			if (delta < 0) 
+			{
+				if (armature.animation.timeScale > 0.2) 
+				{
+					armature.animation.timeScale -= 0.1;
+				}
+			}
+			else 
+			{
+				if (armature.animation.timeScale < 4) 
+				{
+					armature.animation.timeScale += 0.1;
+				}
+			}
+		}
+		
+		var _left;
+		var _right;
 		
 		function keyHandler(e)
 		{
@@ -138,7 +149,7 @@
 					break;
 				case 38 :
 				case 87 :
-					if(isDown) 
+					if (isDown) 
 					{
 						jump();
 					}
@@ -146,12 +157,6 @@
 				case 83 :
 				case 40 :
 					squat(isDown);
-					break;
-				case 32 :
-					if(!isDown) 
-					{
-						changeWeapon();
-					}
 					break;
 			}
 		}
@@ -175,6 +180,13 @@
 				move(0);
 			}
 		}
+		
+		var _speedX = 0;
+		var _speedY = 0;
+		var _moveDir = 0;
+		var _face = 0;
+		var _isJumping;
+		var _isSquat;
 	
 		function move(dir)
 		{
@@ -185,103 +197,84 @@
 			_moveDir = dir;
 			updateAnimation();
 		}
-
-		function jump() 
+		
+		function jump()
 		{
-			if(_isJumping) 
+			if (_isJumping) 
 			{
 				return;
 			}
-			_speedY = -15;
+			_speedY = -24;
 			_isJumping = true;
-			armature.animation.gotoAndPlay("jump");
+			armature.animation.gotoAndPlay("jump", 0.1);
 		}
-
+		
 		function squat(isSquat)
 		{
-			if(_isSquat == isSquat) 
+			if (_isSquat == isSquat) 
 			{
 				return;
 			}
 			_isSquat = isSquat;
 			updateAnimation();
 		}
-
-		function changeWeapon() 
+		
+		function updateAnimation()
 		{
-			_weaponID ++;
-			if(_weaponID >= 4) 
-			{
-				_weaponID -= 4;
-			}
-			
-			var animationName = "weapon" + (_weaponID + 1);
-			
-			_weapon.displayController = animationName;
-			//Animation Mixing
-			armature.animation.gotoAndPlay(animationName, -1, -1, NaN, 0, "weaponGroup", "sameGroup");
-		}
-
-		function updateAnimation() 
-		{
-			if(_isJumping) 
+			if (_isJumping) 
 			{
 				return;
 			}
 			
-			if(_isSquat) 
+			if (_isSquat) 
 			{
 				_speedX = 0;
 				armature.animation.gotoAndPlay("squat");
 				return;
 			}
 
-			if(_moveDir == 0) 
+			if (_moveDir == 0) 
 			{
 				_speedX = 0;
 				armature.animation.gotoAndPlay("stand");
 			}
 			else 
 			{
-				if(_moveDir * _face > 0) 
-				{
-					_speedX = 4* _face;
-					armature.animation.gotoAndPlay("run");
-				}
-				else 
-				{
-					_speedX = -3 * _face;
-					armature.animation.gotoAndPlay("runBack");
-				}
+				_speedX = _moveDir * 6;
+				armature.animation.gotoAndPlay("walk", 0.2);
+				armature.getDisplay().scaleX = -_moveDir * 0.5;
 			}
 		}
 		
-		function updateSpeed() 
+		function updateSpeed()
 		{
-			if(_isJumping) 
+			if (_isJumping) 
 			{
-				if(_speedY <= 0 && _speedY + 0.5 > 0 ) 
+				var speed = 1 * armature.animation.timeScale;
+				if(_speedY <= 0 && _speedY + speed > 0)
 				{
-					armature.animation.gotoAndPlay("fall");
+					armature.animation.gotoAndPlay("fall", 0.2);
 				}
-				_speedY += 0.5;
+				_speedY += speed;
 			}
-			if(_speedX != 0) 
+
+			if (_speedX != 0)
 			{
-				armature.getDisplay().x += _speedX;
-				if(armature.getDisplay().x < 0) 
+				armature.getDisplay().x += _speedX * armature.animation.timeScale;
+				if (armature.getDisplay().x < 0) 
 				{
 					armature.getDisplay().x = 0;
 				}
-				else if(armature.getDisplay().x > 800) 
+				else if (armature.getDisplay().x > 800) 
 				{
 					armature.getDisplay().x = 800;
 				}
 			}
-			if(_speedY != 0) 
+
+			if (_speedY != 0) 
 			{
-				armature.getDisplay().y += _speedY;
-				if(armature.getDisplay().y > 400) 
+				armature.getDisplay().y += _speedY * armature.animation.timeScale;
+				if (armature.getDisplay().y > 400) 
 				{
 					armature.getDisplay().y = 400;
 					_isJumping = false;
@@ -303,51 +296,7 @@
 					break;
 			}
 		}
-		
-		function updateWeapon() 
-		{
-			_face = _mouseX > armature.getDisplay().x?1: -1;
-			if(armature.getDisplay().scaleX * _face < 0)
-			{
-				armature.getDisplay().scaleX *= -1;
-				updateAnimation();
-			}
 
-			var r;
-			if(_face > 0)
-			{
-				r = Math.atan2(_mouseY - armature.getDisplay().y, _mouseX - armature.getDisplay().x);
-			}
-			else
-			{
-				r = Math.PI - Math.atan2(_mouseY - armature.getDisplay().y, _mouseX - armature.getDisplay().x);
-				if(r > Math.PI) 
-				{
-					r -= Math.PI * 2;
-				}
-			}
-			
-			_body.offset.setRotation(r * 0.25);
-			_chest.offset.setRotation(r * 0.25);
-			if(r > 0) 
-			{
-				_head.offset.setRotation(r * 0.2);
-			}
-			else
-			{
-				_head.offset.setRotation(r * 0.4);
-			}
-
-			_armR.offset.setRotation(r * 0.5);
-			if(r > 0) 
-			{
-				_armL.offset.setRotation(r * 0.8);
-			}
-			else
-			{
-				_armL.offset.setRotation(r * 0.6);
-			}
-		}
 	</script>
 </body>
 </html>
