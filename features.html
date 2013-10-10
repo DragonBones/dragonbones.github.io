@@ -48,39 +48,19 @@
             <div class="row-fluid">
                 <div class="span10 offset1">
                     <h2 align="center">FEATURES</h2>
-                    <section class="feature-item">
-                    	<h4>Spine Support (V2.3 New)</h4>
-                        <p>
-                        <a href="http://esotericsoftware.com/" target="_blank">Spine</a> is a 2D skeletal animation tool designed specifically for game development. It got funded on Kickstarter and reached most of the stretched goals. <br>
-                        Now DragonBones also support it! You can easily import a Spine artwork and export to DragonBones data format.                        </p>
-                        <p><img src="features/Spine Support.png" alt=""></p>
-                  	</section>
-                    <section class="feature-item">
-                    	<h4>Animation Mixing (V2.3 New)</h4>
-                        <p>
-                        Animation mixing allow you to cut down on the number of animations you have to create for your game by having some animations apply to part of the body only. This means such animations can be used together with other animations in various combinations.<br>
-                        Regarding animation mixing weighting, DragonBones support normalized weighting as well as additive weighting.
-                        </p>
-                        <p><img src="features/Animation Mixing.png" alt=""></p>
-					</section>
-                    <section class="feature-item">
-					  <h4>JSON Support (V2.3 New)</h4>
-					  <p>
-                      DragonBones supports a variety of texture formats and data formats to export.<br>
-                      For texture format, you can choose PNG or SWF. If you choose SWF, you will get a *.dfswf vector based texture file.<br>
-					  For data format you can choose XML, JSON or Data Merged. </p>
-					  </p>
-                        <img src="features/Json Support.png" alt="">
-                    </section>
                     
-                    <section class="feature-item">
-                        <h4>Fully Integrate with Flash Pro and Starling, Connect Game Creation Pipeline.</h4>
-                        <p>DragonBones contains a Flash Pro based design panel and an AS3 based library. The design panel can convert Flash vector animation to texture atlas and the library can use starling to GPU accelerated render the animation.  So that designers can take care of the animation creation and developers can fully focus on the logic.</p>
+                  <section class="feature-item">
+                        <h4>Fully Integrate with Flash Pro. Fill Gap between Creative Tools and Graphic Engine.</h4>
+                        <p>DragonBones contains a Flash Pro based extension, an AS3 based library and a JS based library. <br>
+                        The Flash Pro extension called design panel, which can convert Flash animation to texture atlas with animation data. <br>
+                        The AS3 library can use <strong>Traditional Display List</strong> as well as <strong>Starling</strong> to render the animation. <br>
+                        The JS library can use <strong>CreateJS</strong> to render the animation. <br>
+                        With above benfit, designers can just focus on the animation creation and developers can just take care of the logic.</p>
                         <img src="features/Integrate with Flash Pro and Starling.png" alt="">
                     </section>
                     <section class="feature-item">
 					  <h4>Reduced Art Assets</h4>
-                        <p>Spliced texture reduces art assets requirement, because characters can be animated in many ways without requiring additional art. </p>
+                        <p>Spliced texture reduces art assets requirement, because characters can be animated in many ways without requiring additional art. Lots of memory consumption will be saved!</p>
 						<img src="features/Reduced Art Assets.png" alt="">
                     </section>
                     <section class="feature-item">
@@ -88,8 +68,26 @@
                         <p>In design panel, designers can create skeletal hierarchy for characters, to ensure animations running more wise and natural.</p>
                         <img src="features/Skeletal Hierarchy.png" alt="">
                     </section>
-                   
-                    <section class="feature-item">
+                    
+                   <section class="feature-item">
+					  <h4>Various Export Format Support</h4>
+				     <p>
+                      DragonBones supports a variety of texture formats and data formats to export.<br>
+                      For texture format, you can choose <strong>PNG</strong> or <strong>SWF</strong>. If you choose SWF, you will get a *.dfswf <strong>vector</strong> based texture file.<br>
+					  For data format you can choose <strong>XML</strong>,<strong> JSON</strong> or Data Merged. </p>
+					  </p>
+                        <img src="features/Json Support.png" alt="">
+                  </section>
+                    
+					<section class="feature-item">
+                    	<h4>Spine Support</h4>
+                        <p>
+                        <a href="http://esotericsoftware.com/" target="_blank">Spine</a> is a 2D skeletal animation tool designed specifically for game development. It got funded on Kickstarter and reached most of the stretched goals. <br>
+                        Now DragonBones also support it! You can easily import a Spine artwork and export to DragonBones data format.                        </p>
+                        <p><img src="features/Spine Support.png" alt=""></p>
+                  	</section>
+                    
+                  <section class="feature-item">
                    	  <h4>Multiple Resolution Solution</h4>
                         <p>
                         A complete solution of multiple resolutions is provided:<br>
@@ -129,8 +127,8 @@ WorldClock.clock.timeScale = 0.1; //10 times slower than normal
 WorldClock.clock.advanceTime(-1);</pre>
 						<img src="features/Time Based Animation.png" alt="">
                     </section>
-                  <section class="feature-item">
-					<h4>Skeleton Reuse and Animation Reuse</h4>
+					<section class="feature-item">
+						<h4>Skeleton Reuse and Animation Reuse</h4>
                         <p>
                         All of the skeleton hierarchy can be reused for different characters only if they have bones with same name.<br>
                         All of the same animations can be reused for different characters only if they have similar skeleton hierarchy.<br>
@@ -141,8 +139,16 @@ WorldClock.clock.advanceTime(-1);</pre>
 characterA = factory.buildArmature("CharacterA", "CharacterB");
 characterA.animation.gotoAndPlay("CharacterB's Animation Name");</pre>
                     <img src="features/Skeleton Reuse and Animation Reuse.png" alt="">
-                  </section>
-                    <section class="feature-item">
+					</section>
+					<section class="feature-item">
+                    	<h4>Animation Mixing</h4>
+                        <p>
+                        Animation mixing allow you to cut down on the number of animations you have to create for your game by having some animations apply to part of the body only. This means such animations can be used together with other animations in various combinations.<br>
+                        Regarding animation mixing weighting, DragonBones support normalized weighting as well as additive weighting.
+                        </p>
+                        <p><img src="features/Animation Mixing.png" alt=""></p>
+					</section>
+				  <section class="feature-item">
                    	  <h4>Color/Alpha Transform Animation</h4>
                         <p>
                         1. Support reading Color/alpha transforms data from Flash Pro and rendering.<br>
@@ -153,14 +159,14 @@ characterA.animation.gotoAndPlay("CharacterB's Animation Name");</pre>
 //set colorTransform in logic
 armature.colorTransform = newColorTransform;</pre>
 					  <img src="features/Color_Alpha Transform Animation.png" alt="">
-                    </section>
-                  <section class="feature-item">
+				  </section>
+				  <section class="feature-item">
 						<h4>Changeable Z-Order</h4>
                         <p>Bones could have different Z-order in different key frames.</p>
 						<img src="features/Changeable Z-Order.png" alt="">
 				  </section>
                   
-                  <section class="feature-item">
+				  <section class="feature-item">
 					  <h4>External Texture Atlas</h4>
                         <p>You can generate texture atlas yourself and put it into DragonBones.</p>
                         <pre class="brush: as3;">
