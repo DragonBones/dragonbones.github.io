@@ -51,7 +51,7 @@
 				);
 			}
 			texture.src = "assets/knight/texture.png";
-		}w
+		}
 		
 		var factory;
 		var armature;
@@ -103,13 +103,11 @@
 			var isDown = e.type == "keydown";
 			switch (currKey) 
 			{
-				
 				case 37 :
 				case 65 :
 					_left = isDown;
 					updateMove(-1);
 					break;
-				
 				case 39 :
 				case 68 :
 					_right = isDown;
