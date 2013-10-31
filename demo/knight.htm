@@ -108,8 +108,7 @@
 					_left = isDown;
 					updateMove(-1);
 					break;
-				case 39 :
-				case 68 :
+				case 32 :
 					_right = isDown;
 					updateMove(1);
 					break;
@@ -127,7 +126,8 @@
 						upgradeWeapon();
 					}
 					break;
-				case 32 :
+				case 39 :
+				case 68 :
 					if (isDown) 
 					{
 						changeWeapon();
