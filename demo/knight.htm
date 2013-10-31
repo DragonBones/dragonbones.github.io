@@ -178,7 +178,7 @@
 			{
 				return;
 			}
-			_speedY = -12;
+			_speedY = -18;
 			_isJumping = true;
 			armature.animation.gotoAndPlay("jump");
 		}
@@ -218,13 +218,13 @@
 			if (_speedX != 0)
 			{
 				armature.getDisplay().x += _speedX;
-				if (armature.getDisplay().x < 90) 
+				if (armature.getDisplay().x < 50) 
 				{
-					armature.getDisplay().x = 90;
+					armature.getDisplay().x = 50;
 				}
-				else if (armature.getDisplay().x > 300) 
+				else if (armature.getDisplay().x > 340) 
 				{
-					armature.getDisplay().x = 300;
+					armature.getDisplay().x = 340;
 				}
 			}
 
@@ -232,9 +232,9 @@
 			{
 				armature.getDisplay().rotation = _speedY * 0.8 * armature.getDisplay().scaleX;
 				armature.getDisplay().y += _speedY;
-				if (armature.getDisplay().y > 400) 
+				if (armature.getDisplay().y > 195) 
 				{
-					armature.getDisplay().y = 400;
+					armature.getDisplay().y = 195;
 					_isJumping = false;
 					_speedY = 0;
 					_speedX = 0;
