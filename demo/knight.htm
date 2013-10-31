@@ -51,7 +51,7 @@
 				);
 			}
 			texture.src = "assets/knight/texture.png";
-		}
+		}w
 		
 		var factory;
 		var armature;
@@ -103,7 +103,9 @@
 			var isDown = e.type == "keydown";
 			switch (currKey) 
 			{
-				case 32 :
+				
+				case 37 :
+				case 65 :
 					_left = isDown;
 					updateMove(-1);
 					break;
@@ -120,15 +122,14 @@
 						jump();
 					}
 					break;
-				case 83 :
-				case 40 :
+				case 32 :
 					if (isDown) 
 					{
 						upgradeWeapon();
 					}
 					break;
-				case 37 :
-				case 65 :
+				case 83 :
+				case 40 :
 					if (isDown) 
 					{
 						changeWeapon();
@@ -179,7 +180,7 @@
 			{
 				return;
 			}
-			_speedY = -18;
+			_speedY = -16;
 			_isJumping = true;
 			armature.animation.gotoAndPlay("jump");
 		}
@@ -219,13 +220,13 @@
 			if (_speedX != 0)
 			{
 				armature.getDisplay().x += _speedX;
-				if (armature.getDisplay().x < 50) 
+				if (armature.getDisplay().x < 70) 
 				{
-					armature.getDisplay().x = 50;
+					armature.getDisplay().x = 70;
 				}
-				else if (armature.getDisplay().x > 340) 
+				else if (armature.getDisplay().x > 320) 
 				{
-					armature.getDisplay().x = 340;
+					armature.getDisplay().x = 320;
 				}
 			}
 
