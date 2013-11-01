@@ -63,7 +63,7 @@
 		>
 		
 			<!--slotList-->
-			<!-
+			<!--
 				Slot is for showing display object in bone
 				name:
 					Defaultly, Slot's name is same with bone
