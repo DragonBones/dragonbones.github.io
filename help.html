@@ -48,6 +48,31 @@
                     </div>
                     <div class="page-header">
                     <section>
+                        <h3>Video Tutorials <small><a id="switchtitle" href="javascript:" onClick="switchframe();">Switch to Youku (看不到？切换至优酷)</a></small></h3>
+							
+                        <div class="row-fluid">
+                        <div class="span4">
+							<div align="center" width="240px" height="181px">
+            					<iframe width="240px" height="181px" id="youtubeframe1" name="youtubeframe1" src="http://www.youtube.com/embed/1HiC2QDbyK0" frameborder="0" allowfullscreen></iframe>
+                				<iframe width="240px" height="181px" style="display:none" id="youkuframe1" name="youkuframe1" src="http://player.youku.com/embed/XNTI4NDYyMTQw" frameborder=0 allowfullscreen></iframe>
+							</div>
+						</div>
+                        <div class="span4">
+							<div align="center" width="240px" height="181px">
+            					<iframe width="240px" height="181px" id="youtubeframe2" name="youtubeframe2" src="http://www.youtube.com/embed/jemwtz0pqZM" frameborder="0" allowfullscreen></iframe>
+                				<iframe width="240px" height="181px" style="display:none" id="youkuframe2" name="youkuframe2" src="http://player.youku.com/embed/XNjMxNzIzMDI4" frameborder=0 allowfullscreen></iframe>
+							</div>
+						</div>
+                        <div class="span4">
+							<div align="center" width="240px" height="181px">
+            					<iframe width="240px" height="181px" id="youtubeframe3" name="youtubeframe3" src="http://www.youtube.com/embed/p4FZMAFiapI" frameborder="0" allowfullscreen></iframe>
+                				<iframe width="240px" height="181px" style="display:none" id="youkuframe3" name="youkuframe3" src="http://player.youku.com/embed/XNjMxNzIzMDI4" frameborder=0 allowfullscreen></iframe>
+							</div>
+						</div>
+                        </div>
+                        <p>&nbsp;</p>
+                    </section>
+                    <section>
                         <h3>Getting Started (V2.1 Updated)</h3>
                         <p>Follow our very important getting started guide (<a href="getting_started_en.html" target="_blank">English</a>, <a href="getting_started_cn.html" target="_blank">中文</a>) to learn how to setup and use DragonBones in your project.</p>
                         <p>&nbsp;</p>
@@ -62,12 +87,6 @@
                         <p>Consult the Skeleton Data Format Spec (<a href="doc/DBSkeletonDataFormatSpec_V2.4_en.xml" target="_blank">English</a>, <a href="doc/DBSkeletonDataFormatSpec_V2.4_cn.xml" target="_blank">中文</a>)about skeleton data format that DragonBones are using.</p>
                         <p>&nbsp;</p>
                     </section>
-                    <section>
-                        <h3>Move from V2.2 to V2.3</h3>
-                        <p>Some difference between V2.2 and V2.3 (<a href="https://github.com/DragonBones/SkeletonAnimationLibrary/wiki/Move-from-V2.2-to-V2.3" target="_blank">English</a>).</p>
-                        <p>&nbsp;</p>
-                    </section>
-                    
                     <section>
                       <h3>Wiki</h3>
                         <p>Find additional information on DragonBones GitHub <a href="https://github.com/DragonBones/SkeletonAnimationLibrary/wiki" target="_blank">Wiki</a>.</p>
@@ -124,7 +143,25 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
+	function switchframe(){
+        if(document.getElementById('youkuframe1').style.display=='none'){
+            document.getElementById('youkuframe1').style.display='block';
+            document.getElementById('youtubeframe1').style.display='none';
+			document.getElementById('youkuframe2').style.display='block';
+            document.getElementById('youtubeframe2').style.display='none';
+			document.getElementById('youkuframe3').style.display='block';
+            document.getElementById('youtubeframe3').style.display='none';
+            document.getElementById('switchtitle').innerText='Switch to YouTube';
+        }else{
+            document.getElementById('youkuframe1').style.display='none';
+            document.getElementById('youtubeframe1').style.display='block';
+			document.getElementById('youkuframe2').style.display='none';
+            document.getElementById('youtubeframe2').style.display='block';
+			document.getElementById('youkuframe3').style.display='none';
+            document.getElementById('youtubeframe3').style.display='block';
+            document.getElementById('switchtitle').innerText='Switch to Youku(看不到？切换至优酷)';
+        }
+    }
 </script>
 
 </html>
