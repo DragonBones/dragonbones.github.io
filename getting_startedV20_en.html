@@ -175,19 +175,14 @@
                                  </li>
                                  <li>
                                     <p>After adjusting the skeletal animation well, you can click the button "export".</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/1-11.png" alt=""></p>
                                     <p>There are many kinds of file format for export to meet your project requirement at the pop up list of "Export".</p>
-                                    <p><strong>SWF (Data Merged)</strong>: SWF file format that contains the skeletal animation data with the type of AS3Obj. If you need vector based the skeletal animation , you can choose this type of format. Of course, the original format of your assets must be the vector based.
+                                    <p><strong>SWF (XML Merged)</strong>: SWF file format that contains the skeletal animation data with the type of XML. If you need vector based the skeletal animation , you can choose this type of format. Of course, the original format of your assets must be the vector based.
 PNG(XML Merged): PNG file format that contains the skeletal animation data with the type of XML.</p>
-									<p><strong>PNG (Data Merged)</strong>: PNG file format that contains the skeletal animation data with the type of AS3Obj.</p>
                                     <p><strong>Zip(XML and SWF)</strong>: Export the XML file and SWF file packed into a Zip file to store the skeletal animation and the visual resource individually.</p>
                                     <p><strong>Zip(XML and PNG)</strong>: Export the XML file and PNG file packed into a Zip file to store the skeletal animation and the visual resource individually.</p>
                                     <p><strong>Zip(XML and PNGs)</strong>: Export the XML file and PNG files packed into a Zip file to store the skeletal animation and the visual resource individually. There would be an individual PNG file for each bone.</p>
-                                    <p><strong>Zip(JSON and SWF)</strong>: Export the JSON file and SWF file packed into a Zip file to store the skeletal animation and the visual resource individually.</p>
-                                    <p><strong>Zip(JSON and PNG)</strong>: Export the JSON file and PNG file packed into a Zip file to store the skeletal animation and the visual resource individually.</p>
-                                    <p><strong>Zip(JSON and PNGs)</strong>: Export the JSON file and PNG files packed into a Zip file to store the skeletal animation and the visual resource individually. There would be an individual PNG file for each bone.</p>
-                                    <p class="img-line"><img src="img/tutorial_pic/1-11.png" alt=""></p>
-                                    <p>Background Color option is not marked defaultly. That means exported texture atlas's background is transparent. You can mark the option and choose a color as the exported texture atlas's background color.</p>
-                                   <p>In this example, we choose "PNG (XML Merged)" and click "OK" to export the file "DragonWalk.png" into a selected directory.</p>
+                                    <p>In this example, we choose "PNG (XML Merged)" and click "OK" to export the file "DragonWalk.png" into a selected directory.</p>
                                     <p class="img-line"><img src="img/tutorial_pic/1-11-2.png" alt=""></p>
                                     <p>Notice that there is only a single PNG file get exported? Yes. Because we choose the export form that combines both XML data and skeletal data, so this PNG file contains all the data needed by the skeletal animation.</p>
                                     <p>In Export Scale dropdown box, you can set the scale of exported texture atlas to provide assets with different dimension for  devices with different resolution.</p>
@@ -215,7 +210,7 @@ PNG(XML Merged): PNG file format that contains the skeletal animation data with 
                                 <li>
                                     <p>Create factory and parse resource data from function "fromRawData", then do other things in callback function "textureCompleteHandler".</p>
                                     <pre class="brush: as3;">
-                                    factory = new NativeFactory(); 
+                                    factory = new BaseFactory(); 
                                     factory.addEventListener(Event.COMPLETE, textureCompleteHandler);
                                     factory.parseData(new ResourcesData());</pre>
                                 </li>

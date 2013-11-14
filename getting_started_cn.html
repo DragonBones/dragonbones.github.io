@@ -174,13 +174,19 @@
                                  </li>
                                  <li>
                                     <p>当你调整完骨骼动画，就可以点击”Export”按钮导出。</p>
-                                    <p class="img-line"><img src="img/tutorial_pic/1-11.png" alt=""></p>
+                                    
                                     <p>在导出格式选项中，包含多种数据格式供你实际项目需求。</p>
-                                    <p><strong>SWF (XML Merged)</strong>: 包含骨骼XML数据的SWF格式，如果游戏需要矢量的骨骼动画可以采用此格式导出，当然前提是原始素材都是矢量的。</p>
-                                    <p><strong>PNG(XML Merged)</strong>: 包含骨骼XML数据的PNG格式。</p>
+                                    <p><strong>SWF (Data Merged)</strong>: 包含骨骼AS3Obj数据的SWF格式，如果游戏需要矢量的骨骼动画可以采用此格式导出，当然前提是原始素材都是矢量的。</p>
+                                    <p><strong>PNG(Data Merged)</strong>: 包含骨骼AS3Obj数据的PNG格式。</p>
                                     <p><strong>Zip(XML and SWF)</strong>: 分开保存的骨骼XML数据和SWF资源。</p>
                                     <p><strong>Zip(XML and PNG)</strong>: 分开保存的骨骼XML数据和PNG图片。</p>
                                     <p><strong>Zip(XML and PNGs)</strong>: 分开保存的骨骼XML数据和按每个骨骼独立的PNG图片包。</p>
+                                    <p><strong>Zip(JSON and SWF)</strong>: 分开保存的骨骼JSON数据和SWF资源。</p>
+                                    <p><strong>Zip(JSON and PNG)</strong>: 分开保存的骨骼JSON数据和PNG图片。</p>
+                                    <p><strong>Zip(JSON and PNGs)</strong>: 分开保存的骨骼JSON数据和按每个骨骼独立的PNG图片包。</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/1-11.png" alt=""></p>
+                                    <p>背景显色选项默认是不勾选的，意味着导出纹理集使用透明背景。勾选后可以选择一个颜色做为导出纹理集的背景颜色。</p>
+                                    <p class="img-line"><img src="img/tutorial_pic/1-12.png" alt=""></p>
                                     <p>例如在本例中，我们选择PNG(XML Merged)，点击OK导出文件DragonWalk.png到指定的目录。</p>
                                     <p class="img-line"><img src="img/tutorial_pic/1-11-2.png" alt=""></p>
                                     <p>你会发现导出的就一个PNG文件？是的，我们选择了合并XML数据的PNG格式，所以此文件中包含了骨骼动画需要的所有数据。</p>
@@ -211,7 +217,7 @@
                                 <li>
                                     <p>创建factory，并通过fromRawData方法解析载入的资源格式，当解析完毕后交给对应事件textureCompleteHandler处理。</p>
                                     <pre class="brush: as3;">
-                                    factory = new BaseFactory(); 
+                                    factory = new NativeFactory(); 
                                     factory.addEventListener(Event.COMPLETE, textureCompleteHandler);
                                     factory.parseData(new ResourcesData());</pre>
                                 </li>
