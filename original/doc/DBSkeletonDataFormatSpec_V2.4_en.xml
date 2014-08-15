@@ -1,0 +1,239 @@
+﻿<!--
+
+	Dragonbones 2.4 Data Format
+	name:
+		FLA file name. For example, if the filename is "dragon.fla"，then the value is "dragon".
+		This Value is used for SkeletonData's name property, which is SkeletonData's id in factory.
+	
+	frameRate:
+		FLA file's frame rate. It is used for calculating animation data from frame based to time based.
+		
+	version:
+		Version number.
+-->
+<dragonBones
+	name="dataName"
+	frameRate="24"
+	version="3.0.0"
+>
+	<!--armatureList-->
+	<!--
+		Armature
+		name:
+			Armature name, same with name of the Movie Clip, contains the armature in Flash Pro Library.(The name contains folder path)
+	-->
+	<armature
+		name="armatureName"
+	>
+	
+		<!--boneList-->
+		<!--
+			Bone
+			name:
+				Bone name, same with name of the Layer, contains the bone。
+				If some Laters have the same name, and there is no conflict in timeline, they will be considerd to the same bone with different Z-Order in different keyframe. 
+			parent:
+				Parent bone name.			
+		-->
+		<bone
+			name="boneName"
+			parent="parentBoneName"
+		>
+			<!--
+				Bone data including position, skew and scale.(They are absolute data instead of relavent data based on parent)
+			-->
+			<transform
+				x="0.00"
+				y="0.00"
+				skX="0.00"
+				skY="0.00"
+				scX="0.00"
+				scY="0.00"
+			/>
+		</bone>
+		
+		<!--skinList-->
+		<!--
+			Skin
+			name:
+				Skin name
+		-->
+		<skin
+			name="skinName"
+		>
+		
+			<!--slotList-->
+			<!--
+				Slot is for showing display object in bone
+				name:
+					Defaultly, Slot's name is same with bone
+				parent:
+					parent bone's name
+				zOrder:
+					ZOrder of the display list in this slot.
+			-->
+			<slot
+				name="slotName"
+				parent="parentBoneName"
+				zOrder="0.00"
+			>
+				
+				<!--displayList-->
+				<!--
+					Display object in a slot
+					type:
+						It canbe "image" or "armature"，stands for it is texture or child armature
+					name:
+						Display Object's Name
+				-->
+				<display
+					type="image"
+					name="displayName"
+				>
+					<!--
+						Display Object data including position, skew, scale and pivot (They are absolute data instead of relavent data based on parent). 
+					-->
+					<transform
+						x="0.00"
+						y="0.00"
+						skX="0.00"
+						skY="0.00"
+						scX="0.00"
+						scY="0.00"
+						pX="0.00"
+						pY="0.00"
+					/>
+				</display>
+				
+			</slot>
+			
+		</skin>
+		
+		<!--animationList-->
+		<!--
+			Animation
+			name:
+				Animation name
+			fadeInTime:
+				Duration of the blending from other animation to this animation.
+			duration:
+				Original duration  of the animation.
+			scale:
+				duration scale of the animation.
+			loop:
+				0 means loop, >1 means playtimes. It can be set in design panel or dynamiclly changed by assign "loop" parameter in "gotoAndPlay" funtion
+			tweenEasing:
+				Key frame easing.All bones in every frame of the animation have the same easing value.
+		-->
+		<animation
+			name="animationName"
+			fadeInTime="0.25"
+			duration="36"
+			scale="1.00"
+			loop="0"
+			tweenEasing="NaN"
+		>
+			
+			<!--frameList-->
+			<!--
+				Key frame data in Main timeline
+				duration:
+					The frame amount of the keyframe's duration.
+
+				event:
+					Custom timeline event in this keyframe. Adding @eventname in frame label of the first layer can enable this value. A FrameEvent will popup when the frame is entered. 
+					
+				sound:
+					Sound event in this keyframe. Draging a sound into timeline's first layer  can enable this value. A SoundEvent will be popped up with the sound id when the frame is entered.
+					If the sound has a class name, then the id will equal to the class name, instead the id will equal to the sound element name in Flash Pro Library.
+					
+				action:
+					GotoAndPlay timeline event. Adding #framelabelnext in frame label of the first layer can enable this value. The animation will gotoAndPlay "framelabelnext" when the frame is entered.
+			-->
+			<frame
+				duration="12"
+				event="eventName"
+				sound="soundName"
+				action="action"
+			/>
+			<!--
+				Skeletal Animation. Each timeline element is from a layer in Flash Pro. it will be convert to a bone. 
+				name:
+					Bone name, same with layer name.
+					
+				scale:
+					Bone animation's scale value. It can be set in designpanel.
+					The scale is for bones in animation. You need to choose a behavior first and choose a bone second. Then you can adjust the value and you can see the bone's animation in current behavior is scaled(faster or slower than other bones).					
+					
+				offset:
+					Bone animation's delay value.[0, 1]
+					The scale is for bones in animation. You need to choose a behavior first and choose a bone second. Then you can adjust the value and you can see the bone's animation in current behavior is delayed(earlier or later than other bones).
+							
+			-->
+			<timeline
+				name="boneName"
+				scale="1.00"
+				offset="0.00"
+			>
+				<!--
+					Keyframe data of the Bone in animation
+					displayIndex:
+						The Texture index of current texture in this slot's texture list.
+					duration:
+
+					event:
+						Custom timeline event in this keyframe. Adding @eventname in frame label of the bone layer can enable this value. A FrameEvent will popup when the frame is entered.
+
+					sound:
+						Sound event in this keyframe. Draging a sound into timeline's bone layer can enable this value. A SoundEvent will be poped up with the sound's id when the frame is entered.
+						If the sound has a class name, then the id will equal to the class name, instead the id will equal to the sound element name in Flash Pro Library.
+						
+					action:
+						GotoAndPlay timeline event. Adding #framelabelnext in frame label of the bone layer can enable this value. It will not work unless the bone is a child armature, because the child armature will gotoAndPlay "framelabelnext" when the frame is entered.
+						
+					tweenEasing:
+						Tween easing, [-1, 1], equal to the easing value in Flash Pro.If add ^ in frame label, this value will be NaN and there will be no tween.
+					tweenRotate:
+						Rotaion amount, equal to the related data in Flash Pro.
+						
+					hide:
+						Slot's visible property. equal to the visible data in Flash Pro.			
+				-->
+				<frame
+					duration="12"
+					event="eventName"
+					sound="soundName"
+					action="action"
+					hide="1"
+					tweenEasing="1.00"
+					tweenRotate="0"
+					displayIndex="0"
+					zOrder="0.00"
+				>
+					<transform
+						x="0.00"
+						y="0.00"
+						skX="0.00"
+						skY="0.00"
+						scX="0.00"
+						scY="0.00"
+						pX="0.00"
+						pY="0.00"
+					/>
+					<colorTransform
+						aO="0"
+						rO="0"
+						gO="0"
+						bO="0"
+						aM="0.00"
+						rM="0.00"
+						gM="0.00"
+						bM="0.00"
+					/>
+				</frame>
+			</timeline>
+			
+		</animation>
+	
+	</armature>
+</dragonBones>
