@@ -210,7 +210,7 @@
 					tweenEasing="1.00"
 					tweenRotate="0"
 					displayIndex="0"
-					zOrder="0.00"
+					z="0.00"
 				>
 					<transform
 						x="0.00"
