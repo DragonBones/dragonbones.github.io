@@ -76,7 +76,7 @@
 			<slot
 				name="slotName"
 				parent="parentBoneName"
-				zOrder="0.00"
+				z="0.00"
 			>
 				
 				<!--displayList-->
