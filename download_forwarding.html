@@ -6,7 +6,6 @@
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js" ><!--<![endif]-->
 <head>
     <title>DragonBones Download</title>
-    <meta http-equiv="refresh" content="0;url=http://dragonbones.effecthub.com/download_forwarding.html">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +20,29 @@
     <![endif]-->
 </head>
 <body data-spy="scroll" data-target=".navbar">
-    
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                 <a class="brand" href="index.html">DragonBones</a>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="container-fluid" style="min-height: 350px;">
+            <div class="row-fluid">
+                <div class="alert alert-block">
+                    Start downloading...
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row-fluid">
+             <div class="span6 offset3">
+                <p class="copyright">© 2012-2013 The DragonBones Team</p>
+             </div>
+        </div>
+    </div>
 </body>
 
 <script src="js/jquery.js"></script>
@@ -38,6 +59,27 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+</script>
+
+<script type="text/javascript">
+    (function($) {
+        $.QueryString = (function(a) {
+            if (a == "") return {};
+            var b = {};
+            for (var i = 0; i < a.length; ++i)
+            {
+                var p=a[i].split('=');
+                if (p.length != 2) continue;
+                b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+            }
+            return b;
+        })(window.location.search.substr(1).split('&'))
+    })(jQuery);
+    $(document).ready(function() {
+        setTimeout(function() {
+            window.location = $.QueryString["download_url"];
+        }, 1000);
+    });
 </script>
 
 </html>

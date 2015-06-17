@@ -75,7 +75,7 @@
 			<slot
 				name="slotName"
 				parent="parentBoneName"
-				z="0.00"
+				zOrder="0.00"
 			>
 				
 				<!--displayList-->
@@ -208,7 +208,7 @@
 					tweenEasing="1.00"
 					tweenRotate="0"
 					displayIndex="0"
-					z="0.00"
+					zOrder="0.00"
 				>
 					<transform
 						x="0.00"

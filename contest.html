@@ -6,7 +6,6 @@
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js" ><!--<![endif]-->
 <head>
     <title>DragonBones Design Contest</title>
-    <meta http-equiv="refresh" content="0;url=http://dragonbones.effecthub.com/contest.html">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +22,93 @@
     
 </head>
 <body data-spy="scroll" data-target=".navbar">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                 <a class="brand" href="index.html">DragonBones</a>
+                 <div class="nav-collapse">
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="showcase.html">Showcase</a></li>
+                        <li><a href="demo.html">Demos</a></li>
+                        <li><a href="download.html">Download</a></li>                       
+                        <li><a href="help.html">Help</a></li>   
+                        <li><a href="backers.html">Backers</a></li>
+                        <li><a href="contribute.html">Contribute</a></li>            
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="container-fluid">
+        	<h2 align="center">DragonBones Design Contest</h2>
+			<div class="well">
+                <div class="row-fluid">
+                    <div class="span8">
+					  <h3>Introduction</h3>
+					  <p>DragonBones Design Contest is now open to for  entries! </p>
+						<p>The contestants are invited to submit a <b>character artworks</b> with  skeletal animation created by DragonBones.</p>
+                        <p>The contest is an animation design competition supported by <b>AwayEffect.com</b> and  open to <b>all designers from around the world</b>. We hope this contest will help to  boost the collaboration among worldwide gaming designers to create world-class  beautiful artworks.</p>
+                        <h3>Schedule</h3>
+                      <p>TBD...</p>
+                        <h3>Entry Process</h3>
+                        <p>1. Fill out the register form in this page and submit.</p>
+                        <p>2. You will receive a password email.</p>
+                        <p>3. Registration successful.</p>
+                        <p>4. Finish your artworks.</p>
+					  <p>5. Submit your artworks.</p>
+						<p>6. Review your artworks in AwayEffect.com. (Optional)</p>
+                        <p>7.Update your artworks. (Optional)</p>
+                        <p>8. Wait until verification and vote finished.</p>
+                        <p>9. Contest result announcement</p>
+                        <h3>Prize</h3>
+                      <p>TBD...</p>
+                      <h3>REGISTER</h3>
+                        <iframe class="span12" src="http://awayeffect.com/dragonbones/attend.php" height="260" scrolling="no" frameborder="0" ></iframe>
+                    </div>
+                    <div class="span4">
+                        <div class="contestpanel">
+                        <iframe class="span12" src="http://awayeffect.com/dragonbones/number.php" height="50" scrolling="no" frameborder="0" ></iframe>
+                             <div>
+                               <h5>people have registered</br></h5>
+                                <p>&nbsp;</p>
+                                <div id="days" class="bignum"></div>
+                                <h5>days left</h5>
+                                <p>Contest Entry will be closed in <br> <b>July 31, 2013</b></p>
+                                <p><a href="javascript:" onClick="javascript:document.back0.submit()" class="btn btn-large btn-block btn-inverse" style="background:#58bb56;">Register Now</span>
+                                </a>
+                                </p>
+                                <h3>FAQ</h3>
+                        	<p>TBD...</p>
+                             </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+            
+		</div>
+        
+    </div>
     
+    <div id="footer">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="http://twitter.com/dragonbonesteam">Follow Us on Twitter</a></li>
+                    <li><a href="http://weibo.com/u/3064343903">Follow Us on Weibo</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="row-fluid">
+                 <div class="span6 offset3">
+                    <p class="copyright">© 2012-2013 The DragonBones Team </p>
+                 </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <!-- Google Analytics -->
@@ -37,6 +122,12 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+
+</script>
+<script type="text/javascript">
+var now = new Date(); 
+var d = new Date(2013,7,1,0,0,0) - now;
+document.getElementById('days').innerHTML = Math.ceil( d / 86400000);
 
 </script>
 </html>
