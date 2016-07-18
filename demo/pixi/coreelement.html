@@ -22,13 +22,16 @@
 	</style>
 
 	<script src="js/pixi.min.js"></script>
-	<script src="js/HelloDragonBones.js"></script>
+	<script src="js/dragonBones.min.js"></script>
+	<script src="js/dragonBonesPixi.min.js"></script>
+	<script src="js/CoreElement.js"></script>
 </head>
 
 <body>
 	<script>
-        new demosPixi.HelloDragonBones();
-    </script>
+		var __define = this.__define || function (o, p, g, s) { Object.defineProperty(o, p, { configurable: true, enumerable: true, get: g, set: s }); };
+        new demosPixi.coreElement.Game();
+	</script>
 </body>
 
 </html>
