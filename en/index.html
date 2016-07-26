@@ -170,7 +170,7 @@
 										<div class="sliderInfo">
 											<h3>&nbsp;</h3>
 											<p>
-												click on the picture to play
+												Click the picture to play
 											</p>
 										</div>
 									</li>
@@ -181,7 +181,7 @@
 										<div class="sliderInfo">
 											<h3>&nbsp;</h3>
 											<p>
-												click on the picture to play
+												Click the picture to play
 											</p>
 										</div>
 									</li>
@@ -192,7 +192,7 @@
 										<div class="sliderInfo">
 											<h3>&nbsp;</h3>
 											<p>
-												click on the picture to play
+												Click the picture to play
 											</p>
 										</div>
 									</li>
@@ -278,10 +278,10 @@
 
 					<div class="clearfix "></div>
 					<div class="col-md-12" style="color: #A5A5A5;margin-top: 70px;font-size: 20px;">
-						<p><img style="height: 31px;width: 30px; margin-bottom: 0px; padding-bottom: 10px; " src="img/yinghao.png" /> discovered Dragon Bones via a discussion in Adobe’s prerelease programs, </p>
+						<p><img style="height: 31px;width: 30px; margin-bottom: 0px; padding-bottom: 10px; " src="img/yinghao.png" />I discovered Dragon Bones via a discussion in Adobe's prerelease programs, </p>
 						<p> and I became very excited. We are doing some investigations with the Flash/AIR platform </p>
 						<p> using Starling and DragonBones provides an innovative pipeline solution for artists.”</p>
-						<p style="margin-top: 50px;"><span style="text-decoration: line-through;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;Ross Przybylski | Engineering Manager | EA</p>
+						<p style="margin-top: 50px;"><span style="text-decoration: line-through;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;Ross Przybylski | Engineering Manager | <a href="http://www.ea.com/" style="color: #00cda2;">EA</a></p>
 					</div>
 				</div>
 			</section>
@@ -291,13 +291,7 @@
 						<p>
 							<a href="http://www.egret.com/about">ABOUT</a>
 						</p>
-						<p>SUPPORT：suppor@egret.com</p>
-					</div>
-					<div class="col-md-4 des">
-						<p>
-							<a href="http://www.egret.com">Egret</a> | <a href="https://www.facebook.com/dragonbonesteam/">FaceBook</a> | <a href="https://twitter.com/dragonbonesteam">Twitter</a>
-						</p>
-						<p>DB QQ 群：205889387</p>
+						<p>SUPPORT：support@egret.com</p>
 					</div>
 					<div class="col-md-4 des">
 						<p>
@@ -322,6 +316,12 @@
                             	</style>
                                 <!-- AddThis Button END -->
                             </div>
+					</div>
+					<div class="col-md-4 des">
+						<p>
+							<a href="http://www.egret.com">Egret</a> | <a href="https://www.facebook.com/dragonbonesteam/">FaceBook</a> | <a href="https://twitter.com/dragonbonesteam">Twitter</a>
+						</p>
+						<p>DB QQ 群：205889387</p>
 					</div>
 					<div class="col-md-12" style="margin: 45px 0 45px 0; font-size:16px; color: #c1c1c1; border-bottom: 1px solid #000;    border-bottom: 1px solid #353535;line-height: 2">PARTNERS</div>
 					<div class="col-md-12">
@@ -382,6 +382,9 @@
 	});
 	$(".tableDisplay").on("click", function(e) {
 		if($(".vCenter").is(":hidden")) {
+			$(".vCenter").show();
+			$(".downDisplay").show();
+			$(".headerDark").show();
 			$('.slider-video').trigger('pause');
 		}
 	});

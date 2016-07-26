@@ -278,10 +278,10 @@
 
 					<div class="clearfix "></div>
 					<div class="col-md-12" style="color: #A5A5A5;margin-top: 70px;font-size: 20px;">
-						<p><img style="height: 31px;width: 30px; margin-bottom: 0px; padding-bottom: 10px; " src="img/yinghao.png" /> discovered Dragon Bones via a discussion in Adobe’s prerelease programs, </p>
+						<p><img style="height: 31px;width: 30px; margin-bottom: 0px; padding-bottom: 10px; " src="img/yinghao.png" />I discovered Dragon Bones via a discussion in Adobe's prerelease programs, </p>
 						<p> and I became very excited. We are doing some investigations with the Flash/AIR platform </p>
 						<p> using Starling and DragonBones provides an innovative pipeline solution for artists.”</p>
-						<p style="margin-top: 50px;"><span style="text-decoration: line-through;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;Ross Przybylski | Engineering Manager | EA</p>
+						<p style="margin-top: 50px;"><span style="text-decoration: line-through;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;Ross Przybylski | Engineering Manager | <a href="http://www.ea.com.cn/" style="color: #00cda2;">EA</a></p>
 					</div>
 				</div>
 			</section>
@@ -291,13 +291,7 @@
 						<p>
 							<a href="http://www.egret.com/about">关于我们</a>
 						</p>
-						<p>技术支持邮箱：suppor@egret.com</p>
-					</div>
-					<div class="col-md-4 des">
-						<p>
-							<a href="http://www.egret.com">Egret官网</a> | <a href="https://www.facebook.com/dragonbonesteam/">FaceBook</a> | <a href="https://twitter.com/dragonbonesteam">Twitter</a>
-						</p>
-						<p>DB QQ 群：205889387</p>
+						<p>技术支持邮箱：support@egret.com</p>
 					</div>
 					<div class="col-md-4 des">
 						<p>
@@ -322,6 +316,12 @@
                             	</style>
                                 <!-- AddThis Button END -->
                             </div>
+					</div>
+					<div class="col-md-4 des">
+						<p>
+							<a href="http://www.egret.com">Egret官网</a> | <a href="https://www.facebook.com/dragonbonesteam/">FaceBook</a> | <a href="https://twitter.com/dragonbonesteam">Twitter</a>
+						</p>
+						<p>DB QQ 群：205889387</p>
 					</div>
 					<div class="col-md-12" style="margin: 45px 0 45px 0; font-size:16px; color: #c1c1c1; border-bottom: 1px solid #000;    border-bottom: 1px solid #353535;line-height: 2">合作伙伴</div>
 					<div class="col-md-12">
@@ -382,6 +382,9 @@
 	});
 	$(".tableDisplay").on("click", function(e) {
 		if($(".vCenter").is(":hidden")) {
+			$(".vCenter").show();
+			$(".downDisplay").show();
+			$(".headerDark").show();
 			$('.slider-video').trigger('pause');
 		}
 	});
