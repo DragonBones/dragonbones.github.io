@@ -1,0 +1,165 @@
+.vCenter {
+    text-align:center; 
+    padding-left: 0px;
+}
+.videoSec h1 {
+    color: #FFFFFF;
+    margin-top: 90px;
+    font-size: 50px;
+}
+.videoSec .des {
+    color: #FFFFFF;
+}
+.one{
+	background: #FBFBFB;
+	padding-top: 85px;
+	padding-bottom: 85px;
+	color: #737373;
+}
+.one h1{
+	text-align: center;
+	color: #000000;
+	margin-bottom: 85px;
+}
+.one .content{
+	margin-left: 100px;
+	margin-top: 50px;
+}
+.one .content p{
+	margin-bottom: 5px;
+}
+.one .content h1{
+	margin-bottom: 30px;
+	color: #D3C0A0;
+	text-align: left;
+}
+.one .content .des{	
+	font-size: 23px;	
+}
+.two{
+	background: #FBFBFB;
+	padding-bottom: 85px;
+	color: #737373;
+}
+.two .content{
+	margin-left: 100px;
+	margin-top: 50px;
+}
+.two .content p{
+	margin-bottom: 5px;
+}
+.two .content h1{
+	margin-bottom: 30px;
+	color: #D3C0A0;
+	text-align: left;
+}
+.two .content .des{
+	
+	font-size: 23px;	
+}
+.three{
+	background: #FBFBFB;
+	padding-bottom: 85px;
+	color: #737373;
+}
+.three .content{
+	margin-left: 100px;
+	margin-top: 50px;
+}
+.three .content p{
+	margin-bottom: 5px;
+}
+.three .content h1{
+	margin-bottom: 30px;
+	color: #D3C0A0;
+	text-align: left;
+}
+.three .content .des{
+	
+	font-size: 23px;	
+}
+.four{
+	padding-top: 85px;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 85px;
+}
+.four h1{
+	text-align: center;
+	color: #000000;
+	margin-bottom: 85px;
+}
+.four img{
+	height: 242px;
+	width: 242px;
+}
+.downDisplay {
+    height: 100px;
+    background-color: rgba(45, 45, 46, 0);
+    margin-top: 0px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.downDisplay button{
+	background-color: #00BBFE; border: 0;
+	width: 200px;
+	height: 50px;
+	font-size: 18px;
+}
+.mobileimg{
+	display: none;
+}
+.bgPattern{
+	background-color: rgba(1,1,1,0);
+}
+@media only screen and (max-width: 767px){
+	.videoSec h1 {
+	    font-size: 20px;
+	    margin-top: 60px;
+	}
+	.one{
+		padding-bottom: 0;
+	}
+	.one .content{
+		margin-left: 0px;
+	}
+	.one .content h1{
+		font-size: 24px;
+	}
+	.one .content .des{
+		font-size: 18px;
+	}
+	.two{
+		padding-bottom: 0;
+	}
+	.two .content{
+		margin-left: 0px;
+	}
+	.two .content h1{
+		font-size: 24px;
+	}
+	.two .content .des{
+		font-size: 18px;
+	}
+	.three .content{
+		margin-left: 0px;
+	}
+	.three .content h1{
+		font-size: 24px;
+	}
+	.three .content .des{
+		font-size: 18px;
+	}
+	.four img{
+		height: 170px;
+		width: 170px;
+		margin-bottom: 20px;
+	}
+	.mobileimg{
+		display: block;
+		width: 100%;
+	}
+	.pcimg{
+		display: none;
+	}
+}

@@ -1,0 +1,148 @@
+.vCenter {
+    text-align:center; 
+    padding-left: 0px;
+}
+.videoSec h1 {
+    color: #151515;
+    margin-top: 90px;
+    font-size: 50px;
+}
+.videoSec .des {
+    color: #949494;
+}
+.one{
+	padding-top: 85px;
+	padding-bottom: 85px;
+	color: #737373;
+}
+.one .content{
+	margin-left: 100px;
+	margin-top: 150px;
+}
+.one .content p{
+	margin-bottom: 5px;
+}
+.one .content h3{
+	margin-bottom: 30px;
+	color: #000000;
+}
+.one .content .des{	
+	font-size: 16px;	
+}
+.two{
+	padding-bottom: 85px;
+	color: #737373;
+}
+.two .content{
+	margin-left: 100px;
+	margin-top: 150px;
+}
+.two .content p{
+	margin-bottom: 5px;
+}
+.two .content h3{
+	margin-bottom: 30px;
+	color: #000000;
+}
+.two .content .des{
+	
+	font-size: 16px;	
+}
+.three{
+	background-color: #EEE;
+}
+.three .dbmoreItem {
+    padding-bottom: 25px;
+}
+.three .texing1 {
+    background-color: #FFFFFF;
+    min-height: 420px;
+    border: 1px #F3F3F3 solid;
+    box-shadow: 0 0 8px rgba(141,141,140,.2);
+    -webkit-box-shadow: 0 0 8px rgba(141,141,140,.2);
+    -moz-box-shadow: 0 0 8px rgba(141,141,140,.2);
+}
+.three .texing1 img {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.three .gongneng-name {
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 10px;
+    color: #000000;
+}
+.three .gongneng-span-name {
+    padding: 10px 20px 20px 20px;
+    max-width: 518px;
+}
+.three  .span-name2 {
+    color: #737373;
+    font-size: 15px;
+    line-height: 28px;
+}
+.three h2{
+	 margin-top: 65px;
+	 margin-bottom: 55px;
+	 text-align: center;
+	 color: #000000;
+
+}
+
+.downDisplay {
+    height: 100px;
+    background-color: rgba(45, 45, 46, 0);
+    margin-top: 0px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.downDisplay button{
+	background-color: #00BBFE; border: 0;
+	width: 200px;
+	height: 50px;
+	font-size: 18px;
+}
+.downDisplay button:hover{
+	background-color: #07a9e2;
+}
+.bgPattern{
+	background-color: rgba(1,1,1,0);
+}
+@media only screen and (max-width: 767px){
+	.one{
+		padding-bottom: 10px;
+	}
+	.one .content{
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	.one img{
+		display: none;
+	}
+	.one p{
+		font-size: 14px;
+		margin-bottom: 1px;
+	}
+	.two{
+	    padding-top: 10px;
+	}
+	.two .content{
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	.two img{
+		width: 90%;
+	}
+	.two p{
+		font-size: 14px;
+		margin-bottom: 1px;
+	}
+	.videoSec h1 {
+	    font-size: 20px;
+	    margin-top: 60px;
+	}
+	.downDisplay button{
+		width: 150px;
+	}
+}

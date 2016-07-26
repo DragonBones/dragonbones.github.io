@@ -1,0 +1,234 @@
+.videoSec {
+	position: relative;
+	background: url() no-repeat;
+	background-size: cover;
+    height: 860px;
+}
+.vCenter {
+    text-align:center; 
+    padding-left: 0px;
+}
+.videoSec h1 {
+    color: #000;
+    font-size: 50px;
+    padding-bottom: 25px;
+}
+.videoSec .banner{
+	width: 100%;
+}
+.videoSec .des {
+    color: #FFFFFF;
+}
+.videoSec .videoCon {
+     z-index: 1;
+}
+.videoSec .tableDisplay {
+    height:auto;
+    margin-top: 250px;
+}
+.videoSec .videoCon .downBtnGroup {
+     border-bottom: 1px solid #E47935;
+     width: 500px;
+	 display: inline-block;
+}
+.videoSec .videoCon .downBtnGroup a{
+     width: 120px;
+     line-height: 30px;
+     border: 1px solid #E47935;
+     border-bottom: 0;
+     display: inherit;
+     background-color: rgba(1,1,1,0);
+     color: #737373;
+}
+.videoSec .videoCon .downBtnGroup a:hover{
+     color: #FFF;
+     border: 1px solid #F88944;
+     border-bottom: 0;
+     background-color: #F88944;
+}
+.videoSec .videoCon .downBtnGroup a:nth-child(1){
+     border-right: 0;
+ 	margin-right: -5px;
+}
+.videoSec .videoCon .downBtnGroup .active{
+     color: #FFF;
+     border: 1px solid #F88944;
+     border-bottom: 0;
+     background-color: #F88944;
+     cursor:default;
+}
+.videoSec .videoCon .downBtn{
+	margin-top: 20px;
+}
+.videoSec .videoCon .downBtn a:nth-child(2){
+    margin-left: 55px;
+}
+.videoSec .videoCon .downBtn a button{
+	width: 200px;
+	height: 60px;
+	line-height: 50px;
+	font-size: 24px;
+	background-color: #f78944;
+	border: 1px solid #f78944;
+	color: #FFF;
+}
+.videoSec .videoCon .downBtn a button:hover{
+	border: 1px solid #f67943;
+	background-color: #f67943;
+}
+.hdownBtn{
+	margin: 10px 0px 10px 0;
+}
+.hdownBtn a{
+	color: #999999;
+}
+.hdownBtn a:hover{
+	color: #3E3D3D;
+}
+.videoSec .videoCon2 {
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-image: url(../img/download/banner2.png);
+    background-repeat:no-repeat;
+    background-position-x : center;
+    background-position-y: -2px;
+	height: 250px;
+}
+.one{
+	background: #FBFBFB;
+	padding-top: 65px;
+	padding-bottom: 65px;
+	color: #737373;
+	text-align: center;
+}
+.one h1{
+	text-align: center;
+	color: #000000;
+	margin: 25px 0 25px 0;
+}
+.one .content{
+	margin-top: 0px;
+}
+
+.one .content .des{	
+	font-size: 22px;	
+}
+.one a button{
+	width: 360px;
+	height: 70px;
+	line-height: 60px;
+	font-size: 18px;
+	background-color: #31cb5d;
+	border: 1px solid #31cb5d;
+	color: #FFF;
+}
+.one a button:hover{
+	background-color: #2bb853;
+	border: 1px solid #2bb853;
+}
+.two{
+	
+	padding-top: 65px;
+	padding-bottom: 65px;
+	color: #737373;
+	text-align: center;
+	background-image: url(../img/download/two-wl.png);	
+}
+.two a{
+	color: #737373;
+}
+.two a:hover{
+	color: #A7A7A7;
+}
+.two h1{
+	text-align: center;
+	color: #000000;
+	margin: 25px 0 25px 0;
+}
+.two h4{
+	margin-bottom: 40px;
+}
+.two .content .des{	
+
+	font-size: 18px;
+	border: 1px solid #E5E5E5;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    border-radius:5px;   
+	background-color: #FCFCFC;
+	padding: 90px 90px 50px 90px;
+
+    text-align: -webkit-center;
+}
+.two .content .des div{	
+
+	margin-left: 50px;
+	text-align: left;
+	width: 630px;
+	
+}
+.two .content .des hr{	
+
+	margin: 40px 0 40px 0;
+}
+#final{
+	display: none;
+}
+.bgPattern{
+	background-color: rgba(1,1,1,0);
+}
+@media only screen and (max-width: 767px){
+	.videoSec .tableDisplay {
+	    margin-top: 50px;
+	}
+	.videoSec {
+	    height: auto;
+	}
+	.videoSec h1 {
+        font-size: 16px;
+	}
+	.videoSec .videoCon .downBtnGroup {
+	     
+	     width: 100%;
+	}
+	.videoSec .videoCon .downBtnGroup a{
+	     width: 120px;
+	     line-height: 30px;
+	     border: 1px solid #999999;
+	     border-bottom: 0;
+	     display: inherit;
+	     background-color: #FFF;
+	     color: #787878;
+	}
+	.videoSec .videoCon .downBtn a button{
+		width: 150px;
+		height: 50px;
+		line-height: 40px;
+		font-size: 14px;
+	}
+	.videoSec .banner{
+		height: 430px;
+		width: 100%;
+	}
+	.videoSec .videoCon2 {
+	    background-size: cover;
+	    background-position-y: 135px;
+	}
+	.one a button {
+	    width: 320px;
+	    height: 70px;
+	    font-size: 16px;
+	}
+	.two .content .des {
+	    padding: 20px 20px 20px 20px;
+	    font-size: 18px;
+	}
+	.two .content .des div {
+	    margin-left: 0px;
+	    text-align: left;
+	    width: 100%;
+	}
+}
