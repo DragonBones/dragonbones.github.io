@@ -111,6 +111,7 @@ header .logo {
 
 header .logo img {
     max-width: 106%;
+    margin-bottom: 3px;
 }
 
 header nav {
