@@ -29,6 +29,10 @@
 .one .content .des{	
 	font-size: 16px;	
 }
+.one .oneimg1{
+	display: none;
+	text-align: center;
+}
 .two{
 	padding-bottom: 85px;
 	color: #737373;
@@ -123,6 +127,10 @@
 	.one p{
 		font-size: 14px;
 		margin-bottom: 1px;
+	}
+	.one .oneimg1{
+		display: block;
+		width: 75%;
 	}
 	.two{
 	    padding-top: 10px;

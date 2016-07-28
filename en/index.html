@@ -47,13 +47,13 @@
 							<a href="animation.html">ANIMATION</a>
 						</li>
 						<li>
-							<a href="manga.html">MANGA</a>
+							<a href="comic.html">COMIC</a>
 						</li>
 						<li>
 							<a href="download.html">DOWNLOAD</a>
 						</li>
 						<li>
-							<a target="_blank" href="http://edn.egret.com/cn/docs/page/364" target="_parent">HELP</a>
+							<a target="_blank" href="http://edn.egret.com/cn/docs/page/364" target="_parent">SUPPORT</a>
 						</li>
 						<li>
 							<a target="_blank" href="http://forum.starling-framework.org/forum/dragon-bones" target="_parent">BBS</a>
@@ -108,7 +108,7 @@
 					</div>
 					<div class="col-xs-12" style="text-align: right;">
 						<div style="margin-top: 302px;"></div>
-						<a href="manga.html">
+						<a href="comic.html">
 						<h3>动漫解决方案</h4>
 						<p>独创可交互动态漫画编辑器模式</p>
 						<p>无需动画基础，轻松实现丰富特效</p>
@@ -136,7 +136,7 @@
 					</div>
 					<div class="col-md-3" style="    padding-left: 17px;">
 						<div style="margin-top: 180px;"></div>
-						<a href="manga.html">
+						<a href="comic.html">
 						<h3>动漫解决方案</h4>
 						<p>独创可交互动态漫画编辑器模式。</p>
 						<p>无需动画基础，轻松实现丰富特效。</p>
@@ -386,6 +386,20 @@
 		}, 100);
 		$('.slider-video').trigger('play');
 	});
+	
+	$(".slider-video").on("pause", function(e) {
+			showVideo();
+	});
+	$(".slider-video").on("ended", function(e) {
+			showVideo();
+	});
+	
+	function showVideo(){
+			$(".vCenter").show();
+			$(".downDisplay").show();
+			$(".headerDark").show();
+	}
+	
 	$(".tableDisplay").on("click", function(e) {
 		if($(".vCenter").is(":hidden")) {
 			$(".vCenter").show();
