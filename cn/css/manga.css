@@ -35,6 +35,7 @@
 }
 .one .content .des{	
 	font-size: 23px;	
+	width: 328px;
 }
 .two{
 	background: #FBFBFB;
@@ -56,6 +57,7 @@
 .two .content .des{
 	
 	font-size: 23px;	
+	width: 328px;
 }
 .three{
 	background: #FBFBFB;
@@ -76,7 +78,8 @@
 }
 .three .content .des{
 	
-	font-size: 23px;	
+	font-size: 23px;
+	width: 328px;	
 }
 .four{
 	padding-top: 85px;
