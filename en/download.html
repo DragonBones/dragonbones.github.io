@@ -73,7 +73,7 @@
 							<div class="vCenter">
 									<h1>Download DragonBones Pro for FREE</h1>
 									<h1>Integrated Animation Creative Platform, Support Windows and Mac</h1>
-									<div class="downBtnGroup">
+									<div class="downBtnGroup" style="display: none;">
 										<a id='final_Btn'  href="javascript:void(0);">稳定版 v4.6.1</a>
 										<a id='prerelease_Btn'  href="javascript:void(0);" class="active">抢鲜版 v4.6.1</a>
 									</div>
@@ -257,6 +257,8 @@ $('.downBtnGroup a').on('click',function(){
 });
 ajaxJson();
 function ajaxJson(){
+	var prereleaseV = "";
+	var finalV = "";
 	$.getJSON('json/down.json',function(data){
 		for(var i=0;i<data.prerelease.length;i++){
 			var item = $('#prerelease').find('[sys='+data.prerelease[i].sys+']')[0];
@@ -271,6 +273,11 @@ function ajaxJson(){
 				$(item).attr('href',data.final[i].url);
 				$('#final_Btn').text('Stable v'+data.final[i].v);
 			}
+		}
+		if(prereleaseV==finalV){
+			$(".downBtnGroup").hide();
+		}else{
+			$(".downBtnGroup").show();
 		}
 	});
 }
