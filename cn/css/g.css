@@ -363,7 +363,7 @@ header nav ul li a {
 .footer1{
 	padding-top: 85px;
 	padding-bottom: 5px;
-	background-color: #121F27;
+	background-color: #040404;
 	
 }
 .footer1 .des p{
@@ -384,7 +384,7 @@ header nav ul li a {
 }
 
 .footer2{
-	background-color: #121F27;
+	background-color: #040404;
 	line-height: 70px;
 	text-align: center;
 	font-size: 16px;
@@ -428,8 +428,7 @@ margin:0px auto;
 .oneFeature-mobile{display: none;}
 
 .what, .who, .getStarted {
-	padding-top: 65px;
-	padding-bottom: 105px;
+
     text-align: center;
     color: #4C4C4E;
 }
@@ -479,76 +478,72 @@ margin:0px auto;
     text-transform: none;
     margin-bottom: 1.25em;
 }
-.bx-wrapper img {
-    margin: 0 auto;
+.carousel-caption {
+    right: inherit;
+    left: 10%;
+    top: 24%;
+    padding-bottom: 30px;
+    text-align: left;
+    color: #FFFFFF;
 }
-.bx-wrapper .bx-controls-direction a {
-    position: absolute;
-    top: 34%;
-    outline: 0;
+.carousel-caption h1{
+	font-size: 2.25em;
+	position: absolute;
+	width: 200px;
+}
+.carousel-caption h3{
+    font-size: 1.1em;
+	position: absolute;
+	top: 80px;
+	width: 360px;
+}
+.carousel-caption h4{
+	margin-top: 30px;
+	position: absolute;
+	width: 250px;
+	top: 130px;
+}
+.carousel-caption h4 .alink {
+    font-size: 20px;
+}
+.carousel-control img{
+	width: 50px;
+	height: 50px;	
+}
+.carousel-control.left{
+	width: 40px;
+    right: 160px;
+    left: inherit;
+    height: 0px;
+    bottom: 115px;
+    top: inherit;
+}
+.carousel-control.right{
     width: 40px;
-    height: 81px;
-    text-indent: -9999px;
-    z-index: 9999;
+    right: 90px;
+    left: inherit;
+    height: 0px;
+    bottom: 115px;
+    top: inherit;
 }
-
-.bx-wrapper .bx-pager {
-    text-align: center;
-    font-size: .85em;
-    font-family: Arial;
-    font-weight: 700;
-    color: #cbcbcb
+.shard {
+    width: 900px;
+    height: 2000px;
+    background: #222c37;
+    background: rgba(34,44,55,0.7);
+    position: absolute;
+    top: -170px;
+    left: 190px;
+    z-index: 1;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: top right;
+    -moz-transform-origin: top right;
+    transform-origin: top right;
 }
-
-.bx-wrapper .bx-controls-auto .bx-controls-auto-item,.bx-wrapper .bx-pager .bx-pager-item {
-    display: inline-block
-}
-
-.bx-wrapper .bx-pager.bx-default-pager a {
-    background: #cbcbcb;
-    text-indent: -9999px;
-    display: block;
-    width: 14px;
-    height: 14px;
-    border: 2px solid #f6f6f6;
-    margin: 0 5px;
-    outline: 0;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 10px;
-    -webkit-transition: .3s all ease-in;
-    -moz-transition: .3s all ease-in;
-    -o-transition: .3s all ease-in;
-    transition: .3s all ease-in
-}
-.bx-wrapper .bx-next:focus, .bx-wrapper .bx-next:hover {
-    background-position: inherit; 
-}
-.bx-wrapper .bx-pager.bx-default-pager a:hover {
-    background: #00cda2
-}
-
-.bx-wrapper .bx-pager.bx-default-pager a.active {
-    background: #fff;
-    border: 3px solid #00cda2;
-    width: 14px;
-    height: 14px
-}
-.bx-wrapper .bx-prev {
-    left: 0;
-    background: url(../img/left.png) no-repeat;
-}
-.bx-wrapper .bx-prev:hover {
-    right: 0;
-    background: url(../img/leftover.png) no-repeat;
-}
-.bx-wrapper .bx-next {
-    right: 0;
-    background: url(../img/right.png) no-repeat;
-}
-.bx-wrapper .bx-next:hover {
-    right: 0;
-    background: url(../img/rightover.png) no-repeat;
+.demoWin{
+	cursor: pointer;
 }
 @media only screen and (max-width: 767px){
 	body{
@@ -634,6 +629,41 @@ margin:0px auto;
 	}
 	.sliderImage {
     width: 100%!important;}
+    .carousel-caption{
+	    -moz-transform: scale(0.7,0.7);
+	    -webkit-transform: scale(0.7,0.7);
+	    -o-transform: scale(0.7,0.7);
+	    transform: scale(0.7,0.7);
+	    right: inherit;
+	    left: 5%;
+	    top: -10px;
+	    padding-bottom: 30px;
+	    text-align: left;
+	    color: #FFFFFF;
+    }
+	.carousel-control.left {
+	    width: 40px;
+	    right: 80px;
+	    left: inherit;
+	    height: 0px;
+	    bottom: 57px;
+	    top: inherit;
+	}
+	.carousel-control.right {
+	    width: 40px;
+	    right: 20px;
+	    left: inherit;
+	    height: 0px;
+	    bottom: 57px;
+	    top: inherit;
+	}
+	.carousel-caption h3 {
+	    width: 223px;
+	}
+	.shard{
+		width: 263px;
+    	height: 960px
+	}
 }
 
 @media (min-width: 992px)

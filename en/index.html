@@ -10,12 +10,9 @@
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<title>DragonBones Offical Website</title>
 		<link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/jquery.bxslider.min.css" rel="stylesheet">
 		<link href="css/g.css" rel="stylesheet">
 		<style>
-			#mobile_popiframe{
 
-			}
 		</style>
 	</head>
 
@@ -31,10 +28,21 @@
 				<div class="authentication">
 					<ul>
 						<li>
-						</li>
-						<li>
 							<a href="/cn/index.html">中文</a>&nbsp;/&nbsp;
 							<a href="/en/index.html" style="color:#FFF;">English</a>
+						</li>
+						<li style="margin-top: 10px;">
+							<style>
+							.octicon-mark-github{
+							    display: inline-block;
+							    vertical-align: text-top;
+							    fill: currentColor;
+							    padding-bottom: 2px;
+							}
+							</style>
+							<a href="https://github.com/DragonBones/" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+							      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -148,61 +156,54 @@
 				</div>
 			</section>
 			<section class="what">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
-						<div class="col-sm-12">
-							<h2>Demos</h2>
-							<p>
-								
-							</p>
-						</div>
-					</div>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators" style="display: none;">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
 
-					<div class="row">
-						<!-- Slider Stuff goes here -->
-						<div class="bx-wrapper">
-							<div class="bx-viewport">
-								<ul class="whatSlider" >
-									<li class="bx-clone">
-										<div class="sliderImage">
-											<span class="demoWin" urlw='480' urlh='600' url='http://sedn.egret.com/examples/dbdemo_1.4/release/index.html'><img alt="" class="img-responsive"  src="img/demo/03(1).png"></span>
-										</div>
-										<div class="sliderInfo">
-											<h3>&nbsp;</h3>
-											<p>
-												
-											</p>
-										</div>
-									</li>
-									<li class="bx-clone">
-										<div class="sliderImage">
-											<span class="demoWin" urlw='480' urlh='600' url='http://sedn.egret.com/examples/tcldemo_5/release/index.html'><img alt="" class="img-responsive"  src="img/demo/01(1).png"></span>
-										</div>
-										<div class="sliderInfo">
-											<h3>&nbsp;</h3>
-											<p>
-												
-											</p>
-										</div>
-									</li>
-									<li class="bx-clone">
-										<div class="sliderImage">
-											<span class="demoWin" urlw='480' urlh='600' url='http://edn.egret.com/cn/example/page/examples/1/160-db-mech/bin-release/web/001/index.html?v=1'><img alt="" class="img-responsive"  src="img/demo/02(1).png"></span>
-										</div>
-										<div class="sliderInfo">
-											<h3>&nbsp;</h3>
-											<p>
-												
-											</p>
-										</div>
-									</li>
-								</ul>
-								<p>
-									Click picture to play
-								</p>
-							</div>
-							
-						</div>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+  	<div class="shard"></div>
+  	<div>
+		<div class="carousel-caption">
+        <h1>示例推荐</h1>
+        <h3>我们制作了一些非常简单的示例用于展示游戏性与互动体验。</h3>
+        <h4><span class="demoWin alink">观看当前示例 &gt;</span></h4>
+      	</div>
+  	</div>
+    <div class="item active" urlw='480' urlh='600' url='http://sedn.egret.com/examples/dbdemo_1.4/release/index.html'>
+      <img src="img/demo/1.jpg" style="    width: 100%;"/>
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+    <div class="item"urlw='480' urlh='600' url='http://edn.egret.com/cn/example/page/examples/1/160-db-mech/bin-release/web/001/index.html?v=1'>
+      <img src="img/demo/2.jpg" style="    width: 100%;"/>
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+    <div class="item" urlw='480' urlh='600' url='http://sedn.egret.com/examples/tcldemo_5/release/index.html'>
+      <img src="img/demo/3.jpg" style="    width: 100%;"/>
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <img src="img/left.png"  />
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <img src="img/right.png"  />
+  </a>
+</div>
 					</div>
 				</div>
 			</section>
@@ -317,7 +318,7 @@
                                 <a class="addthis_counter addthis_bubble_style"></a>
                                 </div>
                                 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-                                <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50879ffb6b4eb16f"></script>
+                                <script async="async" type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50879ffb6b4eb16f"></script>
                         		<style>
                             		.addthis_counter.addthis_bubble_style a.addthis_button_expanded{
                             			color: #000000;
@@ -329,21 +330,7 @@
 					<div class="col-md-12" style="margin: 45px 0 45px 0; font-size:16px; color: #c1c1c1; border-bottom: 1px solid #000;    border-bottom: 1px solid #353535;line-height: 2">PARTNERS</div>
 					<div class="col-md-12">
 						<div class="footer1hzhb">
-							<img src="img/hzhb/1.png" />
-							<img src="img/hzhb/2.png" />
-							<img src="img/hzhb/3.png" />
-							<img src="img/hzhb/4.png" />
-							<img src="img/hzhb/5.png" />
-							<img src="img/hzhb/6.png" />
-							<img src="img/hzhb/7.png" />
-							<img src="img/hzhb/8.png" />
-							<img src="img/hzhb/9.png" />
-							<img src="img/hzhb/10.png" />
-							<img src="img/hzhb/11.png" />
-							<img src="img/hzhb/12.png" />
-							<img src="img/hzhb/13.png" />
-							<img src="img/hzhb/14.png" />
-							<img src="img/hzhb/15.png" />
+							<img style="width: 100%;" src="img/hzhb/partners.jpg" />
 						</div>
 					</div>
 
@@ -362,7 +349,6 @@
 <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="//cdn.bootcss.com/html5media/1.1.8/html5media.js"></script>
 <script src="js/jquery.typetype.min.js"></script>
-<script src="js/jquery.bxslider.min.js"></script>
 <script src="js/common.js"></script>
 <script src="js/html5.js"></script>
 <script src="js/jquery.color-rgba-patch.js"></script>
@@ -370,12 +356,13 @@
 <script type="text/javascript">
 
 	$(".demoWin").click(function() {
+		var item = $('.item.active')[0];
 			if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)) {
-				$(this).attr("urlw", document.body.clientWidth - 50);
-				$(this).attr("urlh", $(window).height());
+				$(item).attr("urlw", document.body.clientWidth - 50);
+				$(item).attr("urlh", $(window).height());
 			}
-			var url = $(this).attr("url");
-			popWin.showWin($(this).attr("urlw"), $(this).attr("urlh"), -30, url);
+			var url = $(item).attr("url");
+			popWin.showWin($(item).attr("urlw"), $(item).attr("urlh"), -30, url);
 	})
 
 	$(".btnPlay").on("click", function(e) {
@@ -439,33 +426,6 @@
 	}
 
 	
-	
-$(function() {
-    $(".animate").hide().delay(2e3).fadeIn("slow"),
-    $(".whatSlider").bxSlider({
-        infiniteLoop: !0,
-        hideControlOnEnd: !0,
-        adaptiveHeight: !0
-    })
-}),
-$(window).bind("load", function() {
-    var a = function() {
-        $(".bx-pager").each(function(a, b) {
-            var c = $(b).parent().parent().find(".sliderImage img").height();
-            $(this).css({
-                top: c + 12
-            })
-        })
-    }
-    ;
-    a(),
-    $(window).resize(function() {
-        a()
-    })
-});
-
-
-
 </script>
 <script>
 	var _hmt = _hmt || [];
