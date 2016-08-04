@@ -85,17 +85,17 @@
 									<h1>Download DragonBones Pro for FREE</h1>
 									<h1>Integrated Animation Creative Platform, Support Windows and Mac</h1>
 									<div class="downBtnGroup" style="display: none;">
-										<a id='final_Btn'  href="javascript:void(0);">稳定版 v4.6.1</a>
-										<a id='prerelease_Btn'  href="javascript:void(0);" class="active">抢鲜版 v4.6.1</a>
+										<a id='final_Btn'  href="javascript:void(0);">Stable</a>
+										<a id='prerelease_Btn'  href="javascript:void(0);" class="active">Latest</a>
 									</div>
 									
 									<div id="final" class="downBtn">
-										<a sys='win' href=""><button type="button" class="btn btn-success"><img style="margin-bottom: 8px;" src="img/download/downicon.png"> Windows</button></a>
-										<a sys='mac' href=""><button type="button" class="btn btn-success"><img style="margin-bottom: 8px;" src="img/download/downicon.png"> Mac</button></a>
+										<a sys='win' href=""><button type="button" class="btn btn-success"><img style="margin-bottom: 8px;" src="img/download/downicon.png"> Windows v<span></span></button></a>
+										<a sys='mac' href=""><button type="button" class="btn btn-success"><img style="margin-bottom: 8px;" src="img/download/downicon.png"> Mac v<span></span></button></a>
 									</div>
 									<div id="prerelease" class="downBtn">
-										<a sys='win' href=""><button type="button" class="btn btn-success"><img style="margin-bottom: 8px;" src="img/download/downicon.png"> Windows</button></a>
-										<a sys='mac' href=""><button type="button" class="btn btn-success"><img style="margin-bottom: 8px;" src="img/download/downicon.png"> Mac</button></a>
+										<a sys='win' href=""><button type="button" class="btn btn-success"><img style="margin-bottom: 8px;" src="img/download/downicon.png"> Windows v<span></span></button></a>
+										<a sys='mac' href=""><button type="button" class="btn btn-success"><img style="margin-bottom: 8px;" src="img/download/downicon.png"> Mac v<span></span></button></a>
 									</div>
 									<p class="hdownBtn"><a target="_blank" href="http://www.egret.com/downloads/dragonbones.html">Download old version</a></p>
 							</div>
@@ -261,14 +261,18 @@ function ajaxJson(){
 			var item = $('#prerelease').find('[sys='+data.prerelease[i].sys+']')[0];
 			if(item){
 				$(item).attr('href',data.prerelease[i].url);
-				$('#prerelease_Btn').text('Latest v'+data.prerelease[i].v);
+				$(item).find('span').text(data.prerelease[i].v);
+				//$('#prerelease_Btn').text('最新版 v'+data.prerelease[i].v);
+				prereleaseV=data.prerelease[i].v;
 			}
 		}
 		for(var i=0;i<data.final.length;i++){
 			var item = $('#final').find('[sys='+data.final[i].sys+']')[0];
 			if(item){
 				$(item).attr('href',data.final[i].url);
-				$('#final_Btn').text('Stable v'+data.final[i].v);
+				$(item).find('span').text(data.final[i].v);
+				//$('#final_Btn').text('稳定版 v'+data.final[i].v);
+				finalV=data.final[i].v;
 			}
 		}
 		if(prereleaseV==finalV){

@@ -85,17 +85,17 @@
 									<h1>免费下载 DragonBones Pro </h1>
 									<h1>集成动画创作平台，支持 Windows 和 Mac</h1>
 									<div class="downBtnGroup" style="display: none;">
-										<a id='final_Btn'  href="javascript:void(0);">稳定版 v4.6.1</a>
-										<a id='prerelease_Btn'  href="javascript:void(0);" class="active">抢鲜版 v4.6.1</a>
+										<a id='final_Btn'  href="javascript:void(0);">稳定版</a>
+										<a id='prerelease_Btn'  href="javascript:void(0);" class="active">最新版</a>
 									</div>
 									
 									<div id="final" class="downBtn">
-										<a sys='win' href=""><button type="button" class="btn btn-success"><img style="margin-bottom: 8px;" src="img/download/downicon.png"> Windows 版</button></a>
-										<a sys='mac' href=""><button type="button" class="btn btn-success"><img style="margin-bottom: 8px;" src="img/download/downicon.png"> Mac 版</button></a>
+										<a sys='win' href=""><button type="button" class="btn btn-success"><img style="margin-bottom: 8px;" src="img/download/downicon.png"> Windows v<span></span></button></a>
+										<a sys='mac' href=""><button type="button" class="btn btn-success"><img style="margin-bottom: 8px;" src="img/download/downicon.png"> Mac v<span></span></button></a>
 									</div>
 									<div id="prerelease" class="downBtn">
-										<a sys='win' href=""><button type="button" class="btn btn-success"><img style="margin-bottom: 8px;" src="img/download/downicon.png"> Windows 版</button></a>
-										<a sys='mac' href=""><button type="button" class="btn btn-success"><img style="margin-bottom: 8px;" src="img/download/downicon.png"> Mac 版</button></a>
+										<a sys='win' href=""><button type="button" class="btn btn-success"><img style="margin-bottom: 8px;" src="img/download/downicon.png"> Windows v<span></span></button></a>
+										<a sys='mac' href=""><button type="button" class="btn btn-success"><img style="margin-bottom: 8px;" src="img/download/downicon.png"> Mac v<span></span></button></a>
 									</div>
 									<p class="hdownBtn"><a target="_blank" href="http://www.egret.com/downloads/dragonbones.html">历史版本下载</a></p>
 							</div>
@@ -261,7 +261,8 @@ function ajaxJson(){
 			var item = $('#prerelease').find('[sys='+data.prerelease[i].sys+']')[0];
 			if(item){
 				$(item).attr('href',data.prerelease[i].url);
-				$('#prerelease_Btn').text('最新版 v'+data.prerelease[i].v);
+				$(item).find('span').text(data.prerelease[i].v);
+				//$('#prerelease_Btn').text('最新版 v'+data.prerelease[i].v);
 				prereleaseV=data.prerelease[i].v;
 			}
 		}
@@ -269,7 +270,8 @@ function ajaxJson(){
 			var item = $('#final').find('[sys='+data.final[i].sys+']')[0];
 			if(item){
 				$(item).attr('href',data.final[i].url);
-				$('#final_Btn').text('稳定版 v'+data.final[i].v);
+				$(item).find('span').text(data.final[i].v);
+				//$('#final_Btn').text('稳定版 v'+data.final[i].v);
 				finalV=data.final[i].v;
 			}
 		}
