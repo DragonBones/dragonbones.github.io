@@ -1,0 +1,29 @@
+---
+permalink: /404.html
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>404</title>
+	</head>
+	<body>
+	<script>
+		(function(){
+		    var type=navigator.appName;
+		    if (type=="Netscape"){
+		        var lang = navigator.language;
+		    }
+		    else{
+		        var lang = navigator.userLanguage;
+		    }
+		    var lang = lang.substr(0,2)
+		    if (lang !== "zh"){
+		        window.location.href="en/index.html";
+		    }else{
+		        window.location.href="cn/index.html";
+		    }
+		})();
+	</script>
+	</body>
+</html>
