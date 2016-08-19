@@ -222,7 +222,12 @@ header nav ul li a {
 	margin-top: 25px;
 	margin-bottom: 45px;
 	color: #f5f6f7;
-	font-size: 18px;
+	font-size: 20px;
+}
+.vCenter .des  p {
+    font-size: 20px;
+    line-height: 35px;
+    margin: 0 0 0px;
 }
 
 .videoSec h1 {
