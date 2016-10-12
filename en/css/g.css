@@ -144,6 +144,7 @@ header nav ul li a {
 }
 .btnPlay a {
 	color: #5fdab5;
+	font-size: 18px;
 }
 .authentication {
 	float: right;
