@@ -138,10 +138,7 @@ header nav ul li a {
 	line-height: 1;
 	padding: 4px;
 }
-.btnPlay a {
-	color: #5fdab5;
-	font-size: 18px;
-}
+
 .btnPlay img{
 	width: 35px;
 	cursor: pointer;

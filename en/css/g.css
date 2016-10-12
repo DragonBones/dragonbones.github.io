@@ -142,10 +142,7 @@ header nav ul li a {
 	width: 35px;
 	cursor: pointer;
 }
-.btnPlay a {
-	color: #5fdab5;
-	font-size: 18px;
-}
+
 .authentication {
 	float: right;
 	margin-left: 40px;
