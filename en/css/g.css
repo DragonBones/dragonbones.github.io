@@ -1,4 +1,4 @@
-body {
+﻿body {
 	font-family: "微软雅黑","Microsoft Yahei","Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
 	font-weight: 500;
 	color: #FFF;
@@ -141,6 +141,9 @@ header nav ul li a {
 .btnPlay img{
 	width: 35px;
 	cursor: pointer;
+}
+.btnPlay a {
+	color: #5fdab5;
 }
 .authentication {
 	float: right;
