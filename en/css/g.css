@@ -673,13 +673,3 @@ margin:0px auto;
 	}
 
 }
-.friend {
-	text-align:center;
-}
-.friend a {
-	margin: 0 10px; 
-	color: #777777;
-}
-.friend a:nth-child(1) {
-	margin: 0 10px 0 0; 
-}
