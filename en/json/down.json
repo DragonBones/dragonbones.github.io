@@ -1,10 +1,10 @@
 ﻿{
     "prerelease":[
-        {"sys":"win","v":"4.9.0","url":"http://www.egret.com/api/download/index?app=DragonBonesPro&v=4.9.0&f=product&ext=exe"},
-        {"sys":"mac","v":"4.9.0","url":"http://www.egret.com/api/download/index?app=DragonBonesPro&v=4.9.0&f=product&ext=dmg"}
+        {"sys":"win","v":"4.9.5","url":"http://www.egret.com/api/download/index?app=DragonBonesPro&v=4.9.5&f=product&ext=exe"},
+        {"sys":"mac","v":"4.9.5","url":"http://www.egret.com/api/download/index?app=DragonBonesPro&v=4.9.5&f=product&ext=dmg"}
     ],
     "final":[
-        {"sys":"win","v":"4.9.0","url":"http://www.egret.com/api/download/index?app=DragonBonesPro&v=4.9.0&f=download&ext=exe"},
-        {"sys":"mac","v":"4.9.0","url":"http://www.egret.com/api/download/index?app=DragonBonesPro&v=4.9.0&f=download&ext=dmg"}
+        {"sys":"win","v":"4.9.5","url":"http://www.egret.com/api/download/index?app=DragonBonesPro&v=4.9.5&f=download&ext=exe"},
+        {"sys":"mac","v":"4.9.5","url":"http://www.egret.com/api/download/index?app=DragonBonesPro&v=4.9.5&f=download&ext=dmg"}
     ]
 }
