@@ -1,0 +1,32 @@
+body, div, html, p, span {padding:0; margin:0; box-sizing:border-box}
+body, html {background:#FFFFFF; width:100%; height:100%; font-family:Arial,Helvetica,sans-serif,"微软雅黑",Arial,Helvetica,sans-serif; font-weight:100;-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+a {text-decoration:none}
+.Dr_Main {margin:auto; position:fixed; width:100%; height:100%; color:#FFFFFF; background:#000000; left:0; top:0; right:0; bottom:0; overflow:hidden}
+.Dr_Main .Dr_Title {height:50px; line-height:50px; background-color:rgba(0,0,0,0.3); text-align:center; padding:0 10px; position:absolute;width:100%;z-index: 9}
+.Dr_Main .Dr_Title .Dr_D_Icon {position:absolute; left:0; top:0;}
+.Dr_Main .Dr_Title .Dr_D_Icon img {vertical-align:middle; margin:0 10px}
+.Dr_Main .Dr_Name {display:inline-block; height:50px}
+.Dr_Main .Dr_Name .Dr_btn {width:30px; height:30px; border-radius:50%; border:2px solid #fff; margin-top:10px; cursor:pointer; line-height:18px; position:relative}
+.Dr_Main .Dr_arrow {position:absolute; border-right:1px solid #fff; border-bottom:1px solid #fff; width:8px; height:8px; display:inline-block; top:50%}
+.Dr_Main .Dr_left {float:left}
+.Dr_Main .Dr_left div {-moz-transform:rotate(135deg); -o-transform:rotate(135deg); -webkit-transform:rotate(135deg); transform:rotate(135deg); margin-top:-4px; right:8px}
+.Dr_Main .Dr_right {float:right}
+.Dr_Main .Dr_right div {-moz-transform:rotate(-45deg); -o-transform:rotate(-45deg); -webkit-transform:rotate(-45deg); transform:rotate(-45deg); margin-top:-4px; left:8px}
+.Dr_Main .Dr_Title .Dr_Name span {text-align:center; margin:0 15px; font-size:20px; max-width:300px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; min-width:200px; display:inline-block}
+
+.Dr_Main .Dr_footer {height:145px; line-height:145px; background-color:rgba(0,0,0,0.3); position:absolute; padding:0 10px; bottom: 0; width: 100%}
+.Dr_Main .Dr_footer .Dr_Tips {padding:10px 0 10px 0; text-align:left; font-size:12px; color:#fff; line-height:20px; float:left}
+.Dr_Main .Dr_footer .Dr_footer_Title {height:60px; line-height:50px; margin:auto; max-width:300px; position:absolute; left:0; right:0; text-align:center}
+.Dr_Main .Dr_footer .Dr_footer_Title span {margin:0 15px; font-size: 20px; max-width:300px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; min-width:200px; display: inline-block}
+.Dr_Main .Dr_footer .Dr_Play {width:68PX; height:68px; border:4px solid #fff; border-radius:50%; position:absolute; margin:auto; left:0; right:0; top:60px; cursor:pointer}
+.Dr_Main .Dr_footer .Dr_Play .Dr_Play_Stop {width:0; height:0; border-top:10px solid transparent; border-left:14px solid #fff; border-bottom:10px solid transparent; position:absolute; margin:auto; top:0; left:0; right:-4px; bottom:0}
+.Dr_Main .Dr_footer .Dr_Play .Dr_Play_On {font-size:20px; font-weight:bold; width:60px; height:60px; text-align:center; line-height:60px}
+.Dr_Main .Dr_footer .Dr_Code {float:right; text-align:center; line-height:30px}
+.Dr_Main .Dr_footer .Dr_Code .Dr_C_Title {height:30px; line-height:30px; text-align:center; display:block; font-size:12px; padding-top:4px}
+.Dr_Main .Dr_footer .Dr_Code .Dr_Code_img {width:100px; height:100px; display:inline-block}
