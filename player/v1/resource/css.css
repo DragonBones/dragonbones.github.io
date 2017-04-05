@@ -1,32 +1,513 @@
-body, div, html, p, span {padding:0; margin:0; box-sizing:border-box}
-body, html {background:#FFFFFF; width:100%; height:100%; font-family:Arial,Helvetica,sans-serif,"微软雅黑",Arial,Helvetica,sans-serif; font-weight:100;-webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-a {text-decoration:none}
-.Dr_Main {margin:auto; position:fixed; width:100%; height:100%; color:#FFFFFF; background:#000000; left:0; top:0; right:0; bottom:0; overflow:hidden}
-.Dr_Main .Dr_Title {height:50px; line-height:50px; background-color:rgba(0,0,0,0.3); text-align:center; padding:0 10px; position:absolute;width:100%;z-index: 9}
-.Dr_Main .Dr_Title .Dr_D_Icon {position:absolute; left:0; top:0;}
-.Dr_Main .Dr_Title .Dr_D_Icon img {vertical-align:middle; margin:0 10px}
-.Dr_Main .Dr_Name {display:inline-block; height:50px}
-.Dr_Main .Dr_Name .Dr_btn {width:30px; height:30px; border-radius:50%; border:2px solid #fff; margin-top:10px; cursor:pointer; line-height:18px; position:relative}
-.Dr_Main .Dr_arrow {position:absolute; border-right:1px solid #fff; border-bottom:1px solid #fff; width:8px; height:8px; display:inline-block; top:50%}
-.Dr_Main .Dr_left {float:left}
-.Dr_Main .Dr_left div {-moz-transform:rotate(135deg); -o-transform:rotate(135deg); -webkit-transform:rotate(135deg); transform:rotate(135deg); margin-top:-4px; right:8px}
-.Dr_Main .Dr_right {float:right}
-.Dr_Main .Dr_right div {-moz-transform:rotate(-45deg); -o-transform:rotate(-45deg); -webkit-transform:rotate(-45deg); transform:rotate(-45deg); margin-top:-4px; left:8px}
-.Dr_Main .Dr_Title .Dr_Name span {text-align:center; margin:0 15px; font-size:20px; max-width:300px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; min-width:200px; display:inline-block}
 
-.Dr_Main .Dr_footer {height:145px; line-height:145px; background-color:rgba(0,0,0,0.3); position:absolute; padding:0 10px; bottom: 0; width: 100%}
-.Dr_Main .Dr_footer .Dr_Tips {padding:10px 0 10px 0; text-align:left; font-size:12px; color:#fff; line-height:20px; float:left}
-.Dr_Main .Dr_footer .Dr_footer_Title {height:60px; line-height:50px; margin:auto; max-width:300px; position:absolute; left:0; right:0; text-align:center}
-.Dr_Main .Dr_footer .Dr_footer_Title span {margin:0 15px; font-size: 20px; max-width:300px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; min-width:200px; display: inline-block}
-.Dr_Main .Dr_footer .Dr_Play {width:68PX; height:68px; border:4px solid #fff; border-radius:50%; position:absolute; margin:auto; left:0; right:0; top:60px; cursor:pointer}
-.Dr_Main .Dr_footer .Dr_Play .Dr_Play_Stop {width:0; height:0; border-top:10px solid transparent; border-left:14px solid #fff; border-bottom:10px solid transparent; position:absolute; margin:auto; top:0; left:0; right:-4px; bottom:0}
-.Dr_Main .Dr_footer .Dr_Play .Dr_Play_On {font-size:20px; font-weight:bold; width:60px; height:60px; text-align:center; line-height:60px}
-.Dr_Main .Dr_footer .Dr_Code {float:right; text-align:center; line-height:30px}
-.Dr_Main .Dr_footer .Dr_Code .Dr_C_Title {height:30px; line-height:30px; text-align:center; display:block; font-size:12px; padding-top:4px}
-.Dr_Main .Dr_footer .Dr_Code .Dr_Code_img {width:100px; height:100px; display:inline-block}
+body,
+html {
+    color: #fff;
+    font-weight: 100;
+    font: 80%/1.65 Verdana, "Geneva CE", lucida, 'Microsoft YaHei', sans-serif;
+}
+
+input,
+select {
+    outline: 0;
+}
+
+.db_content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+}
+
+.db_content .db_right {
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    float: right;
+    padding: 20px 0;
+    width: 260px;
+    height: 100%;
+    background: #232222;
+}
+
+.db_content .db_right .db_right_box {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #414040;
+    width: 100%;
+}
+
+.db_content .db_right .db_right_box .db_db_name {
+    margin-top: 20px;
+    padding: 0 48px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.db_content .db_right .db_right_box .db_db_name select {
+    position: relative;
+    display: block;
+    margin-top: 5px;
+    padding: 0 5px;
+    width: 162px;
+    height: 32px;
+    outline: 0;
+    border: 1px solid #414040;
+    border-radius: 0;
+    background: #1b1b1b;
+    color: #fff;
+}
+
+.db_content .db_right .db_right_box .db_db_name select option {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    display: inline-block;
+}
+
+.db_content .db_right .db_right_play {
+    padding-bottom: 05px;
+    width: 100%;
+    border-bottom: 1px solid #414040;
+}
+
+.db_content .db_right .db_right_play .db_play_title {
+    padding: 0 48px;
+    height: 56px;
+    line-height: 56px;
+}
+
+.db_content .db_right .db_right_play .db_play_btn {
+    height: 30px;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.db_content .db_right .db_right_play .db_play_btn>div {
+    position: relative;
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+}
+
+.db_content .db_right .db_right_play .db_play_btn .db_play {
+    margin: 0 20px;
+}
+
+.db_content .db_right .db_right_play .db_btn {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.db_content .db_right .db_right_play .db_play_btn .db_left_btn div {
+    right: 8px;
+    margin-top: -4px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.db_content .db_right .db_right_play .db_play_btn .db_stop_sta {
+    display: block;
+}
+
+.db_content .db_right .db_right_play .db_play_btn .db_play_sta {
+    display: none;
+}
+
+.db_content .db_right .db_right_play .db_play_btn .db_play>div:first-child {
+    position: absolute;
+    top: 0;
+    right: -3px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid #fff;
+}
+
+.db_content .db_right .db_right_play .db_play_btn .db_play>div:last-child>div {
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    width: 2px;
+    height: 14px;
+    background: #fff;
+}
+
+.db_content .db_right .db_right_play .db_play_btn .db_play>div:last-child>div:first-child {
+    left: 8px;
+}
+
+.db_content .db_right .db_right_play .db_play_btn .db_play>div:last-child>div:last-child {
+    right: 8px;
+}
+
+.db_content .db_right .db_right_play .db_play_btn .db_right_btn div {
+    right: 10px;
+    margin-top: -4px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.db_content .db_right .db_play_speed {
+    padding: 0 48px;
+}
+
+.db_content .db_right .db_play_speed .titles {
+    height: 50px;
+    line-height: 50px;
+}
+
+.db_content .db_right .db_play_speed .db_speed_operation {
+    width: 160px;
+    text-align: center;line-height: 25px;
+    font-size: 12px;overflow: hidden;
+}
+.db_content .db_right .db_play_speed .db_speed_operation .db_speed_reduce div{
+    width: 12px;height: 2px;background: #fff;margin: auto;left: 0;top: 0;bottom: 0;right: 0;
+    position: absolute;
+}
+.db_content .db_right .db_play_speed .db_speed_operation .db_speed_add div:first-child{
+    width: 2px;height: 12px;background: #fff;margin: 0 auto;margin-top: 7px;
+}
+.db_content .db_right .db_play_speed .db_speed_operation .db_speed_add div:last-child{
+    width: 12px;height: 2px;background: #fff;margin: auto;left: 0;top: 0;bottom: 0;right: 0;
+    position: absolute;
+}
+.db_content .db_right .db_play_speed .db_speed_operation span {
+    display: inline-block;
+    width: 30px;
+    float: left;
+    height: 25px;
+    text-align: center;
+    font-weight: 700!important;
+    font-size: 20px;
+    cursor: pointer;position: relative;
+}
+
+.db_content .db_right .db_play_speed .db_speed_operation>div {
+    display: inline-block;
+    float: left;
+    margin: 0 20px;
+    width: 50px;
+    height: 25px;
+    border: 1px solid #999;
+    text-align: center;
+    line-height: 25px;
+}
+
+.db_content .db_right .db_color {
+    padding: 0 48px;
+}
+
+.db_content .db_right .db_color .titles {
+    height: 40px;
+    line-height: 50px;
+}
+
+.db_content .db_right .db_color .db_select_color {
+    height: 14px;
+}
+
+.db_content .db_right .db_color .db_select_color div {
+    display: inline-block;
+    margin-right: -5px;
+    width: 34px;
+    height: 100%;
+    cursor: pointer;
+    float: left;
+}
+
+.db_content .div1 {
+    background: #fefefe;
+}
+
+.db_content .div2 {
+    background: #b6b6b6;
+}
+
+.db_content .div3 {
+    background: #757575;
+}
+
+.db_content .div4 {
+    background: #3c3c3c;
+}
+
+.db_content .div5 {
+    background: #000;
+}
+
+.db_content .db_right .db_coordinate {
+    margin-top: 10px;
+    padding: 0 48px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.db_content .db_right .db_coordinate>div {
+    float: right;
+    display: inline-block;
+    margin-top: 11px;
+    width: 40px;
+    height: 24px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.db_content .db_right .db_coordinate .db_open {
+    background: #4cd964;
+}
+
+.db_content .db_right .db_coordinate .db_open div {
+    float: right;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.db_content .db_right .db_coordinate .db_close {
+    background: #999;
+}
+
+.db_content .db_right .db_coordinate .db_close div {
+    float: left;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.db_content .db_right .db_information {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0 48px;
+    padding-top: 20px;
+    width: 100%;
+    height: 180px;
+}
+
+.db_content .db_right .db_information_t {
+    padding: 0 48px;
+    padding-top: 20px;
+    width: 100%;
+    /*height: 180px;*/
+}
+.db_content .db_right .db_information_t>div {
+    display: -webkit-box;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 20px;
+    max-height: 72px;
+    font-size: 12px;
+    line-height: 18px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+.db_content .db_right .db_information p {
+    display: block;
+    line-height: 20px;
+}
+
+.db_content .db_right .db_information>div {
+    display: -webkit-box;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 18px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+.db_content .db_right .db_information img {
+    width: 100px;
+    height: 100px;
+}
+
+.db_content .db_right_open {
+    position: fixed;
+    top: 0;bottom: 0;margin: auto;right: 226px;
+    z-index: 9999;
+    width: 34px;
+    height: 34px;
+    background: #414040;
+   
+    cursor: pointer;
+    -webkit-animation: myrotate2 .7s ease-in-out;
+    -moz-animation: myrotate2 .7s ease-in-out;
+    -ms-animation: myrotate2 .7s ease-in-out;
+    -o-animation: myrotate2 .7s ease-in-out;
+    animation: myrotate2 .7s ease-in-out;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+@-webkit-keyframes myrotate2 {
+    from {
+        -webkit-transform:  rotateY(180deg);
+    }
+    to {
+        -webkit-transform: rotateY(0deg);
+    }
+}
+
+@-moz-keyframes myrotate2 {
+    from {
+        -moz-transform:  rotateY(180deg);
+    }
+    to {
+        -moz-transform: rotateY(0deg);
+    }
+}
+
+@-ms-keyframes myrotate2 {
+    from {
+        -ms-transform:  rotateY(180deg);
+    }
+    to {
+        -ms-transform: rotateY(0deg);
+    }
+}
+
+@-o-keyframes myrotate2 {
+    from {
+        -o-transform:  rotateY(180deg);
+    }
+    to {
+        -o-transform: rotateY(0deg);
+    }
+}
+
+@keyframes myrotate2 {
+    from {
+        transform:  rotateY(180deg);
+    }
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+.db_content .db_right_open div {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: -4px;
+}
+
+.db_content .db_right_open div:first-child {
+    left: 7px;
+}
+
+.db_content  .db_right_open div:last-child {
+    left: 14px;
+}
+
+.db_content  .db_right_rotate {
+    -webkit-animation: myrotate .7s ease-in-out;
+    -moz-animation: myrotate .7s ease-in-out;
+    -ms-animation: myrotate .7s ease-in-out;
+    -o-animation: myrotate .7s ease-in-out;
+    animation: myrotate .7s ease-in-out;
+    -webkit-transform:  rotateY(180deg);
+    -moz-transform:  rotateY(180deg);
+    -o-transform:  rotateY(180deg);
+    transform:  rotateY(180deg);
+}
+
+@-webkit-keyframes myrotate {
+    from {
+        -webkit-transform: rotateY(0deg);
+    }
+    to {
+        -webkit-transform:  rotateY(180deg);
+    }
+}
+
+@-moz-keyframes myrotate {
+    from {
+        -moz-transform: rotateY(0deg);
+    }
+    to {
+        -moz-transform:  rotateY(180deg);
+    }
+}
+
+@-ms-keyframes myrotate {
+    from {
+        -ms-transform: rotateY(0deg);
+    }
+    to {
+        -ms-transform:  rotateY(180deg);
+    }
+}
+
+@-o-keyframes myrotate {
+    from {
+        -o-transform: rotateY(0deg);
+    }
+    to {
+        -o-transform:  rotateY(180deg);
+    }
+}
+
+@keyframes myrotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform:  rotateY(180deg);
+    }
+}
+
+.db_right ::-webkit-scrollbar {
+    /*隐藏滚轮*/
+    display: none;
+}
+
+.db_right :-moz-scrollbar {
+    display: none;
+}
+
+.db_right ::-webkit-scrollbar {
+    display: none;
+}
