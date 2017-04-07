@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>DragonBones Player</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="full-screen" content="true" />
+	<meta name="screen-orientation" content="portrait" />
+	<meta name="x5-fullscreen" content="true" />
+	<meta name="360-fullscreen" content="true" />
+	<style>
+        body, html {
+            padding:0; margin:0; box-sizing:border-box;
+            width:100%; height:100%;
+            background:#757575;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+	
+	<link href="http://dragonbones.github.io/player/v1/resource/css.css" rel="stylesheet" />
+	
+
+	
+	<!--modules_files_start-->
+	<script egret="lib" src="http://dragonbones.github.io/player/v1/libs/modules/egret/egret.min.js"></script>
+	<script egret="lib" src="http://dragonbones.github.io/player/v1/libs/modules/egret/egret.web.min.js"></script>
+	<script egret="lib" src="http://dragonbones.github.io/player/v1/libs/modules/tween/tween.min.js"></script>
+	<!--modules_files_end-->
+
+	<!--other_libs_files_start-->
+	<script egret="lib" src="http://dragonbones.github.io/player/v1/polyfill/promise.min.js"></script>
+	<script egret="lib" src="http://dragonbones.github.io/player/v1/libs/dragonBones/dragonBones.min.js"></script>
+	<script egret="lib" src="http://dragonbones.github.io/player/v1/libs/qrcode.min.js"></script>
+	<!--other_libs_files_end-->
+
+	<!--game_files_start-->
+	<script src="http://dragonbones.github.io/player/v1/main.min.js"></script>
+	<!--game_files_end-->
+	
+</head>
+
+<body>
+	<div id="hide" style="display: none">
+		<!--data_begin--><!--data_end-->
+		<!--resource-->
+		<img id="background" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFpJREFUeNpi/P//PwM2cPbsWSDJyMgIJJHVsDDgBZjGMTGQCGivAacfWFigUkB/E+XpP3/+UMlJkPBGdgnEbGNjY9qEEq6IR2iARD4coHGxaCBo5OBPGgABBgAvIx2JHdw/MwAAAABJRU5ErkJggg==" />
+	</div>
+	<div class="db_content">
+		<div id="dragonbones-player" class="db_left" style="position:absolute; top: 0; left: 0; float: left; width: 100%; height: 100%;">
+			<div 
+				style="margin: auto; width: 100%; height: 100%;" 
+				class="egret-player" 
+				data-entry-class="Main" 
+				data-orientation="auto" 
+				data-scale-mode="noScale" 
+				data-frame-rate="60" 
+				data-content-width="640"
+				data-content-height="1136" 
+				data-show-paint-rect="false" 
+				data-multi-fingered="2" 
+				data-show-fps="false" 
+				data-show-log="false"
+				data-show-fps-style="x:0,y:0,size:12,textColor:0xFFFFFF,bgAlpha:0.9">
+			</div>
+		</div>
+
+		<div class="db_right" style="margin-right: 0;">
+			
+			<img src="http://dragonbones.github.io/player/v1/resource/logo.png" alt="" style="width: 100%;">
+			
+			<div class="db_right_box">
+				<div class="db_db_name">
+					<div id="armatureTitleLabel">Armature</div>
+					<select id="armatureList" name="" class="db_select_n">  
+						<option value="0">Armature Name</option>
+					</select>
+				</div>
+				<div class="db_db_name">
+					<div id="animationTitleLabel">Animation</div>
+					<select id="animationList" name="" class="db_select_n"> 
+						<option value="0">Animation Name</option>
+					</select>
+				</div>
+			</div>
+			<!--动画播放-->
+			<div class="db_right_play">
+				<div id="animationControlLabel" class="db_play_title">Animation Control</div>
+				<div class="db_play_btn">
+					<div id="prevAnimationButton" class="db_left_btn">
+						<div class="db_btn"></div>
+					</div>
+					<div class="db_play">
+						<div id="playAnimationButton" class="db_stop_sta" style="display: block;">
+						</div>
+						<div id="stopAnimationButton" class="db_play_sta" style="display: none;">
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+					<div id="nextAnimationButton" class="db_right_btn">
+						<div class="db_btn"></div>
+					</div>
+				</div>
+			<div class="db_play_speed" style="margin-top:30px;">
+				<div class="db_speed_operation">
+					<span id="reduceAnimationSpeedButton" class="db_speed_reduce"><div></div></span>
+					<div id="animationSpeedLabel" class="db_speed_num">100 %</div>
+					<span id="addAnimationSpeedButton" class="db_speed_add"><div></div><div></div></span>
+				</div>
+			</div>
+			<div class="db_color">
+				<div id="backgroundColorLabel" class="titles">Background Color</div>
+				<div class="db_select_color">
+					<div class="div1"></div>
+					<div class="div2"></div>
+					<div class="div3"></div>
+					<div class="div4"></div>
+					<div class="div5"></div>
+				</div>
+			</div>
+			<div class="db_coordinate">
+				<span id="gridLabel">Show Grid</span>
+				<div id="gridEnabledButton" class="db_open">
+					<div></div>
+				</div>
+			</div>
+			<div class="db_coordinate">
+				<span id="debugLabel">Show Bone</span>
+				<div id="debugEnabledButton" class="db_close">
+					<div></div>
+				</div>
+			</div>
+			</div>
+			<!--信息-->
+			<div id="infoLabel" class="db_information_t">
+				<p>Info</p>
+				<p>Total Time: 0 s</p>
+				<div>Infomation.</div>
+			</div>
+			<div id="qrcodeGroup" class="db_information">
+				<p id="qrcodeLabel" style="margin:10px 0;"></p>
+				<div id="qrcode"></div>
+			</div>
+		</div>
+		<!--收缩按钮-->
+		<div class="db_right_open">
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<script>
+		egret.runEgret({ renderMode: "webgl", audioType: 0 });
+
+		var db_func = {
+			getViewPortHeight: function () {
+				return document.documentElement.clientHeight || document.body.clientHeight
+			},
+			getViewPortWidth: function () {
+				return document.documentElement.clientWidth || document.body.clientWidth
+			},
+			hasClass: function (elements, cName) {
+				return !!elements.className.match(new RegExp("(\\s|^)" + cName + "(\\s|$)"))
+			},
+			addClass: function (elements, cName) {
+				if (!this.hasClass(elements, cName)) {
+					elements.className += " " + cName
+				}
+			},
+			removeClass: function (elements, cName) {
+				if (typeof (cName) == "string") {
+					if (this.hasClass(elements, cName)) {
+						elements.className = elements.className.replace(new RegExp("(\\s|^)" + cName + "(\\s|$)"), "")
+					}
+				} else if (typeof (cName) == "object") {
+					for (var i = 0; i < cName.length; i++) {
+						if (this.hasClass(elements, cName[i])) {
+							elements.className = elements.className.replace(new RegExp("(\\s|^)" + cName[i] + "(\\s|$)"), "")
+						}
+					}
+				}
+			}
+		};
+
+		var getChildNodes = function (ele) {
+			var childArr = ele.children,
+				childArrTem = new Array();
+			for (var i = 0, len = childArr.length; i < len; i++) {
+				if (childArr[i].nodeType == 1) {
+					childArrTem.push(childArr[i]);
+				}
+			}
+
+			return childArrTem;
+		};
+
+		var isRightShow = true;
+		var totalWidth = db_func.getViewPortWidth();
+		var totalHeight = db_func.getViewPortHeight();
+		var rightWidth = 260;
+		var leftWidth = totalWidth - rightWidth;
+
+		var intverval = 0;
+		var db_content = document.getElementsByClassName("db_content")[0],
+			db_speed_num = document.getElementsByClassName("db_speed_num")[0],
+			db_right_open = document.getElementsByClassName("db_right_open")[0],
+			db_select_color = document.getElementsByClassName("db_select_color")[0],
+			db_right = document.getElementsByClassName("db_right")[0],
+			db_left = document.getElementsByClassName("db_left")[0],
+			db_information = document.getElementsByClassName("db_information")[0],
+			db_right_box = document.getElementsByClassName("db_right_box")[0],
+			db_canvas = document.getElementsByTagName("canvas")[0];
+
+		db_right_open.onclick = function () {
+			if (isRightShow) {
+				isRightShow = false;
+
+				var value = totalWidth - (db_right.offsetLeft + rightWidth);
+				var toValue = -rightWidth;
+
+				clearInterval(intverval);
+				intverval = setInterval(
+					function () {
+						value += (toValue - value) * 0.3;
+
+						if (Math.abs(value - toValue) < 1.0) {
+							clearInterval(intverval);
+							value = toValue;
+							db_func.addClass(db_right_open, "db_right_rotate");
+							db_right_open.style.opacity = "0.5";
+						}
+
+						db_right.style.marginRight = value + "px";
+						db_right_open.style.right = (rightWidth + value) + "px";
+					},
+					20
+				);
+
+				db_left.style.width = totalWidth + "px";
+				db_canvas.style.width = totalWidth + "px";
+				Main.getInstance().view.updateEgretSize(totalWidth, totalHeight);
+			}
+			else {
+				isRightShow = true;
+
+				var value = totalWidth - (db_right.offsetLeft + rightWidth);
+				var toValue = 0;
+
+				clearInterval(intverval);
+				intverval = setInterval(
+					function () {
+						value += (toValue - value) * 0.3;
+
+						if (Math.abs(value - toValue) < 1.0) {
+							clearInterval(intverval);
+							value = toValue;
+							db_func.removeClass(db_right_open, "db_right_rotate");
+							db_right_open.style.opacity = "1.0";
+
+							db_left.style.width = leftWidth + "px";
+							db_canvas.style.width = leftWidth + "px";
+							Main.getInstance().view.updateEgretSize(leftWidth, totalHeight);
+						}
+
+						db_right.style.marginRight = value + "px";
+						db_right_open.style.right = (rightWidth + value - db_right_open.clientWidth)  + "px";
+					},
+					20
+				);
+			}
+		};
+		db_right_open.onmouseover = function () {
+			this.style.opacity = "1";
+		};
+		db_right_open.onmouseout = function () {
+			this.style.opacity = "0.5";
+		};
+
+		var colorDiv = (getChildNodes(db_select_color));
+		for (var i = 0; i < colorDiv.length; i++) {
+			colorDiv[i].onclick = function () {
+				db_func.removeClass(db_left, ["div1", "div2", "div3", "div4", "div5"]);
+				db_func.addClass(db_left, this.className);
+			};
+		}
+
+		function db_size() {
+			totalWidth = db_func.getViewPortWidth();
+			totalHeight = db_func.getViewPortHeight();
+			leftWidth = totalWidth - rightWidth;
+
+			if (totalHeight < 820) {
+				db_information.style.position = "relative";
+				db_right.style.overflowY = "scroll";
+			}
+			else {
+				db_information.style.position = "absolute";
+				db_right.style.overflowY = "scroll";
+			}
+			if (parseInt(db_right.style.marginRight) >= 0) {
+				db_right.style.overflowY = "scroll";
+			}
+			else {
+				db_right.style.overflowY = "visible";
+			}
+			db_right.style.overflowY = "auto";
+			db_right_box.style.width = rightWidth + "px";
+			db_information.style.width = rightWidth + "px";
+
+			if (isRightShow) {
+				db_left.style.width = leftWidth + "px";
+				db_canvas.style.width = leftWidth + "px";
+				Main.getInstance().view.updateEgretSize(leftWidth, totalHeight);
+			}
+			else {
+				db_left.style.width = totalWidth + "px";
+				db_canvas.style.width = totalWidth + "px";
+				Main.getInstance().view.updateEgretSize(totalWidth, totalHeight);
+			}
+		}
+		window.onresize = function () {
+			db_size();
+		};
+		setTimeout(function() {
+			db_size();
+		}, 100);
+	</script>
+</body>
+
+</html>
