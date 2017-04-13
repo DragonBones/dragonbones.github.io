@@ -105,10 +105,6 @@ select {
     float: left;
 }
 
-.db_content .db_right .db_right_play .db_play_btn .db_play {
-    margin: 0 20px;
-}
-
 .db_content .db_right .db_right_play .db_btn {
     position: absolute;
     top: 50%;
@@ -128,15 +124,15 @@ select {
     transform: rotate(135deg);
 }
 
-.db_content .db_right .db_right_play .db_play_btn .db_stop_sta {
-    display: block;
+.db_content .db_right .db_right_play .db_play_btn .db_play {
+    margin: 0 20px;
 }
 
-.db_content .db_right .db_right_play .db_play_btn .db_play_sta {
-    display: none;
+.db_content .db_right .db_right_play .db_play_btn .db_stop {
+    margin: 0 20px;
 }
 
-.db_content .db_right .db_right_play .db_play_btn .db_play>div:first-child {
+.db_content .db_right .db_right_play .db_play_btn .db_stop>div:first-child {
     position: absolute;
     top: 0;
     right: -3px;
