@@ -14,7 +14,7 @@
         body, html {
             padding:0; margin:0; box-sizing:border-box;
             width:100%; height:100%;
-            background:#000000;
+            background:#FFFFFF;
             -webkit-touch-callout: none;
             -webkit-user-select: none;
             -khtml-user-select: none;
@@ -285,11 +285,13 @@
 			this.style.opacity = "0.5";
 		};
 
-		var colorDiv = (getChildNodes(db_select_color));
-		for (var i = 0; i < colorDiv.length; i++) {
-			colorDiv[i].onclick = function () {
-				db_func.removeClass(db_left, ["div1", "div2", "div3", "div4", "div5"]);
-				db_func.addClass(db_left, this.className);
+		var colors = ["#fefefe", "#b6b6b6", "#757575", "#3c3c3c", "#000"];
+		var colorDivs = (getChildNodes(db_select_color));
+		for (var i = 0; i < colorDivs.length; i++) {
+			var colorDiv = colorDivs[i];
+			colorDiv.colorID = i;
+			colorDiv.onclick = function () {
+				db_left.style.backgroundColor = colors[this.colorID];
 			};
 		}
 
