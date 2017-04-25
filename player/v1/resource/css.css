@@ -38,6 +38,7 @@ select {
     width: 260px;
     height: 100%;
     background: #232222;
+    overflow-x: hidden;
 }
 
 .db_content .db_right .db_right_box {
@@ -308,8 +309,15 @@ select {
     bottom: 0;
     padding: 0 48px;
     padding-top: 20px;
-    width: 100%;
-    height: 180px;
+}
+
+.db_content .db_right .db_information>div {
+    overflow: hidden;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 18px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
 }
 
 .db_content .db_right .db_information_t {
@@ -332,22 +340,6 @@ select {
 .db_content .db_right .db_information p {
     display: block;
     line-height: 20px;
-}
-
-.db_content .db_right .db_information>div {
-    display: -webkit-box;
-    overflow: hidden;
-    width: 100%;
-    margin-top: 20px;
-    font-size: 12px;
-    line-height: 18px;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-}
-
-.db_content .db_right .db_information img {
-    width: 100px;
-    height: 100px;
 }
 
 .db_content .db_right_open {

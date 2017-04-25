@@ -10,6 +10,7 @@
 	<meta name="screen-orientation" content="portrait" />
 	<meta name="x5-fullscreen" content="true" />
 	<meta name="360-fullscreen" content="true" />
+	<meta name="renderer" content="webkit">
 	<style>
         body, html {
             padding:0; margin:0; box-sizing:border-box;
@@ -133,12 +134,12 @@
 					<div></div>
 				</div>
 			</div>
-			<div class="db_coordinate">
+			<!--<div class="db_coordinate">
 				<span id="debugLabel">Show Bone</span>
 				<div id="debugEnabledButton" class="db_close">
 					<div></div>
 				</div>
-			</div>
+			</div>-->
 			</div>
 			<!--信息-->
 			<div id="infoLabel" class="db_information_t">
@@ -320,13 +321,21 @@
 
 			if (isRightShow) {
 				db_left.style.width = leftWidth + "px";
-				db_canvas.style.width = leftWidth + "px";
-				Main.getInstance().view.updateEgretSize(leftWidth, totalHeight);
+				if (db_canvas) {
+					db_canvas.style.width = leftWidth + "px";
+				}
+				if (Main.getInstance()) {
+					Main.getInstance().view.updateEgretSize(leftWidth, totalHeight);
+				}
 			}
 			else {
 				db_left.style.width = totalWidth + "px";
-				db_canvas.style.width = totalWidth + "px";
-				Main.getInstance().view.updateEgretSize(totalWidth, totalHeight);
+				if (db_canvas) {
+					db_canvas.style.width = totalWidth + "px";
+				}
+				if (Main.getInstance()) {
+					Main.getInstance().view.updateEgretSize(totalWidth, totalHeight);
+				}
 			}
 		}
 		window.onresize = function () {
