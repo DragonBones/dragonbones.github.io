@@ -1,26 +1,39 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var demosPixi;
 (function (demosPixi) {
     var coreElement;
     (function (coreElement) {
-        var Game = (function () {
+        var Game = (function (_super) {
+            __extends(Game, _super);
             function Game() {
-                this.renderer = new PIXI.WebGLRenderer(800, 600, { backgroundColor: 0x666666 });
-                this.stage = new PIXI.Container();
-                this.factory = new dragonBones.PixiFactory();
-                this._backgroud = new PIXI.Sprite(PIXI.Texture.EMPTY);
-                this._left = false;
-                this._right = false;
-                this._player = null;
-                this._bullets = [];
-                Game.instance = this;
-                this._init();
+                var _this = _super !== null && _super.apply(this, arguments) || this;
+                _this._left = false;
+                _this._right = false;
+                _this._player = null;
+                _this._bullets = [];
+                return _this;
             }
-            Game.prototype._init = function () {
-                Game.STAGE_WIDTH = this.renderer.width;
-                Game.STAGE_HEIGHT = this.renderer.height;
+            Object.defineProperty(Game.prototype, "stage", {
+                get: function () {
+                    return this._stage;
+                },
+                enumerable: true,
+                configurable: true
+            });
+            Game.prototype._onStart = function () {
+                Game.STAGE_WIDTH = this._renderer.width;
+                Game.STAGE_HEIGHT = this._renderer.height;
                 Game.GROUND = Game.STAGE_HEIGHT - 100;
-                document.body.appendChild(this.renderer.view);
-                PIXI.ticker.shared.add(this._renderHandler, this);
+                Game.instance = this;
                 PIXI.loader
                     .add("dragonBonesData", "./resource/assets/CoreElement/CoreElement.json")
                     .add("textureDataA", "./resource/assets/CoreElement/CoreElement_texture_1.json")
@@ -29,16 +42,16 @@ var demosPixi;
                 PIXI.loader.load();
             };
             Game.prototype._loadComplateHandler = function (loader, object) {
-                this.factory.parseDragonBonesData(object["dragonBonesData"].data);
-                this.factory.parseTextureAtlasData(object["textureDataA"].data, object["textureA"].texture);
-                this.stage.interactive = true;
-                this.stage.on('touchstart', this._touchHandler, this);
-                this.stage.on('touchend', this._touchHandler, this);
-                this.stage.on('touchmove', this._touchHandler, this);
-                this.stage.on('mousedown', this._touchHandler, this);
-                this.stage.on('mouseup', this._touchHandler, this);
-                this.stage.on('mousemove', this._touchHandler, this);
-                this.stage.addChild(this._backgroud);
+                dragonBones.PixiFactory.factory.parseDragonBonesData(object["dragonBonesData"].data);
+                dragonBones.PixiFactory.factory.parseTextureAtlasData(object["textureDataA"].data, object["textureA"].texture);
+                this._stage.interactive = true;
+                this._stage.on('touchstart', this._touchHandler, this);
+                this._stage.on('touchend', this._touchHandler, this);
+                this._stage.on('touchmove', this._touchHandler, this);
+                this._stage.on('mousedown', this._touchHandler, this);
+                this._stage.on('mouseup', this._touchHandler, this);
+                this._stage.on('mousemove', this._touchHandler, this);
+                this._stage.addChild(this._backgroud);
                 this._backgroud.width = Game.STAGE_WIDTH;
                 this._backgroud.height = Game.STAGE_HEIGHT;
                 document.addEventListener("keydown", this._keyHandler);
@@ -50,7 +63,7 @@ var demosPixi;
                 text.scale.x = 0.8;
                 text.scale.y = 0.8;
                 text.text = "Press W/A/S/D to move. Press Q/E/SPACE to switch weapons.\nMouse Move to aim. Click to fire.";
-                this.stage.addChild(text);
+                this._stage.addChild(text);
             };
             Game.prototype.addBullet = function (bullet) {
                 this._bullets.push(bullet);
@@ -117,7 +130,7 @@ var demosPixi;
                     }
                 }
                 dragonBones.WorldClock.clock.advanceTime(-1);
-                this.renderer.render(this.stage);
+                _super.prototype._renderHandler.call(this, deltaTime);
             };
             Game.prototype._updateMove = function (dir) {
                 if (this._left && this._right) {
@@ -133,13 +146,13 @@ var demosPixi;
                     this._player.move(0);
                 }
             };
-            Game.STAGE_WIDTH = 0;
-            Game.STAGE_HEIGHT = 0;
-            Game.GROUND = 300;
-            Game.G = 0.6;
-            Game.instance = null;
             return Game;
-        }());
+        }(demosPixi.BaseTest));
+        Game.STAGE_WIDTH = 0;
+        Game.STAGE_HEIGHT = 0;
+        Game.GROUND = 300;
+        Game.G = 0.6;
+        Game.instance = null;
         coreElement.Game = Game;
         var Mecha = (function () {
             function Mecha() {
@@ -164,7 +177,7 @@ var demosPixi;
                 this._walkState = null;
                 this._attackState = null;
                 this._target = new PIXI.Point();
-                this._armature = Game.instance.factory.buildArmature("mecha_1502b");
+                this._armature = dragonBones.PixiFactory.factory.buildArmature("mecha_1502b");
                 this._armatureDisplay = this._armature.display;
                 this._armatureDisplay.x = Game.STAGE_WIDTH * 0.5;
                 this._armatureDisplay.y = Game.GROUND;
@@ -218,7 +231,7 @@ var demosPixi;
                 }
                 this._weaponR.removeEventListener(dragonBones.EventObject.FRAME_EVENT, this._frameEventHandler, this);
                 var weaponName = Mecha.WEAPON_R_LIST[this._weaponRIndex];
-                this._weaponR = Game.instance.factory.buildArmature(weaponName);
+                this._weaponR = dragonBones.PixiFactory.factory.buildArmature(weaponName);
                 this._armature.getSlot("weapon_r").childArmature = this._weaponR;
                 this._weaponR.addEventListener(dragonBones.EventObject.FRAME_EVENT, this._frameEventHandler, this);
             };
@@ -229,7 +242,7 @@ var demosPixi;
                 }
                 this._weaponL.removeEventListener(dragonBones.EventObject.FRAME_EVENT, this._frameEventHandler, this);
                 var weaponName = Mecha.WEAPON_L_LIST[this._weaponLIndex];
-                this._weaponL = Game.instance.factory.buildArmature(weaponName);
+                this._weaponL = dragonBones.PixiFactory.factory.buildArmature(weaponName);
                 this._armature.getSlot("weapon_l").childArmature = this._weaponL;
                 this._weaponL.addEventListener(dragonBones.EventObject.FRAME_EVENT, this._frameEventHandler, this);
             };
@@ -395,18 +408,18 @@ var demosPixi;
                 this._attackState.autoFadeOutTime = this._attackState.fadeTotalTime;
                 this._attackState.addBoneMask("pelvis");
             };
-            Mecha.NORMAL_ANIMATION_GROUP = "normal";
-            Mecha.AIM_ANIMATION_GROUP = "aim";
-            Mecha.ATTACK_ANIMATION_GROUP = "attack";
-            Mecha.JUMP_SPEED = 20;
-            Mecha.NORMALIZE_MOVE_SPEED = 3.6;
-            Mecha.MAX_MOVE_SPEED_FRONT = Mecha.NORMALIZE_MOVE_SPEED * 1.4;
-            Mecha.MAX_MOVE_SPEED_BACK = Mecha.NORMALIZE_MOVE_SPEED * 1.0;
-            Mecha.WEAPON_R_LIST = ["weapon_1502b_r", "weapon_1005", "weapon_1005b", "weapon_1005c", "weapon_1005d", "weapon_1005e"];
-            Mecha.WEAPON_L_LIST = ["weapon_1502b_l", "weapon_1005", "weapon_1005b", "weapon_1005c", "weapon_1005d"];
-            Mecha._globalPoint = new PIXI.Point();
             return Mecha;
         }());
+        Mecha.NORMAL_ANIMATION_GROUP = "normal";
+        Mecha.AIM_ANIMATION_GROUP = "aim";
+        Mecha.ATTACK_ANIMATION_GROUP = "attack";
+        Mecha.JUMP_SPEED = 20;
+        Mecha.NORMALIZE_MOVE_SPEED = 3.6;
+        Mecha.MAX_MOVE_SPEED_FRONT = Mecha.NORMALIZE_MOVE_SPEED * 1.4;
+        Mecha.MAX_MOVE_SPEED_BACK = Mecha.NORMALIZE_MOVE_SPEED * 1.0;
+        Mecha.WEAPON_R_LIST = ["weapon_1502b_r", "weapon_1005", "weapon_1005b", "weapon_1005c", "weapon_1005d", "weapon_1005e"];
+        Mecha.WEAPON_L_LIST = ["weapon_1502b_l", "weapon_1005", "weapon_1005b", "weapon_1005c", "weapon_1005d"];
+        Mecha._globalPoint = new PIXI.Point();
         var Bullet = (function () {
             function Bullet(armatureName, effectArmatureName, radian, speed, position) {
                 this._speedX = 0;
@@ -416,14 +429,14 @@ var demosPixi;
                 this._effect = null;
                 this._speedX = Math.cos(radian) * speed;
                 this._speedY = Math.sin(radian) * speed;
-                this._armature = Game.instance.factory.buildArmature(armatureName);
+                this._armature = dragonBones.PixiFactory.factory.buildArmature(armatureName);
                 this._armatureDisplay = this._armature.display;
                 this._armatureDisplay.x = position.x;
                 this._armatureDisplay.y = position.y;
                 this._armatureDisplay.rotation = radian;
                 this._armature.animation.play("idle");
                 if (effectArmatureName) {
-                    this._effect = Game.instance.factory.buildArmature(effectArmatureName);
+                    this._effect = dragonBones.PixiFactory.factory.buildArmature(effectArmatureName);
                     var effectDisplay = this._effect.display;
                     effectDisplay.rotation = radian;
                     effectDisplay.x = position.x;
