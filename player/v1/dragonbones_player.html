@@ -33,6 +33,7 @@
 	<script egret="lib" src="http://dragonbones.github.io/player/v1/libs/modules/egret/egret.min.js"></script>
 	<script egret="lib" src="http://dragonbones.github.io/player/v1/libs/modules/egret/egret.web.min.js"></script>
 	<script egret="lib" src="http://dragonbones.github.io/player/v1/libs/modules/tween/tween.min.js"></script>
+	<script egret="lib" src="http://dragonbones.github.io/player/v1/libs/modules/res/res.min.js"></script>
 	<!--modules_files_end-->
 
 	<!--other_libs_files_start-->
@@ -338,12 +339,22 @@
 				}
 			}
 		}
+		
 		window.onresize = function () {
 			db_size();
 		};
-		setTimeout(function() {
-			db_size();
-		}, 100);
+
+		if (egret.Capabilities.isMobile) {
+			setTimeout(function() {
+				db_right_open.onclick();
+			}, 2000);
+		}
+		else {
+			setTimeout(function() {
+				db_size();
+			}, 1000);
+		}
+
 	</script>
 </body>
 
