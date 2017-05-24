@@ -160,200 +160,200 @@
 	</div>
 
 	<script>
-		egret.runEgret({ renderMode: "webgl", audioType: 0 });
-
-		var db_func = {
-			getViewPortHeight: function () {
-				return document.documentElement.clientHeight || document.body.clientHeight
-			},
-			getViewPortWidth: function () {
-				return document.documentElement.clientWidth || document.body.clientWidth
-			},
-			hasClass: function (elements, cName) {
-				return !!elements.className.match(new RegExp("(\\s|^)" + cName + "(\\s|$)"))
-			},
-			addClass: function (elements, cName) {
-				if (!this.hasClass(elements, cName)) {
-					elements.className += " " + cName
-				}
-			},
-			removeClass: function (elements, cName) {
-				if (typeof (cName) == "string") {
-					if (this.hasClass(elements, cName)) {
-						elements.className = elements.className.replace(new RegExp("(\\s|^)" + cName + "(\\s|$)"), "")
+        window.onload = function() {
+			egret.runEgret({ renderMode: "webgl", audioType: 0 });
+			var db_func = {
+				getViewPortHeight: function () {
+					return document.documentElement.clientHeight || document.body.clientHeight
+				},
+				getViewPortWidth: function () {
+					return document.documentElement.clientWidth || document.body.clientWidth
+				},
+				hasClass: function (elements, cName) {
+					return !!elements.className.match(new RegExp("(\\s|^)" + cName + "(\\s|$)"))
+				},
+				addClass: function (elements, cName) {
+					if (!this.hasClass(elements, cName)) {
+						elements.className += " " + cName
 					}
-				} else if (typeof (cName) == "object") {
-					for (var i = 0; i < cName.length; i++) {
-						if (this.hasClass(elements, cName[i])) {
-							elements.className = elements.className.replace(new RegExp("(\\s|^)" + cName[i] + "(\\s|$)"), "")
+				},
+				removeClass: function (elements, cName) {
+					if (typeof (cName) == "string") {
+						if (this.hasClass(elements, cName)) {
+							elements.className = elements.className.replace(new RegExp("(\\s|^)" + cName + "(\\s|$)"), "")
+						}
+					} else if (typeof (cName) == "object") {
+						for (var i = 0; i < cName.length; i++) {
+							if (this.hasClass(elements, cName[i])) {
+								elements.className = elements.className.replace(new RegExp("(\\s|^)" + cName[i] + "(\\s|$)"), "")
+							}
 						}
 					}
 				}
-			}
-		};
-
-		var getChildNodes = function (ele) {
-			var childArr = ele.children,
-				childArrTem = new Array();
-			for (var i = 0, len = childArr.length; i < len; i++) {
-				if (childArr[i].nodeType == 1) {
-					childArrTem.push(childArr[i]);
-				}
-			}
-
-			return childArrTem;
-		};
-
-		var isRightShow = true;
-		var totalWidth = db_func.getViewPortWidth();
-		var totalHeight = db_func.getViewPortHeight();
-		var rightWidth = 260;
-		var leftWidth = totalWidth - rightWidth;
-
-		var intverval = 0;
-		var db_content = document.getElementsByClassName("db_content")[0],
-			db_speed_num = document.getElementsByClassName("db_speed_num")[0],
-			db_right_open = document.getElementsByClassName("db_right_open")[0],
-			db_select_color = document.getElementsByClassName("db_select_color")[0],
-			db_right = document.getElementsByClassName("db_right")[0],
-			db_left = document.getElementsByClassName("db_left")[0],
-			db_information = document.getElementsByClassName("db_information")[0],
-			db_right_box = document.getElementsByClassName("db_right_box")[0],
-			db_canvas = document.getElementsByTagName("canvas")[0];
-
-		db_right_open.onclick = function () {
-			if (isRightShow) {
-				isRightShow = false;
-
-				var value = totalWidth - (db_right.offsetLeft + rightWidth);
-				var toValue = -rightWidth;
-
-				clearInterval(intverval);
-				intverval = setInterval(
-					function () {
-						value += (toValue - value) * 0.3;
-
-						if (Math.abs(value - toValue) < 1.0) {
-							clearInterval(intverval);
-							value = toValue;
-							db_func.addClass(db_right_open, "db_right_rotate");
-							db_right_open.style.opacity = "0.5";
-						}
-
-						db_right.style.marginRight = value + "px";
-						db_right_open.style.right = (rightWidth + value) + "px";
-					},
-					20
-				);
-
-				db_left.style.width = totalWidth + "px";
-				db_canvas.style.width = totalWidth + "px";
-				Main.getInstance().view.updateEgretSize(totalWidth, totalHeight);
-			}
-			else {
-				isRightShow = true;
-
-				var value = totalWidth - (db_right.offsetLeft + rightWidth);
-				var toValue = 0;
-
-				clearInterval(intverval);
-				intverval = setInterval(
-					function () {
-						value += (toValue - value) * 0.3;
-
-						if (Math.abs(value - toValue) < 1.0) {
-							clearInterval(intverval);
-							value = toValue;
-							db_func.removeClass(db_right_open, "db_right_rotate");
-							db_right_open.style.opacity = "1.0";
-
-							db_left.style.width = leftWidth + "px";
-							db_canvas.style.width = leftWidth + "px";
-							Main.getInstance().view.updateEgretSize(leftWidth, totalHeight);
-						}
-
-						db_right.style.marginRight = value + "px";
-						db_right_open.style.right = (rightWidth + value - db_right_open.clientWidth)  + "px";
-					},
-					20
-				);
-			}
-		};
-		db_right_open.onmouseover = function () {
-			this.style.opacity = "1";
-		};
-		db_right_open.onmouseout = function () {
-			this.style.opacity = "0.5";
-		};
-
-		var colors = ["#fefefe", "#b6b6b6", "#757575", "#3c3c3c", "#000"];
-		var colorDivs = (getChildNodes(db_select_color));
-		for (var i = 0; i < colorDivs.length; i++) {
-			var colorDiv = colorDivs[i];
-			colorDiv.colorID = i;
-			colorDiv.onclick = function () {
-				db_left.style.backgroundColor = colors[this.colorID];
 			};
-		}
 
-		function db_size() {
-			totalWidth = db_func.getViewPortWidth();
-			totalHeight = db_func.getViewPortHeight();
-			leftWidth = totalWidth - rightWidth;
-
-			if (totalHeight < 820) {
-				db_information.style.position = "relative";
-				db_right.style.overflowY = "scroll";
-			}
-			else {
-				db_information.style.position = "absolute";
-				db_right.style.overflowY = "scroll";
-			}
-			if (parseInt(db_right.style.marginRight) >= 0) {
-				db_right.style.overflowY = "scroll";
-			}
-			else {
-				db_right.style.overflowY = "visible";
-			}
-			db_right.style.overflowY = "auto";
-			db_right_box.style.width = rightWidth + "px";
-			db_information.style.width = rightWidth + "px";
-
-			if (isRightShow) {
-				db_left.style.width = leftWidth + "px";
-				if (db_canvas) {
-					db_canvas.style.width = leftWidth + "px";
+			var getChildNodes = function (ele) {
+				var childArr = ele.children,
+					childArrTem = new Array();
+				for (var i = 0, len = childArr.length; i < len; i++) {
+					if (childArr[i].nodeType == 1) {
+						childArrTem.push(childArr[i]);
+					}
 				}
-				if (Main.getInstance()) {
-					Main.getInstance().view.updateEgretSize(leftWidth, totalHeight);
-				}
-			}
-			else {
-				db_left.style.width = totalWidth + "px";
-				if (db_canvas) {
+
+				return childArrTem;
+			};
+
+			var isRightShow = true;
+			var totalWidth = db_func.getViewPortWidth();
+			var totalHeight = db_func.getViewPortHeight();
+			var rightWidth = 260;
+			var leftWidth = totalWidth - rightWidth;
+
+			var intverval = 0;
+			var db_content = document.getElementsByClassName("db_content")[0],
+				db_speed_num = document.getElementsByClassName("db_speed_num")[0],
+				db_right_open = document.getElementsByClassName("db_right_open")[0],
+				db_select_color = document.getElementsByClassName("db_select_color")[0],
+				db_right = document.getElementsByClassName("db_right")[0],
+				db_left = document.getElementsByClassName("db_left")[0],
+				db_information = document.getElementsByClassName("db_information")[0],
+				db_right_box = document.getElementsByClassName("db_right_box")[0],
+				db_canvas = document.getElementsByTagName("canvas")[0];
+
+			db_right_open.onclick = function () {
+				if (isRightShow) {
+					isRightShow = false;
+
+					var value = totalWidth - (db_right.offsetLeft + rightWidth);
+					var toValue = -rightWidth;
+
+					clearInterval(intverval);
+					intverval = setInterval(
+						function () {
+							value += (toValue - value) * 0.3;
+
+							if (Math.abs(value - toValue) < 1.0) {
+								clearInterval(intverval);
+								value = toValue;
+								db_func.addClass(db_right_open, "db_right_rotate");
+								db_right_open.style.opacity = "0.5";
+							}
+
+							db_right.style.marginRight = value + "px";
+							db_right_open.style.right = (rightWidth + value) + "px";
+						},
+						20
+					);
+
+					db_left.style.width = totalWidth + "px";
 					db_canvas.style.width = totalWidth + "px";
-				}
-				if (Main.getInstance()) {
 					Main.getInstance().view.updateEgretSize(totalWidth, totalHeight);
 				}
+				else {
+					isRightShow = true;
+
+					var value = totalWidth - (db_right.offsetLeft + rightWidth);
+					var toValue = 0;
+
+					clearInterval(intverval);
+					intverval = setInterval(
+						function () {
+							value += (toValue - value) * 0.3;
+
+							if (Math.abs(value - toValue) < 1.0) {
+								clearInterval(intverval);
+								value = toValue;
+								db_func.removeClass(db_right_open, "db_right_rotate");
+								db_right_open.style.opacity = "1.0";
+
+								db_left.style.width = leftWidth + "px";
+								db_canvas.style.width = leftWidth + "px";
+								Main.getInstance().view.updateEgretSize(leftWidth, totalHeight);
+							}
+
+							db_right.style.marginRight = value + "px";
+							db_right_open.style.right = (rightWidth + value - db_right_open.clientWidth)  + "px";
+						},
+						20
+					);
+				}
+			};
+			db_right_open.onmouseover = function () {
+				this.style.opacity = "1";
+			};
+			db_right_open.onmouseout = function () {
+				this.style.opacity = "0.5";
+			};
+
+			var colors = ["#fefefe", "#b6b6b6", "#757575", "#3c3c3c", "#000"];
+			var colorDivs = (getChildNodes(db_select_color));
+			for (var i = 0; i < colorDivs.length; i++) {
+				var colorDiv = colorDivs[i];
+				colorDiv.colorID = i;
+				colorDiv.onclick = function () {
+					db_left.style.backgroundColor = colors[this.colorID];
+				};
+			}
+
+			function db_size() {
+				totalWidth = db_func.getViewPortWidth();
+				totalHeight = db_func.getViewPortHeight();
+				leftWidth = totalWidth - rightWidth;
+
+				if (totalHeight < 820) {
+					db_information.style.position = "relative";
+					db_right.style.overflowY = "scroll";
+				}
+				else {
+					db_information.style.position = "absolute";
+					db_right.style.overflowY = "scroll";
+				}
+				if (parseInt(db_right.style.marginRight) >= 0) {
+					db_right.style.overflowY = "scroll";
+				}
+				else {
+					db_right.style.overflowY = "visible";
+				}
+				db_right.style.overflowY = "auto";
+				db_right_box.style.width = rightWidth + "px";
+				db_information.style.width = rightWidth + "px";
+
+				if (isRightShow) {
+					db_left.style.width = leftWidth + "px";
+					if (db_canvas) {
+						db_canvas.style.width = leftWidth + "px";
+					}
+					if (Main.getInstance()) {
+						Main.getInstance().view.updateEgretSize(leftWidth, totalHeight);
+					}
+				}
+				else {
+					db_left.style.width = totalWidth + "px";
+					if (db_canvas) {
+						db_canvas.style.width = totalWidth + "px";
+					}
+					if (Main.getInstance()) {
+						Main.getInstance().view.updateEgretSize(totalWidth, totalHeight);
+					}
+				}
+			}
+			
+			window.onresize = function () {
+				db_size();
+			};
+
+			if (egret.Capabilities.isMobile) {
+				setTimeout(function() {
+					db_right_open.onclick();
+				}, 2000);
+			}
+			else {
+				setTimeout(function() {
+					db_size();
+				}, 1000);
 			}
 		}
-		
-		window.onresize = function () {
-			db_size();
-		};
-
-		if (egret.Capabilities.isMobile) {
-			setTimeout(function() {
-				db_right_open.onclick();
-			}, 2000);
-		}
-		else {
-			setTimeout(function() {
-				db_size();
-			}, 1000);
-		}
-
 	</script>
 </body>
 
