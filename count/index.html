@@ -17,14 +17,14 @@
 
 <body>
     <script>
-        const code = ["_trackEvent", "player", "open", "", parent.navigator.userAgent.toLowerCase()];
+        const code = ["_trackEvent", "player", "open", ""];
         _hmt.push(code);
 
-        if (parent.location.protocol.indexOf("http") === 0) {
-            if (parent.location.port !== "80") {
+        if (window.location.protocol.indexOf("http") === 0) {
+            if (window.location.port !== "80") {
                 code[3] = "preview";
             }
-            else if (parent.location.href.indexOf("dragonbones.com") >= 0) {
+            else if (window.location.href.indexOf("dragonbones.com") >= 0) {
                 code[3] = "player";
             }
             else {
@@ -33,7 +33,6 @@
         }
         else {
             code[3] = "local";
-            document.getElementById("qrcodeGroup").style.display = "none";
         }
     </script>
 
