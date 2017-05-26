@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?8eca1ba89e44157c28000e727381d598";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <script>
+        const code = ["_trackEvent", "player", "open", "", parent.navigator.userAgent.toLowerCase()];
+        _hmt.push(code);
+
+        if (parent.location.protocol.indexOf("http") === 0) {
+            if (parent.location.port !== "80") {
+                code[3] = "preview";
+            }
+            else if (parent.location.href.indexOf("dragonbones.com") >= 0) {
+                code[3] = "player";
+            }
+            else {
+                code[3] = "remote";
+            }
+        }
+        else {
+            code[3] = "local";
+            document.getElementById("qrcodeGroup").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
