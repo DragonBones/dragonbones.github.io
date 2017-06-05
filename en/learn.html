@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="DragonBones is a 2D game animation and righ media content creative platform for designer. It provides 2D animation solution and motion comic solution. It contains a integrated creative tool DragonBones Pro, Flash Pro plugin for animation export and lots of runtime libraries for game engines and platforms. DragonBones start at October 2012, the first 2D skeletal animation solution all over the world. There are more than 50 thousand designers from over 50 countries are using DragonBones and create thousands of games in app stores."
+    />
+    <meta name="description" content="DragonBones is a 2D game animation and righ media content creative platform for designer. It provides 2D animation solution and motion comic solution. It contains a integrated creative tool DragonBones Pro, Flash Pro plugin for animation export and lots of runtime libraries for game engines and platforms. DragonBones start at October 2012, the first 2D skeletal animation solution all over the world. There are more than 50 thousand designers from over 50 countries are using DragonBones and create thousands of games in app stores.">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Learn DragonBones</title>
+    <link href="http://v3.bootcss.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/g.css" rel="stylesheet">
+</head>
+<style>*{box-sizing:border-box;margin:0;padding:0}
+.course_out{margin:0 auto;max-width:1816px;border-bottom:1px solid #ececec}
+.course{margin:0 auto;width:895px;min-height:300px}
+.course .c_title{height:152px;color:#636363;text-align:left;font-size:34px;line-height:152px}
+.course .c_content{overflow:hidden}
+.course .c_content .c_course{height:482px}
+.course .c_content .c_course .c_db_course{float:left;width:424px;height:100%}
+.course .c_content .c_course .c_db_course_left{margin-right:23px}
+.course .c_content .c_course .c_db_course_right{margin-left:23px}
+.course .c_content .c_course .c_db_course .c_banner{width:100%}
+.course .c_content .c_course .c_db_course .c_db_title{height:86px;color:#636363;font-size:30px;line-height:86px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person{float:right;height:86px;line-height:86px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person img{float:left;margin-top:27px;margin-left:10px;width:32px;height:32px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person span{float:left;margin-left:10px;color:#b3b3b3;font-size:14px}
+.course .c_content .c_course .c_db_course .c_db_text{display:-webkit-box;overflow:hidden;width:100%;height:98px;color:#b3b3b3;text-align:left;font-size:16px;line-height:24px;-webkit-box-orient:vertical;-webkit-line-clamp:4}
+.filebox{overflow:hidden;padding:60px 0}
+.filebox .file_content{float:left;width:424px}
+.filebox .file_content_left{margin-right:23px}
+.filebox .file_content_right{margin-left:23px}
+.filebox .file_content .file_banner{width:424px}
+.filebox .file_content .file_title{height:94px;color:#636363;font-size:38px;line-height:94px}
+.filebox .file_content .file_text{width:100%;color:#b3b3b3;text-overflow:ellipsis;font-size:16px;line-height:24px;}
+.course_b_out{position:relative;margin-top:50px;width:100%;background-color:rgba(0,0,0,.5);text-align:center}
+.course_b_out img{width:100%}
+.course_b_out .bg{position:absolute;top:0;left:0;z-index:1;width:100%;height:100%;background-color:rgba(0,0,0,.6)}
+.course_b_out .course_slogan{position:absolute;top:37%;left:0;z-index:2;width:100%;height:56px;color:#fff;text-align:center;text-align:center;font-size:48px;line-height:56px}
+.course_b_out .course_slogan_i{position:absolute;top:63%;left:0;z-index:2;width:100%;color:#fff;text-align:center;font-size:18px;line-height:32px}
+@media screen and (min-width:319px){.course_b_out{margin-top:-15px}
+.course_b_out .course_slogan{height:18px;line-height:18px;font-size:18px;top:20%}
+.course_b_out .course_slogan_i{line-height:14px;font-size:10px;top:50%}
+.course{padding:0 10px;width:100%}
+.course .c_title{height:86px;line-height:86px;font-size:24px}
+.course .c_content .c_course .c_db_course{width:100%;height:auto}
+.course .c_content .c_course .c_db_course .c_db_title{font-size:18px;height:43px;line-height:43px;margin:10px 0}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person{height:43px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person img{margin-top:5px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person span{height:43px;line-height:43px}
+.course .c_content .c_course .c_db_course_left,.course .c_content .c_course .c_db_course_right{margin:0}
+.course .c_content .c_course .c_db_course .c_db_text{height:auto}
+.course_out{margin-bottom:20px}
+.filebox .file_content{width:100%}
+.filebox .file_content .file_banner{width:100%}
+.filebox .file_content_left,.filebox .file_content_right{margin:0}
+.filebox .file_content .file_title{height:43px;line-height:43px;font-size:18px}
+.filebox .file_content .file_text{font-size:16px}
+}
+@media screen and (min-width:359px){.course_b_out{margin-top:-15px}
+.course_b_out .course_slogan{height:18px;line-height:18px;font-size:18px;top:20%}
+.course_b_out .course_slogan_i{line-height:14px;font-size:10px;top:50%}
+.course{padding:0 10px;width:100%}
+.course .c_title{height:86px;line-height:86px;font-size:24px}
+.course .c_content .c_course .c_db_course{width:100%;height:auto}
+.course .c_content .c_course .c_db_course .c_db_title{font-size:18px;height:43px;line-height:43px;margin:10px 0}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person{height:43px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person img{margin-top:5px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person span{height:43px;line-height:43px}
+.course .c_content .c_course .c_db_course_left,.course .c_content .c_course .c_db_course_right{margin:0}
+.course .c_content .c_course .c_db_course .c_db_text{height:auto}
+.course_out{margin-bottom:20px}
+.filebox .file_content{width:100%}
+.filebox .file_content .file_banner{width:100%}
+.filebox .file_content_left,.filebox .file_content_right{margin:0}
+.filebox .file_content .file_title{height:43px;line-height:43px;font-size:18px}
+.filebox .file_content .file_text{font-size:16px}
+}
+@media screen and (min-width:375px){.course_b_out{margin-top:-15px}
+.course_b_out .course_slogan{height:20px;line-height:20px;font-size:20px;top:20%}
+.course_b_out .course_slogan_i{line-height:18px;font-size:12px;top:50%}
+.course{padding:0 10px;width:100%}
+.course .c_title{height:86px;line-height:86px;font-size:24px}
+.course .c_content .c_course .c_db_course{width:100%;height:auto}
+.course .c_content .c_course .c_db_course .c_db_title{font-size:18px;height:43px;line-height:43px;margin:10px 0}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person{height:43px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person img{margin-top:5px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person span{height:43px;line-height:43px}
+.course .c_content .c_course .c_db_course_left,.course .c_content .c_course .c_db_course_right{margin:0}
+.course .c_content .c_course .c_db_course .c_db_text{height:auto}
+.course_out{margin-bottom:20px}
+.filebox .file_content{width:100%}
+.filebox .file_content .file_banner{width:100%}
+.filebox .file_content_left,.filebox .file_content_right{margin:0}
+.filebox .file_content .file_title{height:43px;line-height:43px;font-size:18px}
+.filebox .file_content .file_text{font-size:16px}
+}
+@media screen and (min-width:414px){.course_b_out{margin-top:-15px}
+.course_b_out .course_slogan{height:22px;line-height:22px;font-size:22px;top:20%}
+.course_b_out .course_slogan_i{line-height:22px;font-size:14px;top:50%}
+.course{padding:0 10px;width:100%}
+.course .c_title{height:86px;line-height:86px;font-size:24px}
+.course .c_content .c_course .c_db_course{width:100%;height:auto}
+.course .c_content .c_course .c_db_course .c_db_title{font-size:18px;height:43px;line-height:43px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person{height:43px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person img{margin-top:5px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person span{height:43px;line-height:43px}
+.course .c_content .c_course .c_db_course_left,.course .c_content .c_course .c_db_course_right{margin:0}
+.course .c_content .c_course .c_db_course .c_db_text{height:auto}
+.course_out{margin-bottom:20px}
+.filebox .file_content{width:100%}
+.filebox .file_content .file_banner{width:100%}
+.filebox .file_content_left,.filebox .file_content_right{margin:0}
+.filebox .file_content .file_title{height:43px;line-height:43px;font-size:18px}
+.filebox .file_content .file_text{font-size:16px}
+}
+@media screen and (min-width:640px){.course_b_out{margin-top:-15px}
+.course_b_out .course_slogan{height:22px;line-height:22px;font-size:22px;top:20%}
+.course_b_out .course_slogan_i{line-height:22px;font-size:14px;top:50%}
+.course{margin:0 auto;width:895px;min-height:300px}
+.course .c_title{height:86px;line-height:86px;font-size:24px}
+.course .c_content .c_course .c_db_course{width:100%;height:auto}
+.course .c_content .c_course .c_db_course .c_db_title{font-size:18px;height:43px;line-height:43px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person{height:43px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person img{margin-top:5px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person span{height:43px;line-height:43px}
+.course .c_content .c_course .c_db_course_left,.course .c_content .c_course .c_db_course_right{margin:0}
+.course .c_content .c_course .c_db_course .c_db_text{height:auto}
+.course_out{margin-bottom:20px}
+.filebox .file_content{width:100%}
+.filebox .file_content .file_banner{width:100%}
+.filebox .file_content_left,.filebox .file_content_right{margin:0}
+.filebox .file_content .file_title{height:43px;line-height:43px;font-size:18px}
+.filebox .file_content .file_text{font-size:16px}
+}
+@media screen and (min-width:768px){.course_b_out{margin-top:-15px}
+.course_b_out .course_slogan{height:34px;line-height:34px;font-size:34px;top:40%}
+.course_b_out .course_slogan_i{line-height:34px;font-size:20px;top:54%}
+.course{padding:0 10px;width:100%}
+.course .c_title{height:86px;line-height:86px;font-size:34px}
+.course .c_content .c_course .c_db_course{width:100%;height:auto}
+.course .c_content .c_course .c_db_course .c_db_title{font-size:24px;height:43px;line-height:43px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person{height:43px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person img{margin-top:5px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person span{height:43px;line-height:43px;font-size:24px}
+.course .c_content .c_course .c_db_course_left,.course .c_content .c_course .c_db_course_right{margin:0}
+.course .c_content .c_course .c_db_course .c_db_text{height:auto;font-size:18px}
+.course_out{margin-bottom:20px}
+.filebox .file_content{width:100%}
+.filebox .file_content .file_banner{width:100%}
+.filebox .file_content_left,.filebox .file_content_right{margin:0}
+.filebox .file_content .file_title{height:43px;line-height:43px;font-size:24px}
+.filebox .file_content .file_text{font-size:18px}
+}
+@media screen and (min-width:1024px){.course_b_out{margin-top:-15px}
+.course_b_out .course_slogan{height:34px;line-height:34px;font-size:34px;top:40%}
+.course_b_out .course_slogan_i{line-height:34px;font-size:20px;top:63%}
+.course{padding:0 10px;width:100%}
+.course .c_title{height:86px;line-height:86px;font-size:34px}
+.course .c_content .c_course .c_db_course{width:100%;height:auto}
+.course .c_content .c_course .c_db_course .c_db_title{font-size:24px;height:43px;line-height:43px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person{height:43px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person img{margin-top:5px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person span{height:43px;line-height:43px;font-size:24px}
+.course .c_content .c_course .c_db_course_left,.course .c_content .c_course .c_db_course_right{margin:0}
+.course .c_content .c_course .c_db_course .c_db_text{height:auto;font-size:18px}
+.course_out{margin-bottom:20px}
+.filebox .file_content{width:100%}
+.filebox .file_content .file_banner{width:100%}
+.filebox .file_content_left,.filebox .file_content_right{margin:0}
+.filebox .file_content .file_title{height:43px;line-height:43px;font-size:24px}
+.filebox .file_content .file_text{font-size:18px}
+}
+@media screen and (min-width:1025px){.course_b_out{margin-top:50px}
+.course_b_out .course_slogan{position:absolute;top:37%;left:0;z-index:2;width:100%;height:56px;color:#fff;text-align:center;text-align:center;font-size:48px;line-height:56px}
+.course_b_out .course_slogan_i{position:absolute;top:54%;left:0;z-index:2;width:100%;color:#fff;text-align:center;font-size:18px;line-height:32px}
+.course{margin:0 auto;width:895px;min-height:300px;padding:0}
+.course .c_title{height:152px;color:#636363;text-align:left;font-size:34px;line-height:152px}
+.course .c_content{width:895px;min-height:300px}
+.course .c_content .c_course .c_db_course{float:left;width:424px;height:100%}
+.course .c_content .c_course .c_db_course .c_db_title{height:86px;color:#636363;font-size:30px;line-height:86px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person{float:right;height:86px;line-height:86px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person img{float:left;margin-top:27px;margin-left:10px;width:32px;height:32px}
+.course .c_content .c_course .c_db_course .c_db_title .c_db_person span{float:left;margin-left:10px;color:#b3b3b3;font-size:14px;height:86px;line-height:86px}
+.course .c_content .c_course .c_db_course_left{margin-right:23px}
+.course .c_content .c_course .c_db_course_right{margin-left:23px}
+.course .c_content .c_course .c_db_course .c_db_text{display:-webkit-box;overflow:hidden;width:100%;height:98px;color:#b3b3b3;text-align:left;font-size:16px;line-height:24px;-webkit-box-orient:vertical;-webkit-line-clamp:4}
+.course_out{margin:0 auto;max-width:1816px;border-bottom:1px solid #ececec;margin-bottom:60px}
+.filebox .file_content{float:left;width:424px;margin-bottom:60px}
+.filebox .file_content_left{margin-right:23px}
+.filebox .file_content_right{margin-left:23px}
+.filebox .file_content .file_banner{width:424px}
+.filebox .file_content .file_title{height:94px;color:#636363;font-size:38px;line-height:94px}
+.filebox .file_content .file_text{width:100%;color:#b3b3b3;height:auto;font-size:16px;line-height:24px;word-break:break-all}
+}
+</style>
+<body>
+    <!--header-->
+    <div style='margin:0 auto;width:0px;height:0px;overflow:hidden;'>
+        <img src="img/logo512.png" width='700'>
+    </div>
+    <header class="headerDark">
+        <div class="container-fluid">
+            <h2 class="logo">
+                <img src="img/logo.png">
+            </h2>
+            <div class="authentication">
+                <ul>
+                    <li>
+                        <a href="/cn/learn.html">中文</a>&nbsp;/&nbsp;
+                        <a href="/en/learn.html" style="color:#FFF;">English</a>
+                    </li>
+                    <li style="margin-top: 10px;">
+                        <style>
+                            .octicon-mark-github {
+                                display: inline-block;
+                                vertical-align: text-top;
+                                fill: currentColor;
+                                padding-bottom: 2px;
+                            }
+                        </style>
+                        <a href="https://github.com/DragonBones/" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+                            <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-wrap">
+                <ul class="group" id="example-one">
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="animation.html">ANIMATION</a>
+                    </li>
+                    <li>
+                        <a href="comic.html">COMIC</a>
+                    </li>
+                    <li>
+                        <a href="download.html">DOWNLOAD</a>
+                    </li>
+                    <li  class="current_page_item">
+                        <a href="learn.html" >LEARN</a>
+                    </li>
+                    <li id="magic-line" style="width: 63px; left: 0px; overflow: hidden;"></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--banner-->
+    <div class="course_b_out">
+        <img src="img/learn/head.png" alt="">
+        <div class="bg"></div>
+        <div class="course_slogan">Learn DraonBones here</div>
+        <p class="course_slogan_i">Video tutorials, Online Documents and Forums<br>Guide you step by step into the wonderful world of DragonBones</p>
+    </div>
+    <!--视频教程-->
+    <div class="course_out">
+        <div class="course">
+            <div class="c_title">Video Tutorials</div>
+            <div class="c_content">
+                <div class="c_course">
+                    <div class="c_db_course c_db_course_left">
+                        <a href="">
+                            <img src="img/learn/video1.png" class="c_banner" alt="">
+                            <div class="c_db_title">
+                                Offical Video Tutorials
+                                <div class="c_db_person">
+                                    <img src="img/learn/teacher1.png" alt="">
+                                    <span>DragonBones Team</span>
+                                </div>
+                            </div>
+                            <p class="c_db_text">
+                                This video series made by DragonBones official team. It indroduced all features of DraonBones Pro from easy to the difficult. We recommended beginners start here.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="c_db_course c_db_course_right">
+                        <a href="">
+                            <img src="img/learn/video2.png" class="c_banner" alt="">
+                            <div class="c_db_title">
+                                Great Video Tutorials Collection
+                                <div class="c_db_person">
+                                    <img src="img/learn/teacher2.png" alt="">
+                                    <img src="img/learn/teacher3.png" alt="">
+                                    <img src="img/learn/teacher4.png" alt="">
+                                </div>
+                            </div>
+                            <p class="c_db_text">
+                                This is the collection of video tutorials from experienced artists globally. They are based on the production of practical cases, property for people who have a certain animation production basis. You can deeply learn some DragonBones advanced skills here.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--文档社区-->
+    <div class="filebox course">
+        <a href="http://developer.egret.com/cn/github/egret-docs/DB/dbPro/interface/mainInterface/index.html" target="_blank" >
+            <div class="file_content file_content_left">
+                <img src="img/learn/doc.png" class="file_banner" alt="">
+                <div class="file_title">Documents</div>
+                <p class="file_text">Explore DragonBones's features and browse the Scripting API.</p>
+            </div>
+        </a>
+        <a href="http://bbs.egret.com/forum-101-1.html" target="_blank" >
+            <div class="file_content file_content_right">
+                <img src="img/learn/social.png" class="file_banner" alt="">
+                <div class="file_title">Community</div>
+                <p class="file_text">Our forums and answers offer a wealth of solutions to problems.</p>
+            </div>
+        </a>
+    </div>
+    <!--footer-->
+    <section class="footer1">
+        <div class="container">
+            <div class="col-md-4 des">
+                <p>
+                    <a href="http://www.egret.com/about">ABOUT</a>
+                </p>
+                <p>SUPPORT: support@egret.com</p>
+            </div>
+            <div class="col-md-4 des">
+                <p>
+                    <a href="http://www.egret.com/join">JOIN</a>
+                </p>
+                <p>QQ Group: 205889387</p>
+                <p>
+                    <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=6bdf9df569141fb908a44d7235ce0651bde2ed3cb90a84738b804fc69534eb7f"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="DragonBones官方群" title="DragonBones官方群"></a>
+                </p>
+
+            </div>
+            <div class="col-md-4 des">
+                <p>
+                    <a href="http://www.egret.com">Egret</a> | <a href="https://www.facebook.com/dragonbonesteam/">FaceBook</a> | <a href="https://twitter.com/dragonbonesteam">Twitter</a> | <a href="old/backers.html">Backers</a>
+                </p>
+                <div class="span6" style="width: 155px;width: 155px;margin: 0;padding: 0;padding-top: 5px;">
+                    <!-- AddThis Button-->
+                    
+					<div class="addthis_toolbox addthis_default_style ">
+					<a class="addthis_button_preferred_1"></a>
+					<a class="addthis_button_preferred_2"></a>
+					<a class="addthis_button_preferred_3"></a>
+					<a class="addthis_button_preferred_4"></a>
+					<a class="addthis_button_preferred_5"></a>
+					<a class="addthis_button_compact"></a>
+					<a class="addthis_counter addthis_bubble_style"></a>
+					</div>
+					<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+					<script async type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50879ffb6b4eb16f"></script>
+					<style>
+						.addthis_counter.addthis_bubble_style a.addthis_button_expanded{
+							color: #000000;
+						}
+					</style>
+						
+                </div>
+            </div>
+            <div class="col-md-12" style="margin: 30px 0 30px 0; font-size:16px; color: #c1c1c1; border-bottom: 1px solid #000;border-bottom: 1px solid #353535;line-height: 2">PARTNERS</div>
+            <div class="col-md-12">
+                <div class="footer1hzhb">
+                    <img style="width: 100%;" src="img/hzhb/partners.jpg" />
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="footer2">
+        <div class="container-fluid">
+            Copyright © 2012-2017 dragonbones.com
+        </div>
+    </section>
+</body>
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="//cdn.bootcss.com/html5media/1.1.8/html5media.js"></script>
+<script src="js/jquery.typetype.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/html5.js"></script>
+<script src="js/jquery.color-rgba-patch.js"></script>
+<script src="js/popwin.js"></script>
+</html>
