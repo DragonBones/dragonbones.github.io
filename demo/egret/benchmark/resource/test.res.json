@@ -1,0 +1,75 @@
+{
+    "resources": [
+        {
+            "name": "performanceTest",
+            "type": "json",
+            "url": "assets/DragonBoy/DragonBoy.json"
+        },
+        {
+            "name": "performanceTest_binary",
+            "type": "bin",
+            "url": "assets/DragonBoy/DragonBoy.dbbin"
+        },
+        {
+            "name": "performanceTest_textureData",
+            "type": "json",
+            "url": "assets/DragonBoy/DragonBoy_texture_1.json"
+        },
+        {
+            "name": "performanceTest_texture",
+            "type": "image",
+            "url": "assets/DragonBoy/DragonBoy_texture_1.png"
+        },
+
+        {
+            "name": "animationBaseTest_binary",
+            "type": "bin",
+            "url": "assets/AnimationBaseTest/AnimationBaseTest.dbbin"
+        },
+        {
+            "name": "animationBaseTest",
+            "type": "json",
+            "url": "assets/AnimationBaseTest/AnimationBaseTest.json"
+        },
+        {
+            "name": "animationBaseTest_textureData",
+            "type": "json",
+            "url": "assets/AnimationBaseTest/texture.json"
+        },
+        {
+            "name": "animationBaseTest_texture",
+            "type": "image",
+            "url": "assets/AnimationBaseTest/texture.png"
+        },
+
+        {
+            "name": "animationBlendTest",
+            "type": "json",
+            "url": "assets/TestB/1_ske.json"
+        },
+        {
+            "name": "animationBlendTest_textureData",
+            "type": "json",
+            "url": "assets/TestB/1_tex.json"
+        },
+        {
+            "name": "animationBlendTest_texture",
+            "type": "image",
+            "url": "assets/TestB/1_tex.png"
+        }
+    ],
+    "groups": [
+        {
+            "name": "performanceTest",
+            "keys": "performanceTest_binary,performanceTest,performanceTest_textureData,performanceTest_texture"
+        },
+        {
+            "name": "animationBaseTest",
+            "keys": "animationBaseTest_binary,animationBaseTest,animationBaseTest_textureData,animationBaseTest_texture"
+        },
+        {
+            "name": "animationBlendTest",
+            "keys": "animationBlendTest,animationBlendTest_textureData,animationBlendTest_texture"
+        }
+    ]
+}
