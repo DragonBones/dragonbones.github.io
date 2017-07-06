@@ -3,22 +3,22 @@
         {
             "name": "performanceTest",
             "type": "json",
-            "url": "assets/DragonBoy/DragonBoy.json"
+            "url": "assets/Ubbie_ske.json"
         },
         {
             "name": "performanceTest_binary",
             "type": "bin",
-            "url": "assets/DragonBoy/DragonBoy.dbbin"
+            "url": "assets/Ubbie_ske.dbbin"
         },
         {
             "name": "performanceTest_textureData",
             "type": "json",
-            "url": "assets/DragonBoy/DragonBoy_texture_1.json"
+            "url": "assets/Ubbie_tex.json"
         },
         {
             "name": "performanceTest_texture",
             "type": "image",
-            "url": "assets/DragonBoy/DragonBoy_texture_1.png"
+            "url": "assets/Ubbie_tex.png"
         },
 
         {
