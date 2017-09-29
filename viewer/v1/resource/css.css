@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    height: 100%;
+    background: #3c3c3c;
+    box-sizing: border-box;
+    -ms-touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 100;
+    font: 80%/1.65 Verdana, "Geneva CE", lucida, 'Microsoft YaHei', sans-serif;
+}
+
+input,
+select {
+    outline: 0;
+}
+
+.dragonbones_player {
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.skin {
+    position: absolute;
+    margin: auto;
+    width: 260px;
+    height: 100%;
+    right: -260px;
+    padding: 20px 30px 20px 30px;
+    z-index: 100;
+    overflow: hidden;
+    background:rgba(34, 34, 34, 0.9);
+}
+
+.skin ::-webkit-scrollbar {
+    display: none;
+}
+
+.skin ::-moz-scrollbar {
+    display: none;
+}
+
+.skin ::-o-scrollbar {
+    display: none;
+}
+
+.skin .group {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.skin .h_group {
+    display: flex;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+}
+
+.skin .title {
+    height: 36px;
+    line-height: 36px;
+}
+
+.skin .label_l {
+    width: 100%;
+}
+
+.skin .item {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.skin .icon {
+    width: 30px;
+}
+
+.skin .number{
+    line-height: 26px;
+    border: 1px solid #404040;
+    text-align: center;
+}
+
+.skin .halo {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.skin select {
+    width: 100%;
+    outline: 0;
+    color: #fff;
+    border: 1px solid #414040;
+    border-radius: 0 !important;
+    background: #1b1b1b;
+}
+
+.skin select option {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    display: inline-block;
+}
+
+.skin .selected {
+    width: 60px;
+    height: 26px;
+    border-radius: 13px;
+    background: #4cd964;
+    cursor: pointer;
+}
+
+.skin .selected >div {
+    float: right;
+    width: 26px;
+    height: 26px;
+    height: 100%;
+    border-radius: 13px;
+    background: #fff;
+}
+
+.skin .unselected {
+    width: 60px;
+    height: 26px;
+    border-radius: 13px;
+    background: #999;
+    cursor: pointer;
+}
+
+.skin .unselected >div {
+    float: left;
+    width: 26px;
+    height: 26px;
+    height: 100%;
+    border-radius: 13px;
+    background: #fff;
+}
+
+.skin .data img {
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    margin-right:20px; 
+}
+
+.skin .animation .play .prev_button>div {
+    margin-top: 7px;
+    margin-left: 8px;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.skin .animation .play .play_button>div:first-child {
+    margin-top: 6px;
+    margin-left: 8px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid #fff;
+}
+
+.skin .animation .play .stop_button>div:last-child>div {
+    margin-top: 6px;
+    margin-left: 8px;
+    width: 10px;
+    height: 12px;
+    background: #fff;
+}
+
+.skin .animation .play .stop_button>div:last-child>div:first-child {
+    left: 8px;
+}
+
+.skin .animation .play .stop_button>div:last-child>div:last-child {
+    right: 8px;
+}
+
+.skin .animation .play .next_button>div {
+    margin-top: 7px;
+    margin-left: 6px;
+    width: 8px;
+    height: 8px;
+    right: 8px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.skin .animation .speed {
+    position: absolute;
+    right: 30px;
+    width: 80px;
+}
+
+.skin .animation .speed .reduce_button{
+    position: absolute;
+    right: 5px;
+    bottom: 3px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 8px solid #fff;
+    cursor: pointer;
+}
+
+.skin .animation .speed .increase_button{
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 8px solid #fff;
+    cursor: pointer;
+}
+
+.skin .view .color >div {
+    width: 100%;
+    height: 16px;
+    cursor: pointer;
+}
+
+.skin .qrcode {
+    position: absolute;
+    left: 30;
+    bottom: 20px;
+}
+
+.skin_button {
+    position: absolute;
+    margin: auto;
+    width: 30px;
+    height: 40px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 200;
+    background: #222222;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.skin_button >div {
+    position: absolute;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: -4px;
+}
+
+.skin_button div:first-child {
+    left: 6px;
+}
+
+.skin_button div:last-child {
+    left: 14px;
+}
