@@ -192,18 +192,10 @@ select {
 
 .skin .animation .play .stop_button>div:last-child>div {
     margin-top: 6px;
-    margin-left: 8px;
+    margin-left: 6px;
     width: 10px;
-    height: 12px;
+    height: 10px;
     background: #fff;
-}
-
-.skin .animation .play .stop_button>div:last-child>div:first-child {
-    left: 8px;
-}
-
-.skin .animation .play .stop_button>div:last-child>div:last-child {
-    right: 8px;
 }
 
 .skin .animation .play .next_button>div {
