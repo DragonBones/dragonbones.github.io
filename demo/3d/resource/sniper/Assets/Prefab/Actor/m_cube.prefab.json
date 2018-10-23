@@ -1,0 +1,36 @@
+{
+	"assets":[
+		"Library/Cube.mesh.bin",
+		"Assets/Res/Actor/Male/Materials/male_1.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_2.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_3.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_4.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_5.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_6.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_7.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_8.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_9.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_10.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_11.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_12.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_13.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_14.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_15.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_16.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_17.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_18.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_19.mat.json",
+		"Assets/Res/Actor/Male/Materials/male_20.mat.json"
+	],
+	"objects":[
+		{"uuid":"1","class":"1","name":"m_cube","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"2"},{"uuid":"3"},{"uuid":"4"},{"uuid":"5"}]}
+	],
+	"components":[
+		{"uuid":"2","class":"11","localPosition":[-3,0,-7],"localRotation":[0,1,0,0],"localScale":[1,1,1],"children":[]},
+		{"uuid":"3","class":"5","_mesh":{"asset":0}},
+		{"uuid":"4","class":"6","_lightmapIndex":-1,"_materials":[{"asset":1},{"asset":2},{"asset":3},{"asset":4},{"asset":5},{"asset":6},{"asset":7},{"asset":8},{"asset":9},{"asset":10},{"asset":11},{"asset":12},{"asset":13},{"asset":14},{"asset":15},{"asset":16},{"asset":17},{"asset":18},{"asset":19},{"asset":20}]},
+		{"uuid":"5","class":"3","_bounds":{"center":[0,0,0],"size":[1,1,1]}}
+	],
+
+	"version":4
+}

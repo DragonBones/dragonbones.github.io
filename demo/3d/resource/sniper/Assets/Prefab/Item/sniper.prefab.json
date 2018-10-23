@@ -1,0 +1,16 @@
+{
+	"assets":[
+		"Assets/Res/Actor/Item/Models/SniperLow.mesh.bin",
+		"Assets/Res/Actor/Materials/people_default.mat.json"
+	],
+	"objects":[
+		{"uuid":"1","class":"1","name":"sniper","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"2"},{"uuid":"3"},{"uuid":"4"}]}
+	],
+	"components":[
+		{"uuid":"2","class":"11","localPosition":[0.693035,1.25665,-1.948665],"localRotation":[0.194585,0.083316,0.507389,0.835315],"localScale":[1,1,1],"children":[]},
+		{"uuid":"3","class":"5","_mesh":{"asset":0}},
+		{"uuid":"4","class":"6","_lightmapIndex":-1,"_materials":[{"asset":1}]}
+	],
+
+	"version":4
+}

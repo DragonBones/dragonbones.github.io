@@ -1,0 +1,14 @@
+{
+	"assets":[
+	],
+	"objects":[
+		{"uuid":"1","unityId":-408308,"class":"paper.Scene","name":"beginScene","ambientColor":[0.212,0.227,0.259,1],"lightmapIntensity":1,"gameObjects":[{"uuid":"2"}],"lightmaps":[]},
+		{"uuid":"2","unityId":41498,"class":"paper.GameObject","name":"Camera","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"3"},{"uuid":"4"}]}
+	],
+	"components":[
+		{"uuid":"3","unityId":41504,"class":"egret3d.Transform","localPosition":[0,0,0],"localRotation":[0.183013,0.683013,-0.183013,0.683013],"localScale":[1,1,1],"children":[]},
+		{"uuid":"4","unityId":41502,"class":"egret3d.Camera","fov":1.0471,"opvalue":1,"_near":0.01,"_far":1000,"cullingMask":16777215,"clearOption_Color":true,"clearOption_Depth":true,"backgroundColor":[0.192157,0.301961,0.47451,0],"viewport":[0,0,1,1],"order":0}
+	],
+
+	"version":4
+}

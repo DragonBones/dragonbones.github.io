@@ -1,0 +1,30 @@
+{
+	"assets":[
+		"Assets/Res/Other/bullet/other/polymsh_detached_0.mesh.bin",
+		"Assets/Res/Other/bullet/Materials/SniperBulletColor.mat.json",
+		"Assets/Res/Other/bullet/BulletTrail_0.mesh.bin",
+		"Assets/Res/Other/bullet/Materials/Gradient.mat.json"
+	],
+	"objects":[
+		{"uuid":"1","class":"1","name":"bullet","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"2"}]},
+		{"uuid":"3","class":"1","name":"followPos","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"4"}]},
+		{"uuid":"5","class":"1","name":"bulletNode","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"6"}]},
+		{"uuid":"7","class":"1","name":"bullet","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"8"},{"uuid":"9"},{"uuid":"10"}]},
+		{"uuid":"11","class":"1","name":"BulletTrail","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"12"}]},
+		{"uuid":"13","class":"1","name":"BulletTrail_0","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"14"},{"uuid":"15"},{"uuid":"16"}]}
+	],
+	"components":[
+		{"uuid":"2","class":"11","localPosition":[0,0,0],"localRotation":[0,0,0,1],"localScale":[1,1,1],"children":[{"uuid":"4"},{"uuid":"6"}]},
+		{"uuid":"4","class":"11","localPosition":[0,0,-0.579],"localRotation":[0,0,0,1],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"6","class":"11","localPosition":[0,0,0],"localRotation":[0,0,0,1],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[{"uuid":"8"},{"uuid":"12"}]},
+		{"uuid":"8","class":"11","localPosition":[0,0,0],"localRotation":[0.707107,0,0,0.707107],"localScale":[0.7,0.7,0.7],"_parent":{"uuid":"6"},"children":[]},
+		{"uuid":"9","class":"5","_mesh":{"asset":0}},
+		{"uuid":"10","class":"6","_lightmapIndex":-1,"_materials":[{"asset":1}]},
+		{"uuid":"12","class":"11","localPosition":[0,0,-0.2513],"localRotation":[-0.707107,0,0,0.707107],"localScale":[1,1,1],"_parent":{"uuid":"6"},"children":[{"uuid":"14"}]},
+		{"uuid":"14","class":"11","localPosition":[0,0,0],"localRotation":[0,0,0,1],"localScale":[1,1,1],"_parent":{"uuid":"12"},"children":[]},
+		{"uuid":"15","class":"5","_mesh":{"asset":2}},
+		{"uuid":"16","class":"6","_lightmapIndex":-1,"_materials":[{"asset":3}]}
+	],
+
+	"version":4
+}

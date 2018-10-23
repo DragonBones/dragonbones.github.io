@@ -1,0 +1,22 @@
+{
+	"assets":[
+		"Library/Quad.mesh.bin",
+		"Assets/Res/Effect/Materials/gunFire_other_doubleside.mat.json"
+	],
+	"objects":[
+		{"uuid":"1","class":"1","name":"gunFire_other","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"2"}]},
+		{"uuid":"3","class":"1","name":"Quad","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"4"},{"uuid":"5"},{"uuid":"6"}]},
+		{"uuid":"7","class":"1","name":"Quad (1)","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"8"},{"uuid":"9"},{"uuid":"10"}]}
+	],
+	"components":[
+		{"uuid":"2","class":"11","localPosition":[0,0,0],"localRotation":[0,0,0,1],"localScale":[1,1,1],"children":[{"uuid":"4"},{"uuid":"8"}]},
+		{"uuid":"4","class":"11","localPosition":[1.42,3.17,-0.25],"localRotation":[-0.035603,0.009898,-0.210025,0.976997],"localScale":[0.182394,13.02448,1],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"5","class":"5","_mesh":{"asset":0}},
+		{"uuid":"6","class":"6","_lightmapIndex":-1,"_materials":[{"asset":1}]},
+		{"uuid":"8","class":"11","localPosition":[1.554,3.4837,-0.27519],"localRotation":[0.088623,0.557415,-0.193711,0.80244],"localScale":[0.245388,13.631484,0.367637],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"9","class":"5","_mesh":{"asset":0}},
+		{"uuid":"10","class":"6","_lightmapIndex":-1,"_materials":[{"asset":1}]}
+	],
+
+	"version":4
+}

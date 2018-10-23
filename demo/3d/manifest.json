@@ -1,0 +1,41 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/dragonBones/dragonBones.js",
+		"libs/modules/promise/promise.js",
+		"libs/zlib/zlib.js",
+		"libs/modules/egret3d/egret3d.js",
+		"libs/modules/inspector/inspector.js",
+		"libs/modules/oimo/oimo.js"
+	],
+	"game": [
+		"bin-debug/examples/MathTest.js",
+		"bin-debug/Main.js",
+		"bin-debug/behaviors/RotateComponent.js",
+		"bin-debug/examples/AnimationTest.js",
+		"bin-debug/examples/ArrowIO.js",
+		"bin-debug/examples/BlendingTest.js",
+		"bin-debug/examples/BowMan.js",
+		"bin-debug/examples/Cube.js",
+		"bin-debug/examples/DefaultMeshes.js",
+		"bin-debug/examples/EUITest.js",
+		"bin-debug/examples/InputTest.js",
+		"bin-debug/examples/LoadTester.js",
+		"bin-debug/behaviors/RaycastTester.js",
+		"bin-debug/examples/Mesh.js",
+		"bin-debug/examples/ParticleTest.js",
+		"bin-debug/examples/PrefabTest.js",
+		"bin-debug/examples/RaycastTest.js",
+		"bin-debug/examples/SceneTest.js",
+		"bin-debug/examples/SkyCube.js",
+		"bin-debug/examples/Test.js",
+		"bin-debug/examples/dragonbones/Test.js",
+		"bin-debug/examples/oimo/OimoBase.js",
+		"bin-debug/examples/sniper/AnimationTest.js",
+		"bin-debug/examples/sniper/SceneTest.js",
+		"bin-debug/examples/sniper/Test.js"
+	]
+}

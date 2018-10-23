@@ -1,0 +1,18 @@
+{
+	"assets":[
+		"Assets/Res/Actor/Deco/Models/cap_0.mesh.bin",
+		"Assets/Res/Actor/Deco/Materials/cap_0Mat.mat.json"
+	],
+	"objects":[
+		{"uuid":"1","unityId":-531292,"class":"paper.GameObject","name":"cap","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"2"}]},
+		{"uuid":"3","unityId":-531294,"class":"paper.GameObject","name":"cap_0","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"4"},{"uuid":"5"},{"uuid":"6"}]}
+	],
+	"components":[
+		{"uuid":"2","unityId":-531296,"class":"egret3d.Transform","localPosition":[0,0,0],"localRotation":[0,0,0,1],"localScale":[1,1,1],"children":[{"uuid":"4"}]},
+		{"uuid":"4","unityId":-531298,"class":"egret3d.Transform","localPosition":[0,-0.03,-0.07],"localRotation":[0.707107,0,0,0.707107],"localScale":[0.14,0.14,0.14],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"5","unityId":-531300,"class":"egret3d.MeshFilter","_mesh":{"asset":0}},
+		{"uuid":"6","unityId":-531302,"class":"egret3d.MeshRenderer","_lightmapIndex":-1,"_castShadows":true,"_receiveShadows":true,"_lightmapScaleOffset":[1,1,0,0],"_materials":[{"asset":1}]}
+	],
+
+	"version":4
+}

@@ -1,0 +1,46 @@
+{
+  "native": {
+    "path_ignore": []
+  },
+  "publish": {
+    "web": 0,
+    "native": 1,
+    "path": "bin-release"
+  },
+  "compilerVersion": "5.3.1",
+  "engineVersion": "5.3.1",
+  "eui": {},
+  "modules": [
+    {
+      "name": "egret"
+    },
+    {
+      "name": "eui"
+    },
+    {
+      "name": "assetsmanager"
+    },
+    {
+      "name": "dragonBones"
+    },
+    {
+      "name": "promise"
+    },
+    {
+      "name": "zlib",
+      "path": "./libs/zlib"
+    },
+    {
+      "name": "egret3d",
+      "path": "../core"
+    },
+    {
+      "name": "inspector",
+      "path": "../editor"
+    },
+    {
+      "name": "oimo",
+      "path": "../plugins/oimo"
+    }
+  ]
+}

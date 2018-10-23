@@ -1,0 +1,44 @@
+{
+	"assets":[
+		"Assets/Res/Gun/mosinsagant/Model/ScopeMosinNagant_0.mesh.bin",
+		"Assets/Res/Gun/mosinsagant/Materials/ScopeMosinNagantDiffuse.mat.json",
+		"Assets/Res/Gun/mosinsagant/Model/MosinNagant_0.mesh.bin",
+		"Assets/Res/Gun/mosinsagant/Texture/Materials/DiffuseMosinNagant.mat.json"
+	],
+	"objects":[
+		{"uuid":"1","unityId":-65146,"class":"paper.GameObject","name":"mosinsagant","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"2"}]},
+		{"uuid":"3","unityId":-65156,"class":"paper.GameObject","name":"ScopeMosinNagant_0","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"4"},{"uuid":"5"},{"uuid":"6"}]},
+		{"uuid":"7","unityId":-65166,"class":"paper.GameObject","name":"mosinsagant","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"8"},{"uuid":"9"},{"uuid":"10"}]},
+		{"uuid":"11","unityId":-65144,"class":"paper.GameObject","name":"arm_pos","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"12"}]},
+		{"uuid":"13","unityId":-65164,"class":"paper.GameObject","name":"start_pos","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"14"}]},
+		{"uuid":"15","unityId":-65158,"class":"paper.GameObject","name":"aim_pos","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"16"}]},
+		{"uuid":"17","unityId":-65154,"class":"paper.GameObject","name":"shoot_pos","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"18"}]},
+		{"uuid":"19","unityId":-65152,"class":"paper.GameObject","name":"muzzle_pos","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"20"}]},
+		{"uuid":"21","unityId":-65168,"class":"paper.GameObject","name":"scope_pos","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"22"}]},
+		{"uuid":"23","unityId":-65160,"class":"paper.GameObject","name":"body_pos","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"24"}]},
+		{"uuid":"25","unityId":-65162,"class":"paper.GameObject","name":"butt_pos","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"26"}]},
+		{"uuid":"27","unityId":-65150,"class":"paper.GameObject","name":"bullet_pos","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"28"}]},
+		{"uuid":"29","unityId":-65148,"class":"paper.GameObject","name":"magazine_pos","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"30"}]}
+	],
+	"components":[
+		{"uuid":"2","unityId":-65194,"class":"egret3d.Transform","localPosition":[0,0,0],"localRotation":[0,0,0,1],"localScale":[1,1,1],"children":[{"uuid":"4"},{"uuid":"8"},{"uuid":"12"},{"uuid":"14"},{"uuid":"16"},{"uuid":"18"},{"uuid":"20"},{"uuid":"22"},{"uuid":"24"},{"uuid":"26"},{"uuid":"28"},{"uuid":"30"}]},
+		{"uuid":"4","unityId":-65186,"class":"egret3d.Transform","localPosition":[0,0.078726,-0.292],"localRotation":[0,0.009427,0,0.999956],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"5","unityId":-65200,"class":"egret3d.MeshFilter","_mesh":{"asset":0}},
+		{"uuid":"6","unityId":-65198,"class":"egret3d.MeshRenderer","_lightmapIndex":-1,"_castShadows":true,"_receiveShadows":true,"_lightmapScaleOffset":[1,1,0,0],"_materials":[{"asset":1}]},
+		{"uuid":"8","unityId":-65176,"class":"egret3d.Transform","localPosition":[0,0.078726,-0.292],"localRotation":[0,0.009427,0,0.999956],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"9","unityId":-65202,"class":"egret3d.MeshFilter","_mesh":{"asset":2}},
+		{"uuid":"10","unityId":-65196,"class":"egret3d.MeshRenderer","_lightmapIndex":-1,"_castShadows":true,"_receiveShadows":true,"_lightmapScaleOffset":[1,1,0,0],"_materials":[{"asset":3}]},
+		{"uuid":"12","unityId":-65184,"class":"egret3d.Transform","localPosition":[-0.022753,-1.653,-0.628891],"localRotation":[-0.70284,-0.053387,-0.04044,0.708188],"localScale":[0.010007,0.010007,0.010007],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"14","unityId":-65182,"class":"egret3d.Transform","localPosition":[-0.16,0.09,-0.984],"localRotation":[0,0,0,1],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"16","unityId":-65178,"class":"egret3d.Transform","localPosition":[0.03,-0.05,-0.864],"localRotation":[0,0,0,1],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"18","unityId":-65180,"class":"egret3d.Transform","localPosition":[0.0543,-0.191,0.807],"localRotation":[0,0,0,1],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"20","unityId":-65170,"class":"egret3d.Transform","localPosition":[0.05,-0.151,0.693],"localRotation":[0,0.866025,0,0.5],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"22","unityId":-65172,"class":"egret3d.Transform","localPosition":[0.05,-0.066,-0.184],"localRotation":[0,0.707107,0,0.707107],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"24","unityId":-65174,"class":"egret3d.Transform","localPosition":[0.05,-0.221,-0.244],"localRotation":[0,0.707107,0,0.707107],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"26","unityId":-65190,"class":"egret3d.Transform","localPosition":[0.05,-0.231,-0.7],"localRotation":[0,0.766044,0,0.642788],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"28","unityId":-65192,"class":"egret3d.Transform","localPosition":[-0.356,-0.455,-0.085],"localRotation":[0.291547,0.644205,-0.291547,0.644205],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"30","unityId":-65188,"class":"egret3d.Transform","localPosition":[0.05,-0.312,-0.176],"localRotation":[0.098454,0.761177,-0.118975,0.62989],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[]}
+	],
+
+	"version":4
+}

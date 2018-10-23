@@ -1,0 +1,22 @@
+{
+	"assets":[
+		"Assets/Res/Gun/AK74/Model/Plane_040.mesh.bin",
+		"Assets/Res/Gun/AK74/Materials/AK74.mat.json"
+	],
+	"objects":[
+		{"uuid":"1","class":"1","name":"ak74m","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"2"}]},
+		{"uuid":"3","class":"1","name":"model","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"4"},{"uuid":"5"},{"uuid":"6"}]},
+		{"uuid":"7","class":"1","name":"start","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"8"}]},
+		{"uuid":"9","class":"1","name":"aim","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"10"}]}
+	],
+	"components":[
+		{"uuid":"2","class":"11","localPosition":[0,0,0],"localRotation":[0,0,0,1],"localScale":[1,1,1],"children":[{"uuid":"4"},{"uuid":"8"},{"uuid":"10"}]},
+		{"uuid":"4","class":"11","localPosition":[0,0,0],"localRotation":[-0.5,-0.5,-0.5,0.5],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"5","class":"5","_mesh":{"asset":0}},
+		{"uuid":"6","class":"6","_lightmapIndex":-1,"_materials":[{"asset":1}]},
+		{"uuid":"8","class":"11","localPosition":[-0.085,0.145,-0.12],"localRotation":[0,0,0,1],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"10","class":"11","localPosition":[0.006,0.0833,-0.11],"localRotation":[0,0,0,1],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[]}
+	],
+
+	"version":4
+}

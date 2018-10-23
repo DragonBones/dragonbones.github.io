@@ -1,0 +1,4180 @@
+{
+	"groups": [],
+	"resources": [
+		{
+			"url": "lensflare0.png",
+			"type": "Texture",
+			"name": "lensflare0.png"
+		},
+		{
+			"url": "lensflare0_alpha.png",
+			"type": "Texture",
+			"name": "lensflare0_alpha.png"
+		},
+		{
+			"url": "logo.png",
+			"type": "Texture",
+			"name": "logo.png"
+		},
+		{
+			"url": "sprite0.jpg",
+			"type": "Texture",
+			"name": "sprite0.jpg"
+		},
+		{
+			"url": "sprite0.png",
+			"type": "Texture",
+			"name": "sprite0.png"
+		},
+		{
+			"url": "UV_Grid_Sm.jpg",
+			"type": "Texture",
+			"name": "UV_Grid_Sm.jpg"
+		},
+		{
+			"url": "2d/default.thm.json",
+			"type": "json",
+			"name": "default_thm_json"
+		},
+		{
+			"url": "dragonbones/WinAni_ske.json",
+			"type": "json",
+			"name": "dragonbones/WinAni_ske.json"
+		},
+		{
+			"url": "dragonbones/WinAni_tex.json",
+			"type": "json",
+			"name": "dragonbones/WinAni_tex.json"
+		},
+		{
+			"url": "dragonbones/WinAni_tex.png",
+			"type": "Texture",
+			"name": "dragonbones/WinAni_tex.png"
+		},
+		{
+			"url": "sniper/1.zipjson",
+			"type": "Unknown",
+			"name": "sniper/1.zipjson"
+		},
+		{
+			"url": "sniper/Unity_GI_(1024x1024)_Baked.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Unity_GI_(1024x1024)_Baked.image.json"
+		},
+		{
+			"url": "sniper/Library/Cube.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Library/Cube.mesh.bin"
+		},
+		{
+			"url": "sniper/Library/Cylinder.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Library/Cylinder.mesh.bin"
+		},
+		{
+			"url": "sniper/Library/Plane.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Library/Plane.mesh.bin"
+		},
+		{
+			"url": "sniper/Library/Quad.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Library/Quad.mesh.bin"
+		},
+		{
+			"url": "sniper/Library/UnityWhite.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Library/UnityWhite.image.json"
+		},
+		{
+			"url": "sniper/Library/UnityWhite.png",
+			"type": "Texture",
+			"name": "sniper/Library/UnityWhite.png"
+		},
+		{
+			"url": "sniper/Assets/city_prop/NewspaperStand01_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/city_prop/NewspaperStand01_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Scenes/beginScene.scene.json",
+			"type": "Scene",
+			"name": "sniper/Assets/Scenes/beginScene.scene.json"
+		},
+		{
+			"url": "sniper/Assets/Scenes/Test.scene.json",
+			"type": "Scene",
+			"name": "sniper/Assets/Scenes/Test.scene.json"
+		},
+		{
+			"url": "sniper/Assets/Scenes/venture02.scene.json",
+			"type": "Scene",
+			"name": "sniper/Assets/Scenes/venture02.scene.json"
+		},
+		{
+			"url": "sniper/Assets/Scenes/venture101.scene.json",
+			"type": "Scene",
+			"name": "sniper/Assets/Scenes/venture101.scene.json"
+		},
+		{
+			"url": "sniper/Assets/Scenes/venture102.scene.json",
+			"type": "Scene",
+			"name": "sniper/Assets/Scenes/venture102.scene.json"
+		},
+		{
+			"url": "sniper/Assets/Scenes/venture103.scene.json",
+			"type": "Scene",
+			"name": "sniper/Assets/Scenes/venture103.scene.json"
+		},
+		{
+			"url": "sniper/Assets/Scenes/venture119.scene.json",
+			"type": "Scene",
+			"name": "sniper/Assets/Scenes/venture119.scene.json"
+		},
+		{
+			"url": "sniper/Assets/Scenes/venture126.scene.json",
+			"type": "Scene",
+			"name": "sniper/Assets/Scenes/venture126.scene.json"
+		},
+		{
+			"url": "sniper/Assets/Scenes/venture130.scene.json",
+			"type": "Scene",
+			"name": "sniper/Assets/Scenes/venture130.scene.json"
+		},
+		{
+			"url": "sniper/Assets/unity_builtin_extra/UnityWhite.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/unity_builtin_extra/UnityWhite.image.json"
+		},
+		{
+			"url": "sniper/Assets/unity_builtin_extra/UnityWhite.png",
+			"type": "Texture",
+			"name": "sniper/Assets/unity_builtin_extra/UnityWhite.png"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Textures/CT_Signs_01.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Chinatown/Textures/CT_Signs_01.image.json"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Textures/CT_Signs_01.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Chinatown/Textures/CT_Signs_01.png"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Textures/CT_Signs_02.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Chinatown/Textures/CT_Signs_02.image.json"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Textures/CT_Signs_02.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Chinatown/Textures/CT_Signs_02.png"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Textures/sign01.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Chinatown/Textures/sign01.image.json"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Textures/sign01.jpg",
+			"type": "Texture",
+			"name": "sniper/Assets/Chinatown/Textures/sign01.jpg"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_01.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_01.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_02.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_02.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_03.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_03.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_04.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_04.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_05.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_05.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_06.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_06.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_07.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_07.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_08.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_08.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_09.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_09.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_10.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_10.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_11.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_11.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_12.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_12.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_13.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_13.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_14.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_14.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_15.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_15.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_16.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_16.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_17.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_17.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_18.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_18.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_19.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_19.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_20.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_20.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_21.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_21.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_22.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_22.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_23.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_23.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_24.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_24.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_25.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_25.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_26.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Chinatown/Models/Signs/CT_Signs_26.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/Materials/CT_Signs_01.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Chinatown/Models/Signs/Materials/CT_Signs_01.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/Materials/CT_Signs_02.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Chinatown/Models/Signs/Materials/CT_Signs_02.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Chinatown/Models/Signs/Materials/sign01.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Chinatown/Models/Signs/Materials/sign01.mat.json"
+		},
+		{
+			"url": "sniper/Assets/city_lowpoly/textures/bcn_4.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/city_lowpoly/textures/bcn_4.image.json"
+		},
+		{
+			"url": "sniper/Assets/city_lowpoly/textures/bcn_4.png",
+			"type": "Texture",
+			"name": "sniper/Assets/city_lowpoly/textures/bcn_4.png"
+		},
+		{
+			"url": "sniper/Assets/city_lowpoly/textures/bcn_5.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/city_lowpoly/textures/bcn_5.image.json"
+		},
+		{
+			"url": "sniper/Assets/city_lowpoly/textures/bcn_5.png",
+			"type": "Texture",
+			"name": "sniper/Assets/city_lowpoly/textures/bcn_5.png"
+		},
+		{
+			"url": "sniper/Assets/city_lowpoly/meshes/closed_meshes/barcelona_11.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/city_lowpoly/meshes/closed_meshes/barcelona_11.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/city_lowpoly/meshes/closed_meshes/barcelona_12.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/city_lowpoly/meshes/closed_meshes/barcelona_12.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/city_lowpoly/meshes/closed_meshes/barcelona_13.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/city_lowpoly/meshes/closed_meshes/barcelona_13.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/city_lowpoly/meshes/closed_meshes/barcelona_14.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/city_lowpoly/meshes/closed_meshes/barcelona_14.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/city_lowpoly/meshes/closed_meshes/barcelona_15.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/city_lowpoly/meshes/closed_meshes/barcelona_15.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/city_lowpoly/meshes/closed_meshes/barcelona_17.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/city_lowpoly/meshes/closed_meshes/barcelona_17.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/city_lowpoly/meshes/closed_meshes/barcelona_18.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/city_lowpoly/meshes/closed_meshes/barcelona_18.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/city_lowpoly/meshes/closed_meshes/barcelona_19.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/city_lowpoly/meshes/closed_meshes/barcelona_19.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/city_lowpoly/meshes/closed_meshes/Materials/bcn_4.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/city_lowpoly/meshes/closed_meshes/Materials/bcn_4.mat.json"
+		},
+		{
+			"url": "sniper/Assets/city_lowpoly/meshes/closed_meshes/Materials/bcn_5.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/city_lowpoly/meshes/closed_meshes/Materials/bcn_5.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Middel_East/Materials/_5.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Middel_East/Materials/_5.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Middel_East/Model/Mesh1.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Middel_East/Model/Mesh1.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Middel_East/Texture/Atlas_5.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Middel_East/Texture/Atlas_5.image.json"
+		},
+		{
+			"url": "sniper/Assets/Middel_East/Texture/Atlas_5.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Middel_East/Texture/Atlas_5.png"
+		},
+		{
+			"url": "sniper/Assets/Model_Pack/FBX/Box001.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Model_Pack/FBX/Box001.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Model_Pack/Materials/Tex_4.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Model_Pack/Materials/Tex_4.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Model_Pack/Texture/Tex_4.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Model_Pack/Texture/Tex_4.image.json"
+		},
+		{
+			"url": "sniper/Assets/Model_Pack/Texture/Tex_4.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Model_Pack/Texture/Tex_4.png"
+		},
+		{
+			"url": "sniper/Assets/Model_Pack/Texture/Materials/Tex_4.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Model_Pack/Texture/Materials/Tex_4.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/building/BuildingBigHoofModel_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/BuildingBigHoofModel_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/BuildingModel123_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/BuildingModel123_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/BuildingSmallModel_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/BuildingSmallModel_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/NY_set1_03.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/NY_set1_03.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/NY_set1_05.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/NY_set1_05.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/NY_set1_07.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/NY_set1_07.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/NY_set2_01.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/NY_set2_01.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/NY_set2_02.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/NY_set2_02.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/NY_set2_03.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/NY_set2_03.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/NY_set2_04.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/NY_set2_04.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/NY_set2_05.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/NY_set2_05.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/NY_set3_02.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/NY_set3_02.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/NY_set3_03.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/NY_set3_03.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/NY_set3_04.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/NY_set3_04.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/NY_set3_05.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/NY_set3_05.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/NY_set3_06.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/NY_set3_06.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/NY_set3_07.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/NY_set3_07.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/NY_set3_08.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/NY_set3_08.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/building/NY_set3_09.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/building/NY_set3_09.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Materials/Concrete.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Materials/Concrete.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Materials/Details.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Materials/Details.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Materials/NewStreet2.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Materials/NewStreet2.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Materials/NYC_set1.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Materials/NYC_set1.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Materials/NYC_set2.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Materials/NYC_set2.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Materials/NYC_set3.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Materials/NYC_set3.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Materials/Props.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Materials/Props.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Materials/Props_Texture_Diffuse.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Materials/Props_Texture_Diffuse.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Materials/SkydomeDay03.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Materials/SkydomeDay03.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Materials/Tex_5.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Materials/Tex_5.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Materials/trees.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Materials/trees.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Materials/Vendors.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Materials/Vendors.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/road/Fillers_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/road/Fillers_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/road/NewStreet2.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/road/NewStreet2.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/road/NewStreet2.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/road/NewStreet2.png"
+		},
+		{
+			"url": "sniper/Assets/Res/road/Plane001.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/road/Plane001.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/skydome/Skydome_Skydome_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/skydome/Skydome_Skydome_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/Concrete.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/textures/Concrete.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/Concrete.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/textures/Concrete.png"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/Details.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/textures/Details.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/Details.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/textures/Details.png"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/NYC_set1.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/textures/NYC_set1.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/NYC_set1.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/textures/NYC_set1.png"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/NYC_set2.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/textures/NYC_set2.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/NYC_set2.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/textures/NYC_set2.png"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/NYC_set3.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/textures/NYC_set3.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/NYC_set3.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/textures/NYC_set3.png"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/Props_Texture_Diffuse.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/textures/Props_Texture_Diffuse.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/Props_Texture_Diffuse.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/textures/Props_Texture_Diffuse.png"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/SkydomeDay03.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/textures/SkydomeDay03.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/SkydomeDay03.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/textures/SkydomeDay03.png"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/Tex_5.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/textures/Tex_5.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/Tex_5.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/textures/Tex_5.png"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/trees.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/textures/trees.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/trees.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/textures/trees.png"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/Vendors.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/textures/Vendors.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/textures/Vendors.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/textures/Vendors.png"
+		},
+		{
+			"url": "sniper/Assets/Res/tree/Bark.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/tree/Bark.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/tree/tree03.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/tree/tree03.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/tree/tree04.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/tree/tree04.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/wall/Wall_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/wall/Wall_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Materials/people_default.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Materials/people_default.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Carrier/helicopter/body.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Carrier/helicopter/body.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Carrier/helicopter/helicopter_run_helicopter_run.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Carrier/helicopter/helicopter_run_helicopter_run.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Carrier/helicopter/Materials/Helicopter_Diffulse.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Carrier/helicopter/Materials/Helicopter_Diffulse.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Carrier/helicopter/Materials/Helicopter_Diffulse.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Carrier/helicopter/Materials/Helicopter_Diffulse.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Carrier/helicopter/Materials/Helicopter_Diffulse.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Carrier/helicopter/Materials/Helicopter_Diffulse.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Carrier/helicopter/Materials/Helicopter_Diffulse_1.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Carrier/helicopter/Materials/Helicopter_Diffulse_1.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Carrier/jeep/boli.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Carrier/jeep/boli.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Carrier/jeep/jeep_run_jeep_run.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Carrier/jeep/jeep_run_jeep_run.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Carrier/jeep/V02_Body.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Carrier/jeep/V02_Body.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Carrier/jeep/Materials/V02.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Carrier/jeep/Materials/V02.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Carrier/jeep/Materials/V02.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Carrier/jeep/Materials/V02.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Carrier/jeep/Materials/V02.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Carrier/jeep/Materials/V02.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Deco/Materials/cap_0Mat.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Deco/Materials/cap_0Mat.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Deco/Models/cap_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Deco/Models/cap_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_1.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_1.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_10.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_10.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_11.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_11.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_12.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_12.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_13.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_13.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_14.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_14.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_15.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_15.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_16.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_16.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_17.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_17.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_18.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_18.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_19.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_19.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_2.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_2.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_20.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_20.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_3.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_3.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_4.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_4.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_5.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_5.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_6.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_6.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_7.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_7.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_8.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_8.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Materials/female_9.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Female/Materials/female_9.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Models/female_fat.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Female/Models/female_fat.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Models/female_fat_LOW_die.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Female/Models/female_fat_LOW_die.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Models/female_fat_LOW_idle.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Female/Models/female_fat_LOW_idle.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Models/female_fat_LOW_run.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Female/Models/female_fat_LOW_run.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Models/female_fat_LOW_talk.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Female/Models/female_fat_LOW_talk.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Models/female_fat_LOW_walk.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Female/Models/female_fat_LOW_walk.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Models/female_slim.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Female/Models/female_slim.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_01.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_01.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_01.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_01.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_02.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_02.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_02.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_02.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_03.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_03.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_03.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_03.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_04.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_04.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_04.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_04.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_05.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_05.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_05.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_05.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_06.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_06.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_06.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_06.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_07.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_07.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_07.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_07.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_08.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_08.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_08.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_08.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_09.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_09.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_09.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_09.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_10.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_10.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_10.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_10.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_11.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_11.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_11.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_11.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_12.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_12.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_12.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_12.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_13.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_13.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_13.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_13.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_14.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_14.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_14.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_14.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_15.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_15.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_15.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_15.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_16.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_16.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_16.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_16.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_17.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_17.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_17.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_17.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_18.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_18.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_18.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_18.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_19.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_19.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_19.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_19.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_20.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_20.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Female/Textures/female_v1_20.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Female/Textures/female_v1_20.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Item/Materials/briefcase_black_0Mat.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Item/Materials/briefcase_black_0Mat.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Item/Materials/gun_black.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Item/Materials/gun_black.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Item/Models/briefcase_black_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Item/Models/briefcase_black_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Item/Models/SniperLow_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Item/Models/SniperLow_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Item/Textures/briefcase_1.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Item/Textures/briefcase_1.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Item/Textures/briefcase_1.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Item/Textures/briefcase_1.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_1.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_1.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_10.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_10.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_11.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_11.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_12.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_12.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_13.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_13.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_14.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_14.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_15.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_15.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_16.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_16.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_17.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_17.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_18.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_18.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_19.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_19.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_2.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_2.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_20.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_20.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_3.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_3.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_4.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_4.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_5.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_5.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_6.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_6.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_7.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_7.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_8.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_8.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Materials/male_9.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Male/Materials/male_9.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_aim_s.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_aim_s.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_crouch_q.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_crouch_q.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_crouch_s.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_crouch_s.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_die.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_die.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_die02.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_die02.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_die_q.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_die_q.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_drive.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_drive.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_ease.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_ease.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_ease_q.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_ease_q.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_fall.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_fall.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_hello.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_hello.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_hide.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_hide.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_idle.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_idle.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_idle_c.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_idle_c.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_idle_q.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_idle_q.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_injured.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_injured.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_jump.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_jump.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_jump_end.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_jump_end.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_kidnap_s.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_kidnap_s.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_phonecall.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_phonecall.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_run.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_run.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_run_q.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_run_q.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_shoot_c.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_shoot_c.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_shoot_q.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_shoot_q.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_shoot_s.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_shoot_s.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_walk.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_walk.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_walk_q.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_walk_q.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/male_anim_warning.ani.bin",
+			"type": "Animation",
+			"name": "sniper/Assets/Res/Actor/Male/Models/male_anim_warning.ani.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Models/toughguy_low.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Male/Models/toughguy_low.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t1.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t1.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t1.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t1.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t10.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t10.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t10.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t10.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t11.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t11.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t11.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t11.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t12.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t12.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t12.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t12.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t13.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t13.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t13.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t13.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t14.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t14.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t14.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t14.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t15.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t15.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t15.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t15.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t16.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t16.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t16.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t16.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t17.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t17.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t17.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t17.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t18.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t18.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t18.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t18.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t19.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t19.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t19.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t19.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t2.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t2.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t2.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t2.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t20.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t20.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t20.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t20.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t3.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t3.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t3.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t3.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t4.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t4.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t4.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t4.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t5.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t5.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t5.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t5.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t6.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t6.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t6.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t6.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t7.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t7.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t7.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t7.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t8.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t8.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t8.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t8.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t9.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t9.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Male/Textures/male_f_t9.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Male/Textures/male_f_t9.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/car1.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/car1.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/car1.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/car1.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/Car2.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/Car2.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/Car2.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/Car2.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/Car2.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/Car2.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarBus.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarBus.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarBus.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarBus.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarBus.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarBus.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarPolice.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarPolice.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarPolice.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarPolice.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarPolice.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarPolice.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarRig.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarRig.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarRig.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarRig.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarSuv.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarSuv.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarSuv.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarSuv.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarSuv.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarSuv.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarTaxiB.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarTaxiB.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarTaxiB.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarTaxiB.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarTaxiB.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarTaxiB.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarTruck.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarTruck.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/carvan.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/carvan.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/carvan.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/carvan.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarWag.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarWag.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarWag.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarWag.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/CarWag.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/CarWag.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/TrafficC1.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/TrafficC1.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/TrafficCV.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/TrafficCV.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/TrafficW1.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/TrafficW1.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/TrafficWV.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/TrafficWV.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/Trailer.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/Trailer.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/WB1.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/WB1.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/WB2.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/WB2.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/WC2.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/WC2.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/WP1.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/WP1.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/WS1.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/WS1.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/WT1.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/WT1.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/Wt2.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/Wt2.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/WTB.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/WTB.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/WW1.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/WW1.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/car1.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/car1.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/Car2.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/Car2.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/CarBus.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/CarBus.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/CarPolice.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/CarPolice.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/CarRig.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/CarRig.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/CarSuv.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/CarSuv.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/CarTaxiB.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/CarTaxiB.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/carvan.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/carvan.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/CarWag.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Actor/Vehicles/Source/Materials/CarWag.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Materials/bullethole.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Effect/Materials/bullethole.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Materials/flare_01.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Effect/Materials/flare_01.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Materials/gunFire.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Effect/Materials/gunFire.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Materials/gunFire_other.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Effect/Materials/gunFire_other.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Materials/gunFire_other_doubleside.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Effect/Materials/gunFire_other_doubleside.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Materials/Mat_Fire.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Effect/Materials/Mat_Fire.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Materials/Mat_Flame.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Effect/Materials/Mat_Flame.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Materials/Mat_Glow.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Effect/Materials/Mat_Glow.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Materials/SoftHole.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Effect/Materials/SoftHole.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/BulletHole.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Effect/Textures/BulletHole.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/BulletHole.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Effect/Textures/BulletHole.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/flare_01.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Effect/Textures/flare_01.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/flare_01.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Effect/Textures/flare_01.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/flare_02.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Effect/Textures/flare_02.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/flare_02.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Effect/Textures/flare_02.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/SoftHole.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Effect/Textures/SoftHole.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/SoftHole.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Effect/Textures/SoftHole.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/Tex_Fire.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Effect/Textures/Tex_Fire.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/Tex_Fire.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Effect/Textures/Tex_Fire.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/Tex_Flame.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Effect/Textures/Tex_Flame.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/Tex_Flame.jpg",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Effect/Textures/Tex_Flame.jpg"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/Tex_Glow.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Effect/Textures/Tex_Glow.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/Tex_Glow.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Effect/Textures/Tex_Glow.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/Shooting-sequence/Shooting-sequence01.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Effect/Textures/Shooting-sequence/Shooting-sequence01.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/Shooting-sequence/Shooting-sequence02.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Effect/Textures/Shooting-sequence/Shooting-sequence02.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/Shooting-sequence/Shooting-sequence03.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Effect/Textures/Shooting-sequence/Shooting-sequence03.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/Shooting-sequence/Shooting-sequence04.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Effect/Textures/Shooting-sequence/Shooting-sequence04.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/Shooting-sequence/Shooting-sequence05.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Effect/Textures/Shooting-sequence/Shooting-sequence05.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/Shooting_sequence/Shooting_sequence01.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Effect/Textures/Shooting_sequence/Shooting_sequence01.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Effect/Textures/Shooting_sequence/Shooting_sequence01.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Effect/Textures/Shooting_sequence/Shooting_sequence01.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/right_arm/RightArm_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Gun/right_arm/RightArm_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/AK74/Materials/AK74.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Gun/AK74/Materials/AK74.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/AK74/Model/Plane_040.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Gun/AK74/Model/Plane_040.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/AK74/Texture/AK74m_COLOR.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Gun/AK74/Texture/AK74m_COLOR.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/AK74/Texture/AK74m_COLOR.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Gun/AK74/Texture/AK74m_COLOR.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/gun/APR308Body_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Gun/R308/gun/APR308Body_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/gun/Materials/APR308Diffuse.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Gun/R308/gun/Materials/APR308Diffuse.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/gun/Materials/APR308MagazineDiffuse.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Gun/R308/gun/Materials/APR308MagazineDiffuse.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/gun_magazine/MagazineAPR308_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Gun/R308/gun_magazine/MagazineAPR308_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/gun_muzzle/MuzzleLR308_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Gun/R308/gun_muzzle/MuzzleLR308_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/gun_muzzle/Materials/MuzzleLR308Diffuse.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Gun/R308/gun_muzzle/Materials/MuzzleLR308Diffuse.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/gun_other/BackLens_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Gun/R308/gun_other/BackLens_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/gun_other/ScopeLR308_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Gun/R308/gun_other/ScopeLR308_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/gun_other/Trigger_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Gun/R308/gun_other/Trigger_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/gun_other/Materials/ScopeLR308Diffuse.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Gun/R308/gun_other/Materials/ScopeLR308Diffuse.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/hand/HandsColor.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Gun/R308/hand/HandsColor.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/hand/HandsColor.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Gun/R308/hand/HandsColor.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/hand/Materials/HandsColor.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Gun/R308/hand/Materials/HandsColor.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/static/NewCrosshairMask.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Gun/R308/static/NewCrosshairMask.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/static/NewCrosshairMask.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Gun/R308/static/NewCrosshairMask.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/static/Materials/NewCrosshairMask.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Gun/R308/static/Materials/NewCrosshairMask.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/Texture/APR308Diffuse.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Gun/R308/Texture/APR308Diffuse.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/Texture/APR308Diffuse.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Gun/R308/Texture/APR308Diffuse.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/Texture/APR308MagazineDiffuse.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Gun/R308/Texture/APR308MagazineDiffuse.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/Texture/APR308MagazineDiffuse.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Gun/R308/Texture/APR308MagazineDiffuse.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/Texture/MuzzleLR308Diffuse.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Gun/R308/Texture/MuzzleLR308Diffuse.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/Texture/MuzzleLR308Diffuse.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Gun/R308/Texture/MuzzleLR308Diffuse.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/Texture/ScopeLR308Diffuse.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Gun/R308/Texture/ScopeLR308Diffuse.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Gun/R308/Texture/ScopeLR308Diffuse.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Gun/R308/Texture/ScopeLR308Diffuse.png"
+		},
+		{
+			"url": "sniper/Assets/Res/obj/model/Box001.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/obj/model/Box001.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/obj/model/Box001rrt.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/obj/model/Box001rrt.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/obj/model/BusStopMesh_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/obj/model/BusStopMesh_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/obj/model/Crosswalk_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/obj/model/Crosswalk_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/obj/model/FireHydrant_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/obj/model/FireHydrant_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/obj/model/RoofDecoration4_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/obj/model/RoofDecoration4_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/obj/model/RoofDecoration6_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/obj/model/RoofDecoration6_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/obj/model/Tunnel_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/obj/model/Tunnel_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Other/bullet/BulletTrail_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Other/bullet/BulletTrail_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Other/bullet/Gradient.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Other/bullet/Gradient.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Other/bullet/Gradient.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Other/bullet/Gradient.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Other/bullet/SniperBulletColor.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Other/bullet/SniperBulletColor.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Other/bullet/SniperBulletColor.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Other/bullet/SniperBulletColor.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Other/bullet/Materials/Gradient.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Other/bullet/Materials/Gradient.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Other/bullet/Materials/SniperBulletColor.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Other/bullet/Materials/SniperBulletColor.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Other/bullet/other/polymsh_detached_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Other/bullet/other/polymsh_detached_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/BuildingBigHoofModel.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/BuildingBigHoofModel.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/BuildingBigHoofModel_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/BuildingBigHoofModel_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/BuildingModel123.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/BuildingModel123.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/BuildingModel123_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/BuildingModel123_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/BuildingSmallModel.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/BuildingSmallModel.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/BuildingSmallModel_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/BuildingSmallModel_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/ny_buildings.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/ny_buildings.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set1_03.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set1_03.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set1_05.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set1_05.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set1_07.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set1_07.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set2_01.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set2_01.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set2_02.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set2_02.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set2_03.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set2_03.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set2_04.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set2_04.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set2_05.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set2_05.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set3_01.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set3_01.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set3_02.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set3_02.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set3_03.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set3_03.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set3_04.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set3_04.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set3_05.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set3_05.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set3_06.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set3_06.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set3_07.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set3_07.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set3_08.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set3_08.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set3_09.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set3_09.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set4_01.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set4_01.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set4_02.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set4_02.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set4_03.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set4_03.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set5_01.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set5_01.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set5_02.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set5_02.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set6_01.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set6_01.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set6_02.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set6_02.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/building/NY_set6_03.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/building/NY_set6_03.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/Materials/Concrete.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/Materials/Concrete.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/Materials/Details.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/Materials/Details.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/Materials/NewStreet2.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/Materials/NewStreet2.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/Materials/NYC_set1.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/Materials/NYC_set1.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/Materials/NYC_set2.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/Materials/NYC_set2.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/Materials/NYC_set3.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/Materials/NYC_set3.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/Materials/NYC_set4.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/Materials/NYC_set4.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/Materials/NYC_set5.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/Materials/NYC_set5.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/Materials/NYC_set6.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/Materials/NYC_set6.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/Materials/Props.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/Materials/Props.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/Materials/Props_Texture_Diffuse.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/Materials/Props_Texture_Diffuse.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/Materials/SkydomeDay03.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/Materials/SkydomeDay03.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/Materials/Tex_5.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/Materials/Tex_5.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/Materials/trees.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/Materials/trees.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/Materials/Vendors.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/Materials/Vendors.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/road/Fillers.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/road/Fillers.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/road/Fillers_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/road/Fillers_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/road/NewStreet2.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/road/NewStreet2.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/road/NewStreet2.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/road/NewStreet2.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/road/Plane001.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/road/Plane001.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/road/R7.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/road/R7.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/skydome/Skydome_Skydome.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/skydome/Skydome_Skydome.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/skydome/Skydome_Skydome_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/skydome/Skydome_Skydome_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/skydome/Skydome_SkylineNear_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/skydome/Skydome_SkylineNear_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/Concrete.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/textures/Concrete.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/Concrete.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/textures/Concrete.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/Details.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/textures/Details.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/Details.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/textures/Details.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/NYC_set1.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/textures/NYC_set1.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/NYC_set1.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/textures/NYC_set1.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/NYC_set2.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/textures/NYC_set2.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/NYC_set2.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/textures/NYC_set2.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/NYC_set3.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/textures/NYC_set3.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/NYC_set3.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/textures/NYC_set3.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/NYC_set4.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/textures/NYC_set4.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/NYC_set4.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/textures/NYC_set4.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/NYC_set5.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/textures/NYC_set5.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/NYC_set5.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/textures/NYC_set5.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/NYC_set6.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/textures/NYC_set6.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/NYC_set6.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/textures/NYC_set6.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/Props_Texture_Diffuse.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/textures/Props_Texture_Diffuse.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/Props_Texture_Diffuse.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/textures/Props_Texture_Diffuse.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/SkydomeDay03.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/textures/SkydomeDay03.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/SkydomeDay03.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/textures/SkydomeDay03.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/Tex_5.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/textures/Tex_5.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/Tex_5.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/textures/Tex_5.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/trees.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/textures/trees.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/trees.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/textures/trees.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/Vendors.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/textures/Vendors.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/textures/Vendors.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/textures/Vendors.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/tree/Bark.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/tree/Bark.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/tree/tree03.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/tree/tree03.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/tree/tree04.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/tree/tree04.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/tree/tree1.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/tree/tree1.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/tree/Tree_04.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/tree/Tree_04.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/wall/Box001.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/wall/Box001.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/wall/Wall.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/wall/Wall.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/wall/Wall_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/wall/Wall_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/AC.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/AC.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/Box001.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/Box001.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/Box001rrt.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/Box001rrt.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/BusStopMesh.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/BusStopMesh.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/BusStopMesh_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/BusStopMesh_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/Crosswalk.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/Crosswalk.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/Crosswalk_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/Crosswalk_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/FireHydrant.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/FireHydrant.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/FireHydrant_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/FireHydrant_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/RoofDecoration4.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/RoofDecoration4.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/RoofDecoration4_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/RoofDecoration4_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/RoofDecoration6.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/RoofDecoration6.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/RoofDecoration6_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/RoofDecoration6_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/Signal_light_02.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/Signal_light_02.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/Street_Light.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/Street_Light.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/Street_Signal.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/Street_Signal.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/Tunnel.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/Tunnel.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/obj/model/Tunnel_0.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/obj/model/Tunnel_0.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/Building_Apartment_02.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/Building_Apartment_02.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/Building_BookStore.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/Building_BookStore.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/Building_PizzaShop.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/Building_PizzaShop.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/Props_Street.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/Props_Street.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/SimpleTownLite_Billboard.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/SimpleTownLite_Billboard.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/SimpleTownLite_Dumpster.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/SimpleTownLite_Dumpster.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/SimpleTownLite_Road.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/SimpleTownLite_Road.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/Vehicle_HotdogTruck.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/Vehicle_HotdogTruck.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/Vehicle_PizzaCar.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Materials/Vehicle_PizzaCar.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/apartment_large_thin_short.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/apartment_large_thin_short.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/billboard_mesh.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/billboard_mesh.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/bin_mesh.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/bin_mesh.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/car_fl_wheel_mesh.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/car_fl_wheel_mesh.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/car_fr_wheel_mesh.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/car_fr_wheel_mesh.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/car_rl_wheel_mesh.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/car_rl_wheel_mesh.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/car_rr_wheel_mesh.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/car_rr_wheel_mesh.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/dumpster_mesh.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/dumpster_mesh.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/hotdog_fl_wheel.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/hotdog_fl_wheel.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/hotdog_fr_wheel.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/hotdog_fr_wheel.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/hotdog_rl_wheel.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/hotdog_rl_wheel.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/hotdog_rr_wheel.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/hotdog_rr_wheel.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/hotdog_truck_seperate.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/hotdog_truck_seperate.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/pizza_car_seperate.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/pizza_car_seperate.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/pizza_shop.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/pizza_shop.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/road_straight_mesh.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/road_straight_mesh.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/store_small_mesh.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Models/store_small_mesh.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/Shop_Damaged.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/Shop_Damaged.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/Shop_Damaged.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/Shop_Damaged.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Building_Apartment_02.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Building_Apartment_02.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Building_Apartment_02.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Building_Apartment_02.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Building_Pizza.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Building_Pizza.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Building_Pizza.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Building_Pizza.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Props.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Props.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Props.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Props.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Props_Billboard_02.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Props_Billboard_02.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Props_Billboard_02.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Props_Billboard_02.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Props_Dumpster.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Props_Dumpster.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Props_Dumpster.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Props_Dumpster.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Road.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Road.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Road.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Road.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Vehicle_HotdogTruck.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Vehicle_HotdogTruck.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Vehicle_HotdogTruck.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Vehicle_HotdogTruck.png"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Vehicle_PizzaCar.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Vehicle_PizzaCar.image.json"
+		},
+		{
+			"url": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Vehicle_PizzaCar.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Res/Scene/SimpleTownLite/_Textures/STL_Vehicle_PizzaCar.png"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Materials/Commercial_Set_1.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Materials/Commercial_Set_1.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Materials/Commercial_Set_2.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Materials/Commercial_Set_2.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Materials/Floors16m_Set.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Materials/Floors16m_Set.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Materials/Free_Converter.com_commercial_set_1_35234930.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Materials/Free_Converter.com_commercial_set_1_35234930.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Materials/Free_Converter.com_commercial_set_2_92944921.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Materials/Free_Converter.com_commercial_set_2_92944921.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Materials/Free_Converter.com_floors16m_set_19373315.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Materials/Free_Converter.com_floors16m_set_19373315.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Materials/Free_Converter.com_historical_set_80594925.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Materials/Free_Converter.com_historical_set_80594925.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Materials/Free_Converter.com_road_modules_52604928.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Materials/Free_Converter.com_road_modules_52604928.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Materials/Free_Converter.com_signs_set_78004923.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Materials/Free_Converter.com_signs_set_78004923.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Materials/Free_Converter.com_trees_set_43513314.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Materials/Free_Converter.com_trees_set_43513314.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Materials/Free_Converter.com_warehouse_set_94774932.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Materials/Free_Converter.com_warehouse_set_94774932.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Materials/Historical_Set.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Materials/Historical_Set.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Materials/Road_Modules.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Materials/Road_Modules.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Materials/Signs_Set.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Materials/Signs_Set.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Materials/tunnelquad.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Materials/tunnelquad.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Materials/Warehouse_Set.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Materials/Warehouse_Set.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Commercial_Set_1.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Commercial_Set_1.image.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Commercial_Set_1.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Commercial_Set_1.png"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Commercial_Set_2.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Commercial_Set_2.image.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Commercial_Set_2.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Commercial_Set_2.png"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_commercial_set_1_35234930.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_commercial_set_1_35234930.image.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_commercial_set_1_35234930.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_commercial_set_1_35234930.png"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_commercial_set_2_92944921.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_commercial_set_2_92944921.image.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_commercial_set_2_92944921.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_commercial_set_2_92944921.png"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_floors16m_set_19373315.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_floors16m_set_19373315.image.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_floors16m_set_19373315.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_floors16m_set_19373315.png"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_historical_set_80594925.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_historical_set_80594925.image.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_historical_set_80594925.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_historical_set_80594925.png"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_road_modules_52604928.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_road_modules_52604928.image.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_road_modules_52604928.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_road_modules_52604928.png"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_signs_set_78004923.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_signs_set_78004923.image.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_signs_set_78004923.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_signs_set_78004923.png"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_trees_set_43513314.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_trees_set_43513314.image.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_trees_set_43513314.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_trees_set_43513314.png"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_warehouse_set_94774932.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_warehouse_set_94774932.image.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_warehouse_set_94774932.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Free_Converter.com_warehouse_set_94774932.png"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Historical_Set.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Historical_Set.image.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Historical_Set.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Historical_Set.png"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Road_Modules.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Road_Modules.image.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Road_Modules.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Road_Modules.png"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Signs_Set.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Signs_Set.image.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Signs_Set.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Signs_Set.png"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Warehouse_Set.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Warehouse_Set.image.json"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Textures/Warehouse_Set.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Skyline_Volume_1/Textures/Warehouse_Set.png"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/ground/Floor_Panel_16x16_B.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/ground/Floor_Panel_16x16_B.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/ground/Floor_Panel_16x16_C.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/ground/Floor_Panel_16x16_C.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/ground/Floor_Panel_16x16_D.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/ground/Floor_Panel_16x16_D.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_01.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_01.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_02.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_02.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_03.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_03.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_04.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_04.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_05.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_05.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_06.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_06.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_07.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_07.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_08.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_08.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_09.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_09.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_10.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_10.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_11.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_11.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_12.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_12.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_13.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_13.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_14.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_14.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_15.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_15.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_16.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_16.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_17.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_17.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_18.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_18.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_19.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/lane/One_Lane_19.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/prop/Bus_Stop_Shelter.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/prop/Bus_Stop_Shelter.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/prop/Bus_Stop_Sign.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/prop/Bus_Stop_Sign.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/prop/Mailbox.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/prop/Mailbox.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/prop/Phone_Booth.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/prop/Phone_Booth.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/sign/Sign_Hwy_06.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/sign/Sign_Hwy_06.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/tree/Tree_01.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/tree/Tree_01.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/tree/Tree_02.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/tree/Tree_02.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/tree/Tree_03.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/tree/Tree_03.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/tree/Tree_04.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/tree/Tree_04.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/tree/Tree_05.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/tree/Tree_05.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/tree/Tree_06.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/tree/Tree_06.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/tree/Tree_07.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/tree/Tree_07.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/tree/Tree_08.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/tree/Tree_08.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/wall/Barrier.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/wall/Barrier.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/wall/Straight_Guardrail.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/wall/Straight_Guardrail.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/warehouse/Warehouse_Medium_05.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/warehouse/Warehouse_Medium_05.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/warehouse/Warehouse_Medium_06.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/warehouse/Warehouse_Medium_06.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/warehouse/Warehouse_Small_01.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/warehouse/Warehouse_Small_01.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/warehouse/Warehouse_Small_04.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/warehouse/Warehouse_Small_04.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Skyline_Volume_1/Models/meshes/closed_meshes/Materials/NYC_set3.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Skyline_Volume_1/Models/meshes/closed_meshes/Materials/NYC_set3.mat.json"
+		},
+		{
+			"url": "sniper/Assets/texture/city/skyline.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/texture/city/skyline.image.json"
+		},
+		{
+			"url": "sniper/Assets/texture/city/skyline.png",
+			"type": "Texture",
+			"name": "sniper/Assets/texture/city/skyline.png"
+		},
+		{
+			"url": "sniper/Assets/texture/city/Materials/skyline.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/texture/city/Materials/skyline.mat.json"
+		},
+		{
+			"url": "sniper/Assets/Urban_American_Assets/Props/Vehicles/Source/carvan.image.json",
+			"type": "TextureDesc",
+			"name": "sniper/Assets/Urban_American_Assets/Props/Vehicles/Source/carvan.image.json"
+		},
+		{
+			"url": "sniper/Assets/Urban_American_Assets/Props/Vehicles/Source/carvan.png",
+			"type": "Texture",
+			"name": "sniper/Assets/Urban_American_Assets/Props/Vehicles/Source/carvan.png"
+		},
+		{
+			"url": "sniper/Assets/Urban_American_Assets/Props/Vehicles/Source/TrafficCV.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Urban_American_Assets/Props/Vehicles/Source/TrafficCV.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Urban_American_Assets/Props/Vehicles/Source/TrafficWV.mesh.bin",
+			"type": "Mesh",
+			"name": "sniper/Assets/Urban_American_Assets/Props/Vehicles/Source/TrafficWV.mesh.bin"
+		},
+		{
+			"url": "sniper/Assets/Urban_American_Assets/Props/Vehicles/Source/Materials/carvan.mat.json",
+			"type": "Material",
+			"name": "sniper/Assets/Urban_American_Assets/Props/Vehicles/Source/Materials/carvan.mat.json"
+		},
+		{
+			"url": "sniper/Prefab/Actor/f_bonus.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Actor/f_bonus.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Actor/f_cube.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Actor/f_cube.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Actor/f_fat.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Actor/f_fat.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Actor/f_slim.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Actor/f_slim.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Actor/helicopter.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Actor/helicopter.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Actor/jeep.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Actor/jeep.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Actor/male.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Actor/male.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Actor/m_cube.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Actor/m_cube.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Effect/bullethole.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Effect/bullethole.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Effect/explosion.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Effect/explosion.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Effect/flare.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Effect/flare.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Effect/gunFire.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Effect/gunFire.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Effect/gunFire_other.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Effect/gunFire_other.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Effect/gunFlare.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Effect/gunFlare.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Effect/softhole.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Effect/softhole.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Gun/ak74m.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Gun/ak74m.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Gun/apr308.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Gun/apr308.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Gun/RightArm.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Gun/RightArm.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Item/briefcase.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Item/briefcase.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Item/cap.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Item/cap.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Item/sniper.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Item/sniper.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Other/bullet.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Other/bullet.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Vehicle/BigRig.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Vehicle/BigRig.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Vehicle/Car1.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Vehicle/Car1.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Vehicle/Car2.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Vehicle/Car2.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Vehicle/CityBus.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Vehicle/CityBus.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Vehicle/PoliceCar.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Vehicle/PoliceCar.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Vehicle/Suv.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Vehicle/Suv.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Vehicle/TaxiB.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Vehicle/TaxiB.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Vehicle/Van.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Vehicle/Van.prefab.json"
+		},
+		{
+			"url": "sniper/Prefab/Vehicle/Wagon.prefab.json",
+			"type": "Prefab",
+			"name": "sniper/Prefab/Vehicle/Wagon.prefab.json"
+		},
+		{
+			"url": "Assets/C_xiaohuangren_D_01_ANIM.prefab.json",
+			"type": "Prefab",
+			"name": "Assets/C_xiaohuangren_D_01_ANIM.prefab.json"
+		},
+		{
+			"url": "Assets/texiao_anhei13x13.prefab.json",
+			"type": "Prefab",
+			"name": "Assets/texiao_anhei13x13.prefab.json"
+		},
+		{
+			"url": "Assets/Z3_Water/Water/Tasharen_Water.image.json",
+			"type": "TextureDesc",
+			"name": "Assets/Z3_Water/Water/Tasharen_Water.image.json"
+		},
+		{
+			"url": "Assets/Z3_Water/Water/Tasharen_Water.png",
+			"type": "Texture",
+			"name": "Assets/Z3_Water/Water/Tasharen_Water.png"
+		},
+		{
+			"url": "Assets/Z3_Water/Water/water_juhunzhong.mat.json",
+			"type": "Material",
+			"name": "Assets/Z3_Water/Water/water_juhunzhong.mat.json"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/L_shiqiao.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/L_shiqiao.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/Plane_01.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/Plane_01.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_cao_01.image.json",
+			"type": "TextureDesc",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_cao_01.image.json"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_cao_01.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_cao_01.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_cao_01.png",
+			"type": "Texture",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_cao_01.png"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_cao_02.image.json",
+			"type": "TextureDesc",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_cao_02.image.json"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_cao_02.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_cao_02.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_cao_02.png",
+			"type": "Texture",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_cao_02.png"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_daoju.image.json",
+			"type": "TextureDesc",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_daoju.image.json"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_daoju.png",
+			"type": "Texture",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_daoju.png"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_heye.image.json",
+			"type": "TextureDesc",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_heye.image.json"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_heye.png",
+			"type": "Texture",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_heye.png"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_heye_01.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_heye_01.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_shuicao_01.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_shuicao_01.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_Sunflower.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_Sunflower.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_Sunflower_1.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_Sunflower_1.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_tizi.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_tizi.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_tree_02.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_tree_02.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_tree_03.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_tree_03.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_tree_04.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_tree_04.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_wujian.image.json",
+			"type": "TextureDesc",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_wujian.image.json"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/L_wujian.png",
+			"type": "Texture",
+			"name": "Assets/Art/changjing/FBX/GOOD/L_wujian.png"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/1V1/L_dibiao1v1.image.json",
+			"type": "TextureDesc",
+			"name": "Assets/Art/changjing/FBX/GOOD/1V1/L_dibiao1v1.image.json"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/1V1/L_dibiao1v1.png",
+			"type": "Texture",
+			"name": "Assets/Art/changjing/FBX/GOOD/1V1/L_dibiao1v1.png"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/1V1/L_dibiao_1v1.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/1V1/L_dibiao_1v1.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/1V1/L_dixing_1v1.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/1V1/L_dixing_1v1.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/1V1/Object001.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/1V1/Object001.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/1V1/Object002.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/1V1/Object002.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/1V1/Object003.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/1V1/Object003.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/1V1/Object004.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/1V1/Object004.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/1V1/Object005.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/1V1/Object005.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/1V1/Object006.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/GOOD/1V1/Object006.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/1V1/Materials/GOOD_dibiao_1v1.mat.json",
+			"type": "Material",
+			"name": "Assets/Art/changjing/FBX/GOOD/1V1/Materials/GOOD_dibiao_1v1.mat.json"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/Materials/L_cao_01.mat.json",
+			"type": "Material",
+			"name": "Assets/Art/changjing/FBX/GOOD/Materials/L_cao_01.mat.json"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/Materials/L_cao_02.mat.json",
+			"type": "Material",
+			"name": "Assets/Art/changjing/FBX/GOOD/Materials/L_cao_02.mat.json"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/Materials/L_daoju_diff.mat.json",
+			"type": "Material",
+			"name": "Assets/Art/changjing/FBX/GOOD/Materials/L_daoju_diff.mat.json"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/Materials/L_heye_01.mat.json",
+			"type": "Material",
+			"name": "Assets/Art/changjing/FBX/GOOD/Materials/L_heye_01.mat.json"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/Materials/L_weilan.mat.json",
+			"type": "Material",
+			"name": "Assets/Art/changjing/FBX/GOOD/Materials/L_weilan.mat.json"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/GOOD/Materials/L_weilan_diff.mat.json",
+			"type": "Material",
+			"name": "Assets/Art/changjing/FBX/GOOD/Materials/L_weilan_diff.mat.json"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/Materials/L_dimian_1v1.mat.json",
+			"type": "Material",
+			"name": "Assets/Art/changjing/FBX/Materials/L_dimian_1v1.mat.json"
+		},
+		{
+			"url": "Assets/Art/changjing/FBX/zhiwu/L_tree.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/changjing/FBX/zhiwu/L_tree.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/changjing/Scenes/Scene_11X9.scene.json",
+			"type": "Scene",
+			"name": "Assets/Art/changjing/Scenes/Scene_11X9.scene.json"
+		},
+		{
+			"url": "Assets/Art/changjing/Scenes/Scene_11X9/Lightmap_0_comp_light.image.json",
+			"type": "TextureDesc",
+			"name": "Assets/Art/changjing/Scenes/Scene_11X9/Lightmap_0_comp_light.image.json"
+		},
+		{
+			"url": "Assets/Art/changjing/Scenes/Scene_11X9/Lightmap_0_comp_light.png",
+			"type": "Texture",
+			"name": "Assets/Art/changjing/Scenes/Scene_11X9/Lightmap_0_comp_light.png"
+		},
+		{
+			"url": "Assets/Art/changjing/Textures/dimian.image.json",
+			"type": "TextureDesc",
+			"name": "Assets/Art/changjing/Textures/dimian.image.json"
+		},
+		{
+			"url": "Assets/Art/changjing/Textures/dimian.png",
+			"type": "Texture",
+			"name": "Assets/Art/changjing/Textures/dimian.png"
+		},
+		{
+			"url": "Assets/Art/changjing/Particles/Textures/Ripples.image.json",
+			"type": "TextureDesc",
+			"name": "Assets/Art/changjing/Particles/Textures/Ripples.image.json"
+		},
+		{
+			"url": "Assets/Art/changjing/Particles/Textures/Ripples.png",
+			"type": "Texture",
+			"name": "Assets/Art/changjing/Particles/Textures/Ripples.png"
+		},
+		{
+			"url": "Assets/Art/changjing/Particles/Textures/Ripples_lizi.mat.json",
+			"type": "Material",
+			"name": "Assets/Art/changjing/Particles/Textures/Ripples_lizi.mat.json"
+		},
+		{
+			"url": "Assets/Art/effect/animation/xuanzhuan_1_xuanzhuan_1.ani.bin",
+			"type": "Animation",
+			"name": "Assets/Art/effect/animation/xuanzhuan_1_xuanzhuan_1.ani.bin"
+		},
+		{
+			"url": "Assets/Art/effect/animation/xuanzhuan_2_xuanzhuan_2.ani.bin",
+			"type": "Animation",
+			"name": "Assets/Art/effect/animation/xuanzhuan_2_xuanzhuan_2.ani.bin"
+		},
+		{
+			"url": "Assets/Art/effect/Materials/daoguang01_5x10.mat.json",
+			"type": "Material",
+			"name": "Assets/Art/effect/Materials/daoguang01_5x10.mat.json"
+		},
+		{
+			"url": "Assets/Art/effect/Materials/effect_huojiantong_hm_001.mat.json",
+			"type": "Material",
+			"name": "Assets/Art/effect/Materials/effect_huojiantong_hm_001.mat.json"
+		},
+		{
+			"url": "Assets/Art/effect/Materials/light0066.mat.json",
+			"type": "Material",
+			"name": "Assets/Art/effect/Materials/light0066.mat.json"
+		},
+		{
+			"url": "Assets/Art/effect/Materials/light0067.mat.json",
+			"type": "Material",
+			"name": "Assets/Art/effect/Materials/light0067.mat.json"
+		},
+		{
+			"url": "Assets/Art/effect/Materials/xiangshangguangshu02.mat.json",
+			"type": "Material",
+			"name": "Assets/Art/effect/Materials/xiangshangguangshu02.mat.json"
+		},
+		{
+			"url": "Assets/Art/effect/Textures/effect_huojiantong_hm_001.image.json",
+			"type": "TextureDesc",
+			"name": "Assets/Art/effect/Textures/effect_huojiantong_hm_001.image.json"
+		},
+		{
+			"url": "Assets/Art/effect/Textures/effect_huojiantong_hm_001.png",
+			"type": "Texture",
+			"name": "Assets/Art/effect/Textures/effect_huojiantong_hm_001.png"
+		},
+		{
+			"url": "Assets/Art/effect/Textures/gui_3.image.json",
+			"type": "TextureDesc",
+			"name": "Assets/Art/effect/Textures/gui_3.image.json"
+		},
+		{
+			"url": "Assets/Art/effect/Textures/gui_3.mat.json",
+			"type": "Material",
+			"name": "Assets/Art/effect/Textures/gui_3.mat.json"
+		},
+		{
+			"url": "Assets/Art/effect/Textures/gui_3.png",
+			"type": "Texture",
+			"name": "Assets/Art/effect/Textures/gui_3.png"
+		},
+		{
+			"url": "Assets/Art/effect/Textures/light0066.image.json",
+			"type": "TextureDesc",
+			"name": "Assets/Art/effect/Textures/light0066.image.json"
+		},
+		{
+			"url": "Assets/Art/effect/Textures/light0066.png",
+			"type": "Texture",
+			"name": "Assets/Art/effect/Textures/light0066.png"
+		},
+		{
+			"url": "Assets/Art/effect/Textures/light_009_0777.image.json",
+			"type": "TextureDesc",
+			"name": "Assets/Art/effect/Textures/light_009_0777.image.json"
+		},
+		{
+			"url": "Assets/Art/effect/Textures/light_009_0777.png",
+			"type": "Texture",
+			"name": "Assets/Art/effect/Textures/light_009_0777.png"
+		},
+		{
+			"url": "Assets/Art/effect/Textures/xiangshangguangshu01.image.json",
+			"type": "TextureDesc",
+			"name": "Assets/Art/effect/Textures/xiangshangguangshu01.image.json"
+		},
+		{
+			"url": "Assets/Art/effect/Textures/xiangshangguangshu01.png",
+			"type": "Texture",
+			"name": "Assets/Art/effect/Textures/xiangshangguangshu01.png"
+		},
+		{
+			"url": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01.image.json",
+			"type": "TextureDesc",
+			"name": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01.image.json"
+		},
+		{
+			"url": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01.mesh.bin",
+			"type": "Mesh",
+			"name": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01.mesh.bin"
+		},
+		{
+			"url": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01.png",
+			"type": "Texture",
+			"name": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01.png"
+		},
+		{
+			"url": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_die01.ani.bin",
+			"type": "Animation",
+			"name": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_die01.ani.bin"
+		},
+		{
+			"url": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_down01.ani.bin",
+			"type": "Animation",
+			"name": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_down01.ani.bin"
+		},
+		{
+			"url": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_idle01.ani.bin",
+			"type": "Animation",
+			"name": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_idle01.ani.bin"
+		},
+		{
+			"url": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_rise01.ani.bin",
+			"type": "Animation",
+			"name": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_rise01.ani.bin"
+		},
+		{
+			"url": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_run01.ani.bin",
+			"type": "Animation",
+			"name": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_run01.ani.bin"
+		},
+		{
+			"url": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_show05.ani.bin",
+			"type": "Animation",
+			"name": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_show05.ani.bin"
+		},
+		{
+			"url": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_skill01.ani.bin",
+			"type": "Animation",
+			"name": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_skill01.ani.bin"
+		},
+		{
+			"url": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_stun01.ani.bin",
+			"type": "Animation",
+			"name": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_stun01.ani.bin"
+		},
+		{
+			"url": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_walk01.ani.bin",
+			"type": "Animation",
+			"name": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/C_xiaohuangren_D_01_ANIM_walk01.ani.bin"
+		},
+		{
+			"url": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/Materials/C_xiaohuangren_D_01_ANIM.mat.json",
+			"type": "Material",
+			"name": "Assets/Art/Models/Player/C_xiaohuangren_D_01_ANIM/Materials/C_xiaohuangren_D_01_ANIM.mat.json"
+		},
+		{
+			"url": "2d/assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "2d/assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "2d/assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "2d/assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "2d/assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "2d/assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "2d/assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "2d/assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "2d/assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "2d/assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "2d/assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "2d/assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "2d/assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "2d/assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "2d/assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "2d/assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "2d/assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "2d/assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "2d/assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "2d/assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "2d/assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "2d/assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "2d/assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "2d/assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "2d/assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		}
+	]
+}

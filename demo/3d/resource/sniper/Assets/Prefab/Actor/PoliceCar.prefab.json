@@ -1,0 +1,43 @@
+{
+	"assets":[
+		"Assets/Res/Actor/Vehicles/Source/CarPolice.mesh.bin",
+		"Assets/Res/Actor/Vehicles/Source/Materials/CarPolice.mat.json",
+		"Assets/Res/Actor/Vehicles/Source/WP1.mesh.bin"
+	],
+	"objects":[
+		{"uuid":"1","class":"1","name":"PoliceCar","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"2"}]},
+		{"uuid":"3","class":"1","name":"Police Car","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"4"},{"uuid":"5"},{"uuid":"6"}]},
+		{"uuid":"7","class":"1","name":"WPF","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"8"}]},
+		{"uuid":"9","class":"1","name":"WP1 (3)","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"10"},{"uuid":"11"},{"uuid":"12"}]},
+		{"uuid":"13","class":"1","name":"WPR","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"14"}]},
+		{"uuid":"15","class":"1","name":"WP1 (2)","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"16"},{"uuid":"17"},{"uuid":"18"}]},
+		{"uuid":"19","class":"1","name":"WDR","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"20"}]},
+		{"uuid":"21","class":"1","name":"WP1 (1)","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"22"},{"uuid":"23"},{"uuid":"24"}]},
+		{"uuid":"25","class":"1","name":"WDF","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"26"}]},
+		{"uuid":"27","class":"1","name":"WP1","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"28"},{"uuid":"29"},{"uuid":"30"}]}
+	],
+	"components":[
+		{"uuid":"2","class":"11","localPosition":[8.994411,0,6.21981],"localRotation":[0,0,0,1],"localScale":[1,1,1],"children":[{"uuid":"4"}]},
+		{"uuid":"4","class":"11","localPosition":[0,0.96,0],"localRotation":[0,0,0,1],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[{"uuid":"8"},{"uuid":"14"},{"uuid":"20"},{"uuid":"26"}]},
+		{"uuid":"5","class":"5","_mesh":{"asset":0}},
+		{"uuid":"6","class":"6","_lightmapIndex":-1,"_materials":[{"asset":1}]},
+		{"uuid":"8","class":"11","localPosition":[0.8095,-0.62746,1.638361],"localRotation":[0,0,0,1],"localScale":[-1,1,1],"_parent":{"uuid":"4"},"children":[{"uuid":"10"}]},
+		{"uuid":"10","class":"11","localPosition":[0,0,0],"localRotation":[0,0,0,1],"localScale":[1,1,1],"_parent":{"uuid":"8"},"children":[]},
+		{"uuid":"11","class":"5","_mesh":{"asset":2}},
+		{"uuid":"12","class":"6","_lightmapIndex":-1,"_materials":[{"asset":1}]},
+		{"uuid":"14","class":"11","localPosition":[0.8095,-0.62746,-1.45],"localRotation":[0,0,0,1],"localScale":[1,1,1],"_parent":{"uuid":"4"},"children":[{"uuid":"16"}]},
+		{"uuid":"16","class":"11","localPosition":[0,0,0],"localRotation":[0,0,0,1],"localScale":[-1,1,1],"_parent":{"uuid":"14"},"children":[]},
+		{"uuid":"17","class":"5","_mesh":{"asset":2}},
+		{"uuid":"18","class":"6","_lightmapIndex":-1,"_materials":[{"asset":1}]},
+		{"uuid":"20","class":"11","localPosition":[-0.8095,-0.62746,-1.45],"localRotation":[0,0,0,1],"localScale":[1,1,1],"_parent":{"uuid":"4"},"children":[{"uuid":"22"}]},
+		{"uuid":"22","class":"11","localPosition":[0,0,0],"localRotation":[0,0,0,1],"localScale":[1,1,1],"_parent":{"uuid":"20"},"children":[]},
+		{"uuid":"23","class":"5","_mesh":{"asset":2}},
+		{"uuid":"24","class":"6","_lightmapIndex":-1,"_materials":[{"asset":1}]},
+		{"uuid":"26","class":"11","localPosition":[-0.8095,-0.62746,1.638361],"localRotation":[0,0,0,1],"localScale":[1,1,1],"_parent":{"uuid":"4"},"children":[{"uuid":"28"}]},
+		{"uuid":"28","class":"11","localPosition":[0,0,0],"localRotation":[0,0,0,1],"localScale":[1,1,1],"_parent":{"uuid":"26"},"children":[]},
+		{"uuid":"29","class":"5","_mesh":{"asset":2}},
+		{"uuid":"30","class":"6","_lightmapIndex":-1,"_materials":[{"asset":1}]}
+	],
+
+	"version":4
+}

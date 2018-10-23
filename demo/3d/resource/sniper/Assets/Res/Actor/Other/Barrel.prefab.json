@@ -1,0 +1,19 @@
+{
+	"assets":[
+		"Assets/Res/Actor/Other/Mesh/Barrel_0.mesh.bin",
+		"Assets/Res/Actor/Other/Materials/Barrel.mat.json"
+	],
+	"objects":[
+		{"uuid":"1","unityId":-446318,"class":"paper.GameObject","name":"Barrel","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"2"}]},
+		{"uuid":"3","unityId":-446320,"class":"paper.GameObject","name":"Barrel_0","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"4"},{"uuid":"5"},{"uuid":"6"},{"uuid":"7"}]}
+	],
+	"components":[
+		{"uuid":"2","unityId":-446322,"class":"egret3d.Transform","localPosition":[5.4486,0,-6.987],"localRotation":[0,0,0,1],"localScale":[1,1,1],"children":[{"uuid":"4"}]},
+		{"uuid":"4","unityId":-446324,"class":"egret3d.Transform","localPosition":[0,0.42,0],"localRotation":[0,0,0,1],"localScale":[0.3,0.3,0.3],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"5","unityId":-446326,"class":"egret3d.MeshFilter","_mesh":{"asset":0}},
+		{"uuid":"6","unityId":-446328,"class":"egret3d.MeshRenderer","_lightmapIndex":-1,"_castShadows":true,"_receiveShadows":true,"_lightmapScaleOffset":[1,1,0,0],"_materials":[{"asset":1}]},
+		{"uuid":"7","unityId":-450524,"class":"egret3d.BoxCollider","aabb":[-1.226084,-1.691234,-1.226084,1.226084,1.691234,1.226084]}
+	],
+
+	"version":4
+}

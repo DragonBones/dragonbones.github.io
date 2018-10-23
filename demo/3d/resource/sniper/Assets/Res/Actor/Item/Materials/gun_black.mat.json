@@ -1,0 +1,14 @@
+{    "asset":{        "version":2    },    "materials":[
+        {            "extensions":{                "KHR_techniques_webgl":{                    "technique":"builtin/materialcolor.shader.json",                    "values":{                        "diffuse":[
+                            0,
+                            0,
+                            0
+                        ],                        "opacity":1                    }                },                "paper":{                    "renderQueue":2000,                    "defines":[
+                    ]                }            }        }
+    ],    "extensionsRequired":[
+        "KHR_techniques_webgl",
+        "paper"
+    ],    "extensionsUsed":[
+        "KHR_techniques_webgl",
+        "paper"
+    ],    "version":4}

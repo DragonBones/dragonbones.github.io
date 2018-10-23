@@ -1,0 +1,16 @@
+{
+	"assets":[
+		"Library/Quad.mesh.bin",
+		"Assets/Res/Effect/Materials/SoftHole.mat.json"
+	],
+	"objects":[
+		{"uuid":"1","class":"1","name":"softhole","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"2"},{"uuid":"3"},{"uuid":"4"}]}
+	],
+	"components":[
+		{"uuid":"2","class":"11","localPosition":[0.940572,0.833,1.296089],"localRotation":[0,0,0,1],"localScale":[0.01,0.01,0.01],"children":[]},
+		{"uuid":"3","class":"5","_mesh":{"asset":0}},
+		{"uuid":"4","class":"6","_lightmapIndex":-1,"_materials":[{"asset":1}]}
+	],
+
+	"version":4
+}

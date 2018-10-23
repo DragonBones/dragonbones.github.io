@@ -1,0 +1,18 @@
+{
+	"assets":[
+		"Assets/Res/Gun/right_arm/RightArm_0.mesh.bin",
+		"Assets/Res/Gun/R308/hand/Materials/HandsColor.mat.json"
+	],
+	"objects":[
+		{"uuid":"1","class":"1","name":"RightArm","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"2"}]},
+		{"uuid":"3","class":"1","name":"RightArm_0","tag":"Untagged","layer":2,"isStatic":false,"components":[{"uuid":"4"},{"uuid":"5"},{"uuid":"6"}]}
+	],
+	"components":[
+		{"uuid":"2","class":"11","localPosition":[-0.022753,-1.653,-0.628891],"localRotation":[-0.70284,-0.053387,-0.04044,0.708188],"localScale":[0.010007,0.010007,0.010007],"children":[{"uuid":"4"}]},
+		{"uuid":"4","class":"11","localPosition":[0,0,0],"localRotation":[0,0,0,1],"localScale":[1,1,1],"_parent":{"uuid":"2"},"children":[]},
+		{"uuid":"5","class":"5","_mesh":{"asset":0}},
+		{"uuid":"6","class":"6","_lightmapIndex":-1,"_materials":[{"asset":1}]}
+	],
+
+	"version":4
+}
