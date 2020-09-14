@@ -1,10 +1,10 @@
 ﻿{
     "prerelease":[
-        {"sys":"win","v":"5.5","url":"https://docs.egret.com/dragonbones/en"},
-        {"sys":"mac","v":"5.5","url":"https://docs.egret.com/dragonbones/en"}
+        {"sys":"win","v":"5.6","url":"https://docs.egret.com/dragonbones/en"},
+        {"sys":"mac","v":"5.6","url":"https://docs.egret.com/dragonbones/en"}
     ],
     "final":[
-        {"sys":"win","v":"5.5","url":"https://docs.egret.com/dragonbones/en"},
-        {"sys":"mac","v":"5.5","url":"https://docs.egret.com/dragonbones/en"}
+        {"sys":"win","v":"5.6","url":"https://docs.egret.com/dragonbones/en"},
+        {"sys":"mac","v":"5.6","url":"https://docs.egret.com/dragonbones/en"}
     ]
 }
