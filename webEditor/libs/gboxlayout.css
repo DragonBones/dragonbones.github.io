@@ -1,0 +1,97 @@
+body {
+    user-select: none;
+}
+.gapp {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #bbbbbb;
+}
+.gbox {
+    position: absolute;
+    background:#ffffff;
+    /* border: 2px solid #2a2a2a; */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.gbox.gfocus {
+    /* border: 1px solid #5a5a5a; */
+}
+.gsplit {
+    position: absolute;
+    background: rgba(0,0,0,0);
+    /* border: 0px solid #2a2a2a; */
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1;
+}
+.gsplit_v {
+    cursor: row-resize;
+}
+.gsplit_h {
+    cursor: col-resize;
+}
+.gLabel {
+    margin-left: 8px;
+    margin-right: 8px;
+    /* width: 100px; */
+    border-top: 1px solid rgba(0,0,0,0);
+    /* background-color: #333;
+    border: 1px solid #2a2a2a; */
+    box-sizing: border-box;
+    display: inline-block;
+}
+.gLabel >* {
+    pointer-events: none;
+}
+.gLabelSelect {
+    border-top: 1px solid #367CF7;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+.gPanelToolbar {
+    width: 100%;
+}
+.gPanelLabels :hover{
+    background-color: rgb(175, 174, 174);
+}
+.gPanelConent {
+    width: 100%;
+    height: calc(100% - 20px);
+}
+.none ~ .gPanelConent{
+    height: 100%;
+}
+.none {
+    display: none
+}
+
+.dragElement {
+    position: absolute;
+    background: rgba(0,0,0,0.1);
+    border: 2px solid #999999;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.dragContainer {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+.yy_modal .ant-modal-footer {
+    padding: 0 52px;
+    height: 134px;
+    text-align: left;
+    line-height: 48px;
+    border-top: none;
+    
+}
+.yy_modal.ant-modal {
+    display: inline-block;
+    vertical-align: middle;
+    top: 0;
+    text-align: left;
+  }

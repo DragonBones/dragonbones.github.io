@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>文件-打开</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="文件-打开">
+            <rect id="box" x="0" y="0" width="24" height="24"></rect>
+            <path d="M17,8 L7,8 L7,10 L6,10 L6,6.3 C6,6.13431458 6.13431458,6 6.3,6 L9.92917961,6 C9.97575314,6 10.0216871,6.01084353 10.0633437,6.03167184 L12,7 L17.7,7 C17.8656854,7 18,7.13431458 18,7.3 L18,10 L17,10 L17,8 Z M16.7737096,18 L7.22629042,18 C7.09234632,18 6.97463052,17.9112068 6.93783324,17.7824163 L5,11 L19,11 L17.0621668,17.7824163 C17.0253695,17.9112068 16.9076537,18 16.7737096,18 Z" id="icon_folder" fill="#C3C3C3"></path>
+        </g>
+    </g>
+</svg>
