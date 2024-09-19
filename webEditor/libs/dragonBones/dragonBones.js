@@ -93,7 +93,7 @@ var dragonBones;
             enumerable: true,
             configurable: true
         });
-        DragonBones.VERSION = "5.7.000";
+        DragonBones.VERSION = "6.0.000";
         DragonBones.yDown = true;
         DragonBones.debug = false;
         DragonBones.debugDraw = false;
@@ -6674,7 +6674,7 @@ var dragonBones;
         };
         IKConstraint.prototype._onClear = function () {
             _super.prototype._onClear.call(this);
-            // this._scaleEnabled = false;
+            this._scaleEnabled = false;
             this._bendPositive = false;
             this._weight = 1.0;
             this._constraintData = null;
@@ -6770,7 +6770,7 @@ var dragonBones;
             this._bone = this._constraintData.bone !== null ? this._armature.getBone(this._constraintData.bone.name) : null;
             {
                 var ikConstraintData = this._constraintData;
-                // this._scaleEnabled = ikConstraintData.scaleEnabled;
+                this._scaleEnabled = ikConstraintData.scaleEnabled;
                 this._bendPositive = ikConstraintData.bendPositive;
                 this._weight = ikConstraintData.weight;
             }
@@ -8836,30 +8836,15 @@ var dragonBones;
                                         break;
                                     }
                                     case 22 /* SlotDeform */: {
-                                        var dragonBonesData = this._animationData.parent.parent;
-                                        var timelineArray = dragonBonesData.timelineArray;
-                                        var frameIntOffset = this._animationData.frameIntOffset + timelineArray[timelineData.offset + 3 /* TimelineFrameValueCount */];
-                                        var frameIntArray = dragonBonesData.frameIntArray;
-                                        var geometryOffset = frameIntArray[frameIntOffset + 0 /* DeformVertexOffset */];
-                                        if (geometryOffset < 0) {
-                                            geometryOffset += 65536; // Fixed out of bounds bug. 
+                                        var timeline = dragonBones.BaseObject.borrowObject(dragonBones.DeformTimelineState);
+                                        timeline.target = this._armature.animation.getBlendState(BlendState.SLOT_DEFORM, slot.name, slot);
+                                        timeline.init(this._armature, this, timelineData);
+                                        if (timeline.target !== null) {
+                                            this._slotBlendTimelines.push(timeline);
+                                            ffdFlags.push(timeline.geometryOffset);
                                         }
-                                        for (var i = 0, l = slot.displayFrameCount; i < l; ++i) {
-                                            var displayFrame = slot.getDisplayFrameAt(i);
-                                            var geometryData = displayFrame.getGeometryData();
-                                            if (geometryData === null) {
-                                                continue;
-                                            }
-                                            if (geometryData.offset === geometryOffset) {
-                                                var timeline = dragonBones.BaseObject.borrowObject(dragonBones.DeformTimelineState);
-                                                timeline.target = this._armature.animation.getBlendState(BlendState.SLOT_DEFORM, displayFrame.rawDisplayData.name, slot);
-                                                timeline.displayFrame = displayFrame;
-                                                timeline.init(this._armature, this, timelineData);
-                                                this._slotBlendTimelines.push(timeline);
-                                                displayFrame.updateDeformVertices();
-                                                ffdFlags.push(geometryOffset);
-                                                break;
-                                            }
+                                        else {
+                                            timeline.returnToPool();
                                         }
                                         break;
                                     }
@@ -8898,6 +8883,7 @@ var dragonBones;
                                 var geometryData = displayFrame.getGeometryData();
                                 if (geometryData !== null && ffdFlags.indexOf(geometryData.offset) < 0) {
                                     var timeline = dragonBones.BaseObject.borrowObject(dragonBones.DeformTimelineState);
+                                    timeline.geometryOffset = geometryData.offset; //
                                     timeline.displayFrame = displayFrame; //
                                     timeline.target = this._armature.animation.getBlendState(BlendState.SLOT_DEFORM, slot.name, slot);
                                     timeline.init(this._armature, this, null);
@@ -9850,7 +9836,7 @@ var dragonBones;
         TimelineState.prototype._onClear = function () {
             this.dirty = false;
             this.playState = -1;
-            this.currentPlayTimes = 0;
+            this.currentPlayTimes = -1;
             this.currentTime = -1.0;
             this.target = null;
             this._isTween = false;
@@ -9884,13 +9870,11 @@ var dragonBones;
                 this.currentPlayTimes = 1;
                 this.currentTime = this._actionTimeline.currentTime;
             }
-            else if (this._actionTimeline === null || this._timeScale !== 1.0 || this._timeOffset !== 0.0) { // Action timeline or has scale and offset.
+            else if (this._actionTimeline === null) {
+                // Action timeline 主时间轴，是事件时间轴，如果没有事件，就是空帧的时间轴。不可缩放，不可偏移，不可循环
+                // 每次更新会首先更新它，然后再更新其他时间轴
                 var playTimes = this._animationState.playTimes;
                 var totalTime = playTimes * this._duration;
-                passedTime *= this._timeScale;
-                if (this._timeOffset !== 0.0) {
-                    passedTime += this._timeOffset * this._animationData.duration;
-                }
                 if (playTimes > 0 && (passedTime >= totalTime || passedTime <= -totalTime)) {
                     if (this.playState <= 0 && this._animationState._playheadState === 3) {
                         this.playState = 1;
@@ -9910,6 +9894,7 @@ var dragonBones;
                     if (passedTime < 0.0) {
                         passedTime = -passedTime;
                         this.currentPlayTimes = Math.floor(passedTime / this._duration);
+                        // 倒放
                         this.currentTime = this._duration - (passedTime % this._duration);
                     }
                     else {
@@ -9920,9 +9905,37 @@ var dragonBones;
                 this.currentTime += this._position;
             }
             else { // Multi frames.
+                // 包含多帧的时间轴，可以缩放，可以偏移，可以循环
+                // 这里和5.7版本的逻辑不一样了。增加了时间轴的循环属性，缩放和偏移稍有不同
+                // 5.7版本的缩放和偏移是加在骨骼上的，并且每个时间轴的长度必须和总时间轴的长度一致
+                // 6.0版本的缩放和偏移是加在时间轴上的，每个时间轴的长度可以不一致
                 this.playState = this._actionTimeline.playState;
                 this.currentPlayTimes = this._actionTimeline.currentPlayTimes;
-                this.currentTime = this._actionTimeline.currentTime;
+                var mainTime = this._actionTimeline.currentTime;
+                if (this._timeScale === 1.0 && this._timeOffset === 0.0 && this._timeLoop === 0 && this._timelineDuration === this._duration) {
+                    this.currentTime = mainTime;
+                }
+                else {
+                    if (this._timeScale !== 1.0 || this._timeOffset !== 0.0) {
+                        mainTime *= this._timeScale;
+                        mainTime += this._timeOffset;
+                    }
+                    if (this._timeLoop !== 0) {
+                        mainTime = mainTime % this._timelineDuration;
+                        if (mainTime < 0) {
+                            mainTime += this._timelineDuration;
+                        }
+                    }
+                    else if (mainTime > this._timelineDuration) {
+                        // 如果时间轴不循环，那么当时间超过时间轴长度时，就会停在最后一帧
+                        mainTime = this._timelineDuration + 0.000001;
+                    }
+                    else if (mainTime < 0) {
+                        mainTime = 0.0;
+                    }
+                    this.currentTime = mainTime;
+                }
+                this.currentTime += this._position;
             }
             if (this.currentPlayTimes === prevPlayTimes && this.currentTime === prevTime) {
                 return false;
@@ -9933,6 +9946,12 @@ var dragonBones;
                 this._frameIndex = -1;
             }
             return true;
+        };
+        TimelineState.prototype.uint2int = function (v) {
+            if (v > 32767) {
+                return v - 65536;
+            }
+            return v;
         };
         TimelineState.prototype.init = function (armature, animationState, timelineData) {
             this._armature = armature;
@@ -9954,10 +9973,12 @@ var dragonBones;
                 this._timelineArray = dragonBonesData.timelineArray;
                 this._frameIndices = dragonBonesData.frameIndices;
                 //
-                this._frameCount = this._timelineArray[this._timelineData.offset + 2 /* TimelineKeyFrameCount */];
-                this._frameValueOffset = this._timelineArray[this._timelineData.offset + 4 /* TimelineFrameValueOffset */];
-                this._timeScale = 100.0 / this._timelineArray[this._timelineData.offset + 0 /* TimelineScale */];
-                this._timeOffset = this._timelineArray[this._timelineData.offset + 1 /* TimelineOffset */] * 0.01;
+                this._frameCount = this._timelineArray[this._timelineData.offset + 4 /* TimelineKeyFrameCount */];
+                this._frameValueOffset = this._timelineArray[this._timelineData.offset + 6 /* TimelineFrameValueOffset */];
+                this._timeScale = this._timelineArray[this._timelineData.offset + 0 /* TimelineScale */] * 0.01;
+                this._timeOffset = this.uint2int(this._timelineArray[this._timelineData.offset + 1 /* TimelineOffset */]) * this._frameRateR;
+                this._timeLoop = this._timelineArray[this._timelineData.offset + 2 /* TimelineLoop */];
+                this._timelineDuration = this._timelineArray[this._timelineData.offset + 3 /* TimelineDuration */] * this._frameRateR;
             }
         };
         TimelineState.prototype.fadeOut = function () {
@@ -9970,14 +9991,14 @@ var dragonBones;
                     var frameIndex = this._frameIndices[this._timelineData.frameIndicesOffset + timelineFrameIndex];
                     if (this._frameIndex !== frameIndex) {
                         this._frameIndex = frameIndex;
-                        this._frameOffset = this._animationData.frameOffset + this._timelineArray[this._timelineData.offset + 5 /* TimelineFrameOffset */ + this._frameIndex];
+                        this._frameOffset = this._animationData.frameOffset + this._timelineArray[this._timelineData.offset + 7 /* TimelineFrameOffset */ + this._frameIndex];
                         this._onArriveAtFrame();
                     }
                 }
                 else if (this._frameIndex < 0) {
                     this._frameIndex = 0;
                     if (this._timelineData !== null) { // May be pose timeline.
-                        this._frameOffset = this._animationData.frameOffset + this._timelineArray[this._timelineData.offset + 5 /* TimelineFrameOffset */];
+                        this._frameOffset = this._animationData.frameOffset + this._timelineArray[this._timelineData.offset + 7 /* TimelineFrameOffset */];
                     }
                     this._onArriveAtFrame();
                 }
@@ -10069,7 +10090,7 @@ var dragonBones;
                     this._frameDurationR = 1.0 / (this._animationData.duration - this._framePosition);
                 }
                 else {
-                    var nextFrameOffset = this._animationData.frameOffset + this._timelineArray[this._timelineData.offset + 5 /* TimelineFrameOffset */ + this._frameIndex + 1];
+                    var nextFrameOffset = this._animationData.frameOffset + this._timelineArray[this._timelineData.offset + 7 /* TimelineFrameOffset */ + this._frameIndex + 1];
                     var frameDuration = this._frameArray[nextFrameOffset] * this._frameRateR - this._framePosition;
                     if (frameDuration > 0) {
                         this._frameDurationR = 1.0 / frameDuration;
@@ -10331,7 +10352,7 @@ var dragonBones;
         ActionTimelineState.prototype._onCrossFrame = function (frameIndex) {
             var eventDispatcher = this._armature.eventDispatcher;
             if (this._animationState.actionEnabled) {
-                var frameOffset = this._animationData.frameOffset + this._timelineArray[this._timelineData.offset + 5 /* TimelineFrameOffset */ + frameIndex];
+                var frameOffset = this._animationData.frameOffset + this._timelineArray[this._timelineData.offset + 7 /* TimelineFrameOffset */ + frameIndex];
                 var actionCount = this._frameArray[frameOffset + 1];
                 var actions = this._animationData.parent.actions; // May be the animaton data not belong to this armature data.
                 for (var i = 0; i < actionCount; ++i) {
@@ -10373,7 +10394,7 @@ var dragonBones;
                         if (this._animationState.displayControl && this._animationState.resetToPose) { // Reset zorder to pose.
                             this._armature._sortZOrder(null, 0);
                         }
-                        // prevPlayTimes = this.currentPlayTimes; // TODO
+                        prevPlayTimes = this.currentPlayTimes;
                         if (eventActive && eventDispatcher.hasDBEventListener(dragonBones.EventObject.START)) {
                             var eventObject = dragonBones.BaseObject.borrowObject(dragonBones.EventObject);
                             eventObject.type = dragonBones.EventObject.START;
@@ -10413,7 +10434,7 @@ var dragonBones;
                         var crossedFrameIndex = this._frameIndex;
                         this._frameIndex = frameIndex;
                         if (this._timelineArray !== null) {
-                            this._frameOffset = this._animationData.frameOffset + this._timelineArray[timelineData.offset + 5 /* TimelineFrameOffset */ + this._frameIndex];
+                            this._frameOffset = this._animationData.frameOffset + this._timelineArray[timelineData.offset + 7 /* TimelineFrameOffset */ + this._frameIndex];
                             if (isReverse) {
                                 if (crossedFrameIndex < 0) {
                                     var prevFrameIndex = Math.floor(prevTime * this._frameRate);
@@ -10425,7 +10446,7 @@ var dragonBones;
                                     }
                                 }
                                 while (crossedFrameIndex >= 0) {
-                                    var frameOffset = this._animationData.frameOffset + this._timelineArray[timelineData.offset + 5 /* TimelineFrameOffset */ + crossedFrameIndex];
+                                    var frameOffset = this._animationData.frameOffset + this._timelineArray[timelineData.offset + 7 /* TimelineFrameOffset */ + crossedFrameIndex];
                                     // const framePosition = this._frameArray[frameOffset] * this._frameRateR; // Precision problem
                                     var framePosition = this._frameArray[frameOffset] / this._frameRate;
                                     if (this._position <= framePosition &&
@@ -10451,7 +10472,7 @@ var dragonBones;
                                 if (crossedFrameIndex < 0) {
                                     var prevFrameIndex = Math.floor(prevTime * this._frameRate);
                                     crossedFrameIndex = this._frameIndices[timelineData.frameIndicesOffset + prevFrameIndex];
-                                    var frameOffset = this._animationData.frameOffset + this._timelineArray[timelineData.offset + 5 /* TimelineFrameOffset */ + crossedFrameIndex];
+                                    var frameOffset = this._animationData.frameOffset + this._timelineArray[timelineData.offset + 7 /* TimelineFrameOffset */ + crossedFrameIndex];
                                     // const framePosition = this._frameArray[frameOffset] * this._frameRateR; // Precision problem
                                     var framePosition = this._frameArray[frameOffset] / this._frameRate;
                                     if (this.currentPlayTimes === prevPlayTimes) { // Start.
@@ -10475,7 +10496,7 @@ var dragonBones;
                                     else {
                                         crossedFrameIndex = 0;
                                     }
-                                    var frameOffset = this._animationData.frameOffset + this._timelineArray[timelineData.offset + 5 /* TimelineFrameOffset */ + crossedFrameIndex];
+                                    var frameOffset = this._animationData.frameOffset + this._timelineArray[timelineData.offset + 7 /* TimelineFrameOffset */ + crossedFrameIndex];
                                     // const framePosition = this._frameArray[frameOffset] * this._frameRateR; // Precision problem
                                     var framePosition = this._frameArray[frameOffset] / this._frameRate;
                                     if (this._position <= framePosition &&
@@ -10498,7 +10519,7 @@ var dragonBones;
                 else if (this._frameIndex < 0) {
                     this._frameIndex = 0;
                     if (this._timelineData !== null) {
-                        this._frameOffset = this._animationData.frameOffset + this._timelineArray[this._timelineData.offset + 5 /* TimelineFrameOffset */];
+                        this._frameOffset = this._animationData.frameOffset + this._timelineArray[this._timelineData.offset + 7 /* TimelineFrameOffset */];
                         // Arrive at frame.
                         var framePosition = this._frameArray[this._frameOffset] / this._frameRate;
                         if (this.currentPlayTimes === prevPlayTimes) { // Start.
@@ -10786,7 +10807,7 @@ var dragonBones;
             if (this._timelineData !== null) {
                 var dragonBonesData = this._animationData.parent.parent;
                 var frameIntArray = dragonBonesData.frameIntArray;
-                var frameIntOffset = this._animationData.frameIntOffset + this._timelineArray[this._timelineData.offset + 3 /* TimelineFrameValueCount */];
+                var frameIntOffset = this._animationData.frameIntOffset + this._timelineArray[this._timelineData.offset + 5 /* TimelineFrameValueCount */];
                 this._valueOffset = this._animationData.frameFloatOffset;
                 this._valueCount = frameIntArray[frameIntOffset + 2 /* DeformValueCount */];
                 this._deformCount = frameIntArray[frameIntOffset + 1 /* DeformCount */];
@@ -11113,6 +11134,7 @@ var dragonBones;
         };
         DeformTimelineState.prototype._onClear = function () {
             _super.prototype._onClear.call(this);
+            this.geometryOffset = 0;
             this.displayFrame = null;
             this._deformCount = 0;
             this._deformOffset = 0;
@@ -11121,18 +11143,35 @@ var dragonBones;
         DeformTimelineState.prototype.init = function (armature, animationState, timelineData) {
             _super.prototype.init.call(this, armature, animationState, timelineData);
             if (this._timelineData !== null) {
-                var frameIntOffset = this._animationData.frameIntOffset + this._timelineArray[this._timelineData.offset + 3 /* TimelineFrameValueCount */];
+                var frameIntOffset = this._animationData.frameIntOffset + this._timelineArray[this._timelineData.offset + 5 /* TimelineFrameValueCount */];
                 var dragonBonesData = this._animationData.parent.parent;
                 var frameIntArray = dragonBonesData.frameIntArray;
+                var slot = this.target.target;
+                this.geometryOffset = frameIntArray[frameIntOffset + 0 /* DeformVertexOffset */];
+                if (this.geometryOffset < 0) {
+                    this.geometryOffset += 65536; // Fixed out of bounds bug. 
+                }
+                for (var i = 0, l = slot.displayFrameCount; i < l; ++i) {
+                    var displayFrame = slot.getDisplayFrameAt(i);
+                    var geometryData = displayFrame.getGeometryData();
+                    if (geometryData === null) {
+                        continue;
+                    }
+                    if (geometryData.offset === this.geometryOffset) {
+                        this.displayFrame = displayFrame;
+                        this.displayFrame.updateDeformVertices();
+                        break;
+                    }
+                }
+                if (this.displayFrame === null) {
+                    this.returnToPool(); //
+                    return;
+                }
                 this._valueOffset = this._animationData.frameFloatOffset;
                 this._valueCount = frameIntArray[frameIntOffset + 2 /* DeformValueCount */];
                 this._deformCount = frameIntArray[frameIntOffset + 1 /* DeformCount */];
                 this._deformOffset = frameIntArray[frameIntOffset + 3 /* DeformValueOffset */];
-                this._sameValueOffset = frameIntArray[frameIntOffset + 4 /* DeformFloatOffset */];
-                if (this._sameValueOffset < 0) {
-                    this._sameValueOffset += 65536; // Fixed out of bounds bug. 
-                }
-                this._sameValueOffset += this._animationData.frameFloatOffset;
+                this._sameValueOffset = frameIntArray[frameIntOffset + 4 /* DeformFloatOffset */] + this._animationData.frameFloatOffset;
                 this._valueScale = this._armature.armatureData.scale;
                 this._valueArray = dragonBonesData.frameFloatArray;
                 this._rd.length = this._valueCount * 2;
@@ -11745,6 +11784,7 @@ var dragonBones;
         DataParser.PLAY_TIMES = "playTimes";
         DataParser.SCALE = "scale";
         DataParser.OFFSET = "offset";
+        DataParser.LOOP = "loop";
         DataParser.POSITION = "position";
         DataParser.DURATION = "duration";
         DataParser.TWEEN_EASING = "tweenEasing";
@@ -12803,6 +12843,19 @@ var dragonBones;
             this._animation = null; //
             return animation;
         };
+        ObjectDataParser.prototype.getTimelineDuration = function (frames) {
+            if (!frames || frames.length === 0) {
+                return 0;
+            }
+            else {
+                var duration = 0;
+                for (var i = 0, l = frames.length; i < l; ++i) {
+                    var frame = frames[i];
+                    duration += frame.duration >= 0 ? frame.duration : 0;
+                }
+                return duration;
+            }
+        };
         ObjectDataParser.prototype._parseTimeline = function (rawData, rawFrames, framesKey, timelineType, frameValueType, frameValueCount, frameParser, timeline) {
             if (timeline === void 0) { timeline = null; }
             if (rawData !== null && framesKey.length > 0 && framesKey in rawData) {
@@ -12825,31 +12878,46 @@ var dragonBones;
             timeline.offset = timelineOffset;
             this._frameValueType = frameValueType;
             this._timeline = timeline;
-            this._timelineArray.length += 1 + 1 + 1 + 1 + 1 + keyFrameCount;
-            if (rawData !== null) {
-                this._timelineArray[timelineOffset + 0 /* TimelineScale */] = Math.round(ObjectDataParser._getNumber(rawData, dragonBones.DataParser.SCALE, 1.0) * 100);
-                this._timelineArray[timelineOffset + 1 /* TimelineOffset */] = Math.round(ObjectDataParser._getNumber(rawData, dragonBones.DataParser.OFFSET, 0.0) * 100);
+            // 这里比5.7版本增加了TimelineLoop和TimelineDuration，所以就和二进制版本的数据不兼容了。
+            // BinaryOffset.TimelineScale
+            // BinaryOffset.TimelineOffset
+            // BinaryOffset.TimelineLoop = 2,
+            // BinaryOffset.TimelineDuration = 3,
+            // BinaryOffset.TimelineKeyFrameCount
+            // BinaryOffset.TimelineFrameValueCount
+            // BinaryOffset.TimelineFrameValueOffset
+            // 帧的数量
+            //
+            this._timelineArray.length += 1 + 1 + 1 + 1 + 1 + 1 + 1 + keyFrameCount;
+            if (rawData !== null && rawData.timelineConfig && rawData.timelineConfig[framesKey]) {
+                var rawTimelineConfig = rawData.timelineConfig[framesKey];
+                this._timelineArray[timelineOffset + 0 /* TimelineScale */] = Math.round(ObjectDataParser._getNumber(rawTimelineConfig, dragonBones.DataParser.SCALE, 1.0) * 100);
+                this._timelineArray[timelineOffset + 1 /* TimelineOffset */] = Math.round(ObjectDataParser._getNumber(rawTimelineConfig, dragonBones.DataParser.OFFSET, 0));
+                this._timelineArray[timelineOffset + 2 /* TimelineLoop */] = (ObjectDataParser._getBoolean(rawTimelineConfig, dragonBones.DataParser.LOOP, false)) ? 1 : 0;
             }
             else {
                 this._timelineArray[timelineOffset + 0 /* TimelineScale */] = 100;
                 this._timelineArray[timelineOffset + 1 /* TimelineOffset */] = 0;
+                this._timelineArray[timelineOffset + 2 /* TimelineLoop */] = 0;
             }
-            this._timelineArray[timelineOffset + 2 /* TimelineKeyFrameCount */] = keyFrameCount;
-            this._timelineArray[timelineOffset + 3 /* TimelineFrameValueCount */] = frameValueCount;
+            var timelineDuration = this.getTimelineDuration(rawFrames);
+            this._timelineArray[timelineOffset + 3 /* TimelineDuration */] = timelineDuration;
+            this._timelineArray[timelineOffset + 4 /* TimelineKeyFrameCount */] = keyFrameCount;
+            this._timelineArray[timelineOffset + 5 /* TimelineFrameValueCount */] = frameValueCount;
             switch (this._frameValueType) {
                 case 0 /* Step */:
-                    this._timelineArray[timelineOffset + 4 /* TimelineFrameValueOffset */] = 0;
+                    this._timelineArray[timelineOffset + 6 /* TimelineFrameValueOffset */] = 0;
                     break;
                 case 1 /* Int */:
-                    this._timelineArray[timelineOffset + 4 /* TimelineFrameValueOffset */] = frameIntArrayLength - this._animation.frameIntOffset;
+                    this._timelineArray[timelineOffset + 6 /* TimelineFrameValueOffset */] = frameIntArrayLength - this._animation.frameIntOffset;
                     break;
                 case 2 /* Float */:
-                    this._timelineArray[timelineOffset + 4 /* TimelineFrameValueOffset */] = frameFloatArrayLength - this._animation.frameFloatOffset;
+                    this._timelineArray[timelineOffset + 6 /* TimelineFrameValueOffset */] = frameFloatArrayLength - this._animation.frameFloatOffset;
                     break;
             }
             if (keyFrameCount === 1) { // Only one frame.
                 timeline.frameIndicesOffset = -1;
-                this._timelineArray[timelineOffset + 5 /* TimelineFrameOffset */ + 0] = frameParser.call(this, rawFrames[0], 0, 0) - this._animation.frameOffset;
+                this._timelineArray[timelineOffset + 7 /* TimelineFrameOffset */ + 0] = frameParser.call(this, rawFrames[0], 0, 0) - this._animation.frameOffset;
             }
             else {
                 var totalFrameCount = this._animation.frameCount + 1; // One more frame than animation.
@@ -12872,7 +12940,7 @@ var dragonBones;
                                 frameCount = ObjectDataParser._getNumber(rawFrame, dragonBones.DataParser.DURATION, 1);
                             }
                         }
-                        this._timelineArray[timelineOffset + 5 /* TimelineFrameOffset */ + iK] = frameParser.call(this, rawFrame, frameStart, frameCount) - this._animation.frameOffset;
+                        this._timelineArray[timelineOffset + 7 /* TimelineFrameOffset */ + iK] = frameParser.call(this, rawFrame, frameStart, frameCount) - this._animation.frameOffset;
                         iK++;
                     }
                     frameIndices[frameIndicesOffset + i] = iK - 1;
@@ -13320,7 +13388,7 @@ var dragonBones;
                 this._frameIntArray[frameIntOffset + 2 /* DeformValueCount */] = this._frameFloatArray.length - frameFloatOffset;
                 this._frameIntArray[frameIntOffset + 3 /* DeformValueOffset */] = 0;
                 this._frameIntArray[frameIntOffset + 4 /* DeformFloatOffset */] = frameFloatOffset - this._animation.frameFloatOffset;
-                this._timelineArray[this._timeline.offset + 3 /* TimelineFrameValueCount */] = frameIntOffset - this._animation.frameIntOffset;
+                this._timelineArray[this._timeline.offset + 5 /* TimelineFrameValueCount */] = frameIntOffset - this._animation.frameIntOffset;
             }
             return frameOffset;
         };
@@ -13457,7 +13525,7 @@ var dragonBones;
                 this._frameIntArray[frameIntOffset + 2 /* DeformValueCount */] = this._frameFloatArray.length - frameFloatOffset;
                 this._frameIntArray[frameIntOffset + 3 /* DeformValueOffset */] = 0;
                 this._frameIntArray[frameIntOffset + 4 /* DeformFloatOffset */] = frameFloatOffset - this._animation.frameFloatOffset;
-                this._timelineArray[this._timeline.offset + 3 /* TimelineFrameValueCount */] = frameIntOffset - this._animation.frameIntOffset;
+                this._timelineArray[this._timeline.offset + 5 /* TimelineFrameValueCount */] = frameIntOffset - this._animation.frameIntOffset;
             }
             return frameOffset;
         };
@@ -13932,7 +14000,7 @@ var dragonBones;
             timeline.type = type;
             timeline.offset = offset;
             this._timeline = timeline;
-            var keyFrameCount = this._timelineArrayBuffer[timeline.offset + 2 /* TimelineKeyFrameCount */];
+            var keyFrameCount = this._timelineArrayBuffer[timeline.offset + 4 /* TimelineKeyFrameCount */];
             if (keyFrameCount === 1) {
                 timeline.frameIndicesOffset = -1;
             }
@@ -13945,12 +14013,12 @@ var dragonBones;
                 timeline.frameIndicesOffset = frameIndicesOffset;
                 for (var i = 0, iK = 0, frameStart = 0, frameCount = 0; i < totalFrameCount; ++i) {
                     if (frameStart + frameCount <= i && iK < keyFrameCount) {
-                        frameStart = this._frameArrayBuffer[this._animation.frameOffset + this._timelineArrayBuffer[timeline.offset + 5 /* TimelineFrameOffset */ + iK]];
+                        frameStart = this._frameArrayBuffer[this._animation.frameOffset + this._timelineArrayBuffer[timeline.offset + 7 /* TimelineFrameOffset */ + iK]];
                         if (iK === keyFrameCount - 1) {
                             frameCount = this._animation.frameCount - frameStart;
                         }
                         else {
-                            frameCount = this._frameArrayBuffer[this._animation.frameOffset + this._timelineArrayBuffer[timeline.offset + 5 /* TimelineFrameOffset */ + iK + 1]] - frameStart;
+                            frameCount = this._frameArrayBuffer[this._animation.frameOffset + this._timelineArrayBuffer[timeline.offset + 7 /* TimelineFrameOffset */ + iK + 1]] - frameStart;
                         }
                         iK++;
                     }
@@ -14088,9 +14156,6 @@ var dragonBones;
             geometry.offset = rawData[dragonBones.DataParser.OFFSET];
             geometry.data = this._data;
             var weightOffset = this._intArrayBuffer[geometry.offset + 3 /* GeometryWeightOffset */];
-            if (weightOffset < -1) { // -1 is a special flag that there is no bones weight.
-                weightOffset += 65536; // Fixed out of bounds bug. 
-            }
             if (weightOffset >= 0) {
                 var weight = dragonBones.BaseObject.borrowObject(dragonBones.WeightData);
                 var vertexCount = this._intArrayBuffer[geometry.offset + 0 /* GeometryVertexCount */];
@@ -14126,7 +14191,7 @@ var dragonBones;
             var frameFloatArray = new Float32Array(this._binary, this._binaryOffset + offsets[6], l4 / Float32Array.BYTES_PER_ELEMENT);
             var frameArray = new Int16Array(this._binary, this._binaryOffset + offsets[8], l5 / Int16Array.BYTES_PER_ELEMENT);
             var timelineArray = new Uint16Array(this._binary, this._binaryOffset + offsets[10], l6 / Uint16Array.BYTES_PER_ELEMENT);
-            var colorArray = l7 > 0 ? new Int16Array(this._binary, this._binaryOffset + offsets[12], l7 / Uint16Array.BYTES_PER_ELEMENT) : intArray; // Color.
+            var colorArray = l7 > 0 ? new Int16Array(this._binary, this._binaryOffset + offsets[12], l7 / Int16Array.BYTES_PER_ELEMENT) : intArray; // Color.
             this._data.binary = this._binary;
             this._data.intArray = this._intArrayBuffer = intArray;
             this._data.floatArray = floatArray;
@@ -14134,6 +14199,7 @@ var dragonBones;
             this._data.frameFloatArray = frameFloatArray;
             this._data.frameArray = this._frameArrayBuffer = frameArray;
             this._data.timelineArray = this._timelineArrayBuffer = timelineArray;
+            // TODO: this._data.timelineArray 需要兼容，6.0版本的数据，每个时间轴多了两个数据，所以这里要处理一下
             this._data.colorArray = colorArray;
         };
         BinaryDataParser.prototype.parseDragonBonesData = function (rawData, scale) {
